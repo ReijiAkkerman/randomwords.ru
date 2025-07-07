@@ -1,0 +1,35 @@
+.tools {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 500px;
+    height: 100%;
+    box-sizing: border-box;
+
+    &-communication {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+
+        &__button {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__div {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &-common {
+        display: flex;
+        justify-content: start;
+        gap: 10px;
+
+        &-actions {
+            display: flex;
+            justify-content: start; 
+        }
+    }
+}

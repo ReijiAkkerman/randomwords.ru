@@ -1,0 +1,32 @@
+.tools {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 500px;
+  height: 100%;
+  box-sizing: border-box;
+}
+.tools-communication {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.tools-communication__button {
+  display: flex;
+  justify-content: center;
+}
+.tools-communication__div {
+  display: flex;
+  justify-content: space-between;
+}
+.tools-common {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+}
+.tools-common-actions {
+  display: flex;
+  justify-content: start;
+}
+
+/*# sourceMappingURL=position.css.map */

@@ -1,0 +1,37 @@
+:root {
+    --main-border-color: #000;
+    --main-svg-color: #444;
+    --main-text-color: #000;
+    --inactive-color: #aaa;
+
+    --block-radius: 10px;
+
+    --tools-button-padding: 5px 15px;
+    --tools-timer-button-padding: 0 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+button {
+    border: none;
+    background-color: #0000;
+    cursor: pointer;
+}
+
+svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--inactive-color);
+}
+
+.svg {
+    fill: var(--inactive-color);
+}
+
+p {
+    font-family: jura;
+}

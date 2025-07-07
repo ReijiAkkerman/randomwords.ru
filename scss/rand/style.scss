@@ -1,0 +1,102 @@
+.tools {
+    padding: 0 10px;
+    border-left: 1px solid var(--main-border-color);
+
+    &__div {
+        padding: 5px;
+        border-top: 1px solid var(--main-border-color);
+
+        &:first-of-type {
+            border: none;
+        }
+    }
+
+    &__button_search {
+        width: 50px !important;
+        box-sizing: content-box;
+    }
+
+    &-communication {
+        &__button {
+            width: 50px;
+            padding: var(--tools-button-padding);
+            border: 1px solid var(--inactive-color);
+            border-radius: var(--block-radius);
+            box-sizing: content-box;
+
+            &:hover {
+                border-color: var(--main-border-color);
+            }
+
+            &:hover > svg {
+                fill: var(--main-svg-color);
+            }
+
+            &:hover > .tools-communication__p {
+                color: var(--main-text-color);
+            }
+        }
+
+        &__p {
+            color: var(--inactive-color);
+            font-size: 16px;
+        }
+
+        &__div {
+            border: 1px solid var(--inactive-color);
+            border-radius: var(--block-radius);
+            width: 100%;
+        }
+
+        &-timer {
+            &__button {
+                padding: var(--tools-timer-button-padding);
+
+                &:first-of-type {
+                    border-right: 1px solid var(--inactive-color);
+                }
+
+                &:last-of-type {
+                    border-left: 1px solid var(--inactive-color);
+                }
+
+                &:hover .svg {
+                    fill: var(--main-svg-color);
+                }
+            }
+
+            &__p {
+                font-size: 25px;
+                margin: auto 0;
+                color: var(--inactive-color);
+            }
+        }
+    }
+
+    &-common {
+        &__button {
+            width: 100%;
+            padding: var(--tools-button-padding);
+            border-left: 1px solid var(--main-border-color);
+
+            &:first-of-type {
+                border: none;
+            }
+
+            &:hover > svg {
+                fill: var(--main-svg-color);
+            }
+        }
+
+        &-actions {
+            border: 1px solid var(--main-border-color);
+            border-radius: var(--block-radius);
+            width: 100%;
+        }
+
+        &-search {
+            border: 1px solid var(--main-border-color);
+            border-radius: var(--block-radius);
+        }
+    }
+}
