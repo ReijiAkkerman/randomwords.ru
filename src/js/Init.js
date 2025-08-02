@@ -1,11 +1,5 @@
-export {ToolsLists} from '../js/css/ToolsLists'; 
+import {ToolsLists} from '/src/js/css/ToolsLists.js'; 
 
 document.addEventListener('DOMContentLoaded', function() {
     ToolsLists.test();
 });
-
-// css
-
-// var ToolsLists = new ToolsLists();
-
-// other

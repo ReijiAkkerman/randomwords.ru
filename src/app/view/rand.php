@@ -9,9 +9,7 @@
         <link rel="stylesheet" href="/src/css/rand/style.css">
     </head>
     <body>
-        <section class="words">
-
-        </section>
+        <section class="words"></section>
         <main class="tools">
             <div class="tools__div tools-communication">
                 <button class="tools-communication__button tools__button_chats">
@@ -74,14 +72,13 @@
                     </button>
                 </div>
             </div>
-            <div class="tools__div tools-lists">
-                <div class="tools-lists__div tools-lists-group"></div>
-                <div class="tools-lists__div tools-lists-cath"></div>
+            <div class="tools__div tools-listsControl">
+                <div class="tools-listsControl__div tools-listsControl-group"></div>
+                <div class="tools-listsControl__div tools-listsControl-cath"></div>
             </div>
         </main>
-        <section class="settings">
+        <section class="settings"></section>
 
-        </section>
-        <script type="module" src="../../js/Init.js"></script>
+        <script type="module" src="/src/js/Init.js"></script>
     </body>
 </html>
