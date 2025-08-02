@@ -99,4 +99,17 @@
             border-radius: var(--block-radius);
         }
     }
+
+    &-lists {
+        box-shadow: inset 10px -3px 10px #fff,
+                    inset -10px -3px 10px #fff;
+        
+        &__div {
+            z-index: -1;
+            min-width: 360px;
+            min-height: 40px;
+            border: 1px solid var(--main-border-color);
+            border-radius: 10px;
+        }
+    }
 }

@@ -2,11 +2,11 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="../../css/fonts.css">
-        <link rel="stylesheet" href="../../css/position.css">
-        <link rel="stylesheet" href="../../css/style.css">
-        <link rel="stylesheet" href="../../css/rand/position.css">
-        <link rel="stylesheet" href="../../css/rand/style.css">
+        <link rel="stylesheet" href="/src/css/fonts.css">
+        <link rel="stylesheet" href="/src/css/position.css">
+        <link rel="stylesheet" href="/src/css/style.css">
+        <link rel="stylesheet" href="/src/css/rand/position.css">
+        <link rel="stylesheet" href="/src/css/rand/style.css">
     </head>
     <body>
         <section class="words">
@@ -75,22 +75,13 @@
                 </div>
             </div>
             <div class="tools__div tools-lists">
-                <div class="tools-list-split"></div>
-                <div class="tools-list-combined"></div>
-                <div class="tools-list-hard"></div>
-                <div class="tools-list-main"></div>
-            </div>
-            <div class="tools__div tools-quickAccess">
-                <div class="tools-quickAccess"></div>
-                <div class="tools-quickAccess-modes">
-                    <button class="tools__button_sourceMode"></button>
-                    <button class="tools__button_translationMode"></button>
-                    <button class="tools__button_transcriptionMode"></button>
-                </div>
+                <div class="tools-lists__div tools-lists-group"></div>
+                <div class="tools-lists__div tools-lists-cath"></div>
             </div>
         </main>
         <section class="settings">
 
         </section>
+        <script type="module" src="../../js/Init.js"></script>
     </body>
 </html>
