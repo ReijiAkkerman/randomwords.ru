@@ -79,6 +79,6 @@
         </main>
         <section class="settings"></section>
 
-        <script type="module" src="/src/js/Init.js"></script>
+        <script type="module" src="/src/js/css/tools_listsControl.js"></script>
     </body>
 </html>

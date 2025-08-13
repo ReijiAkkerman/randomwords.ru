@@ -76,7 +76,7 @@
   border-radius: var(--block-radius);
 }
 .tools-listsControl {
-  box-shadow: inset 10px -3px 10px #fff, inset -10px -3px 10px #fff;
+  box-shadow: inset -10px -3px 10px #fff;
 }
 .tools-listsControl__div {
   z-index: -1;
