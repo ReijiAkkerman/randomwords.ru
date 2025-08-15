@@ -55,6 +55,9 @@
   margin: auto 0;
   color: var(--inactive-color);
 }
+.tools-common {
+  border-bottom: 1px solid var(--main-border-color);
+}
 .tools-common__button {
   width: 100%;
   padding: var(--tools-button-padding);
@@ -76,14 +79,34 @@
   border-radius: var(--block-radius);
 }
 .tools-listsControl {
+  padding: 5px 0;
+  margin: 0 5px;
+  border: none;
   box-shadow: inset -10px -3px 10px #fff;
 }
 .tools-listsControl__div {
-  z-index: -1;
   min-width: 360px;
   min-height: 40px;
   border: 1px solid var(--main-border-color);
   border-radius: 10px;
+  background-color: #fff;
+}
+.tools-listsControl__button {
+  box-sizing: border-box;
+  width: 100%;
+  border-left: 1px solid var(--main-border-color);
+}
+.tools-listsControl__button:first-of-type {
+  border: none;
+}
+.tools-listsControl__button:hover {
+  cursor: pointer;
+}
+.tools-listsControl__button:hover > svg {
+  fill: var(--main-svg-color);
+}
+.tools-listsControl__button:hover > .svg-stroke {
+  stroke: var(--main-svg-color);
 }
 
 /*# sourceMappingURL=style.css.map */
