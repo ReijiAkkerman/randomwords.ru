@@ -91,22 +91,22 @@
   border-radius: 10px;
   background-color: #fff;
 }
-.tools-listsControl__button {
+.tools-listsControl-group__button {
   box-sizing: border-box;
   width: 100%;
   border-left: 1px solid var(--main-border-color);
 }
-.tools-listsControl__button:first-of-type {
+.tools-listsControl-group__button:first-of-type {
   border: none;
 }
-.tools-listsControl__button:hover {
+.tools-listsControl-group__button:hover {
   cursor: pointer;
 }
-.tools-listsControl__button:hover > svg {
-  fill: var(--main-svg-color);
+.tools-listsControl-group__svg {
+  padding: 0 15px;
 }
-.tools-listsControl__button:hover > .svg-stroke {
-  stroke: var(--main-svg-color);
+.tools-listsControl-group__p {
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -116,25 +116,35 @@
             background-color: #fff;
         }
 
-        &__button {
-            box-sizing: border-box;
-            width: 100%;
-            border-left: 1px solid var(--main-border-color);
-
-            &:first-of-type {
-                border: none;
+        &-group {
+            &__button {
+                box-sizing: border-box;
+                width: 100%;
+                border-left: 1px solid var(--main-border-color);
+    
+                &:first-of-type {
+                    border: none;
+                }
+    
+                &:hover {
+                    cursor: pointer;
+    
+                    // > svg {
+                    //     fill: var(--main-svg-color);
+                    // }
+    
+                    // > .svg-stroke {
+                    //     stroke: var(--main-svg-color);
+                    // }
+                }
             }
 
-            &:hover {
-                cursor: pointer;
+            &__svg {
+                padding: 0 15px;
+            }
 
-                > svg {
-                    fill: var(--main-svg-color);
-                }
-
-                > .svg-stroke {
-                    stroke: var(--main-svg-color);
-                }
+            &__p {
+                font-size: 18px;
             }
         }
     }
