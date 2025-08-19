@@ -69,6 +69,9 @@
 .tools-common__button:hover > svg {
   fill: var(--main-svg-color);
 }
+.tools-common__p {
+  font-size: 18px;
+}
 .tools-common-actions {
   border: 1px solid var(--main-border-color);
   border-radius: var(--block-radius);
@@ -101,6 +104,12 @@
 }
 .tools-listsControl-group__button:hover {
   cursor: pointer;
+}
+.tools-listsControl-group__button:hover > svg {
+  fill: var(--main-svg-color);
+}
+.tools-listsControl-group__button:hover > .svg-stroke {
+  stroke: var(--main-svg-color);
 }
 .tools-listsControl-group__svg {
   padding: 0 15px;
