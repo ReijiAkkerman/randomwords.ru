@@ -112,6 +112,10 @@
         border: none;
         box-shadow: inset -10px -3px 10px #fff;
 
+        &::-webkit-scrollbar {
+            height: 0;
+        }
+
         &__div {
             min-width: 360px;
             min-height: 40px;

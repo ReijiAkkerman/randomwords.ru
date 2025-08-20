@@ -87,6 +87,9 @@
   border: none;
   box-shadow: inset -10px -3px 10px #fff;
 }
+.tools-listsControl::-webkit-scrollbar {
+  height: 0;
+}
 .tools-listsControl__div {
   min-width: 360px;
   min-height: 40px;

@@ -105,10 +105,12 @@
                 </div>
                 <div class="tools-listsControl__div tools-listsControl-cath"></div>
             </div>
+            <div class="tools__div tools-lists"></div>
         </main>
         <section class="settings"></section>
 
-        <script type="module" src="/src/js/view/tools_listsControl__group.js"></script>
         <script type="module" src="/src/js/view/tools_common__actions.js"></script>
+        <script type="module" src="/src/js/view/tools_listsControl.js"></script>
+        <script type="module" src="/src/js/view/tools_listsControl__group.js"></script>
     </body>
 </html>
