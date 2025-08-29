@@ -20,7 +20,14 @@ class tools_listsControl {
 
 
     static showGroupArea() {
-        tools_listsControl.listsControl.scrollLeft = 0;
+        // tools_listsControl.listsControl.scrollLeft = 0;
+        let animationInfo = [{scrollLeft:1}];
+        let timingInfo = {
+            duration: 200,
+            fill: "forwards",
+            easing: "linear",
+        };
+        tools_listsControl.listsControl.animate(animationInfo, timingInfo);
     }
 
     static showCathArea() {

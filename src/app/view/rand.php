@@ -49,13 +49,13 @@
                         <svg class="tools-common__svg" viewBox="0 0 17 17">
                             <path d="M10.646 13.146l0.707 0.707-2.853 2.854-2.854-2.854 0.707-0.707 1.647 1.647v-3.772h1v3.772l1.646-1.647zM8 2.207v3.772h1v-3.772l1.646 1.646 0.707-0.707-2.853-2.853-2.854 2.853 0.707 0.707 1.647-1.646zM0 8v1h17v-1h-17z"/>
                         </svg>
-                        <p style="display:none;" class="tools-common__p">Разделить список</p>
+                        <pre style="display:none;" class="tools-common__pre">Разделить список</pre>
                     </button>
                     <button class="tools-common__button tools__button_combineLists">
                         <svg class="tools-common__svg" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 1l-.5.5v3l.5.5h3l.5-.5v-3L4.5 1h-3zM2 4V2h2v2H2zm-.5 2l-.5.5v3l.5.5h3l.5-.5v-3L4.5 6h-3zM2 9V7h2v2H2zm-1 2.5l.5-.5h3l.5.5v3l-.5.5h-3l-.5-.5v-3zm1 .5v2h2v-2H2zm10.5-7l-.5.5v6l.5.5h3l.5-.5v-6l-.5-.5h-3zM15 8h-2V6h2v2zm0 3h-2V9h2v2zM9.1 8H6v1h3.1l-1 1 .7.6 1.8-1.8v-.7L8.8 6.3l-.7.7 1 1z"/>
                         </svg>
-                        <p style="display:none;" class="tools-common__p">Объединить список</p>
+                        <pre style="display:none;" class="tools-common__pre">Объединить список</pre>
                     </button>
                     <button class="tools-common__button tools__button_createList">
                         <svg class="tools-common__svg" viewBox="0 0 32 32">
@@ -64,7 +64,7 @@
                                 c-3.842-3.842-10.167-3.975-14.142,0c-3.899,3.899-3.899,10.243,0,14.142c3.975,3.975,10.301,3.841,14.142,0
                                 C26.97,19.172,26.97,12.828,23.071,8.929z"/>
                         </svg>
-                        <p style="display:none;" class="tools-common__p">Создать новый список</p>
+                        <pre style="display:none;" class="tools-common__pre">Создать список</pre>
                     </button>
                 </div>
                 <div class="tools-common-search">
@@ -109,8 +109,9 @@
         </main>
         <section class="settings"></section>
 
+        <!-- <script type="module" src="/src/js/view/tools_common.js"></script>
         <script type="module" src="/src/js/view/tools_common__actions.js"></script>
         <script type="module" src="/src/js/view/tools_listsControl.js"></script>
-        <script type="module" src="/src/js/view/tools_listsControl__group.js"></script>
+        <script type="module" src="/src/js/view/tools_listsControl__group.js"></script> -->
     </body>
 </html>

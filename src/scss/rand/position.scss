@@ -31,6 +31,10 @@
             display: flex;
             justify-content: start; 
         }
+
+        &__pre {
+            position: relative;
+        }
     }
 
     &-listsControl {

@@ -28,6 +28,9 @@
   display: flex;
   justify-content: start;
 }
+.tools-common__pre {
+  position: relative;
+}
 .tools-listsControl {
   display: flex;
   justify-content: start;

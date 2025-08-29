@@ -1,0 +1,36 @@
+div {
+  display: flex;
+  justify-content: start;
+  background-color: #aaa;
+  width: 400px;
+}
+
+button {
+  width: 100%;
+  min-width: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  min-height: 30px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.cls1 {
+  background-color: #f00;
+}
+
+.cls2 {
+  background-color: #0f0;
+}
+
+.cls3 {
+  background-color: #00f;
+}
+
+svg {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=test.css.map */

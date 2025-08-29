@@ -1,3 +1,5 @@
+@use '../globals';
+
 .tools {
     padding: 0 10px;
     border-left: 1px solid var(--main-border-color);
@@ -77,20 +79,30 @@
         border-bottom: 1px solid var(--main-border-color);
 
         &__button {
+            box-sizing: content-box;
             width: 100%;
             padding: var(--tools-button-padding);
             border-left: 1px solid var(--main-border-color);
+            transition: width globals.$tools-buttons__animationDuration ease-in-out;
+
+            > .tools-common__svg {
+                transition: opacity globals.$tools-buttons__animationDuration ease-in-out;
+            }
 
             &:first-of-type {
                 border: none;
             }
 
-            &:hover > svg {
-                fill: var(--main-svg-color);
+            &:hover {
+                width: 400%;
+
+                > .tools-common__svg {
+                    opacity: 0;
+                }
             }
         }
 
-        &__p {
+        &__pre {
             font-size: 18px;
         }
 
