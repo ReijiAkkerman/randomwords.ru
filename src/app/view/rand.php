@@ -109,9 +109,9 @@
         </main>
         <section class="settings"></section>
 
-        <!-- <script type="module" src="/src/js/view/tools_common.js"></script>
+        <script type="module" src="/src/js/view/tools_common.js"></script>
         <script type="module" src="/src/js/view/tools_common__actions.js"></script>
         <script type="module" src="/src/js/view/tools_listsControl.js"></script>
-        <script type="module" src="/src/js/view/tools_listsControl__group.js"></script> -->
+        <script type="module" src="/src/js/view/tools_listsControl__group.js"></script>
     </body>
 </html>
