@@ -141,20 +141,21 @@
                 box-sizing: border-box;
                 width: 100%;
                 border-left: 1px solid var(--main-border-color);
+                transition: width globals.$tools-buttons__animationDuration ease-in-out;
+
+                > .tools-listsControl-group__svg {
+                    transition: opacity globals.$tools-buttons__animationDuration ease-in-out;
+                }
     
                 &:first-of-type {
                     border: none;
                 }
     
                 &:hover {
-                    cursor: pointer;
+                    width: 400%;
     
-                    > svg {
-                        fill: var(--main-svg-color);
-                    }
-
-                    > .svg-stroke {
-                        stroke: var(--main-svg-color);
+                    > .tools-listsControl-group__svg {
+                        opacity: 0;
                     }
                 }
             }
@@ -163,7 +164,7 @@
                 padding: 0 15px;
             }
 
-            &__p {
+            &__pre {
                 font-size: 18px;
             }
         }

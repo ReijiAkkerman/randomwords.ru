@@ -109,23 +109,24 @@
   box-sizing: border-box;
   width: 100%;
   border-left: 1px solid var(--main-border-color);
+  transition: width 200ms ease-in-out;
+}
+.tools-listsControl-group__button > .tools-listsControl-group__svg {
+  transition: opacity 200ms ease-in-out;
 }
 .tools-listsControl-group__button:first-of-type {
   border: none;
 }
 .tools-listsControl-group__button:hover {
-  cursor: pointer;
+  width: 400%;
 }
-.tools-listsControl-group__button:hover > svg {
-  fill: var(--main-svg-color);
-}
-.tools-listsControl-group__button:hover > .svg-stroke {
-  stroke: var(--main-svg-color);
+.tools-listsControl-group__button:hover > .tools-listsControl-group__svg {
+  opacity: 0;
 }
 .tools-listsControl-group__svg {
   padding: 0 15px;
 }
-.tools-listsControl-group__p {
+.tools-listsControl-group__pre {
   font-size: 18px;
 }
 
