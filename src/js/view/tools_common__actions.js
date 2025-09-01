@@ -43,7 +43,7 @@ class tools_common__actions {
 
 
     static #TIMEOUT_ID__ICON = false;
-    static #ICON_SHOWN = false;
+    static #ICON_SHOWN = true;
 
     static #TIMEOUT_ID__DESCRIPTION = false;
     static #DESCRIPTION_SHOWN = false;
@@ -89,17 +89,17 @@ class tools_common__actions {
     static #hideIcon(icon) {
         tools_common__actions.#TIMEOUT_ID__ICON = setTimeout(() => {
             icon.style.display = "none";
-            tools_common__actions.#ICON_SHOWN = true;
+            tools_common__actions.#SET_STATUS__ICON_HIDDEN();
         }, tools_common__actions.#animationDelay);
     }
 
     static #showIcon(icon) {
-        if(tools_common__actions.#ICON_SHOWN === true) {
+        if(tools_common__actions.#ICON_SHOWN === false) {
             icon.style.display = "";
-            tools_common__actions.#ICON_SHOWN = false;
+            tools_common__actions.#SET_STATUS__ICON_SHOWN();
         }
         else 
-            clearTimeout(tools_common__actions.#TIMEOUT_ID__ICON);
+            tools_common__actions.#DECLINE_ICON_SHOWING();
     }
 
 
@@ -110,17 +110,47 @@ class tools_common__actions {
         tools_common__actions.#TIMEOUT_ID__DESCRIPTION = setTimeout(() => {
             description.style.display = "";
             description.animate(tools_common__actions.#animationInfo, tools_common__actions.#timingInfo);
-            tools_common__actions.#DESCRIPTION_SHOWN = true;
+            tools_common__actions.#SET_STATUS__DESCRIPTION_SHOWN();
         }, tools_common__actions.#animationDelay);
     }
 
     static #hideDescription(description) {
         if(tools_common__actions.#DESCRIPTION_SHOWN === true) {
             description.style.display = "none";
-            tools_common__actions.#DESCRIPTION_SHOWN = false;
+            tools_common__actions.#SET_STATUS__DESCRIPTION_HIDDEN();
         }
         else 
-            clearTimeout(tools_common__actions.#TIMEOUT_ID__DESCRIPTION);
+            tools_common__actions.#DECLINE_DESCRIPTION_SHOWING();
+    }
+
+
+
+
+
+    // Изменение статус-переменных
+
+    static #SET_STATUS__ICON_SHOWN() {
+        tools_common__actions.#ICON_SHOWN = true;
+    }
+
+    static #SET_STATUS__ICON_HIDDEN() {
+        tools_common__actions.#ICON_SHOWN = false;
+    }
+
+    static #SET_STATUS__DESCRIPTION_SHOWN() {
+        tools_common__actions.#DESCRIPTION_SHOWN = true;
+    }
+
+    static #SET_STATUS__DESCRIPTION_HIDDEN() {
+        tools_common__actions.#DESCRIPTION_SHOWN = false;
+    }
+
+    static #DECLINE_ICON_SHOWING() {
+        clearTimeout(tools_common__actions.#TIMEOUT_ID__ICON);
+    }
+
+    static #DECLINE_DESCRIPTION_SHOWING() {
+        clearTimeout(tools_common__actions.#TIMEOUT_ID__DESCRIPTION);
     }
 }
 
