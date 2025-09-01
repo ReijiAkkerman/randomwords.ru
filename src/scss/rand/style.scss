@@ -85,20 +85,12 @@
             border-left: 1px solid var(--main-border-color);
             transition: width globals.$tools-buttons__animationDuration ease-in-out;
 
-            // > .tools-common__svg {
-            //     transition: opacity globals.$tools-buttons__animationDuration ease-in-out;
-            // }
-
             &:first-of-type {
                 border: none;
             }
 
             &:hover {
                 width: 400%;
-
-            //     > .tools-common__svg {
-            //         opacity: 0;
-            //     }
             }
         }
 
