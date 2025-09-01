@@ -118,7 +118,7 @@
   border: none;
 }
 .tools-listsControl-group__button:hover {
-  width: 400%;
+  width: 300%;
 }
 .tools-listsControl-group__button:hover > .tools-listsControl-group__svg {
   opacity: 0;
