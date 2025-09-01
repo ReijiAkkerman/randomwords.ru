@@ -65,17 +65,11 @@
   border-left: 1px solid var(--main-border-color);
   transition: width 200ms ease-in-out;
 }
-.tools-common__button > .tools-common__svg {
-  transition: opacity 200ms ease-in-out;
-}
 .tools-common__button:first-of-type {
   border: none;
 }
 .tools-common__button:hover {
   width: 400%;
-}
-.tools-common__button:hover > .tools-common__svg {
-  opacity: 0;
 }
 .tools-common__pre {
   font-size: 18px;

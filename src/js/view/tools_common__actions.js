@@ -28,12 +28,9 @@ class tools_common__actions {
 
 
 
+    static #animationInstance;
+    static #animationDuration = 200;
     static #animationDelay = 200;
-    static #animationInfo = [
-        {opacity:1},
-        {opacity:0},
-        {opacity:1},
-    ];
     static #timingInfo = {
         duration: 80,
         fill: "forwards",
@@ -41,7 +38,7 @@ class tools_common__actions {
     };
 
 
-
+    
     static #TIMEOUT_ID__ICON = false;
     static #ICON_SHOWN = true;
 
@@ -87,19 +84,37 @@ class tools_common__actions {
 
 
     static #hideIcon(icon) {
+        let animationInfo = [{opacity:0}];
+        let timingInfo = {
+            duration: tools_common__actions.#animationDuration,
+            fill: "forwards",
+            easing: "ease-in-out",
+        };
+        tools_common__actions.#animationInstance = icon.animate(animationInfo, timingInfo);
         tools_common__actions.#TIMEOUT_ID__ICON = setTimeout(() => {
             icon.style.display = "none";
+            icon.style.opacity = 0;
             tools_common__actions.#SET_STATUS__ICON_HIDDEN();
         }, tools_common__actions.#animationDelay);
     }
 
     static #showIcon(icon) {
+        let animationInfo = [{opacity:1}];
+        let timingInfo = {
+            duration: tools_common__actions.#animationDuration,
+            fill: "forwards",
+            easing: "ease-in-out",
+        };
         if(tools_common__actions.#ICON_SHOWN === false) {
             icon.style.display = "";
+            icon.animate(animationInfo, timingInfo);
+            icon.style.opacity = 1;
             tools_common__actions.#SET_STATUS__ICON_SHOWN();
         }
-        else 
+        else {
+            tools_common__actions.#animationInstance.reverse();
             tools_common__actions.#DECLINE_ICON_SHOWING();
+        }
     }
 
 
@@ -107,9 +122,19 @@ class tools_common__actions {
 
 
     static #showDescription(description) {
+        let animationInfo = [
+            {opacity:1},
+            {opacity:0},
+            {opacity:1},
+        ];
+        let timingInfo = {
+            duration: 80,
+            fill: "forwards",
+            easing: "steps(2, end)",
+        };
         tools_common__actions.#TIMEOUT_ID__DESCRIPTION = setTimeout(() => {
             description.style.display = "";
-            description.animate(tools_common__actions.#animationInfo, tools_common__actions.#timingInfo);
+            description.animate(animationInfo, timingInfo);
             tools_common__actions.#SET_STATUS__DESCRIPTION_SHOWN();
         }, tools_common__actions.#animationDelay);
     }
