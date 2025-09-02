@@ -103,7 +103,20 @@
                         <pre style="display:none;" class="tools-listsControl-group__pre">Групповые списки</pre>
                     </button>
                 </div>
-                <div class="tools-listsControl__div tools-listsControl-cath"></div>
+                <div class="tools-listsControl__div tools-listsControl-cath">
+                    <button class="tools-listsControl-cath__button">
+                        <svg style="display:none;" class="tools-listsControl-cath__svg" viewBox="0 0 1024 1024">
+                            <path d="M768 903.232l-50.432 56.768L256 512l461.568-448 50.432 56.768L364.928 512z"/>
+                        </svg>
+                        <pre class="tools-listsControl-cath__pre">Наименование группы</pre>
+                    </button>
+                    <button class="tools-listsControl-cath__button">
+                        <svg class="tools-listsControl-cath__svg" viewBox="0 0 1024 1024">
+                            <path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z"/>
+                        </svg>
+                        <pre style="display:none;" class="tools-listsControl-cath__pre">Наименование категории</pre>
+                    </button>
+                </div>
             </div>
             <div class="tools__div tools-lists"></div>
         </main>
@@ -111,7 +124,7 @@
 
         <script type="module" src="/src/js/view/tools_common.js"></script>
         <script type="module" src="/src/js/view/tools_common__actions.js"></script>
-        <script type="module" src="/src/js/view/tools_listsControl.js"></script>
+        <!-- <script type="module" src="/src/js/view/tools_listsControl.js"></script> -->
         <script type="module" src="/src/js/view/tools_listsControl__group.js"></script>
     </body>
 </html>

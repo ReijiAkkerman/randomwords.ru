@@ -87,7 +87,6 @@
   padding: 5px 0;
   margin: 0 5px;
   border: none;
-  box-shadow: inset -10px -3px 10px #fff;
 }
 .tools-listsControl::-webkit-scrollbar {
   height: 0;
@@ -121,6 +120,26 @@
   padding: 0 15px;
 }
 .tools-listsControl-group__pre {
+  font-size: 18px;
+}
+.tools-listsControl-cath__button {
+  width: 100%;
+}
+.tools-listsControl-cath__button:first-of-type {
+  width: 500%;
+}
+.tools-listsControl-cath__button:last-of-type {
+  border-left: 1px solid var(--main-border-color);
+}
+.tools-listsControl-cath__button:hover > .tools-listsControl-cath__svg {
+  fill: var(--main-svg-color);
+}
+.tools-listsControl-cath__svg {
+  width: 25px;
+  height: 25px;
+}
+.tools-listsControl-cath__pre {
+  text-align: center;
   font-size: 18px;
 }
 

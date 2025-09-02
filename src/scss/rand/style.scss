@@ -95,7 +95,7 @@
         }
 
         &__pre {
-            font-size: 18px;
+            font-size: globals.$tools-buttons-descriptions__fontSize;
         }
 
         &-actions {
@@ -114,7 +114,6 @@
         padding: 5px 0;
         margin: 0 5px;
         border: none;
-        box-shadow: inset -10px -3px 10px #fff;
 
         &::-webkit-scrollbar {
             height: 0;
@@ -157,7 +156,37 @@
             }
 
             &__pre {
-                font-size: 18px;
+                font-size: globals.$tools-buttons-descriptions__fontSize;
+            }
+        }
+
+        &-cath {
+            &__button {
+                width: 100%;
+
+                &:first-of-type {
+                    width: 500%;
+                }
+
+                &:last-of-type {
+                    border-left: 1px solid var(--main-border-color);
+                }
+
+                &:hover {
+                    > .tools-listsControl-cath__svg {
+                        fill: var(--main-svg-color);
+                    }
+                }
+            }
+
+            &__svg {
+                width: 25px;
+                height: 25px;
+            }
+
+            &__pre {
+                text-align: center;
+                font-size: globals.$tools-buttons-descriptions__fontSize;
             }
         }
     }
