@@ -31,11 +31,6 @@ class tools_common__actions {
     static #animationInstance;
     static #animationDuration = 200;
     static #animationDelay = 200;
-    static #timingInfo = {
-        duration: 80,
-        fill: "forwards",
-        easing: "steps(2, end)",
-    };
 
 
     
