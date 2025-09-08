@@ -142,5 +142,66 @@
   text-align: center;
   font-size: 18px;
 }
+.tools-actionsBar-editing {
+  box-sizing: border-box;
+  height: 40px;
+}
+.tools-actionsBar-editing__div {
+  margin-right: 0px;
+  width: 60px;
+  height: 100%;
+  border: 1px solid var(--inactive-color);
+  border-radius: 25%;
+}
+.tools-actionsBar-editing__p {
+  font-size: 30px;
+  color: var(--inactive-color);
+}
+.tools-actionsBar-editing__form {
+  width: 100%;
+  padding: 1px 0 0 0;
+}
+.tools-actionsBar-editing__button {
+  height: 100%;
+  width: 100px;
+  border: 1px solid var(--main-border-color);
+  border-radius: var(--block-radius);
+  border-color: var(--inactive-color);
+  background-color: rgba(255, 0, 0, 0.2);
+}
+.tools-actionsBar-editing__input {
+  box-sizing: border-box;
+  font-family: Jura;
+  font-size: 25px;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 10px;
+  border-top: 1px solid var(--inactive-color);
+  border-bottom: 1px solid var(--inactive-color);
+}
+.tools-actionsBar-editing__input::placeholder {
+  font-family: Jura;
+}
+.tools-actionsBar-editing__input:focus {
+  border-color: var(--main-border-color);
+}
+.tools-actionsBar-confirmation {
+  box-sizing: border-box;
+  height: 40px;
+}
+.tools-actionsBar-confirmation__button {
+  width: 100%;
+  padding: var(--tools-button-padding);
+  border: 1px solid var(--inactive-color);
+  border-radius: var(--block-radius);
+}
+.tools-actionsBar-confirmation__button.tools__button_createNesting {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.tools-actionsBar-confirmation__button.tools__button_createNesting .tools-actionsBar-confirmation__svg {
+  width: 40px;
+  height: 40px;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -48,4 +48,25 @@
             justify-content: start;
         }
     }
+
+    &-actionsBar {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        &-editing, &-confirmation {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 10px;
+        }
+
+        &-editing {
+            &__div {
+                display: flex;
+                justify-content: center;
+                vertical-align: center;
+            }
+        }
+    }
 }

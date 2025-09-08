@@ -39,4 +39,9 @@ p, pre {
   font-family: jura;
 }
 
+input {
+  border: none;
+  outline: none;
+}
+
 /*# sourceMappingURL=style.css.map */
