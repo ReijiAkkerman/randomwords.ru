@@ -159,8 +159,8 @@
   color: var(--inactive-color);
 }
 .tools-actionsBar-editing__form {
+  min-height: 40px;
   width: 100%;
-  padding: 1px 0 0 0;
 }
 .tools-actionsBar-editing__button {
   height: 100%;
@@ -170,20 +170,26 @@
   border-color: var(--inactive-color);
   background-color: rgba(255, 0, 0, 0.2);
 }
+.tools-actionsBar-editing__button:hover {
+  border-color: var(--main-border-color);
+}
 .tools-actionsBar-editing__input {
   box-sizing: border-box;
   font-family: Jura;
-  font-size: 25px;
+  font-size: 20px;
+  color: var(--inactive-color);
   width: 100%;
-  height: 100%;
-  padding: 0 0 0 10px;
-  border-top: 1px solid var(--inactive-color);
-  border-bottom: 1px solid var(--inactive-color);
+  min-height: 40px;
+  padding: 0 10px;
+  border-left: 2px solid var(--inactive-color);
+  border-right: 2px solid var(--inactive-color);
+  border-radius: var(--block-radius);
 }
 .tools-actionsBar-editing__input::placeholder {
   font-family: Jura;
 }
 .tools-actionsBar-editing__input:focus {
+  color: var(--main-text-color);
   border-color: var(--main-border-color);
 }
 .tools-actionsBar-confirmation {
@@ -194,15 +200,27 @@
   box-sizing: border-box;
   width: 100%;
   min-height: 40px;
-  padding: auto;
   border: 1px solid var(--inactive-color);
   border-radius: var(--block-radius);
+}
+.tools-actionsBar-confirmation__button:hover {
+  border-color: var(--main-border-color);
+}
+.tools-actionsBar-confirmation__button:hover > .tools-actionsBar-confirmation__svg {
+  fill: var(--main-svg-color);
+}
+.tools-actionsBar-confirmation__button.tools__button_deleteCath:hover {
+  border-color: var(--inactive-color);
+  cursor: default;
+}
+.tools-actionsBar-confirmation__button.tools__button_deleteCath:hover > .tools-actionsBar-confirmation__svg {
+  fill: var(--inactive-color);
 }
 .tools-actionsBar-confirmation__button.tools__button_createNesting {
   padding-bottom: 0;
   padding-top: 0;
 }
-.tools-actionsBar-confirmation__button.tools__button_createNesting .tools-actionsBar-confirmation__svg {
+.tools-actionsBar-confirmation__button.tools__button_createNesting > .tools-actionsBar-confirmation__svg {
   width: 38px;
   height: 38px;
 }
