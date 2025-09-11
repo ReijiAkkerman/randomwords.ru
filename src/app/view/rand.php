@@ -152,8 +152,8 @@
                     </button>
                 </div>
             </div>
-            <div class="tools__div tools-selectionBar"></div>
-            <div style="display:none;" class="tools__div tools-lists"></div>
+            <div style="display:none;" class="tools__div tools-selectionBar"></div>
+            <div class="tools__div tools-lists"></div>
         </main>
         <section class="settings"></section>
 

@@ -1,10 +1,19 @@
 .tools {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     right: 0;
     width: 500px;
     height: 100%;
     box-sizing: border-box;
+
+    &__div {
+        &.tools-lists {
+            height: 100%;
+        }
+    }
 
     &-communication {
         display: flex;
@@ -42,6 +51,7 @@
         justify-content: start;
         gap: 10px;
         overflow-x: scroll;
+        min-height: fit-content;
 
         &__div {
             display: flex;
