@@ -191,7 +191,7 @@
         }
     }
 
-    &-actionsBar {
+    &-actionsArea {
         &-editing {
             box-sizing: border-box;
             height: 40px;
@@ -221,10 +221,11 @@
                 border: 1px solid var(--main-border-color);
                 border-radius: var(--block-radius);
                 border-color: var(--inactive-color);
-                background-color: #f003;
+                background: linear-gradient(0.25turn, #f88, #ff8, #8f8, #8ff, #88f, #f8f, #f88);
 
                 &:hover {
                     border-color: var(--main-border-color);
+                    background: linear-gradient(0.25turn, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);;
                 }
             }
 
@@ -265,7 +266,7 @@
                 &:hover {
                     border-color: var(--main-border-color);
 
-                    > .tools-actionsBar-confirmation__svg {
+                    > .tools-actionsArea-confirmation__svg {
                         fill: var(--main-svg-color);
                     }
                 }
@@ -274,7 +275,7 @@
                     border-color: var(--inactive-color);
                     cursor: default;
 
-                        > .tools-actionsBar-confirmation__svg {
+                        > .tools-actionsArea-confirmation__svg {
                             fill: var(--inactive-color);
                         }
                     }
@@ -283,11 +284,58 @@
                     padding-bottom: 0;
                     padding-top: 0;
 
-                    > .tools-actionsBar-confirmation__svg {
+                    > .tools-actionsArea-confirmation__svg {
                         width: 38px;
                         height: 38px;
                     }
                 }
+            }
+        }
+    }
+
+    &-selectionArea {
+        &-cathegoryItem {
+            border: 1px solid var(--inactive-color);
+            border-radius: var(--block-radius);
+            padding: var(--tools-button-padding);
+            cursor: pointer;
+
+            &:hover {
+                border-color: var(--main-border-color);
+            }
+
+            &:hover > &__pre, &:hover > &__p {
+                color: var(--main-text-color);
+            }
+
+            &__button {
+                cursor: grab;
+
+                &:active {
+                    cursor: grabbing;
+                }
+            }
+
+            &__button:hover > &__svg {
+                fill: var(--main-svg-color);
+            }
+
+            &__svg {
+                vertical-align: sub;
+            }
+
+            &__pre {
+                font-size: 20px;
+                color: var(--inactive-cathegoryItem-color);
+                width: 100%;
+                padding-left: 15px;
+            }
+
+            &__p {
+                padding-right: 5px;
+                font-size: 20px;
+                font-weight: bold;
+                color: var(--inactive-color);
             }
         }
     }

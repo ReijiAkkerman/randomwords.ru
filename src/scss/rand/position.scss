@@ -59,7 +59,7 @@
         }
     }
 
-    &-actionsBar {
+    &-actionsArea {
         display: flex;
         flex-direction: column;
         gap: 5px;
@@ -77,6 +77,17 @@
                 justify-content: center;
                 vertical-align: center;
             }
+        }
+    }
+
+    &-selectionArea {
+        display: flex;
+        flex-direction: column;
+
+        &-cathegoryItem {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
     }
 }

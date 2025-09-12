@@ -142,11 +142,11 @@
   text-align: center;
   font-size: 18px;
 }
-.tools-actionsBar-editing {
+.tools-actionsArea-editing {
   box-sizing: border-box;
   height: 40px;
 }
-.tools-actionsBar-editing__div {
+.tools-actionsArea-editing__div {
   box-sizing: border-box;
   margin-right: 0px;
   min-width: 40px;
@@ -154,26 +154,27 @@
   border: 1px solid var(--inactive-color);
   border-radius: 25%;
 }
-.tools-actionsBar-editing__p {
+.tools-actionsArea-editing__p {
   font-size: 30px;
   color: var(--inactive-color);
 }
-.tools-actionsBar-editing__form {
+.tools-actionsArea-editing__form {
   min-height: 40px;
   width: 100%;
 }
-.tools-actionsBar-editing__button {
+.tools-actionsArea-editing__button {
   height: 100%;
   width: 100px;
   border: 1px solid var(--main-border-color);
   border-radius: var(--block-radius);
   border-color: var(--inactive-color);
-  background-color: rgba(255, 0, 0, 0.2);
+  background: linear-gradient(0.25turn, #f88, #ff8, #8f8, #8ff, #88f, #f8f, #f88);
 }
-.tools-actionsBar-editing__button:hover {
+.tools-actionsArea-editing__button:hover {
   border-color: var(--main-border-color);
+  background: linear-gradient(0.25turn, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
 }
-.tools-actionsBar-editing__input {
+.tools-actionsArea-editing__input {
   box-sizing: border-box;
   font-family: Jura;
   font-size: 20px;
@@ -185,44 +186,80 @@
   border-right: 2px solid var(--inactive-color);
   border-radius: var(--block-radius);
 }
-.tools-actionsBar-editing__input::placeholder {
+.tools-actionsArea-editing__input::placeholder {
   font-family: Jura;
 }
-.tools-actionsBar-editing__input:focus {
+.tools-actionsArea-editing__input:focus {
   color: var(--main-text-color);
   border-color: var(--main-border-color);
 }
-.tools-actionsBar-confirmation {
+.tools-actionsArea-confirmation {
   box-sizing: border-box;
   height: 40px;
 }
-.tools-actionsBar-confirmation__button {
+.tools-actionsArea-confirmation__button {
   box-sizing: border-box;
   width: 100%;
   min-height: 40px;
   border: 1px solid var(--inactive-color);
   border-radius: var(--block-radius);
 }
-.tools-actionsBar-confirmation__button:hover {
+.tools-actionsArea-confirmation__button:hover {
   border-color: var(--main-border-color);
 }
-.tools-actionsBar-confirmation__button:hover > .tools-actionsBar-confirmation__svg {
+.tools-actionsArea-confirmation__button:hover > .tools-actionsArea-confirmation__svg {
   fill: var(--main-svg-color);
 }
-.tools-actionsBar-confirmation__button.tools__button_deleteCath:hover {
+.tools-actionsArea-confirmation__button.tools__button_deleteCath:hover {
   border-color: var(--inactive-color);
   cursor: default;
 }
-.tools-actionsBar-confirmation__button.tools__button_deleteCath:hover > .tools-actionsBar-confirmation__svg {
+.tools-actionsArea-confirmation__button.tools__button_deleteCath:hover > .tools-actionsArea-confirmation__svg {
   fill: var(--inactive-color);
 }
-.tools-actionsBar-confirmation__button.tools__button_createNesting {
+.tools-actionsArea-confirmation__button.tools__button_createNesting {
   padding-bottom: 0;
   padding-top: 0;
 }
-.tools-actionsBar-confirmation__button.tools__button_createNesting > .tools-actionsBar-confirmation__svg {
+.tools-actionsArea-confirmation__button.tools__button_createNesting > .tools-actionsArea-confirmation__svg {
   width: 38px;
   height: 38px;
+}
+.tools-selectionArea-cathegoryItem {
+  border: 1px solid var(--inactive-color);
+  border-radius: var(--block-radius);
+  padding: var(--tools-button-padding);
+  cursor: pointer;
+}
+.tools-selectionArea-cathegoryItem:hover {
+  border-color: var(--main-border-color);
+}
+.tools-selectionArea-cathegoryItem:hover > .tools-selectionArea-cathegoryItem__pre, .tools-selectionArea-cathegoryItem:hover > .tools-selectionArea-cathegoryItem__p {
+  color: var(--main-text-color);
+}
+.tools-selectionArea-cathegoryItem__button {
+  cursor: grab;
+}
+.tools-selectionArea-cathegoryItem__button:active {
+  cursor: grabbing;
+}
+.tools-selectionArea-cathegoryItem__button:hover > .tools-selectionArea-cathegoryItem__svg {
+  fill: var(--main-svg-color);
+}
+.tools-selectionArea-cathegoryItem__svg {
+  vertical-align: sub;
+}
+.tools-selectionArea-cathegoryItem__pre {
+  font-size: 20px;
+  color: var(--inactive-cathegoryItem-color);
+  width: 100%;
+  padding-left: 15px;
+}
+.tools-selectionArea-cathegoryItem__p {
+  padding-right: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--inactive-color);
 }
 
 /*# sourceMappingURL=style.css.map */

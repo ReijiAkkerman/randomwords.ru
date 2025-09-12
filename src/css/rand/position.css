@@ -48,21 +48,30 @@
   display: flex;
   justify-content: start;
 }
-.tools-actionsBar {
+.tools-actionsArea {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.tools-actionsBar-editing, .tools-actionsBar-confirmation {
+.tools-actionsArea-editing, .tools-actionsArea-confirmation {
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 10px;
 }
-.tools-actionsBar-editing__div {
+.tools-actionsArea-editing__div {
   display: flex;
   justify-content: center;
   vertical-align: center;
+}
+.tools-selectionArea {
+  display: flex;
+  flex-direction: column;
+}
+.tools-selectionArea-cathegoryItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=position.css.map */
