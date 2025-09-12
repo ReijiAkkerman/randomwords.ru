@@ -256,10 +256,8 @@
   padding-left: 15px;
 }
 .tools-selectionArea-cathegoryItem__p {
-  padding-right: 5px;
   font-size: 20px;
-  font-weight: bold;
-  color: var(--inactive-color);
+  color: var(--inactive-cathegoryItem-color);
 }
 
 /*# sourceMappingURL=style.css.map */

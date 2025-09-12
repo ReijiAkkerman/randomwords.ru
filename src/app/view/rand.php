@@ -165,7 +165,49 @@
                         </svg>
                     </button>
                     <pre class="tools-selectionArea-cathegoryItem__pre">Наименование группы</pre>
-                    <p class="tools-selectionArea-cathegoryItem__p">1</p>
+                    <p class="tools-selectionArea-cathegoryItem__p">8</p>
+                </div>
+                <div class="tools-selectionArea-cathegoryItem">
+                    <button class="tools-selectionArea-cathegoryItem__button tools__button_drag">
+                        <svg class="tools-selectionArea-cathegoryItem__svg" viewBox="0 0 24 24" fill="none">
+                            <circle cx="20" cy="8" r="1" transform="rotate(-180 20 8)" stroke-width="2"/>
+                            <circle cx="20" cy="16" r="1" transform="rotate(-180 20 16)" stroke-width="2"/>
+                            <circle cx="12" cy="8" r="1" transform="rotate(-180 12 8)" stroke-width="2"/>
+                            <circle cx="12" cy="16" r="1" transform="rotate(-180 12 16)" stroke-width="2"/>
+                            <circle cx="4" cy="8" r="1" transform="rotate(-180 4 8)" stroke-width="2"/>
+                            <circle cx="4" cy="16" r="1" transform="rotate(-180 4 16)" stroke-width="2"/>
+                        </svg>
+                    </button>
+                    <pre class="tools-selectionArea-cathegoryItem__pre">Наименование группы</pre>
+                    <p class="tools-selectionArea-cathegoryItem__p">8</p>
+                </div>
+                <div class="tools-selectionArea-cathegoryItem">
+                    <button class="tools-selectionArea-cathegoryItem__button tools__button_drag">
+                        <svg class="tools-selectionArea-cathegoryItem__svg" viewBox="0 0 24 24" fill="none">
+                            <circle cx="20" cy="8" r="1" transform="rotate(-180 20 8)" stroke-width="2"/>
+                            <circle cx="20" cy="16" r="1" transform="rotate(-180 20 16)" stroke-width="2"/>
+                            <circle cx="12" cy="8" r="1" transform="rotate(-180 12 8)" stroke-width="2"/>
+                            <circle cx="12" cy="16" r="1" transform="rotate(-180 12 16)" stroke-width="2"/>
+                            <circle cx="4" cy="8" r="1" transform="rotate(-180 4 8)" stroke-width="2"/>
+                            <circle cx="4" cy="16" r="1" transform="rotate(-180 4 16)" stroke-width="2"/>
+                        </svg>
+                    </button>
+                    <pre class="tools-selectionArea-cathegoryItem__pre">Наименование группы</pre>
+                    <p class="tools-selectionArea-cathegoryItem__p">8</p>
+                </div>
+                <div class="tools-selectionArea-cathegoryItem">
+                    <button class="tools-selectionArea-cathegoryItem__button tools__button_drag">
+                        <svg class="tools-selectionArea-cathegoryItem__svg" viewBox="0 0 24 24" fill="none">
+                            <circle cx="20" cy="8" r="1" transform="rotate(-180 20 8)" stroke-width="2"/>
+                            <circle cx="20" cy="16" r="1" transform="rotate(-180 20 16)" stroke-width="2"/>
+                            <circle cx="12" cy="8" r="1" transform="rotate(-180 12 8)" stroke-width="2"/>
+                            <circle cx="12" cy="16" r="1" transform="rotate(-180 12 16)" stroke-width="2"/>
+                            <circle cx="4" cy="8" r="1" transform="rotate(-180 4 8)" stroke-width="2"/>
+                            <circle cx="4" cy="16" r="1" transform="rotate(-180 4 16)" stroke-width="2"/>
+                        </svg>
+                    </button>
+                    <pre class="tools-selectionArea-cathegoryItem__pre">Наименование группы</pre>
+                    <p class="tools-selectionArea-cathegoryItem__p">8</p>
                 </div>
             </div>
             <div class="tools__div tools-lists"></div>
@@ -173,8 +215,9 @@
         <section class="settings"></section>
 
         <!-- <script type="module" src="/src/js/view/tools_common.js"></script> -->
-        <script type="module" src="/src/js/view/tools_common__actions.js"></script>
-        <script type="module" src="/src/js/view/tools_listsControl.js"></script>
-        <script type="module" src="/src/js/view/tools_listsControl__group.js"></script>
+        <script type="module" src="/src/js/view/tools/common/tools_common__actions.js"></script>
+        <script type="module" src="/src/js/view/tools/listsControl/tools_listsControl.js"></script>
+        <script type="module" src="/src/js/view/tools/listsControl/tools_listsControl__group.js"></script>
+        <script type="module" src="/src/js/view/tools/selectionArea/tools_selectionArea.js"></script>
     </body>
 </html>

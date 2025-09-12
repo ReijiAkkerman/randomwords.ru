@@ -67,6 +67,7 @@
 .tools-selectionArea {
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 .tools-selectionArea-cathegoryItem {
   display: flex;
