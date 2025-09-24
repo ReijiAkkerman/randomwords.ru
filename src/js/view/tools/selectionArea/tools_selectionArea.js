@@ -31,8 +31,16 @@ class tools_selectionArea {
 
 
 
+    /**
+     * CSS-переменные
+     */
+
     static #__inactive_borderColor;
     static #__inactive_textColor;
+
+
+
+    static #DRAGGING_STARTED = false;
 
 
 
@@ -47,11 +55,15 @@ class tools_selectionArea {
     static unsetHighlighting() {
         tools_selectionArea.#setDefaultBorderColor();
         tools_selectionArea.#setDefaultTextColor();
+        tools_selectionArea.#START_DRAGGING();
     }
 
     static revertHighlighting() {
-        tools_selectionArea.#unsetDefaultBorderColor();
-        tools_selectionArea.#unsetDefaultTextColor();
+        if(tools_selectionArea.#DRAGGING_STARTED === true) {
+            tools_selectionArea.#unsetDefaultBorderColor();
+            tools_selectionArea.#unsetDefaultTextColor();
+            tools_selectionArea.#STOP_DRAGGING();
+        }
     }
 
 
@@ -83,6 +95,14 @@ class tools_selectionArea {
         tools_selectionArea.#cathegoryItem_name.style.color = 
         tools_selectionArea.#cathegoryItem_nestingMark.style.color = "";
     }
+
+    static #START_DRAGGING() {
+        tools_selectionArea.#DRAGGING_STARTED = true;
+    }
+
+    static #STOP_DRAGGING() {
+        tools_selectionArea.#DRAGGING_STARTED = false;
+    }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -90,5 +110,5 @@ document.addEventListener("DOMContentLoaded", function() {
     tools_selectionArea.getCSSTextColorValue();
     tools_selectionArea.cathegoryItem__buttons.forEach(element => {element.addEventListener("mouseenter", tools_selectionArea.defineHighlightedItem)});
     tools_selectionArea.dragButton__buttons.forEach(element => {element.addEventListener("mousedown", tools_selectionArea.unsetHighlighting)});
-    tools_selectionArea.dragButton__buttons.forEach(element => {element.addEventListener("mouseup", tools_selectionArea.revertHighlighting)});
+    document.addEventListener("mouseup", tools_selectionArea.revertHighlighting);
 });
