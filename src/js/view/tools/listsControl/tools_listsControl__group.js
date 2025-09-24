@@ -44,6 +44,10 @@ class tools_listsControl__group {
 
 
 
+    /**
+     * Анимации при наведении мыши
+     */
+
     static showTip__personalLists() {
         tools_listsControl__group.#hideIcon(tools_listsControl__group.#personalLists__icon);
         tools_listsControl__group.#showDescription(tools_listsControl__group.#personalLists__description);
@@ -166,6 +170,16 @@ class tools_listsControl__group {
     static #DECLINE_DESCRIPTION_SHOWING() {
         clearTimeout(tools_listsControl__group.#TIMEOUT_ID__DESCRIPTION);
     }
+
+
+
+
+
+    /**
+     * Переключение режима группирования по клику
+     */
+
+    
 }
 
 document.addEventListener("DOMContentLoaded", function() {
