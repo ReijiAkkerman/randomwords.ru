@@ -81,7 +81,7 @@
         &__button {
             box-sizing: content-box;
             width: 100%;
-            padding: var(--tools-button-padding);
+            padding: var(--tools-common-button-padding);
             border-left: 1px solid var(--main-border-color);
             transition: width globals.$tools-buttons__animationDuration ease-in-out;
 
@@ -91,6 +91,14 @@
 
             &:hover {
                 width: 400%;
+
+                &.switcher {
+                    width: 100%;
+
+                    .tools-common__svg {
+                        fill: var(--main-svg-color);
+                    }
+                }
             }
         }
 
@@ -107,6 +115,10 @@
         &-search {
             border: 1px solid var(--main-border-color);
             border-radius: var(--block-radius);
+
+            .tools__button_search {
+                padding: var(--tools-button-padding);
+            }
         }
     }
 

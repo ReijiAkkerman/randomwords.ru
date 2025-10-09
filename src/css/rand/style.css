@@ -61,7 +61,7 @@
 .tools-common__button {
   box-sizing: content-box;
   width: 100%;
-  padding: var(--tools-button-padding);
+  padding: var(--tools-common-button-padding);
   border-left: 1px solid var(--main-border-color);
   transition: width 200ms ease-in-out;
 }
@@ -70,6 +70,12 @@
 }
 .tools-common__button:hover {
   width: 400%;
+}
+.tools-common__button:hover.switcher {
+  width: 100%;
+}
+.tools-common__button:hover.switcher .tools-common__svg {
+  fill: var(--main-svg-color);
 }
 .tools-common__pre {
   font-size: 18px;
@@ -82,6 +88,9 @@
 .tools-common-search {
   border: 1px solid var(--main-border-color);
   border-radius: var(--block-radius);
+}
+.tools-common-search .tools__button_search {
+  padding: var(--tools-button-padding);
 }
 .tools-listsControl {
   padding: 5px 0;
