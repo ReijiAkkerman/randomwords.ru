@@ -45,32 +45,56 @@
             </div>
             <div class="tools__div tools-common">
                 <div class="tools-common-actions">
-                    <button class="tools-common__button tools__button_splitList">
-                        <svg class="tools-common__svg" viewBox="0 0 17 17">
-                            <path d="M10.646 13.146l0.707 0.707-2.853 2.854-2.854-2.854 0.707-0.707 1.647 1.647v-3.772h1v3.772l1.646-1.647zM8 2.207v3.772h1v-3.772l1.646 1.646 0.707-0.707-2.853-2.853-2.854 2.853 0.707 0.707 1.647-1.646zM0 8v1h17v-1h-17z"/>
-                        </svg>
-                        <pre style="display:none;" class="tools-common__pre">Разделить список</pre>
-                    </button>
-                    <button class="tools-common__button tools__button_combineLists">
-                        <svg class="tools-common__svg" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 1l-.5.5v3l.5.5h3l.5-.5v-3L4.5 1h-3zM2 4V2h2v2H2zm-.5 2l-.5.5v3l.5.5h3l.5-.5v-3L4.5 6h-3zM2 9V7h2v2H2zm-1 2.5l.5-.5h3l.5.5v3l-.5.5h-3l-.5-.5v-3zm1 .5v2h2v-2H2zm10.5-7l-.5.5v6l.5.5h3l.5-.5v-6l-.5-.5h-3zM15 8h-2V6h2v2zm0 3h-2V9h2v2zM9.1 8H6v1h3.1l-1 1 .7.6 1.8-1.8v-.7L8.8 6.3l-.7.7 1 1z"/>
-                        </svg>
-                        <pre style="display:none;" class="tools-common__pre">Объединить списки</pre>
-                    </button>
-                    <button class="tools-common__button tools__button_createList">
-                        <svg class="tools-common__svg" viewBox="0 0 32 32">
-                            <path d="M24,15v2h-7v7h-2v-7H8v-2h7V8h2v7H24z M24.485,24.485c-4.686,4.686-12.284,4.686-16.971,0
-                                c-4.686-4.686-4.686-12.284,0-16.971c4.687-4.686,12.284-4.686,16.971,0C29.172,12.201,29.172,19.799,24.485,24.485z M23.071,8.929
-                                c-3.842-3.842-10.167-3.975-14.142,0c-3.899,3.899-3.899,10.243,0,14.142c3.975,3.975,10.301,3.841,14.142,0
-                                C26.97,19.172,26.97,12.828,23.071,8.929z"/>
-                        </svg>
-                        <pre style="display:none;" class="tools-common__pre">Создать список</pre>
-                    </button>
-                    <button class="tools-common__button tools__button_showAdditionalActions switcher">
-                        <svg class="tools-common__svg" viewBox="0 0 1024 1024">
-                            <path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z"/>
-                        </svg>
-                    </button>
+                    <div style="display:none;" class="tools-common__div">
+                        <button class="tools-common__button tools-common__button_moreOftenUsed tools__button_splitList">
+                            <svg class="tools-common__svg" viewBox="0 0 17 17">
+                                <path d="M10.646 13.146l0.707 0.707-2.853 2.854-2.854-2.854 0.707-0.707 1.647 1.647v-3.772h1v3.772l1.646-1.647zM8 2.207v3.772h1v-3.772l1.646 1.646 0.707-0.707-2.853-2.853-2.854 2.853 0.707 0.707 1.647-1.646zM0 8v1h17v-1h-17z"/>
+                            </svg>
+                            <pre style="display:none;" class="tools-common__pre">Разделить список</pre>
+                        </button>
+                        <button class="tools-common__button tools-common__button_moreOftenUsed tools__button_combineLists">
+                            <svg class="tools-common__svg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 1l-.5.5v3l.5.5h3l.5-.5v-3L4.5 1h-3zM2 4V2h2v2H2zm-.5 2l-.5.5v3l.5.5h3l.5-.5v-3L4.5 6h-3zM2 9V7h2v2H2zm-1 2.5l.5-.5h3l.5.5v3l-.5.5h-3l-.5-.5v-3zm1 .5v2h2v-2H2zm10.5-7l-.5.5v6l.5.5h3l.5-.5v-6l-.5-.5h-3zM15 8h-2V6h2v2zm0 3h-2V9h2v2zM9.1 8H6v1h3.1l-1 1 .7.6 1.8-1.8v-.7L8.8 6.3l-.7.7 1 1z"/>
+                            </svg>
+                            <pre style="display:none;" class="tools-common__pre">Объединить списки</pre>
+                        </button>
+                        <button class="tools-common__button tools-common__button_moreOftenUsed tools__button_createList">
+                            <svg class="tools-common__svg" viewBox="0 0 32 32">
+                                <path d="M24,15v2h-7v7h-2v-7H8v-2h7V8h2v7H24z M24.485,24.485c-4.686,4.686-12.284,4.686-16.971,0
+                                    c-4.686-4.686-4.686-12.284,0-16.971c4.687-4.686,12.284-4.686,16.971,0C29.172,12.201,29.172,19.799,24.485,24.485z M23.071,8.929
+                                    c-3.842-3.842-10.167-3.975-14.142,0c-3.899,3.899-3.899,10.243,0,14.142c3.975,3.975,10.301,3.841,14.142,0
+                                    C26.97,19.172,26.97,12.828,23.071,8.929z"/>
+                            </svg>
+                            <pre style="display:none;" class="tools-common__pre">Создать список</pre>
+                        </button>
+                        <button class="tools-common__button tools-common__button_moreOftenUsed tools__button_next switcher">
+                            <svg class="tools-common__svg" viewBox="0 0 1024 1024">
+                                <path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="tools-common__div">
+                        <button class="tools-common__button tools-common___button_lessOftenUsed tools__button_back switcher">
+                            <svg viewBox="0 0 1024 1024">
+                                <path d="M768 903.232l-50.432 56.768L256 512l461.568-448 50.432 56.768L364.928 512z"/>
+                            </svg>
+                        </button>
+                        <button class="tools-common__button tools-common___button_lessOftenUsed tools__button_deleteList">
+                            <svg viewBox="0 0 1024 1024">
+                                <path d="M160 256H96a32 32 0 0 1 0-64h256V95.936a32 32 0 0 1 32-32h256a32 32 0 0 1 32 32V192h256a32 32 0 1 1 0 64h-64v672a32 32 0 0 1-32 32H192a32 32 0 0 1-32-32V256zm448-64v-64H416v64h192zM224 896h576V256H224v640zm192-128a32 32 0 0 1-32-32V416a32 32 0 0 1 64 0v320a32 32 0 0 1-32 32zm192 0a32 32 0 0 1-32-32V416a32 32 0 0 1 64 0v320a32 32 0 0 1-32 32z"/>
+                            </svg>
+                        </button>
+                        <button class="tools-common__button tools-common___button_lessOftenUsed tools__button_shareList">
+                            <svg viewBox="0 0 32 32">
+                                <path d="M27 22c-1.646 0-3.103 0.8-4.013 2.028l-13.168-6.71c0.114-0.421 0.181-0.86 0.181-1.317 0-0.572-0.101-1.119-0.277-1.63l13.242-6.426c0.909 1.244 2.375 2.056 4.035 2.056 2.762 0 5-2.239 5-5s-2.238-5-5-5-5 2.239-5 5c0 0.388 0.049 0.764 0.133 1.127l-13.432 6.518c-0.915-1.009-2.231-1.646-3.7-1.646-2.761 0-5 2.239-5 5s2.239 5 5 5c1.59 0 3.004-0.744 3.92-1.902l13.222 6.739c-0.090 0.374-0.142 0.762-0.142 1.163 0 2.761 2.238 5 5 5s5-2.239 5-5-2.238-5-5-5zM27 2c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zM5 19c-1.657 0-3-1.343-3-3s1.343-3 3-3c1.657 0 3 1.344 3 3s-1.343 3-3 3zM27 30c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"></path>
+                            </svg>
+                        </button>
+                        <button class="tools-common__button tools-common___button_lessOftenUsed tools__button_editList">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M4 16L3.46967 15.4697C3.32902 15.6103 3.25 15.8011 3.25 16H4ZM17 3L17.5303 2.46967C17.2374 2.17678 16.7626 2.17678 16.4697 2.46967L17 3ZM21 7L21.5303 7.53033C21.8232 7.23744 21.8232 6.76256 21.5303 6.46967L21 7ZM8 20V20.75C8.19891 20.75 8.38968 20.671 8.53033 20.5303L8 20ZM4 20H3.25C3.25 20.4142 3.58579 20.75 4 20.75V20ZM12 19.25C11.5858 19.25 11.25 19.5858 11.25 20C11.25 20.4142 11.5858 20.75 12 20.75V19.25ZM20.5 20.75C20.9142 20.75 21.25 20.4142 21.25 20C21.25 19.5858 20.9142 19.25 20.5 19.25V20.75ZM4.53033 16.5303L17.5303 3.53033L16.4697 2.46967L3.46967 15.4697L4.53033 16.5303ZM16.4697 3.53033L20.4697 7.53033L21.5303 6.46967L17.5303 2.46967L16.4697 3.53033ZM20.4697 6.46967L7.46967 19.4697L8.53033 20.5303L21.5303 7.53033L20.4697 6.46967ZM8 19.25H4V20.75H8V19.25ZM4.75 20V16H3.25V20H4.75ZM13.4697 6.53033L17.4697 10.5303L18.5303 9.46967L14.5303 5.46967L13.4697 6.53033ZM12 20.75H20.5V19.25H12V20.75Z"/>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
                 <div class="tools-common-search">
                     <button class="tools-common__button tools__button_search">

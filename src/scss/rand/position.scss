@@ -36,9 +36,15 @@
         justify-content: start;
         gap: 10px;
 
+        &__div {
+            display: flex;
+            justify-content: start;
+            width: 100%;
+        }
+        
         &-actions {
             display: flex;
-            justify-content: start; 
+            justify-content: start;
         }
 
         &__pre {

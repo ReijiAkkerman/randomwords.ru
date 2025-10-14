@@ -3,7 +3,7 @@ class tools_common__actions {
         ["Кнопка разделения списка", ".tools__button_splitList"],
         ["Кнопка объединения списков", ".tools__button_combineLists"],
         ["Кнопка создания нового списка", ".tools__button_createList"],
-        ["Кнопка переключения на дополнительные действия", ".tools__button_showAdditionalActions"],
+        ["Кнопка переключения на дополнительные действия", ".tools__button_next"],
 
         ["Иконка кнопки", ".tools-common__svg"],
         ["Описание кнопки", ".tools-common__pre"],
@@ -16,12 +16,12 @@ class tools_common__actions {
     static splitList__button = document.querySelector(tools_common__actions.#selectors.get("Кнопка разделения списка"));
     static combineLists__button = document.querySelector(tools_common__actions.#selectors.get("Кнопка объединения списков"));
     static createList__button = document.querySelector(tools_common__actions.#selectors.get("Кнопка создания нового списка"));
-    static showAdditionalActions__button = document.querySelector(tools_common__actions.#selectors.get("Кнопка переключения на дополнительные действия"));
+    static next__button = document.querySelector(tools_common__actions.#selectors.get("Кнопка переключения на дополнительные действия"));
 
     static #splitList__icon = tools_common__actions.splitList__button.querySelector(tools_common__actions.#selectors.get("Иконка кнопки"));
     static #combineLists__icon = tools_common__actions.combineLists__button.querySelector(tools_common__actions.#selectors.get("Иконка кнопки"));
     static #createList__icon = tools_common__actions.createList__button.querySelector(tools_common__actions.#selectors.get("Иконка кнопки"));
-    static #showAdditionalActions__icon = tools_common__actions.showAdditionalActions__button.querySelector(tools_common__actions.#selectors.get("Иконка кнопки"));
+    static #next__icon = tools_common__actions.next__button.querySelector(tools_common__actions.#selectors.get("Иконка кнопки"));
 
     static #splitList__description = tools_common__actions.splitList__button.querySelector(tools_common__actions.#selectors.get("Описание кнопки"));
     static #combineLists__description = tools_common__actions.combineLists__button.querySelector(tools_common__actions.#selectors.get("Описание кнопки"));
@@ -78,7 +78,7 @@ class tools_common__actions {
     }
 
     static animateButton() {
-        tools_common__actions.#animateIcon(tools_common__actions.#showAdditionalActions__icon);
+        tools_common__actions.#animateIcon(tools_common__actions.#next__icon);
     }
 
 
@@ -204,5 +204,5 @@ document.addEventListener("DOMContentLoaded", function() {
     tools_common__actions.combineLists__button.addEventListener("mouseleave", tools_common__actions.hideTip__combineLists);
     tools_common__actions.createList__button.addEventListener("mouseenter", tools_common__actions.showTip__createList);
     tools_common__actions.createList__button.addEventListener("mouseleave", tools_common__actions.hideTip__createList);
-    tools_common__actions.showAdditionalActions__button.addEventListener("mouseenter", tools_common__actions.animateButton);
+    tools_common__actions.next__button.addEventListener("mouseenter", tools_common__actions.animateButton);
 });

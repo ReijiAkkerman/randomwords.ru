@@ -30,6 +30,11 @@
   justify-content: start;
   gap: 10px;
 }
+.tools-common__div {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
 .tools-common-actions {
   display: flex;
   justify-content: start;
