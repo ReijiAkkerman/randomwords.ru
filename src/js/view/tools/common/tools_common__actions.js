@@ -1,9 +1,15 @@
 class tools_common__actions {
     static #selectors = new Map([
+        // NEXT
         ["Кнопка разделения списка", ".tools__button_splitList"],
         ["Кнопка объединения списков", ".tools__button_combineLists"],
         ["Кнопка создания нового списка", ".tools__button_createList"],
-        ["Кнопка переключения на дополнительные действия", ".tools__button_next"],
+        ["Кнопка переключения на более используемые действия", ".tools__button_next"],
+        // BACK
+        ["Кнопка переключения на менее используемые действия", ".tools__button_back"],
+        ["Кнопка удаления списка", ".tools__button_deleteList"],
+        ["Кнопка поделиться списком", ".tools__button_shareList"],
+        ["Кнопка изменения списка", ".tools__button_editList"],
 
         ["Иконка кнопки", ".tools-common__svg"],
         ["Описание кнопки", ".tools-common__pre"],
@@ -13,10 +19,12 @@ class tools_common__actions {
 
 
 
+    // NEXT
+
     static splitList__button = document.querySelector(tools_common__actions.#selectors.get("Кнопка разделения списка"));
     static combineLists__button = document.querySelector(tools_common__actions.#selectors.get("Кнопка объединения списков"));
     static createList__button = document.querySelector(tools_common__actions.#selectors.get("Кнопка создания нового списка"));
-    static next__button = document.querySelector(tools_common__actions.#selectors.get("Кнопка переключения на дополнительные действия"));
+    static next__button = document.querySelector(tools_common__actions.#selectors.get("Кнопка переключения на более используемые действия"));
 
     static #splitList__icon = tools_common__actions.splitList__button.querySelector(tools_common__actions.#selectors.get("Иконка кнопки"));
     static #combineLists__icon = tools_common__actions.combineLists__button.querySelector(tools_common__actions.#selectors.get("Иконка кнопки"));
@@ -26,6 +34,22 @@ class tools_common__actions {
     static #splitList__description = tools_common__actions.splitList__button.querySelector(tools_common__actions.#selectors.get("Описание кнопки"));
     static #combineLists__description = tools_common__actions.combineLists__button.querySelector(tools_common__actions.#selectors.get("Описание кнопки"));
     static #createList__description = tools_common__actions.createList__button.querySelector(tools_common__actions.#selectors.get("Описание кнопки"));
+
+    // BACK
+
+    static back__button = document.querySelector(tools_common__actions.#selectors.get("Кнопка переключения на менее используемые действия"));
+    static deleteList__button = document.querySelector(tools_common__actions.#selectors.get("Кнопка удаления списка"));
+    static shareList__button = document.querySelector(tools_common__actions.#selectors.get("Кнопка поделиться списком"));
+    static editList__button = document.querySelector(tools_common__actions.#selectors.get("Кнопка изменения списка"));
+
+    static #back__icon = tools_common__actions.back__button.querySelector(tools_common__actions.#selectors.get("Иконка кнопки"));
+    static #deleteList__icon = tools_common__actions.deleteList__button.querySelector(tools_common__actions.#selectors.get("Иконка кнопки"));
+    static #shareList__icon = tools_common__actions.shareList__button.querySelector(tools_common__actions.#selectors.get("Иконка кнопки"));
+    static #editList__icon = tools_common__actions.editList__button.querySelector(tools_common__actions.#selectors.get("Иконка кнопки"));
+
+    static #deleteList__description = tools_common__actions.deleteList__button.querySelector(tools_common__actions.#selectors.get("Описание кнопки"));
+    static #shareList__description = tools_common__actions.shareList__button.querySelector(tools_common__actions.#selectors.get("Описание кнопки"));
+    static #editList__description = tools_common__actions.editList__button.querySelector(tools_common__actions.#selectors.get("Описание кнопки"));
 
 
 
@@ -46,6 +70,8 @@ class tools_common__actions {
 
 
 
+
+    // NEXT
 
     static showTip__splitList() {
         tools_common__actions.#hideIcon(tools_common__actions.#splitList__icon);
@@ -77,8 +103,48 @@ class tools_common__actions {
         tools_common__actions.#showIcon(tools_common__actions.#createList__icon);
     }
 
-    static animateButton() {
+    static animateNextButton() {
         tools_common__actions.#animateIcon(tools_common__actions.#next__icon);
+    }
+
+
+
+
+
+    // BACK
+
+    static animateBackButton() {
+        tools_common__actions.#animateIcon(tools_common__actions.#back__icon);
+    }
+
+    static showTip__deleteList() {
+        tools_common__actions.#hideIcon(tools_common__actions.#deleteList__icon);
+        tools_common__actions.#showDescription(tools_common__actions.#deleteList__description);
+    }
+
+    static hideTip__deleteList() {
+        tools_common__actions.#hideDescription(tools_common__actions.#deleteList__description);
+        tools_common__actions.#showIcon(tools_common__actions.#deleteList__icon);
+    }
+
+    static showTip__shareList() {
+        tools_common__actions.#hideIcon(tools_common__actions.#shareList__icon);
+        tools_common__actions.#showDescription(tools_common__actions.#shareList__description);
+    }
+
+    static hideTip__shareList() {
+        tools_common__actions.#hideDescription(tools_common__actions.#shareList__description);
+        tools_common__actions.#showIcon(tools_common__actions.#shareList__icon);
+    }
+
+    static showTip__editList() {
+        tools_common__actions.#hideIcon(tools_common__actions.#editList__icon);
+        tools_common__actions.#showDescription(tools_common__actions.#editList__description);
+    }
+
+    static hideTip__editList() {
+        tools_common__actions.#hideDescription(tools_common__actions.#editList__description);
+        tools_common__actions.#showIcon(tools_common__actions.#editList__icon);
     }
 
 
@@ -198,11 +264,20 @@ class tools_common__actions {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+    // NEXT
     tools_common__actions.splitList__button.addEventListener("mouseenter", tools_common__actions.showTip__splitList);
     tools_common__actions.splitList__button.addEventListener("mouseleave", tools_common__actions.hideTip__splitList);
     tools_common__actions.combineLists__button.addEventListener("mouseenter", tools_common__actions.showTip__combineLists);
     tools_common__actions.combineLists__button.addEventListener("mouseleave", tools_common__actions.hideTip__combineLists);
     tools_common__actions.createList__button.addEventListener("mouseenter", tools_common__actions.showTip__createList);
     tools_common__actions.createList__button.addEventListener("mouseleave", tools_common__actions.hideTip__createList);
-    tools_common__actions.next__button.addEventListener("mouseenter", tools_common__actions.animateButton);
+    tools_common__actions.next__button.addEventListener("mouseenter", tools_common__actions.animateNextButton);
+    // BACK
+    tools_common__actions.back__button.addEventListener("mouseenter", tools_common__actions.animateBackButton);
+    tools_common__actions.deleteList__button.addEventListener("mouseenter", tools_common__actions.showTip__deleteList);
+    tools_common__actions.deleteList__button.addEventListener("mouseleave", tools_common__actions.hideTip__deleteList);
+    tools_common__actions.shareList__button.addEventListener("mouseenter", tools_common__actions.showTip__shareList);
+    tools_common__actions.shareList__button.addEventListener("mouseleave", tools_common__actions.hideTip__shareList);
+    tools_common__actions.editList__button.addEventListener("mouseenter", tools_common__actions.showTip__editList);
+    tools_common__actions.editList__button.addEventListener("mouseleave", tools_common__actions.hideTip__editList);
 });
