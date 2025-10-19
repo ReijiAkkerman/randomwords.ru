@@ -1,5 +1,9 @@
 class tools_common__actions {
     static #selectors = new Map([
+        /** Переключение на дополнительные действия и обратно */
+        ["Область кнопок более используемых действий", ".tools-common__div_back"],
+        ["Область кнопок менее используемых действий", ".tools-common__div_next"],
+        /** Отображение и скрытие подсказок */
         // NEXT
         ["Кнопка разделения списка", ".tools__button_splitList"],
         ["Кнопка объединения списков", ".tools__button_combineLists"],
@@ -18,6 +22,21 @@ class tools_common__actions {
 
 
 
+
+    /**
+     * Переключение на дополнительные действия и обратно
+     */
+
+    static backButtons__area = document.querySelector(tools_common__actions.#selectors.get("Область кнопок более используемых действий"));
+    static nextButtons__area = document.querySelector(tools_common__actions.#selectors.get("Область кнопок менее используемых действий"));
+
+
+
+
+
+    /**
+     * Отображение и скрытие подсказок
+     */
 
     // NEXT
 
@@ -55,6 +74,32 @@ class tools_common__actions {
 
 
 
+    /**
+     * Переключение на дополнительные действия и обратно
+     */
+
+    static next_elements = [
+        "back__button",
+        "deleteList__button",
+        "shareList__button",
+        "editList__button",
+    ];
+
+    static back_elements = [
+        "splitList__button",
+        "combineLists__button",
+        "createList__button",
+        "next__button",
+    ];
+
+
+
+
+
+    /**
+     * Отображение и скрытие подсказок
+     */
+
     static #animationInstance;
     static #animationDuration = 200;
     static #animationDelay = 200;
@@ -70,6 +115,68 @@ class tools_common__actions {
 
 
 
+
+    /**
+     * Переключение на дополнительные действия и обратно
+     */
+
+    static showNextElements() {
+        tools_common__actions.#hideElements(tools_common__actions.back_elements);
+        tools_common__actions.#hideButtonsArea(tools_common__actions.backButtons__area);
+        tools_common__actions.#showButtonsArea(tools_common__actions.nextButtons__area);
+        tools_common__actions.#showElements(tools_common__actions.next_elements);
+    }
+
+    static showBackElements() {
+        tools_common__actions.#hideElements(tools_common__actions.next_elements);
+        tools_common__actions.#hideButtonsArea(tools_common__actions.nextButtons__area);
+        tools_common__actions.#showButtonsArea(tools_common__actions.backButtons__area);
+        tools_common__actions.#showElements(tools_common__actions.back_elements);
+    }
+
+
+
+
+
+    static #hideElements(elements) {
+        elements.forEach(element => {
+            tools_common__actions.#hideButton(tools_common__actions[element]);
+        });
+    }
+
+    static #showElements(elements) {
+        elements.forEach(element => {
+            tools_common__actions.#showButton(tools_common__actions[element]);
+        });
+    }
+
+
+
+
+
+    static #hideButtonsArea(area) {
+        area.style.display = "none";
+    }
+
+    static #showButtonsArea(area) {
+        area.style.display = "";
+    }
+
+    static #hideButton(button) {
+        button.style.display = "none";
+    }
+
+    static #showButton(button) {
+        button.style.display = "";
+    }
+
+
+
+
+
+    /**
+     * Отображение и скрытие подсказок
+     */
 
     // NEXT
 
@@ -264,6 +371,10 @@ class tools_common__actions {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+    /** Переключение на дополнительные действия и обратно */
+    tools_common__actions.back__button.addEventListener("click", tools_common__actions.showBackElements);
+    tools_common__actions.next__button.addEventListener("click", tools_common__actions.showNextElements);
+    /** Отображение и скрытие подсказок */
     // NEXT
     tools_common__actions.splitList__button.addEventListener("mouseenter", tools_common__actions.showTip__splitList);
     tools_common__actions.splitList__button.addEventListener("mouseleave", tools_common__actions.hideTip__splitList);
