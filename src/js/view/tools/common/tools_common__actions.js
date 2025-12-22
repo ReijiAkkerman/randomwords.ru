@@ -319,7 +319,7 @@ class tools_common__actions {
             {opacity:1},
         ];
         let timingInfo = {
-            duration: 80,
+            duration: 120,
             fill: "forwards",
             easing: "steps(2, end)",
         };
