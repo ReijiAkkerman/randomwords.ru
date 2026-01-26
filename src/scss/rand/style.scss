@@ -307,6 +307,9 @@
     }
 
     &-groupSelectionArea {
+        max-height: 20vh;
+        overflow-y: scroll;
+
         &-cathegoryItem {
             border: 1px solid var(--inactive-color);
             border-radius: var(--block-radius);

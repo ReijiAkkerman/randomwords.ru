@@ -241,6 +241,62 @@
                     <pre class="tools-groupSelectionArea-cathegoryItem__pre">Наименование группы</pre>
                     <p class="tools-groupSelectionArea-cathegoryItem__p">8</p>
                 </div>
+                <div class="tools-groupSelectionArea-cathegoryItem">
+                    <button class="tools-groupSelectionArea-cathegoryItem__button tools__button_drag">
+                        <svg class="tools-groupSelectionArea-cathegoryItem__svg" viewBox="0 0 24 24" fill="none">
+                            <circle cx="20" cy="8" r="1" transform="rotate(-180 20 8)" stroke-width="2"/>
+                            <circle cx="20" cy="16" r="1" transform="rotate(-180 20 16)" stroke-width="2"/>
+                            <circle cx="12" cy="8" r="1" transform="rotate(-180 12 8)" stroke-width="2"/>
+                            <circle cx="12" cy="16" r="1" transform="rotate(-180 12 16)" stroke-width="2"/>
+                            <circle cx="4" cy="8" r="1" transform="rotate(-180 4 8)" stroke-width="2"/>
+                            <circle cx="4" cy="16" r="1" transform="rotate(-180 4 16)" stroke-width="2"/>
+                        </svg>
+                    </button>
+                    <pre class="tools-groupSelectionArea-cathegoryItem__pre">Наименование группы</pre>
+                    <p class="tools-groupSelectionArea-cathegoryItem__p">8</p>
+                </div>
+                <div class="tools-groupSelectionArea-cathegoryItem">
+                    <button class="tools-groupSelectionArea-cathegoryItem__button tools__button_drag">
+                        <svg class="tools-groupSelectionArea-cathegoryItem__svg" viewBox="0 0 24 24" fill="none">
+                            <circle cx="20" cy="8" r="1" transform="rotate(-180 20 8)" stroke-width="2"/>
+                            <circle cx="20" cy="16" r="1" transform="rotate(-180 20 16)" stroke-width="2"/>
+                            <circle cx="12" cy="8" r="1" transform="rotate(-180 12 8)" stroke-width="2"/>
+                            <circle cx="12" cy="16" r="1" transform="rotate(-180 12 16)" stroke-width="2"/>
+                            <circle cx="4" cy="8" r="1" transform="rotate(-180 4 8)" stroke-width="2"/>
+                            <circle cx="4" cy="16" r="1" transform="rotate(-180 4 16)" stroke-width="2"/>
+                        </svg>
+                    </button>
+                    <pre class="tools-groupSelectionArea-cathegoryItem__pre">Наименование группы</pre>
+                    <p class="tools-groupSelectionArea-cathegoryItem__p">8</p>
+                </div>
+                <div class="tools-groupSelectionArea-cathegoryItem">
+                    <button class="tools-groupSelectionArea-cathegoryItem__button tools__button_drag">
+                        <svg class="tools-groupSelectionArea-cathegoryItem__svg" viewBox="0 0 24 24" fill="none">
+                            <circle cx="20" cy="8" r="1" transform="rotate(-180 20 8)" stroke-width="2"/>
+                            <circle cx="20" cy="16" r="1" transform="rotate(-180 20 16)" stroke-width="2"/>
+                            <circle cx="12" cy="8" r="1" transform="rotate(-180 12 8)" stroke-width="2"/>
+                            <circle cx="12" cy="16" r="1" transform="rotate(-180 12 16)" stroke-width="2"/>
+                            <circle cx="4" cy="8" r="1" transform="rotate(-180 4 8)" stroke-width="2"/>
+                            <circle cx="4" cy="16" r="1" transform="rotate(-180 4 16)" stroke-width="2"/>
+                        </svg>
+                    </button>
+                    <pre class="tools-groupSelectionArea-cathegoryItem__pre">Наименование группы</pre>
+                    <p class="tools-groupSelectionArea-cathegoryItem__p">8</p>
+                </div>
+                <div class="tools-groupSelectionArea-cathegoryItem">
+                    <button class="tools-groupSelectionArea-cathegoryItem__button tools__button_drag">
+                        <svg class="tools-groupSelectionArea-cathegoryItem__svg" viewBox="0 0 24 24" fill="none">
+                            <circle cx="20" cy="8" r="1" transform="rotate(-180 20 8)" stroke-width="2"/>
+                            <circle cx="20" cy="16" r="1" transform="rotate(-180 20 16)" stroke-width="2"/>
+                            <circle cx="12" cy="8" r="1" transform="rotate(-180 12 8)" stroke-width="2"/>
+                            <circle cx="12" cy="16" r="1" transform="rotate(-180 12 16)" stroke-width="2"/>
+                            <circle cx="4" cy="8" r="1" transform="rotate(-180 4 8)" stroke-width="2"/>
+                            <circle cx="4" cy="16" r="1" transform="rotate(-180 4 16)" stroke-width="2"/>
+                        </svg>
+                    </button>
+                    <pre class="tools-groupSelectionArea-cathegoryItem__pre">Наименование группы</pre>
+                    <p class="tools-groupSelectionArea-cathegoryItem__p">8</p>
+                </div>
             </div>
             <div class="tools__div tools-lists"></div>
         </main>
