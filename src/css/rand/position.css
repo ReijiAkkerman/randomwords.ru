@@ -69,12 +69,12 @@
   justify-content: center;
   vertical-align: center;
 }
-.tools-selectionArea {
+.tools-groupSelectionArea {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.tools-selectionArea-cathegoryItem {
+.tools-groupSelectionArea-cathegoryItem {
   display: flex;
   align-items: center;
   justify-content: space-between;
