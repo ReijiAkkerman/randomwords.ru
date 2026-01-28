@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 .tools__div.tools-lists {
-  height: 100%;
+  flex: 1;
 }
 .tools-communication {
   display: flex;

@@ -11,7 +11,9 @@
 
     &__div {
         &.tools-lists {
-            height: 100%;
+            // min-height: 0;
+            flex: 1;
+            // height: 100%;
         }
     }
 

@@ -1,34 +1,58 @@
-div {
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+main {
     display: flex;
-    justify-content: start;
-    background-color: #aaa;
-    width: 400px;
+    flex-direction: column;
+    position: fixed;
+    box-sizing: border-box;
+    right: 0;
+    width: 500px;
+    height: 100%;
+    background-color: #888;
+    padding: 5px; /* Добавим padding для main */
+    gap: 5px; /* И gap между группами и списками */
 }
 
-button {
-    width: 100%;
-    min-width: 30px;
-    background-color: #0000;
-    border: none;
-    min-height: 30px;
-    font-size: 20px;
-    padding: 10px;
+div {
+    box-sizing: border-box;
 }
 
-.cls1 {
+.groups {
+    flex: 0 0 auto; /* Не растет, не сжимается, авто-размер */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
     background-color: #f00;
+    max-height: 100px; /* Максимальная высота */
+    overflow-y: auto; /* Всегда auto, но... */
+    min-height: 0; /* Важно для правильного расчета */
 }
 
-.cls2 {
-    background-color: #0f0;
+.group {
+    box-sizing: border-box;
+    background-color: #080;
+    height: 60px; /* Фиксированная высота */
+    flex-shrink: 0; /* Не сжимается */
 }
 
-.cls3 {
-    background-color: #00f;
+.lists {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1; /* Занимает оставшееся пространство */
+    min-height: 0;
+    background-color: #00f; /* Для наглядности */
+    padding: 5px;
+    overflow-y: auto;
 }
 
-svg {
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
+.list {
+    min-height: 50px;
+    background-color: #ff0;
+    height: 50px;
 }

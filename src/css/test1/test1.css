@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  box-sizing: border-box;
+  right: 0;
+  width: 500px;
+  height: 100%;
+  background-color: #888;
+}
+
+div {
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.groups {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+  background-color: #f00;
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+.group {
+  box-sizing: border-box;
+  background-color: #080;
+  min-height: 60px;
+}
+
+.lists {
+  height: 100%;
+}
+
+/*# sourceMappingURL=test1.css.map */

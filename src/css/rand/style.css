@@ -3,6 +3,7 @@
   border-left: 1px solid var(--main-border-color);
 }
 .tools__div {
+  box-sizing: border-box;
   padding: 5px;
   border-top: 1px solid var(--main-border-color);
 }
@@ -236,8 +237,9 @@
   height: 38px;
 }
 .tools-groupSelectionArea {
-  max-height: 20vh;
-  overflow-y: scroll;
+  flex: 0 0 auto;
+  max-height: 130px;
+  overflow-y: auto;
 }
 .tools-groupSelectionArea-cathegoryItem {
   border: 1px solid var(--inactive-color);
