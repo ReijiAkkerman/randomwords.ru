@@ -178,24 +178,19 @@
             &__button {
                 width: 100%;
 
-                &:first-of-type {
-                    width: 500%;
+                &.switcher {
+                    width: fit-content;
                 }
 
                 &:last-of-type {
                     border-left: 1px solid var(--main-border-color);
-                }
-
-                &:hover {
-                    > .tools-listsControl-cath__svg {
-                        fill: var(--main-svg-color);
-                    }
                 }
             }
 
             &__svg {
                 width: 25px;
                 height: 25px;
+                padding: 0 15px;
             }
 
             &__pre {

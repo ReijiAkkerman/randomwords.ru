@@ -136,18 +136,16 @@
 .tools-listsControl-cath__button {
   width: 100%;
 }
-.tools-listsControl-cath__button:first-of-type {
-  width: 500%;
+.tools-listsControl-cath__button.switcher {
+  width: fit-content;
 }
 .tools-listsControl-cath__button:last-of-type {
   border-left: 1px solid var(--main-border-color);
 }
-.tools-listsControl-cath__button:hover > .tools-listsControl-cath__svg {
-  fill: var(--main-svg-color);
-}
 .tools-listsControl-cath__svg {
   width: 25px;
   height: 25px;
+  padding: 0 15px;
 }
 .tools-listsControl-cath__pre {
   text-align: center;
