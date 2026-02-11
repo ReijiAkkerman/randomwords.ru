@@ -317,6 +317,14 @@
                 border-radius: 10px;
                 padding: 5px;
                 height: 100%;
+
+                &:hover {
+                    border-color: var(--main-border-color);
+                }
+            }
+
+            &__button:hover &__svg {
+                fill: var(--main-svg-color);
             }
         }
 

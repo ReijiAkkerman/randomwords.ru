@@ -248,6 +248,12 @@
   padding: 5px;
   height: 100%;
 }
+.tools-groupSelectionArea-navigationBlock__button:hover {
+  border-color: var(--main-border-color);
+}
+.tools-groupSelectionArea-navigationBlock__button:hover .tools-groupSelectionArea-navigationBlock__svg {
+  fill: var(--main-svg-color);
+}
 .tools-groupSelectionArea-cathegoryItem {
   border: 1px solid var(--inactive-color);
   border-radius: var(--block-radius);
