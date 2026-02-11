@@ -136,26 +136,22 @@
                     </button>
                 </div>
                 <div class="tools-listsControl__div tools-listsControl-cath">
-                    <div style="display:none;" class="tools-listsControl-cath__div tools-listsConstrol-cath_currentCathegory">
-                        <button class="tools-listsControl-cath__button switcher">
-                            <svg class="tools-listsControl-cath__svg" viewBox="0 0 1024 1024">
-                                <path d="M768 903.232l-50.432 56.768L256 512l461.568-448 50.432 56.768L364.928 512z"/>
-                            </svg>
-                        </button>
-                        <button class="tools-listsControl-cath__button">
-                            <pre class="tools-listsControl-cath__pre">Наименование категории</pre>
-                        </button>
-                    </div>
-                    <div class="tools-listsControl-cath__div tools-listsControl-cath_currentGroup">
-                        <button class="tools-listsControl-cath__button">
-                            <pre class="tools-listsControl-cath__pre">Наименование группы</pre>
-                        </button>
-                        <button class="tools-listsControl-cath__button switcher">
-                            <svg class="tools-listsControl-cath__svg" viewBox="0 0 1024 1024">
-                                <path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z"/>
-                            </svg>
-                        </button>
-                    </div>
+                    <button style="display:none;opacity:0;" class="tools-listsControl-cath__button tools__button_switchToGroup switcher">
+                        <svg class="tools-listsControl-cath__svg" viewBox="0 0 1024 1024">
+                            <path d="M768 903.232l-50.432 56.768L256 512l461.568-448 50.432 56.768L364.928 512z"/>
+                        </svg>
+                    </button>
+                    <button style="display:none;opacity:0;" class="tools-listsControl-cath__button tools__button_selectCathegory">
+                        <pre class="tools-listsControl-cath__pre">Наименование категории</pre>
+                    </button>
+                    <button class="tools-listsControl-cath__button tools__button_selectGroup">
+                        <pre class="tools-listsControl-cath__pre">Наименование группы</pre>
+                    </button>
+                    <button class="tools-listsControl-cath__button tools__button_switchToCathegory switcher">
+                        <svg class="tools-listsControl-cath__svg" viewBox="0 0 1024 1024">
+                            <path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z"/>
+                        </svg>
+                    </button>
                 </div>
             </div>
             <div class="tools__div tools-actionsArea">
@@ -204,6 +200,20 @@
                     </button>
                 </div>
                 <div class="tools-groupSelectionArea-itemsBlock">
+                    <div class="tools-groupSelectionArea-cathegoryItem">
+                        <button class="tools-groupSelectionArea-cathegoryItem__button tools__button_drag">
+                            <svg class="tools-groupSelectionArea-cathegoryItem__svg" viewBox="0 0 24 24" fill="none">
+                                <circle cx="20" cy="8" r="1" transform="rotate(-180 20 8)" stroke-width="2"/>
+                                <circle cx="20" cy="16" r="1" transform="rotate(-180 20 16)" stroke-width="2"/>
+                                <circle cx="12" cy="8" r="1" transform="rotate(-180 12 8)" stroke-width="2"/>
+                                <circle cx="12" cy="16" r="1" transform="rotate(-180 12 16)" stroke-width="2"/>
+                                <circle cx="4" cy="8" r="1" transform="rotate(-180 4 8)" stroke-width="2"/>
+                                <circle cx="4" cy="16" r="1" transform="rotate(-180 4 16)" stroke-width="2"/>
+                            </svg>
+                        </button>
+                        <pre class="tools-groupSelectionArea-cathegoryItem__pre">Наименование группы</pre>
+                        <p class="tools-groupSelectionArea-cathegoryItem__p">8</p>
+                    </div>
                     <div class="tools-groupSelectionArea-cathegoryItem">
                         <button class="tools-groupSelectionArea-cathegoryItem__button tools__button_drag">
                             <svg class="tools-groupSelectionArea-cathegoryItem__svg" viewBox="0 0 24 24" fill="none">

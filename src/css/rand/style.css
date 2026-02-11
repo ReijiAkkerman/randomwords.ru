@@ -137,7 +137,7 @@
   width: 100%;
 }
 .tools-listsControl-cath__button.switcher {
-  width: fit-content;
+  width: 20%;
 }
 .tools-listsControl-cath__button:last-of-type {
   border-left: 1px solid var(--main-border-color);
