@@ -98,8 +98,30 @@
 
     &-groupSelectionArea {
         display: flex;
-        flex-direction: column;
         gap: 5px;
+
+        &-navigationBlock {
+            display: flex;
+            /* flex-direction
+                Для одного пункта группы списков установить через js значение row.
+                Собития для срабатывания функции:
+                    первоначальная загрузка страницы,
+                    нажатие кнопки назад,
+                    нажатие кнопки домой,
+                    для групповых занятий приход данных о новом пункте от сервера */
+            flex-direction: column;
+            gap: 5px;
+            position: sticky;
+            top: 0;
+            height: 100%;
+        }
+
+        &-itemsBlock {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            width: 100%;
+        }
 
         &-cathegoryItem {
             display: flex;

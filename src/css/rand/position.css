@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .tools {
   display: flex;
   flex-direction: column;
@@ -76,8 +77,28 @@
 }
 .tools-groupSelectionArea {
   display: flex;
+  gap: 5px;
+}
+.tools-groupSelectionArea-navigationBlock {
+  display: flex;
+  /* flex-direction
+      Для одного пункта группы списков установить через js значение row.
+      Собития для срабатывания функции:
+          первоначальная загрузка страницы,
+          нажатие кнопки назад,
+          нажатие кнопки домой,
+          для групповых занятий приход данных о новом пункте от сервера */
   flex-direction: column;
   gap: 5px;
+  position: sticky;
+  top: 0;
+  height: 100%;
+}
+.tools-groupSelectionArea-itemsBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
 }
 .tools-groupSelectionArea-cathegoryItem {
   display: flex;
