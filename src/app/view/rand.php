@@ -136,18 +136,14 @@
                     </button>
                 </div>
                 <div class="tools-listsControl__div tools-listsControl-cath">
-                    <button style="display:none;opacity:0;" class="tools-listsControl-cath__button tools__button_switchToGroup switcher">
-                        <svg class="tools-listsControl-cath__svg" viewBox="0 0 1024 1024">
+                    <button class="tools-listsControl-cath__button tools-listsControl-cath_leftButton">
+                        <svg style="display:none;opacity:0;" class="tools-listsControl-cath__svg" viewBox="0 0 1024 1024">
                             <path d="M768 903.232l-50.432 56.768L256 512l461.568-448 50.432 56.768L364.928 512z"/>
                         </svg>
-                    </button>
-                    <button style="display:none;opacity:0;" class="tools-listsControl-cath__button tools__button_selectCathegory">
-                        <pre class="tools-listsControl-cath__pre">Наименование категории</pre>
-                    </button>
-                    <button class="tools-listsControl-cath__button tools__button_selectGroup">
                         <pre class="tools-listsControl-cath__pre">Наименование группы</pre>
                     </button>
-                    <button class="tools-listsControl-cath__button tools__button_switchToCathegory switcher">
+                    <button class="tools-listsControl-cath__button tools-listsControl-cath_rightButton switcher">
+                        <pre style="display:none;opacity:0;" class="tools-listsControl-cath__pre">Наименование категории</pre>
                         <svg class="tools-listsControl-cath__svg" viewBox="0 0 1024 1024">
                             <path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z"/>
                         </svg>
@@ -249,8 +245,11 @@
         <section class="settings"></section>
 
         <script type="module" src="/src/js/view/tools/common/tools_common__actions.js"></script>
+
         <script type="module" src="/src/js/view/tools/listsControl/tools_listsControl.js"></script>
         <script type="module" src="/src/js/view/tools/listsControl/tools_listsControl__group.js"></script>
+        <script type="module" src="/src/js/view/tools/listsControl/tools_listsControl__cath.js"></script>
+
         <script type="module" src="/src/js/view/tools/groupSelectionArea/tools_groupSelectionArea.js"></script>
     </body>
 </html>
