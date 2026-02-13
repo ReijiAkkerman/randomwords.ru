@@ -31,12 +31,19 @@ class tools_listsControl__cath {
 
 
 
+    static #OPENED_MODE = 'group';
+
+
+
+
+
     static switchToGroup() {
         tools_listsControl__cath.#cathegory_hideText();
         tools_listsControl__cath.#setProportionsForGroup();
         tools_listsControl__cath.#cathegory_hideIcon();
         tools_listsControl__cath.#group_showText();
         tools_listsControl__cath.#group_showIcon();
+        tools_listsControl__cath.#SET_GROUP_MODE();
     }
 
     static switchToCathegory() {
@@ -45,6 +52,7 @@ class tools_listsControl__cath {
         tools_listsControl__cath.#group_hideIcon();
         tools_listsControl__cath.#cathegory_showIcon();
         tools_listsControl__cath.#cathegory_showText();
+        tools_listsControl__cath.#SET_CATHEGORY_MODE();
     }
 
 
@@ -74,7 +82,7 @@ class tools_listsControl__cath {
     }
 
     static #cathegory_showIcon() {
-        tools_listsControl__cath.#showIcon(tools_listsControl__cath.#switchToGroup__icon);
+        tools_listsControl__cath.#showIcon(tools_listsControl__cath.#switchToGroup__icon, tools_listsControl__cath.#secondElementDelay);
     }
 
     static #cathegory_hideText() {
@@ -82,7 +90,7 @@ class tools_listsControl__cath {
     }
 
     static #cathegory_showText() {
-        tools_listsControl__cath.#showText(tools_listsControl__cath.#selectCathegory__text, tools_listsControl__cath.#secondElementDelay);
+        tools_listsControl__cath.#showText(tools_listsControl__cath.#selectCathegory__text);
     }
 
 
@@ -151,7 +159,7 @@ class tools_listsControl__cath {
         let timingInfo = {
             duration: tools_listsControl__cath.#transitionDuration,
             fill: "forwards",
-            easing: "ease-in-out",
+            easing: "ease-out",
         };
         tools_listsControl__cath.right__button.animate(animationInfo, timingInfo);
     }
@@ -161,9 +169,29 @@ class tools_listsControl__cath {
         let timingInfo = {
             duration: tools_listsControl__cath.#transitionDuration,
             fill: "forwards",
-            easing: "ease-in-out",
+            easing: "ease-in",
         };
         tools_listsControl__cath.right__button.animate(animationInfo, timingInfo);
+    }
+
+
+
+
+
+    static #SET_GROUP_MODE() {
+        tools_listsControl__cath.#OPENED_MODE = "group";
+    }
+
+    static #SET_CATHEGORY_MODE() {
+        tools_listsControl__cath.#OPENED_MODE = "cathegory";
+    }
+
+
+
+
+
+    static __GET__CURRENT_MODE() {
+        return tools_listsControl__cath.#OPENED_MODE;
     }
 }
 
