@@ -117,16 +117,23 @@
         }
 
         &-itemsBlock {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
+            display: block;
             width: 100%;
+
+            &::after {
+                display: block;
+            }
         }
 
         &-cathegoryItem {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            margin-top: 5px;
+
+            &:first-of-type {
+                margin-top: 0;
+            }
         }
     }
 }

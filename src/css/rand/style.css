@@ -267,6 +267,12 @@
 .tools-groupSelectionArea-navigationBlock__button:hover .tools-groupSelectionArea-navigationBlock__svg {
   fill: var(--main-svg-color);
 }
+.tools-groupSelectionArea-itemsBlock::after {
+  content: "";
+  width: 100%;
+  height: 0;
+  padding-bottom: 5px;
+}
 .tools-groupSelectionArea-cathegoryItem {
   border: 1px solid var(--inactive-color);
   border-radius: var(--block-radius);

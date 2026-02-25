@@ -95,15 +95,20 @@
   height: 100%;
 }
 .tools-groupSelectionArea-itemsBlock {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+  display: block;
   width: 100%;
+}
+.tools-groupSelectionArea-itemsBlock::after {
+  display: block;
 }
 .tools-groupSelectionArea-cathegoryItem {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 5px;
+}
+.tools-groupSelectionArea-cathegoryItem:first-of-type {
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=position.css.map */
