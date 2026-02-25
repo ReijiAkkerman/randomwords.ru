@@ -64,7 +64,7 @@
   width: 100%;
   padding: var(--tools-common-button-padding);
   border-left: 1px solid var(--main-border-color);
-  transition: width 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 .tools-common__button:first-of-type {
   border: none;
@@ -77,6 +77,19 @@
 }
 .tools-common__button:hover.switcher .tools-common__svg {
   fill: var(--main-svg-color);
+}
+.tools-common__button.tools__button_editList {
+  border-bottom-right-radius: calc(var(--block-radius) - 1px);
+  border-top-right-radius: calc(var(--block-radius) - 1px);
+}
+.tools-common__button.tools__button_editList:hover {
+  background-color: #afa;
+}
+.tools-common__button.tools__button_shareList:hover {
+  background-color: #ccf;
+}
+.tools-common__button.tools__button_deleteList:hover {
+  background-color: #fcc;
 }
 .tools-common__pre {
   font-size: 18px;

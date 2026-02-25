@@ -84,7 +84,7 @@
             width: 100%;
             padding: var(--tools-common-button-padding);
             border-left: 1px solid var(--main-border-color);
-            transition: width globals.$tools-buttons__animationDuration ease-in-out;
+            transition: all globals.$tools-buttons__animationDuration ease-in-out;
 
             &:first-of-type {
                 border: none;
@@ -101,6 +101,23 @@
                     }
                 }
             }
+        }
+
+        &__button.tools__button_editList {
+            border-bottom-right-radius: calc(var(--block-radius) - 1px);
+            border-top-right-radius: calc(var(--block-radius) - 1px);
+            
+            &:hover {
+                background-color: #afa;
+            }
+        }
+
+        &__button.tools__button_shareList:hover {
+            background-color: #ccf;
+        }
+
+        &__button.tools__button_deleteList:hover {
+            background-color: #fcc;
         }
 
         &__pre {
