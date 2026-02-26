@@ -16,7 +16,7 @@
 }
 .tools-communication__button {
   width: 50px;
-  padding: var(--tools-button-padding);
+  padding: 5px 15px;
   border: 1px solid var(--inactive-color);
   border-radius: var(--block-radius);
   box-sizing: content-box;
@@ -40,7 +40,7 @@
   width: 100%;
 }
 .tools-communication-timer__button {
-  padding: var(--tools-timer-button-padding);
+  padding: 0 10px;
 }
 .tools-communication-timer__button:first-of-type {
   border-right: 1px solid var(--inactive-color);
@@ -62,7 +62,7 @@
 .tools-common__button {
   box-sizing: content-box;
   width: 100%;
-  padding: var(--tools-common-button-padding);
+  padding: 5px;
   border-left: 1px solid var(--main-border-color);
   transition: all 200ms ease-in-out;
 }
@@ -104,7 +104,7 @@
   border-radius: var(--block-radius);
 }
 .tools-common-search .tools__button_search {
-  padding: var(--tools-button-padding);
+  padding: 5px 15px;
 }
 .tools-listsControl {
   padding: 5px 0;
@@ -271,12 +271,12 @@
   content: "";
   width: 100%;
   height: 0;
-  padding-bottom: 5px;
+  padding-bottom: var(--tools-groupSelectionArea-itemsBlock__after);
 }
 .tools-groupSelectionArea-cathegoryItem {
   border: 1px solid var(--inactive-color);
   border-radius: var(--block-radius);
-  padding: var(--tools-button-padding);
+  padding: 5px 15px;
   cursor: pointer;
 }
 .tools-groupSelectionArea-cathegoryItem:hover {

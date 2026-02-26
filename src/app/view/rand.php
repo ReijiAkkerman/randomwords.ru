@@ -251,5 +251,6 @@
         <script type="module" src="/src/js/view/tools/listsControl/tools_listsControl__cath.js"></script>
 
         <script type="module" src="/src/js/view/tools/groupSelectionArea/tools_groupSelectionArea.js"></script>
+        <script type="module" src="/src/js/view/tools/groupSelectionArea/tools_groupSelectionArea_itemsBlock.js"></script>
     </body>
 </html>
