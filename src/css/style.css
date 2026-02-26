@@ -35,7 +35,7 @@ svg {
   stroke: var(--inactive-color);
 }
 
-p, pre {
+p, pre, button {
   font-family: jura;
 }
 

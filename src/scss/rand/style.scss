@@ -377,7 +377,7 @@
             }
 
             &__button:hover > &__svg {
-                fill: var(--main-svg-color);
+                fill: var(--main-text-color);
             }
 
             &__svg {
@@ -394,6 +394,85 @@
             &__p {
                 font-size: 20px;
                 color: var(--inactive-cathegoryItem-color);
+            }
+        }
+    }
+
+    &-quickAccessBar {
+        &-languages {
+            border: 1px solid var(--inactive-color);
+            border-radius: var(--block-radius);
+
+            &:hover {
+                border-color: var(--main-border-color);
+            }
+
+            &__button {
+                padding: 5px;
+                border-left: 1px solid var(--inactive-color);
+                color: var(--inactive-color);
+                font-size: 24px;
+                min-width: 50px;
+
+                &:first-of-type {
+                    border-left: none;
+                }
+
+                &:hover {
+                    color: var(--main-text-color);
+                    border-color: var(--main-border-color);
+                }
+
+                &:hover + & {
+                    border-color: var(--main-border-color);
+                }
+            }
+        }
+
+        &-modes__button:hover > &__svg,
+        &-settings__button:hover > &__svg {
+            fill: var(--main-text-color);
+        }
+
+        &-modes__button:hover > &__svg.svg-stroke {
+            stroke: var(--main-text-color);
+        }
+
+        &-modes {
+            border: 1px solid var(--inactive-color);
+            border-radius: var(--block-radius);
+
+            &:hover {
+                border-color: var(--main-border-color);
+            }
+
+            &__button {
+                padding: 5px 10px;
+                border-left: 1px solid var(--inactive-color);
+
+                &:first-of-type {
+                    border-left: none;
+                }
+
+                &:hover {
+                    border-color: var(--main-border-color);
+                }
+
+                &:hover + & {
+                    border-color: var(--main-border-color);
+                }
+            }
+        }
+
+        &-settings {
+            &__button {
+                padding: 5px;
+                border: 1px solid var(--inactive-color);
+                border-radius: var(--block-radius);
+
+                &:hover {
+                    border-color: var(--main-border-color);
+                }
             }
         }
     }

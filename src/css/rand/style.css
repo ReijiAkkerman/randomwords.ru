@@ -292,7 +292,7 @@
   cursor: grabbing;
 }
 .tools-groupSelectionArea-cathegoryItem__button:hover > .tools-groupSelectionArea-cathegoryItem__svg {
-  fill: var(--main-svg-color);
+  fill: var(--main-text-color);
 }
 .tools-groupSelectionArea-cathegoryItem__svg {
   vertical-align: sub;
@@ -306,6 +306,64 @@
 .tools-groupSelectionArea-cathegoryItem__p {
   font-size: 20px;
   color: var(--inactive-cathegoryItem-color);
+}
+.tools-quickAccessBar-languages {
+  border: 1px solid var(--inactive-color);
+  border-radius: var(--block-radius);
+}
+.tools-quickAccessBar-languages:hover {
+  border-color: var(--main-border-color);
+}
+.tools-quickAccessBar-languages__button {
+  padding: 5px;
+  border-left: 1px solid var(--inactive-color);
+  color: var(--inactive-color);
+  font-size: 24px;
+  min-width: 50px;
+}
+.tools-quickAccessBar-languages__button:first-of-type {
+  border-left: none;
+}
+.tools-quickAccessBar-languages__button:hover {
+  color: var(--main-text-color);
+  border-color: var(--main-border-color);
+}
+.tools-quickAccessBar-languages__button:hover + .tools-quickAccessBar-languages__button {
+  border-color: var(--main-border-color);
+}
+.tools-quickAccessBar-modes__button:hover > .tools-quickAccessBar__svg, .tools-quickAccessBar-settings__button:hover > .tools-quickAccessBar__svg {
+  fill: var(--main-text-color);
+}
+.tools-quickAccessBar-modes__button:hover > .tools-quickAccessBar__svg.svg-stroke {
+  stroke: var(--main-text-color);
+}
+.tools-quickAccessBar-modes {
+  border: 1px solid var(--inactive-color);
+  border-radius: var(--block-radius);
+}
+.tools-quickAccessBar-modes:hover {
+  border-color: var(--main-border-color);
+}
+.tools-quickAccessBar-modes__button {
+  padding: 5px 10px;
+  border-left: 1px solid var(--inactive-color);
+}
+.tools-quickAccessBar-modes__button:first-of-type {
+  border-left: none;
+}
+.tools-quickAccessBar-modes__button:hover {
+  border-color: var(--main-border-color);
+}
+.tools-quickAccessBar-modes__button:hover + .tools-quickAccessBar-modes__button {
+  border-color: var(--main-border-color);
+}
+.tools-quickAccessBar-settings__button {
+  padding: 5px;
+  border: 1px solid var(--inactive-color);
+  border-radius: var(--block-radius);
+}
+.tools-quickAccessBar-settings__button:hover {
+  border-color: var(--main-border-color);
 }
 
 /*# sourceMappingURL=style.css.map */

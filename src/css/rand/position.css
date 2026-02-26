@@ -110,5 +110,17 @@
 .tools-groupSelectionArea-cathegoryItem:first-of-type {
   margin-top: 0;
 }
+.tools-quickAccessBar {
+  display: flex;
+  justify-content: space-between;
+}
+.tools-quickAccessBar-languages {
+  display: flex;
+  justify-content: start;
+}
+.tools-quickAccessBar-modes {
+  display: flex;
+  justify-content: start;
+}
 
 /*# sourceMappingURL=position.css.map */

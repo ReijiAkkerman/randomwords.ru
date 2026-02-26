@@ -136,4 +136,19 @@
             }
         }
     }
+
+    &-quickAccessBar {
+        display: flex;
+        justify-content: space-between;
+
+        &-languages {
+            display: flex;
+            justify-content: start;
+        }
+
+        &-modes {
+            display: flex;
+            justify-content: start;
+        }
+    }
 }
