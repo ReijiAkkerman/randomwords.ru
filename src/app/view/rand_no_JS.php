@@ -24,16 +24,16 @@
                 </div>
                 <div class="tools-communication-timer">
                     <button class="tools-communication-timer__button tools__button_startTimeCounter">
-                        <svg viewBox="0 0 24 24">
-                            <path class="svg" fill-rule="evenodd" clip-rule="evenodd" d="M10.5 6H6V18H10.5V6ZM7.5 16.5V7.5H9V16.5H7.5ZM18 6H13.5V18H18V6ZM15 16.5V7.5H16.5V16.5H15Z"></path>
+                        <svg class="tools-communication-timer__svg" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 6H6V18H10.5V6ZM7.5 16.5V7.5H9V16.5H7.5ZM18 6H13.5V18H18V6ZM15 16.5V7.5H16.5V16.5H15Z"></path>
                         </svg>
                     </button>
                     <p class="tools-communication-timer__p">
                         <span class="tools-communication-timer__hours">01</span>:<span class="tools-communication-timer__minutes">27</span>:<span class="tools-communication-timer__seconds">35</span>
                     </p>
                     <button class="tools-communication-timer__button tools__button_stopTimeCounter">
-                        <svg viewBox="0 0 24 24">
-                            <path class="svg" fill-rule="evenodd" clip-rule="evenodd" d="M6 6H18V18H6V6ZM16 16V8H8V16H16Z"></path>
+                        <svg class="tools-communication-timer__svg" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6 6H18V18H6V6ZM16 16V8H8V16H16Z"></path>
                         </svg>
                     </button>
                 </div>
@@ -52,17 +52,17 @@
                 <div class="tools-common-actions">
                     <div class="tools-common-actions__div tools-common-actions__div_back">
                         <button class="tools-common-actions__button tools__button_splitList">
-                            <svg class="tools-common__svg" viewBox="0 0 17 17">
+                            <svg class="tools-common-actions__svg" viewBox="0 0 17 17">
                                 <path d="M10.646 13.146l0.707 0.707-2.853 2.854-2.854-2.854 0.707-0.707 1.647 1.647v-3.772h1v3.772l1.646-1.647zM8 2.207v3.772h1v-3.772l1.646 1.646 0.707-0.707-2.853-2.853-2.854 2.853 0.707 0.707 1.647-1.646zM0 8v1h17v-1h-17z"></path>
                             </svg>
                         </button>
                         <button class="tools-common-actions__button tools__button_combineLists">
-                            <svg class="tools-common__svg" viewBox="0 0 16 16">
+                            <svg class="tools-common-actions__svg" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 1l-.5.5v3l.5.5h3l.5-.5v-3L4.5 1h-3zM2 4V2h2v2H2zm-.5 2l-.5.5v3l.5.5h3l.5-.5v-3L4.5 6h-3zM2 9V7h2v2H2zm-1 2.5l.5-.5h3l.5.5v3l-.5.5h-3l-.5-.5v-3zm1 .5v2h2v-2H2zm10.5-7l-.5.5v6l.5.5h3l.5-.5v-6l-.5-.5h-3zM15 8h-2V6h2v2zm0 3h-2V9h2v2zM9.1 8H6v1h3.1l-1 1 .7.6 1.8-1.8v-.7L8.8 6.3l-.7.7 1 1z"></path>
                             </svg>
                         </button>
                         <button class="tools-common-actions__button tools__button_createList">
-                            <svg class="tools-common__svg" viewBox="0 0 32 32">
+                            <svg class="tools-common-actions__svg" viewBox="0 0 32 32">
                                 <path d="M24,15v2h-7v7h-2v-7H8v-2h7V8h2v7H24z M24.485,24.485c-4.686,4.686-12.284,4.686-16.971,0
                                     c-4.686-4.686-4.686-12.284,0-16.971c4.687-4.686,12.284-4.686,16.971,0C29.172,12.201,29.172,19.799,24.485,24.485z M23.071,8.929
                                     c-3.842-3.842-10.167-3.975-14.142,0c-3.899,3.899-3.899,10.243,0,14.142c3.975,3.975,10.301,3.841,14.142,0
@@ -70,29 +70,29 @@
                             </svg>
                         </button>
                         <button class="tools-common-actions__button tools__button_showMoreListActions">
-                            <svg class="tools-common__svg" viewBox="0 0 1024 1024">
+                            <svg class="tools-common-actions__svg" viewBox="0 0 1024 1024">
                                 <path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z"></path>
                             </svg>
                         </button>
                     </div>
                     <div class="tools-common-actions__div tools-common-actions__div_next">
                         <button class="tools-common-actions__button tools__button_showLessListActions">
-                            <svg class="tools-common__svg" viewBox="0 0 1024 1024">
+                            <svg class="tools-common-actions__svg" viewBox="0 0 1024 1024">
                                 <path d="M768 903.232l-50.432 56.768L256 512l461.568-448 50.432 56.768L364.928 512z"></path>
                             </svg>
                         </button>
                         <button class="tools-common-actions__button tools__button_deleteList">
-                            <svg class="tools-common__svg" viewBox="0 0 1024 1024" style="opacity: 1;">
+                            <svg class="tools-common-actions__svg" viewBox="0 0 1024 1024" style="opacity: 1;">
                                 <path d="M160 256H96a32 32 0 0 1 0-64h256V95.936a32 32 0 0 1 32-32h256a32 32 0 0 1 32 32V192h256a32 32 0 1 1 0 64h-64v672a32 32 0 0 1-32 32H192a32 32 0 0 1-32-32V256zm448-64v-64H416v64h192zM224 896h576V256H224v640zm192-128a32 32 0 0 1-32-32V416a32 32 0 0 1 64 0v320a32 32 0 0 1-32 32zm192 0a32 32 0 0 1-32-32V416a32 32 0 0 1 64 0v320a32 32 0 0 1-32 32z"></path>
                             </svg>
                         </button>
                         <button class="tools-common-actions__button tools__button_shareList">
-                            <svg class="tools-common__svg" viewBox="0 0 32 32" style="opacity: 1;">
+                            <svg class="tools-common-actions__svg" viewBox="0 0 32 32" style="opacity: 1;">
                                 <path d="M27 22c-1.646 0-3.103 0.8-4.013 2.028l-13.168-6.71c0.114-0.421 0.181-0.86 0.181-1.317 0-0.572-0.101-1.119-0.277-1.63l13.242-6.426c0.909 1.244 2.375 2.056 4.035 2.056 2.762 0 5-2.239 5-5s-2.238-5-5-5-5 2.239-5 5c0 0.388 0.049 0.764 0.133 1.127l-13.432 6.518c-0.915-1.009-2.231-1.646-3.7-1.646-2.761 0-5 2.239-5 5s2.239 5 5 5c1.59 0 3.004-0.744 3.92-1.902l13.222 6.739c-0.090 0.374-0.142 0.762-0.142 1.163 0 2.761 2.238 5 5 5s5-2.239 5-5-2.238-5-5-5zM27 2c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zM5 19c-1.657 0-3-1.343-3-3s1.343-3 3-3c1.657 0 3 1.344 3 3s-1.343 3-3 3zM27 30c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"></path>
                             </svg>
                         </button>
                         <button class="tools-common-actions__button tools__button_editList">
-                            <svg class="tools-common__svg" viewBox="0 0 24 24" style="opacity: 1;">
+                            <svg class="tools-common-actions__svg" viewBox="0 0 24 24" style="opacity: 1;">
                                 <path d="M4 16L3.46967 15.4697C3.32902 15.6103 3.25 15.8011 3.25 16H4ZM17 3L17.5303 2.46967C17.2374 2.17678 16.7626 2.17678 16.4697 2.46967L17 3ZM21 7L21.5303 7.53033C21.8232 7.23744 21.8232 6.76256 21.5303 6.46967L21 7ZM8 20V20.75C8.19891 20.75 8.38968 20.671 8.53033 20.5303L8 20ZM4 20H3.25C3.25 20.4142 3.58579 20.75 4 20.75V20ZM12 19.25C11.5858 19.25 11.25 19.5858 11.25 20C11.25 20.4142 11.5858 20.75 12 20.75V19.25ZM20.5 20.75C20.9142 20.75 21.25 20.4142 21.25 20C21.25 19.5858 20.9142 19.25 20.5 19.25V20.75ZM4.53033 16.5303L17.5303 3.53033L16.4697 2.46967L3.46967 15.4697L4.53033 16.5303ZM16.4697 3.53033L20.4697 7.53033L21.5303 6.46967L17.5303 2.46967L16.4697 3.53033ZM20.4697 6.46967L7.46967 19.4697L8.53033 20.5303L21.5303 7.53033L20.4697 6.46967ZM8 19.25H4V20.75H8V19.25ZM4.75 20V16H3.25V20H4.75ZM13.4697 6.53033L17.4697 10.5303L18.5303 9.46967L14.5303 5.46967L13.4697 6.53033ZM12 20.75H20.5V19.25H12V20.75Z"></path>
                             </svg>
                         </button>
@@ -100,7 +100,7 @@
                 </div>
                 <div class="tools-common-search">
                     <button class="tools-common-search__button">
-                        <svg viewBox="0 0 24 24">
+                        <svg class="tools-common-search__svg" viewBox="0 0 24 24">
                             <path d="M10.77 18.3C9.2807 18.3 7.82485 17.8584 6.58655 17.031C5.34825 16.2036 4.38311 15.0275 3.81318 13.6516C3.24325 12.2757 3.09413 10.7616 3.38468 9.30096C3.67523 7.84029 4.39239 6.49857 5.44548 5.44548C6.49857 4.39239 7.84029 3.67523 9.30096 3.38468C10.7616 3.09413 12.2757 3.24325 13.6516 3.81318C15.0275 4.38311 16.2036 5.34825 17.031 6.58655C17.8584 7.82485 18.3 9.2807 18.3 10.77C18.3 11.7588 18.1052 12.738 17.7268 13.6516C17.3484 14.5652 16.7937 15.3953 16.0945 16.0945C15.3953 16.7937 14.5652 17.3484 13.6516 17.7268C12.738 18.1052 11.7588 18.3 10.77 18.3ZM10.77 4.74999C9.58331 4.74999 8.42327 5.10189 7.43657 5.76118C6.44988 6.42046 5.68084 7.35754 5.22672 8.45389C4.77259 9.55025 4.65377 10.7566 4.88528 11.9205C5.11679 13.0844 5.68824 14.1535 6.52735 14.9926C7.36647 15.8317 8.43556 16.4032 9.59945 16.6347C10.7633 16.8662 11.9697 16.7474 13.0661 16.2933C14.1624 15.8391 15.0995 15.0701 15.7588 14.0834C16.4181 13.0967 16.77 11.9367 16.77 10.75C16.77 9.15869 16.1379 7.63257 15.0126 6.50735C13.8874 5.38213 12.3613 4.74999 10.77 4.74999Z"></path>
                             <path d="M20 20.75C19.9015 20.7504 19.8038 20.7312 19.7128 20.6934C19.6218 20.6557 19.5392 20.6001 19.47 20.53L15.34 16.4C15.2075 16.2578 15.1354 16.0697 15.1388 15.8754C15.1422 15.6811 15.221 15.4958 15.3584 15.3583C15.4958 15.2209 15.6812 15.1422 15.8755 15.1388C16.0698 15.1354 16.2578 15.2075 16.4 15.34L20.53 19.47C20.6704 19.6106 20.7493 19.8012 20.7493 20C20.7493 20.1987 20.6704 20.3893 20.53 20.53C20.4608 20.6001 20.3782 20.6557 20.2872 20.6934C20.1962 20.7312 20.0985 20.7504 20 20.75Z"></path>
                         </svg>

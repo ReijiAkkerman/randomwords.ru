@@ -18,6 +18,10 @@
             border: 1px solid var(--inactive-color);
             border-radius: var(--block-radius);
 
+            &:hover {
+                border-color: var(--main-border-color);
+            }
+
             &__button {
                 padding: 0 10px;
 
@@ -30,6 +34,14 @@
                     padding-left: 9px;
                     border-left: 1px solid var(--inactive-color);
                 }
+
+                &:hover {
+                    border-color: var(--main-border-color);
+                }
+            }
+
+            &__button:hover &__svg {
+                fill: var(--main-svg-color);
             }
 
             &__p {
@@ -74,6 +86,10 @@
             border: 1px solid var(--inactive-color);
             border-radius: var(--block-radius);
 
+            &:hover {
+                border-color: var(--main-border-color);
+            }
+
             &__button {
                 box-sizing: border-box;
                 border-left: 1px solid var(--inactive-color);
@@ -83,6 +99,18 @@
                 &:first-of-type {
                     border: none;
                 }
+
+                &:hover {
+                    border-color: var(--main-border-color);
+                }
+
+                &:hover + & {
+                    border-color: var(--main-border-color);
+                }
+            }
+
+            &__button:hover &__svg {
+                fill: var(--main-svg-color);
             }
         }
 
@@ -90,10 +118,18 @@
             border: 1px solid var(--inactive-color);
             border-radius: var(--block-radius);
 
+            &:hover {
+                border-color: var(--main-border-color);
+            }
+
             &__button {
                 height: 100%;
                 min-width: 80px;
                 padding: 5px 15px;
+            }
+
+            &__button:hover &__svg {
+                fill: var(--main-svg-color);
             }
         }
     }
