@@ -1,0 +1,100 @@
+.tools {
+    border-left: 1px solid var(--main-border-color);
+    padding: 0 10px;
+    background-color: #fff;
+
+    &__div {
+        border-top: 1px solid var(--main-border-color);
+        padding: 5px;
+
+        &:first-of-type {
+            border-top: none;
+        }
+    }
+
+    &-communication {
+
+        &-timer {
+            border: 1px solid var(--inactive-color);
+            border-radius: var(--block-radius);
+
+            &__button {
+                padding: 0 10px;
+
+                &:first-of-type {
+                    padding-right: 9px;
+                    border-right: 1px solid var(--inactive-color);
+                }
+
+                &:last-of-type {
+                    padding-left: 9px;
+                    border-left: 1px solid var(--inactive-color);
+                }
+            }
+
+            &__p {
+                font-size: 25px;
+                margin: auto 0;
+                color: var(--inactive-color);
+            }
+        }
+
+        &__label {
+            cursor: pointer;
+            padding: 5px 15px;
+            border: 1px solid var(--inactive-color);
+            border-radius: var(--block-radius);
+            height: max-content;
+
+            &:hover {
+                border-color: var(--main-border-color);
+            }
+        }
+
+        &__div:hover &__svg {
+            fill: var(--main-svg-color);
+        }
+
+        &__div:hover &__p {
+            color: var(--main-text-color);
+        }
+
+        &__svg {
+            fill: var(--inactive-color);
+        }
+
+        &__p {
+            color: var(--inactive-color);
+        }
+    }
+
+    &-common {
+
+        &-actions {
+            border: 1px solid var(--inactive-color);
+            border-radius: var(--block-radius);
+
+            &__button {
+                box-sizing: border-box;
+                border-left: 1px solid var(--inactive-color);
+                width: 100%;
+                padding: 5px;
+
+                &:first-of-type {
+                    border: none;
+                }
+            }
+        }
+
+        &-search {
+            border: 1px solid var(--inactive-color);
+            border-radius: var(--block-radius);
+
+            &__button {
+                height: 100%;
+                min-width: 80px;
+                padding: 5px 15px;
+            }
+        }
+    }
+}

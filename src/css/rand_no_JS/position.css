@@ -1,0 +1,48 @@
+.tools {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 500px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+.tools__input {
+  display: none;
+  z-index: 0;
+  position: relative;
+}
+.tools-communication {
+  display: flex;
+  gap: 10px;
+}
+.tools-communication-timer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.tools-communication__label {
+  display: flex;
+  justify-content: center;
+}
+.tools-common {
+  display: flex;
+  gap: 10px;
+}
+.tools-common-actions {
+  width: 100%;
+}
+.tools-common-actions__div {
+  display: flex;
+}
+.tools-common-actions__div_next {
+  display: none;
+}
+.tools-something {
+  height: 100%;
+}
+
+/*# sourceMappingURL=position.css.map */
