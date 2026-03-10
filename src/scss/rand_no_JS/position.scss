@@ -55,6 +55,21 @@
         }
     }
 
+    &-listsControl {
+        display: flex;
+        gap: 10px;
+
+        &__div {
+            display: flex;
+        }
+
+        &-workingGroup {
+            &-item {
+                width: 100%;
+            }
+        }
+    }
+
     &-something {
         height: 100%;
     }

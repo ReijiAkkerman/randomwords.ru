@@ -81,6 +81,7 @@
     }
 
     &-common {
+        border-bottom: 1px solid var(--main-border-color);
 
         &-actions {
             border: 1px solid var(--inactive-color);
@@ -130,6 +131,39 @@
 
             &__button:hover &__svg {
                 fill: var(--main-svg-color);
+            }
+        }
+    }
+
+    &-listsControl {
+        padding: 5px 0;
+        margin: 0 5px;
+        border: none;
+        overflow-x: scroll;
+        min-height: fit-content;
+
+        &::-webkit-scrollbar {
+            height: 0;
+        }
+
+        &__div {
+            min-width: 350px;
+            border: 1px solid var(--inactive-color);
+            border-radius: var(--block-radius);
+            
+            &:last-of-type {
+                width: 100%;
+            }
+        }
+
+        &-workingGroup {
+            &-item {
+                padding: 5px;
+                border-left: 1px solid var(--inactive-color);
+
+                &:first-of-type {
+                    border: none;
+                }
             }
         }
     }

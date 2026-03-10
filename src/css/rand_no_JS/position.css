@@ -41,6 +41,16 @@
 .tools-common-actions__div_next {
   display: none;
 }
+.tools-listsControl {
+  display: flex;
+  gap: 10px;
+}
+.tools-listsControl__div {
+  display: flex;
+}
+.tools-listsControl-workingGroup-item {
+  width: 100%;
+}
 .tools-something {
   height: 100%;
 }
