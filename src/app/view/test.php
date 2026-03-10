@@ -1,44 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="/src/css/test.css">
+        <link rel="stylesheet" href="/src/css/test/test.css">
     </head>
     <body>
-        <main>
-            <div class="groups">
-                <div class="group"></div>
-                <!-- <div class="group"></div> -->
-                <!-- <div class="group"></div>
-                <div class="group"></div> -->
-            </div>
-            <div class="lists">
-                <div class="list"></div>
-                <div class="list"></div>
-                <div class="list"></div>
-                <div class="list"></div>
-                <div class="list"></div>
-                <div class="list"></div>
-                <div class="list"></div>
-                <div class="list"></div>
-                <div class="list"></div>
-                <div class="list"></div>
-                <div class="list"></div>
-                <div class="list"></div>
-                <div class="list"></div>
-                <div class="list"></div>
-                <div class="list"></div>
-                <div class="list"></div>
-                <div class="list"></div>
-                <div class="list"></div>
-                <div class="list"></div>
-                <div class="list"></div>
-                <div class="list"></div>
-                <div class="list"></div>
-                <div class="list"></div>
-                <div class="list"></div>
-                <div class="list"></div>
-            </div>
-        </main>
+        <section>
+            <div class="blue"></div>
+            <div class="red"></div>
+        </section>
     </body>
 </html>

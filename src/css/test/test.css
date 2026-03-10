@@ -1,3 +1,26 @@
+section {
+  overflow-x: scroll;
+  display: flex;
+  gap: 10px;
+}
 
+.blue {
+  background-color: #00f;
+  min-width: 1000px;
+  height: 200px;
+  transition: min-width 1s ease-in-out;
+}
+
+.red {
+  min-width: 1000px;
+  height: 200px;
+  background-color: #f00;
+  transition: all 1s;
+}
+.red:hover {
+  left: 0;
+  transform: translateX(-1010px);
+  min-width: 100%;
+}
 
 /*# sourceMappingURL=test.css.map */

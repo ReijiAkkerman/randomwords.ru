@@ -108,9 +108,6 @@
                 </div>
             </div>
             <div class="tools__div tools-listsControl">
-                <div class="tools-listsControl__div tools-listsControl-selectedSection">
-
-                </div>
                 <div class="tools-listsControl__div tools-listsControl-workingGroup">
                     <button class="tools-listsControl-workingGroup-item">
                         <svg class="tools-listsControl-workingGroup-item__svg" viewBox="0 0 32 32" style="opacity: 1;">
@@ -133,6 +130,9 @@
                             <path class="cls-1" d="M8,17a7,7,0,0,0-7,7H7"></path>
                         </svg>
                     </button>
+                </div>
+                <div class="tools-listsControl__div tools-listsControl-selectedSection">
+
                 </div>
             </div>
             <div class="tools__div tools-something">
