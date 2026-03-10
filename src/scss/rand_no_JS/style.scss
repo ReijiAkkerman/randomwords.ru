@@ -13,26 +13,23 @@
     }
 
     &-communication {
-
         &-timer {
-            border: 1px solid var(--inactive-color);
-            border-radius: var(--block-radius);
-
-            &:hover {
-                border-color: var(--main-border-color);
-            }
-
             &__button {
                 padding: 0 10px;
+                height: 100%;
 
                 &:first-of-type {
                     padding-right: 9px;
-                    border-right: 1px solid var(--inactive-color);
+                    border: 1px solid var(--inactive-color);
+                    border-top-left-radius: var(--block-radius);
+                    border-bottom-left-radius: var(--block-radius);
                 }
 
                 &:last-of-type {
                     padding-left: 9px;
-                    border-left: 1px solid var(--inactive-color);
+                    border: 1px solid var(--inactive-color);
+                    border-top-right-radius: var(--block-radius);
+                    border-bottom-right-radius: var(--block-radius);
                 }
 
                 &:hover {
@@ -45,9 +42,15 @@
             }
 
             &__p {
+                box-sizing: border-box;
+                line-height: 40px;
+                width: 100%;
+                height: 100%;
+                text-align: center;
                 font-size: 25px;
-                margin: auto 0;
                 color: var(--inactive-color);
+                border-top: 1px solid var(--inactive-color);
+                border-bottom: 1px solid var(--inactive-color);
             }
         }
 
@@ -84,21 +87,22 @@
         border-bottom: 1px solid var(--main-border-color);
 
         &-actions {
-            border: 1px solid var(--inactive-color);
-            border-radius: var(--block-radius);
-
-            &:hover {
-                border-color: var(--main-border-color);
-            }
-
             &__button {
                 box-sizing: border-box;
-                border-left: 1px solid var(--inactive-color);
+                border: 1px solid var(--inactive-color);
+                border-right: none;
                 width: 100%;
                 padding: 5px;
 
                 &:first-of-type {
-                    border: none;
+                    border-top-left-radius: var(--block-radius);
+                    border-bottom-left-radius: var(--block-radius);
+                }
+
+                &:last-of-type {
+                    border-top-right-radius: var(--block-radius);
+                    border-bottom-right-radius: var(--block-radius);
+                    border-right: 1px solid var(--inactive-color);
                 }
 
                 &:hover {
@@ -106,7 +110,7 @@
                 }
 
                 &:hover + & {
-                    border-color: var(--main-border-color);
+                    border-left-color: var(--main-border-color);
                 }
             }
 
@@ -148,8 +152,6 @@
 
         &__div {
             min-width: 350px;
-            border: 1px solid var(--inactive-color);
-            border-radius: var(--block-radius);
             
             &:last-of-type {
                 width: 100%;
@@ -159,10 +161,34 @@
         &-workingGroup {
             &-item {
                 padding: 5px;
-                border-left: 1px solid var(--inactive-color);
+                border: 1px solid var(--inactive-color);
+                border-right: none;
 
                 &:first-of-type {
-                    border: none;
+                    border-top-left-radius: var(--block-radius);
+                    border-bottom-left-radius: var(--block-radius);
+                }
+
+                &:last-of-type {
+                    border-right: 1px solid var(--inactive-color);
+                    border-top-right-radius: var(--block-radius);
+                    border-bottom-right-radius: var(--block-radius);
+                }
+
+                &:hover {
+                    border-color: var(--main-border-color);
+                }
+
+                &:hover + & {
+                    border-left-color: var(--main-border-color);
+                }
+
+                &:hover > &__svg{
+                    fill: var(--main-svg-color);
+                }
+
+                &:hover > &__svg.svg-stroke {
+                    stroke: var(--main-svg-color);
                 }
             }
         }

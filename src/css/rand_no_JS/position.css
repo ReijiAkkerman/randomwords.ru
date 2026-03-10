@@ -21,7 +21,8 @@
 }
 .tools-communication-timer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
   width: 100%;
 }
 .tools-communication__label {
