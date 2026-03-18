@@ -14,7 +14,7 @@
         <input class="tools__input" type="radio" name="main_window" id="default">
         <input class="tools__input" type="radio" name="main_window" id="alarms">
         <!-- Управление списками -->
-        <input class="tools__input" type="checkbox" name="selectSection_area">
+        <input class="tools__input" type="checkbox" name="selectListsSection_area">
         <main class="tools">
             <div class="tools__div tools-communication">
                 <div class="tools-communication__div">
@@ -152,6 +152,41 @@
                         <pre class="tools-listsControl-selectedSection-name__pre">Наименование группы</pre>                        
                     </label> 
                 </div>
+            </div>
+            <div class="tools__div tools-sectionEditingArea">
+                <div class="tools-sectionEditingArea-appearance">
+                    <input class="tools-sectionEditingArea-appearance__input" type="text" name="listsSectionName" placeholder="Наименование раздела . . .">
+                    <button class="tools-sectionEditingArea-appearance__button_setColor"></button>
+                </div>
+                <div class="tools-sectionEditingArea-colors">
+                    <button class="tools-sectionEditingArea-colors__button"></button>
+                    <button class="tools-sectionEditingArea-colors__button"></button>
+                    <button class="tools-sectionEditingArea-colors__button"></button>
+                    <button class="tools-sectionEditingArea-colors__button"></button>
+                    <button class="tools-sectionEditingArea-colors__button"></button>
+                    <button class="tools-sectionEditingArea-colors__button"></button>
+                    <button class="tools-sectionEditingArea-colors__button"></button>
+                    <button class="tools-sectionEditingArea-colors__button"></button>
+                    <button class="tools-sectionEditingArea-colors__button"></button>
+                    <button class="tools-sectionEditingArea-colors__button"></button>
+                </div>
+                <div class="tools-sectionEditingArea-actions">
+                    <button class="tools-sectionEditingArea-actions__button">
+
+                    </button>
+                    <button class="tools-sectionEditingArea-actions__button">
+
+                    </button>
+                    <button class="tools-sectionEditingArea-actions__button">
+
+                    </button>
+                    <button class="tools-sectionEditingArea-actions__button">
+                        
+                    </button>
+                </div>
+            </div>
+            <div class="tools__div tools-sectionSelectionArea">
+
             </div>
             <div class="tools__div tools-something">
 

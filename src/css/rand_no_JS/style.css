@@ -224,5 +224,31 @@
 .tools-listsControl-workingGroup:hover + .tools-listsControl-selectedSection {
   transform: translateX(-362px);
 }
+.tools-sectionEditingArea-appearance__input {
+  color: var(--inactive-color);
+  width: 100%;
+  font-size: 20px;
+  font-family: Jura;
+  min-height: 40px;
+  padding: 0 10px;
+  border-left: 2px solid var(--inactive-color);
+  border-right: 2px solid var(--inactive-color);
+  border-radius: var(--block-radius);
+}
+.tools-sectionEditingArea-appearance__input:focus {
+  border-color: var(--main-border-color);
+  color: var(--main-text-color);
+}
+.tools-sectionEditingArea-appearance__button_setColor {
+  width: 100px;
+  height: 100%;
+  border: 1px solid var(--inactive-color);
+  border-radius: var(--block-radius);
+  background: linear-gradient(0.25turn, #f88, #ff8, #8f8, #8ff, #88f, #f8f, #f88);
+}
+.tools-sectionEditingArea-appearance__button_setColor:hover {
+  background: linear-gradient(0.25turn, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
+  border-color: var(--main-border-color);
+}
 
 /*# sourceMappingURL=style.css.map */
