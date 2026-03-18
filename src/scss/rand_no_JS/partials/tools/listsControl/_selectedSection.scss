@@ -1,15 +1,26 @@
-$tools-buttons__animationDuration: 200ms;
-$tools-buttons-descriptions__fontSize: 18px;
+@mixin hover {
+    &:hover {
+        border-color: var(--main-border-color);
+    }
 
-@mixin tools-listsControl-selectedSection-leftButton {
+    &:hover + label {
+        border-left-color: var(--main-border-color);
+    }
+}
+
+@mixin left-button {
     border: 1px solid var(--inactive-color);
     border-right: none;
     border-top-left-radius: var(--block-radius);
     border-bottom-left-radius: var(--block-radius);
+
+    @include hover;
 }
 
-@mixin tools-listsControl-selectedSection-rightButton {
+@mixin right-button {
     border: 1px solid var(--inactive-color);
     border-top-right-radius: var(--block-radius);
     border-bottom-right-radius: var(--block-radius);
+
+    @include hover;
 }

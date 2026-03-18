@@ -9,9 +9,12 @@
         <link rel="stylesheet" href="/src/css/rand_no_JS/style.css">
     </head>
     <body>
-        <input class="tools__input" type="radio" name="opened_window" id="messages">
-        <input class="tools__input" type="radio" name="opened_window" id="default">
-        <input class="tools__input" type="radio" name="opened_window" id="alarms">
+        <!-- Основные окна -->
+        <input class="tools__input" type="radio" name="main_window" id="messages">
+        <input class="tools__input" type="radio" name="main_window" id="default">
+        <input class="tools__input" type="radio" name="main_window" id="alarms">
+        <!-- Управление списками -->
+        <input class="tools__input" type="checkbox" name="selectSection_area">
         <main class="tools">
             <div class="tools__div tools-communication">
                 <div class="tools-communication__div">
@@ -132,7 +135,22 @@
                     </button>
                 </div>
                 <div class="tools-listsControl__div tools-listsControl-selectedSection">
-
+                    <label class="tools-listsControl-selectedSection-name tools-listsControl-selectedSection-name_cath">
+                        <pre class="tools-listsControl-selectedSection-name__pre">Наименование категории</pre>
+                    </label>
+                    <label class="tools-listsControl-selectedSection-switcher tools-listsControl-selectedSection-switcher_next">
+                        <svg class="tools-listsControl-selectedSection-switcher__svg" viewBox="0 0 1024 1024" style="opacity: 1;">
+                            <path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z"></path>
+                        </svg>
+                    </label>
+                    <label style="display:none;" class="tools-listsControl-selectedSection-switcher tools-listsControl-selectedSection-switcher_back">
+                        <svg style="opacity: 1;" class="tools-listsControl-selectedSection-switcher__svg" viewBox="0 0 1024 1024">
+                            <path d="M768 903.232l-50.432 56.768L256 512l461.568-448 50.432 56.768L364.928 512z"></path>
+                        </svg>
+                    </label>
+                    <label style="display:none;" class="tools-listsControl-selectedSection-name tools-listsControl-selectedSection-name_group">
+                        <pre class="tools-listsControl-selectedSection-name__pre">Наименование группы</pre>                        
+                    </label> 
                 </div>
             </div>
             <div class="tools__div tools-something">

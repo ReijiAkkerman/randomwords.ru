@@ -49,6 +49,17 @@
 .tools-listsControl__div {
   display: flex;
 }
+.tools-listsControl-selectedSection > label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tools-listsControl-selectedSection-name {
+  width: 400%;
+}
+.tools-listsControl-selectedSection-switcher {
+  width: 100%;
+}
 .tools-listsControl-workingGroup-item {
   width: 100%;
 }

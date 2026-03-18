@@ -64,6 +64,22 @@
             display: flex;
         }
 
+        &-selectedSection {
+            > label {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &-name {
+                width: 400%;
+            }
+
+            &-switcher {
+                width: 100%;
+            }
+        }
+
         &-workingGroup {
             &-item {
                 width: 100%;
