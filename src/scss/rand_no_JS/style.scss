@@ -285,5 +285,34 @@
                 }
             }
         }
+
+        &-colors {
+            &__button {
+                width: 100%;
+                height: 35px;
+                border: 1px solid var(--main-border-color);
+                border-radius: var(--block-radius);
+                opacity: 0.4;
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                &_fff {background-color: #fff;}
+                &_aaa {background-color: #aaa;}
+                &_f00 {background-color: #f00;}
+                &_ff0 {background-color: #ff0;}
+                &_0f0 {background-color: #0f0;}
+                &_0ff {background-color: #0ff;}
+                &_22f {background-color: #22f;}
+                &_f0f {background-color: #f0f;}
+                &_840 {background-color: #840;}
+                &_000 {background-color: #000;}
+            }
+
+            &__svg {
+                fill: var(--main-svg-color);
+            }
+        }
     }
 }

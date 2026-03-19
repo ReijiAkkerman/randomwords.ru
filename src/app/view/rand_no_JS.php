@@ -159,16 +159,21 @@
                     <button class="tools-sectionEditingArea-appearance__button_setColor"></button>
                 </div>
                 <div class="tools-sectionEditingArea-colors">
-                    <button class="tools-sectionEditingArea-colors__button"></button>
-                    <button class="tools-sectionEditingArea-colors__button"></button>
-                    <button class="tools-sectionEditingArea-colors__button"></button>
-                    <button class="tools-sectionEditingArea-colors__button"></button>
-                    <button class="tools-sectionEditingArea-colors__button"></button>
-                    <button class="tools-sectionEditingArea-colors__button"></button>
-                    <button class="tools-sectionEditingArea-colors__button"></button>
-                    <button class="tools-sectionEditingArea-colors__button"></button>
-                    <button class="tools-sectionEditingArea-colors__button"></button>
-                    <button class="tools-sectionEditingArea-colors__button"></button>
+                    <button class="tools-sectionEditingArea-colors__button tools-sectionEditingArea-colors__button_fff"></button>
+                    <button class="tools-sectionEditingArea-colors__button tools-sectionEditingArea-colors__button_aaa"></button>
+                    <button class="tools-sectionEditingArea-colors__button tools-sectionEditingArea-colors__button_f00"></button>
+                    <button class="tools-sectionEditingArea-colors__button tools-sectionEditingArea-colors__button_ff0"></button>
+                    <button class="tools-sectionEditingArea-colors__button tools-sectionEditingArea-colors__button_0f0"></button>
+                    <button class="tools-sectionEditingArea-colors__button tools-sectionEditingArea-colors__button_0ff"></button>
+                    <button class="tools-sectionEditingArea-colors__button tools-sectionEditingArea-colors__button_22f"></button>
+                    <button class="tools-sectionEditingArea-colors__button tools-sectionEditingArea-colors__button_f0f"></button>
+                    <button class="tools-sectionEditingArea-colors__button tools-sectionEditingArea-colors__button_840"></button>
+                    <button class="tools-sectionEditingArea-colors__button tools-sectionEditingArea-colors__button_000"></button>
+                    <button class="tools-sectionEditingArea-colors__button tools-sectionEditingArea-colors_unsetColor">
+                        <svg class="tools-sectionEditingArea-colors__svg" viewBox="0 0 1024 1024">
+                            <path d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"></path>
+                        </svg>
+                    </button>
                 </div>
                 <div class="tools-sectionEditingArea-actions">
                     <button class="tools-sectionEditingArea-actions__button">
