@@ -80,6 +80,17 @@
   display: flex;
   gap: 10px;
 }
+.tools-sectionSelectionArea {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.tools-sectionSelectionArea-currentSectionInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
 .tools-something {
   height: 100%;
 }

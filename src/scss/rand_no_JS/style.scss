@@ -341,4 +341,43 @@
             }
         }
     }
+
+    &-sectionSelectionArea {
+        &-currentSectionInfo {
+            &__button {
+                padding: 5px;
+                border: 1px solid var(--inactive-color);
+                border-radius: var(--block-radius);
+
+                &:hover {
+                    border-color: var(--main-border-color);
+                }
+            }
+
+            &__button:hover > &__svg {
+                fill: var(--main-svg-color);
+            }
+
+            &__svg {
+                width: 25px;
+                height: 25px;
+            }
+
+            &__pre {
+                box-sizing: border-box;
+                color: var(--main-svg-color);
+                line-height: 37px;
+                margin-left: 10px;
+                font-size: 20px;
+                width: 100%;
+                height: 100%;
+                text-align: left;
+
+                &:before {
+                    content: "★";
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
 }

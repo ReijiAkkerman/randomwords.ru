@@ -176,7 +176,7 @@
                     </button>
                 </div>
                 <div class="tools-sectionEditingArea-actions">
-                    <button class="tools-sectionEditingArea-actions__button">
+                    <!-- <button class="tools-sectionEditingArea-actions__button">
                         <svg class="tools-sectionEditingArea-actions__svg" viewBox="0 0 24 24">
                             <path d="M13 3C13 2.44772 12.5523 2 12 2C11.4477 2 11 2.44772 11 3V11H3C2.44772 11 2 11.4477 2 12C2 12.5523 2.44772 13 3 13H11V21C11 21.5523 11.4477 22 12 22C12.5523 22 13 21.5523 13 21V13H21C21.5523 13 22 12.5523 22 12C22 11.4477 21.5523 11 21 11H13V3Z"></path>
                         </svg>
@@ -184,6 +184,11 @@
                     <button class="tools-sectionEditingArea-actions__button tools-sectionEditingArea-actions__button_smallSvg">
                         <svg class="tools-sectionEditingArea-actions__svg" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M11 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM6.025 7.5a5 5 0 1 1 0 1H4A1.5 1.5 0 0 1 2.5 10h-1A1.5 1.5 0 0 1 0 8.5v-1A1.5 1.5 0 0 1 1.5 6h1A1.5 1.5 0 0 1 4 7.5h2.025zM11 5a.5.5 0 0 1 .5.5v2h2a.5.5 0 0 1 0 1h-2v2a.5.5 0 0 1-1 0v-2h-2a.5.5 0 0 1 0-1h2v-2A.5.5 0 0 1 11 5zM1.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"></path>
+                        </svg>
+                    </button> -->
+                    <button class="tools-sectionEditingArea-actions__button">
+                        <svg class="tools-sectionEditingArea-actions__svg" viewBox="0 0 1024 1024">
+                            <path d="M160 256H96a32 32 0 0 1 0-64h256V95.936a32 32 0 0 1 32-32h256a32 32 0 0 1 32 32V192h256a32 32 0 1 1 0 64h-64v672a32 32 0 0 1-32 32H192a32 32 0 0 1-32-32V256zm448-64v-64H416v64h192zM224 896h576V256H224v640zm192-128a32 32 0 0 1-32-32V416a32 32 0 0 1 64 0v320a32 32 0 0 1-32 32zm192 0a32 32 0 0 1-32-32V416a32 32 0 0 1 64 0v320a32 32 0 0 1-32 32z"></path>
                         </svg>
                     </button>
                     <button class="tools-sectionEditingArea-actions__button">
@@ -193,13 +198,28 @@
                     </button>
                     <button class="tools-sectionEditingArea-actions__button">
                         <svg class="tools-sectionEditingArea-actions__svg" viewBox="0 0 1024 1024">
-                            <path d="M160 256H96a32 32 0 0 1 0-64h256V95.936a32 32 0 0 1 32-32h256a32 32 0 0 1 32 32V192h256a32 32 0 1 1 0 64h-64v672a32 32 0 0 1-32 32H192a32 32 0 0 1-32-32V256zm448-64v-64H416v64h192zM224 896h576V256H224v640zm192-128a32 32 0 0 1-32-32V416a32 32 0 0 1 64 0v320a32 32 0 0 1-32 32zm192 0a32 32 0 0 1-32-32V416a32 32 0 0 1 64 0v320a32 32 0 0 1-32 32z"></path>
+                            <path d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"></path>
                         </svg>
                     </button>
                 </div>
             </div>
             <div class="tools__div tools-sectionSelectionArea">
-
+                <div class="tools-sectionSelectionArea-currentSectionInfo">
+                    <pre class="tools-sectionSelectionArea-currentSectionInfo__pre">Наименование раздела</pre>
+                    <button class="tools-sectionSelectionArea-currentSectionInfo__button">
+                        <svg class="tools-sectionSelectionArea-currentSectionInfo__svg" viewBox="0 0 24 24">
+                            <path d="M13 3C13 2.44772 12.5523 2 12 2C11.4477 2 11 2.44772 11 3V11H3C2.44772 11 2 11.4477 2 12C2 12.5523 2.44772 13 3 13H11V21C11 21.5523 11.4477 22 12 22C12.5523 22 13 21.5523 13 21V13H21C21.5523 13 22 12.5523 22 12C22 11.4477 21.5523 11 21 11H13V3Z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="tools-sectionSelectionArea__div">
+                    <div class="tools-sectionSelectionArea-navigation">
+    
+                    </div>
+                    <div class="tools-sectionSelectionArea-sectionsList">
+    
+                    </div>
+                </div>
             </div>
             <div class="tools__div tools-something">
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .tools {
   border-left: 1px solid var(--main-border-color);
   padding: 0 10px;
@@ -311,6 +312,35 @@
 .tools-sectionEditingArea-actions__button_smallSvg > .tools-sectionEditingArea-actions__svg {
   width: 38px;
   height: 38px;
+}
+.tools-sectionSelectionArea-currentSectionInfo__button {
+  padding: 5px;
+  border: 1px solid var(--inactive-color);
+  border-radius: var(--block-radius);
+}
+.tools-sectionSelectionArea-currentSectionInfo__button:hover {
+  border-color: var(--main-border-color);
+}
+.tools-sectionSelectionArea-currentSectionInfo__button:hover > .tools-sectionSelectionArea-currentSectionInfo__svg {
+  fill: var(--main-svg-color);
+}
+.tools-sectionSelectionArea-currentSectionInfo__svg {
+  width: 25px;
+  height: 25px;
+}
+.tools-sectionSelectionArea-currentSectionInfo__pre {
+  box-sizing: border-box;
+  color: var(--main-svg-color);
+  line-height: 37px;
+  margin-left: 10px;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+.tools-sectionSelectionArea-currentSectionInfo__pre:before {
+  content: "★";
+  padding-right: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
