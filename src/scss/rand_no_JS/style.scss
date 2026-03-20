@@ -314,5 +314,31 @@
                 fill: var(--main-svg-color);
             }
         }
+
+        &-actions {
+            &__button {
+                border: 1px solid var(--inactive-color);
+                border-radius: var(--block-radius);
+                padding: 5px 0;
+                width: 100%;
+
+                &_smallSvg {
+                    padding: 0;
+                }
+
+                &:hover {
+                    border-color: var(--main-border-color);
+                }
+            }
+
+            &__button:hover > &__svg {
+                fill: var(--main-svg-color);
+            }
+
+            &__button_smallSvg > &__svg {
+                width: 38px;
+                height: 38px;
+            }
+        }
     }
 }

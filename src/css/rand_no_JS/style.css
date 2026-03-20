@@ -293,5 +293,24 @@
 .tools-sectionEditingArea-colors__svg {
   fill: var(--main-svg-color);
 }
+.tools-sectionEditingArea-actions__button {
+  border: 1px solid var(--inactive-color);
+  border-radius: var(--block-radius);
+  padding: 5px 0;
+  width: 100%;
+}
+.tools-sectionEditingArea-actions__button_smallSvg {
+  padding: 0;
+}
+.tools-sectionEditingArea-actions__button:hover {
+  border-color: var(--main-border-color);
+}
+.tools-sectionEditingArea-actions__button:hover > .tools-sectionEditingArea-actions__svg {
+  fill: var(--main-svg-color);
+}
+.tools-sectionEditingArea-actions__button_smallSvg > .tools-sectionEditingArea-actions__svg {
+  width: 38px;
+  height: 38px;
+}
 
 /*# sourceMappingURL=style.css.map */

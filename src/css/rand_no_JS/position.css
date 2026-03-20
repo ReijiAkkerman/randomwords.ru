@@ -76,6 +76,10 @@
   display: flex;
   gap: 8px;
 }
+.tools-sectionEditingArea-actions {
+  display: flex;
+  gap: 10px;
+}
 .tools-something {
   height: 100%;
 }
