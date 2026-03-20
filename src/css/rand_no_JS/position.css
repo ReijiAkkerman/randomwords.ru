@@ -82,14 +82,23 @@
 }
 .tools-sectionSelectionArea {
   display: flex;
+  gap: 5px;
+}
+.tools-sectionSelectionArea-navigation {
+  display: flex;
+  position: sticky;
+  top: 0;
   flex-direction: column;
   gap: 5px;
 }
-.tools-sectionSelectionArea-currentSectionInfo {
+.tools-sectionSelectionArea-sectionsList {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column;
+  gap: 5px;
+}
+.tools-sectionSelectionArea-sectionsList-sectionItem {
+  display: flex;
+  box-sizing: border-box;
 }
 .tools-something {
   height: 100%;

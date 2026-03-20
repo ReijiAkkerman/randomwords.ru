@@ -48,12 +48,6 @@
                 }
             }
         }
-
-        &-search {
-            &__button {
-
-            }
-        }
     }
 
     &-listsControl {
@@ -110,14 +104,25 @@
 
     &-sectionSelectionArea {
         display: flex;
-        flex-direction: column;
         gap: 5px;
 
-        &-currentSectionInfo {
+        &-navigation {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 10px;
+            position: sticky;
+            top: 0;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        &-sectionsList {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            &-sectionItem {
+                display: flex;
+                box-sizing: border-box;
+            }
         }
     }
 

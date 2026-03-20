@@ -204,20 +204,47 @@
                 </div>
             </div>
             <div class="tools__div tools-sectionSelectionArea">
-                <div class="tools-sectionSelectionArea-currentSectionInfo">
-                    <pre class="tools-sectionSelectionArea-currentSectionInfo__pre">Наименование раздела</pre>
-                    <button class="tools-sectionSelectionArea-currentSectionInfo__button">
-                        <svg class="tools-sectionSelectionArea-currentSectionInfo__svg" viewBox="0 0 24 24">
-                            <path d="M13 3C13 2.44772 12.5523 2 12 2C11.4477 2 11 2.44772 11 3V11H3C2.44772 11 2 11.4477 2 12C2 12.5523 2.44772 13 3 13H11V21C11 21.5523 11.4477 22 12 22C12.5523 22 13 21.5523 13 21V13H21C21.5523 13 22 12.5523 22 12C22 11.4477 21.5523 11 21 11H13V3Z"></path>
+                <div class="tools-sectionSelectionArea-navigation">
+                    <button class="tools-sectionSelectionArea-navigation__button">
+                        <svg class="tools-sectionSelectionArea-navigation__svg" viewBox="0 0 1024 1024">
+                            <path d="M768 903.232l-50.432 56.768L256 512l461.568-448 50.432 56.768L364.928 512z"></path>
+                        </svg>
+                    </button>
+                    <button class="tools-sectionSelectionArea-navigation__button">
+                        <svg class="tools-sectionSelectionArea-navigation__svg" viewBox="0 0 36 36">
+                            <path d="M33.71,17.29l-15-15a1,1,0,0,0-1.41,0l-15,15a1,1,0,0,0,1.41,1.41L18,4.41,32.29,18.71a1,1,0,0,0,1.41-1.41Z"></path>
+                            <path d="M28,32h-5V22H13V32H8V18L6,20V32a2,2,0,0,0,2,2h7V24h6V34h7a2,2,0,0,0,2-2V19.76l-2-2Z"></path>
                         </svg>
                     </button>
                 </div>
-                <div class="tools-sectionSelectionArea__div">
-                    <div class="tools-sectionSelectionArea-navigation">
-    
+                <div class="tools-sectionSelectionArea-sectionsList">
+                    <pre class="tools-sectionSelectionArea-sectionsList_header">Выбранный раздел</pre>
+                    <div class="tools-sectionSelectionArea-sectionsList-sectionItem">
+                        <svg class="tools-sectionSelectionArea-sectionsList-sectionItem__svg" viewBox="0 0 24 24" fill="none">
+                            <circle cx="20" cy="8" r="1" transform="rotate(-180 20 8)" stroke-width="2"></circle>
+                            <circle cx="20" cy="16" r="1" transform="rotate(-180 20 16)" stroke-width="2"></circle>
+                            <circle cx="12" cy="8" r="1" transform="rotate(-180 12 8)" stroke-width="2"></circle>
+                            <circle cx="12" cy="16" r="1" transform="rotate(-180 12 16)" stroke-width="2"></circle>
+                            <circle cx="4" cy="8" r="1" transform="rotate(-180 4 8)" stroke-width="2"></circle>
+                            <circle cx="4" cy="16" r="1" transform="rotate(-180 4 16)" stroke-width="2"></circle>
+                        </svg>
+                        <pre class="tools-sectionSelectionArea-sectionsList-sectionItem__pre">Наименование раздела</pre>
                     </div>
-                    <div class="tools-sectionSelectionArea-sectionsList">
-    
+                    <div class="tools-sectionSelectionArea-sectionsList-sectionItem">
+                        <svg class="tools-sectionSelectionArea-sectionsList-sectionItem__svg" viewBox="0 0 24 24" fill="none">
+                            <circle cx="20" cy="8" r="1" transform="rotate(-180 20 8)" stroke-width="2"></circle>
+                            <circle cx="20" cy="16" r="1" transform="rotate(-180 20 16)" stroke-width="2"></circle>
+                            <circle cx="12" cy="8" r="1" transform="rotate(-180 12 8)" stroke-width="2"></circle>
+                            <circle cx="12" cy="16" r="1" transform="rotate(-180 12 16)" stroke-width="2"></circle>
+                            <circle cx="4" cy="8" r="1" transform="rotate(-180 4 8)" stroke-width="2"></circle>
+                            <circle cx="4" cy="16" r="1" transform="rotate(-180 4 16)" stroke-width="2"></circle>
+                        </svg>
+                        <pre class="tools-sectionSelectionArea-sectionsList-sectionItem__pre">Наименование раздела</pre>
+                    </div>
+                    <div class="tools-sectionSelectionArea-sectionsList-sectionItem tools-sectionSelectionArea-sectionItem_addNew">
+                        <svg class="tools-sectionSelectionArea-sectionsList-sectionItem__svg" viewBox="0 0 24 24">
+                            <path d="M13 3C13 2.44772 12.5523 2 12 2C11.4477 2 11 2.44772 11 3V11H3C2.44772 11 2 11.4477 2 12C2 12.5523 2.44772 13 3 13H11V21C11 21.5523 11.4477 22 12 22C12.5523 22 13 21.5523 13 21V13H21C21.5523 13 22 12.5523 22 12C22 11.4477 21.5523 11 21 11H13V3Z"></path>
+                        </svg>
                     </div>
                 </div>
             </div>
