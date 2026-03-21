@@ -218,7 +218,7 @@
                     </button>
                 </div>
                 <div class="tools-sectionSelectionArea-sectionsList">
-                    <pre class="tools-sectionSelectionArea-sectionsList_header">Выбранный раздел</pre>
+                    <pre class="tools-sectionSelectionArea-sectionsList_header">Apache2 Docs</pre>
                     <div class="tools-sectionSelectionArea-sectionsList-sectionItem">
                         <svg class="tools-sectionSelectionArea-sectionsList-sectionItem__svg" viewBox="0 0 24 24" fill="none">
                             <circle cx="20" cy="8" r="1" transform="rotate(-180 20 8)" stroke-width="2"></circle>
@@ -241,10 +241,11 @@
                         </svg>
                         <pre class="tools-sectionSelectionArea-sectionsList-sectionItem__pre">Наименование раздела</pre>
                     </div>
-                    <div class="tools-sectionSelectionArea-sectionsList-sectionItem tools-sectionSelectionArea-sectionItem_addNew">
+                    <div class="tools-sectionSelectionArea-sectionsList-sectionItem tools-sectionSelectionArea-sectionsList-sectionItem_addNew">
                         <svg class="tools-sectionSelectionArea-sectionsList-sectionItem__svg" viewBox="0 0 24 24">
                             <path d="M13 3C13 2.44772 12.5523 2 12 2C11.4477 2 11 2.44772 11 3V11H3C2.44772 11 2 11.4477 2 12C2 12.5523 2.44772 13 3 13H11V21C11 21.5523 11.4477 22 12 22C12.5523 22 13 21.5523 13 21V13H21C21.5523 13 22 12.5523 22 12C22 11.4477 21.5523 11 21 11H13V3Z"></path>
                         </svg>
+                        <pre class="tools-sectionSelectionArea-sectionsList-sectionItem__pre">Создать раздел</pre>
                     </div>
                 </div>
             </div>

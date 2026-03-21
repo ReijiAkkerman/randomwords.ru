@@ -96,9 +96,23 @@
   flex-direction: column;
   gap: 5px;
 }
+.tools-sectionSelectionArea-sectionsList_header {
+  position: sticky;
+  top: 0;
+}
 .tools-sectionSelectionArea-sectionsList-sectionItem {
   display: flex;
+  justify-content: center;
   box-sizing: border-box;
+}
+.tools-sectionSelectionArea-sectionsList-sectionItem_addNew > .tools-sectionSelectionArea-sectionsList-sectionItem__pre {
+  display: none;
+}
+.tools-sectionSelectionArea-sectionsList-sectionItem_addNew:first-of-type > .tools-sectionSelectionArea-sectionsList-sectionItem__svg {
+  display: none;
+}
+.tools-sectionSelectionArea-sectionsList-sectionItem_addNew:first-of-type > .tools-sectionSelectionArea-sectionsList-sectionItem__pre {
+  display: block;
 }
 .tools-something {
   height: 100%;

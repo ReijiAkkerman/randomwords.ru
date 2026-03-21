@@ -119,9 +119,27 @@
             flex-direction: column;
             gap: 5px;
 
+            &_header {
+                position: sticky;
+                top: 0;
+            }
+
             &-sectionItem {
                 display: flex;
+                justify-content: center;
                 box-sizing: border-box;
+
+                &_addNew > &__pre {
+                    display: none;
+                }
+
+                &_addNew:first-of-type > &__svg {
+                    display: none;
+                }
+
+                &_addNew:first-of-type > &__pre {
+                    display: block;
+                }
             }
         }
     }
