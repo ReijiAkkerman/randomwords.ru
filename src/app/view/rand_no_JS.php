@@ -219,27 +219,77 @@
                 </div>
                 <div class="tools-sectionSelectionArea-sectionsList">
                     <pre class="tools-sectionSelectionArea-sectionsList_header">Apache2 Docs</pre>
-                    <div class="tools-sectionSelectionArea-sectionsList-sectionItem">
-                        <svg class="tools-sectionSelectionArea-sectionsList-sectionItem__svg" viewBox="0 0 24 24" fill="none">
-                            <circle cx="20" cy="8" r="1" transform="rotate(-180 20 8)" stroke-width="2"></circle>
-                            <circle cx="20" cy="16" r="1" transform="rotate(-180 20 16)" stroke-width="2"></circle>
-                            <circle cx="12" cy="8" r="1" transform="rotate(-180 12 8)" stroke-width="2"></circle>
-                            <circle cx="12" cy="16" r="1" transform="rotate(-180 12 16)" stroke-width="2"></circle>
-                            <circle cx="4" cy="8" r="1" transform="rotate(-180 4 8)" stroke-width="2"></circle>
-                            <circle cx="4" cy="16" r="1" transform="rotate(-180 4 16)" stroke-width="2"></circle>
-                        </svg>
-                        <pre class="tools-sectionSelectionArea-sectionsList-sectionItem__pre">Наименование раздела</pre>
+                    <div class="tools-sectionSelectionArea-sectionsList__div">
+                        <div class="tools-sectionSelectionArea-sectionsList-sectionItem">
+                            <svg class="tools-sectionSelectionArea-sectionsList-sectionItem__svg" viewBox="0 0 24 24" fill="none">
+                                <circle cx="20" cy="8" r="1" transform="rotate(-180 20 8)" stroke-width="2"></circle>
+                                <circle cx="20" cy="16" r="1" transform="rotate(-180 20 16)" stroke-width="2"></circle>
+                                <circle cx="12" cy="8" r="1" transform="rotate(-180 12 8)" stroke-width="2"></circle>
+                                <circle cx="12" cy="16" r="1" transform="rotate(-180 12 16)" stroke-width="2"></circle>
+                                <circle cx="4" cy="8" r="1" transform="rotate(-180 4 8)" stroke-width="2"></circle>
+                                <circle cx="4" cy="16" r="1" transform="rotate(-180 4 16)" stroke-width="2"></circle>
+                            </svg>
+                            <pre class="tools-sectionSelectionArea-sectionsList-sectionItem__pre">Наименование раздела</pre>
+                        </div>
+                        <button class="tools-sectionSelectionArea-sectionsList-sectionItem-increaseNestingLevel__button">
+                            <svg class="tools-sectionSelectionArea-sectionsList-sectionItem-increaseNestingLevel__svg" viewBox="0 0 1024 1024">
+                                <path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z"></path>
+                            </svg>
+                        </button>
                     </div>
-                    <div class="tools-sectionSelectionArea-sectionsList-sectionItem">
-                        <svg class="tools-sectionSelectionArea-sectionsList-sectionItem__svg" viewBox="0 0 24 24" fill="none">
-                            <circle cx="20" cy="8" r="1" transform="rotate(-180 20 8)" stroke-width="2"></circle>
-                            <circle cx="20" cy="16" r="1" transform="rotate(-180 20 16)" stroke-width="2"></circle>
-                            <circle cx="12" cy="8" r="1" transform="rotate(-180 12 8)" stroke-width="2"></circle>
-                            <circle cx="12" cy="16" r="1" transform="rotate(-180 12 16)" stroke-width="2"></circle>
-                            <circle cx="4" cy="8" r="1" transform="rotate(-180 4 8)" stroke-width="2"></circle>
-                            <circle cx="4" cy="16" r="1" transform="rotate(-180 4 16)" stroke-width="2"></circle>
-                        </svg>
-                        <pre class="tools-sectionSelectionArea-sectionsList-sectionItem__pre">Наименование раздела</pre>
+                    <div class="tools-sectionSelectionArea-sectionsList__div">
+                        <div class="tools-sectionSelectionArea-sectionsList-sectionItem">
+                            <svg class="tools-sectionSelectionArea-sectionsList-sectionItem__svg" viewBox="0 0 24 24" fill="none">
+                                <circle cx="20" cy="8" r="1" transform="rotate(-180 20 8)" stroke-width="2"></circle>
+                                <circle cx="20" cy="16" r="1" transform="rotate(-180 20 16)" stroke-width="2"></circle>
+                                <circle cx="12" cy="8" r="1" transform="rotate(-180 12 8)" stroke-width="2"></circle>
+                                <circle cx="12" cy="16" r="1" transform="rotate(-180 12 16)" stroke-width="2"></circle>
+                                <circle cx="4" cy="8" r="1" transform="rotate(-180 4 8)" stroke-width="2"></circle>
+                                <circle cx="4" cy="16" r="1" transform="rotate(-180 4 16)" stroke-width="2"></circle>
+                            </svg>
+                            <pre class="tools-sectionSelectionArea-sectionsList-sectionItem__pre">Наименование раздела</pre>
+                        </div>
+                        <button class="tools-sectionSelectionArea-sectionsList-sectionItem-increaseNestingLevel__button">
+                            <svg class="tools-sectionSelectionArea-sectionsList-sectionItem-increaseNestingLevel__svg" viewBox="0 0 1024 1024">
+                                <path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="tools-sectionSelectionArea-sectionsList__div">
+                        <div class="tools-sectionSelectionArea-sectionsList-sectionItem">
+                            <svg class="tools-sectionSelectionArea-sectionsList-sectionItem__svg" viewBox="0 0 24 24" fill="none">
+                                <circle cx="20" cy="8" r="1" transform="rotate(-180 20 8)" stroke-width="2"></circle>
+                                <circle cx="20" cy="16" r="1" transform="rotate(-180 20 16)" stroke-width="2"></circle>
+                                <circle cx="12" cy="8" r="1" transform="rotate(-180 12 8)" stroke-width="2"></circle>
+                                <circle cx="12" cy="16" r="1" transform="rotate(-180 12 16)" stroke-width="2"></circle>
+                                <circle cx="4" cy="8" r="1" transform="rotate(-180 4 8)" stroke-width="2"></circle>
+                                <circle cx="4" cy="16" r="1" transform="rotate(-180 4 16)" stroke-width="2"></circle>
+                            </svg>
+                            <pre class="tools-sectionSelectionArea-sectionsList-sectionItem__pre">Наименование раздела</pre>
+                        </div>
+                        <button class="tools-sectionSelectionArea-sectionsList-sectionItem-increaseNestingLevel__button">
+                            <svg class="tools-sectionSelectionArea-sectionsList-sectionItem-increaseNestingLevel__svg" viewBox="0 0 1024 1024">
+                                <path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="tools-sectionSelectionArea-sectionsList__div">
+                        <div class="tools-sectionSelectionArea-sectionsList-sectionItem">
+                            <svg class="tools-sectionSelectionArea-sectionsList-sectionItem__svg" viewBox="0 0 24 24" fill="none">
+                                <circle cx="20" cy="8" r="1" transform="rotate(-180 20 8)" stroke-width="2"></circle>
+                                <circle cx="20" cy="16" r="1" transform="rotate(-180 20 16)" stroke-width="2"></circle>
+                                <circle cx="12" cy="8" r="1" transform="rotate(-180 12 8)" stroke-width="2"></circle>
+                                <circle cx="12" cy="16" r="1" transform="rotate(-180 12 16)" stroke-width="2"></circle>
+                                <circle cx="4" cy="8" r="1" transform="rotate(-180 4 8)" stroke-width="2"></circle>
+                                <circle cx="4" cy="16" r="1" transform="rotate(-180 4 16)" stroke-width="2"></circle>
+                            </svg>
+                            <pre class="tools-sectionSelectionArea-sectionsList-sectionItem__pre">Наименование раздела</pre>
+                        </div>
+                        <button class="tools-sectionSelectionArea-sectionsList-sectionItem-increaseNestingLevel__button">
+                            <svg class="tools-sectionSelectionArea-sectionsList-sectionItem-increaseNestingLevel__svg" viewBox="0 0 1024 1024">
+                                <path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z"></path>
+                            </svg>
+                        </button>
                     </div>
                     <div class="tools-sectionSelectionArea-sectionsList-sectionItem tools-sectionSelectionArea-sectionsList-sectionItem_addNew">
                         <svg class="tools-sectionSelectionArea-sectionsList-sectionItem__svg" viewBox="0 0 24 24">

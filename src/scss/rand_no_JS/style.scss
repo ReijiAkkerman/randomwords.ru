@@ -361,9 +361,18 @@
         }
 
         &-sectionsList {
-            max-height: 125px;
+            max-height: 172px;
             overflow-y: auto;
             width: 100%;
+
+            &__div:hover &-sectionItem-increaseNestingLevel__button {
+                border: 1px solid var(--inactive-color);
+            }
+
+            &__div:hover &-sectionItem-increaseNestingLevel__svg {
+                width: 30px;
+                padding: 0 1px 0 2px;
+            }
 
             > * {
                 margin-right: 5px;
@@ -380,30 +389,10 @@
 
             &-sectionItem {
                 cursor: pointer;
+                width: 100%;
                 padding: 5px 15px;
                 border: 1px solid var(--inactive-color);
                 border-radius: var(--block-radius);
-
-                &_addNew {
-                    &:first-of-type {
-                        height: 100%;
-                    }
-                }
-
-                &_addNew:first-of-type > &__svg {
-                    margin: auto;
-                }
-
-                &_addNew:first-of-type > &__pre {
-                    padding: 0;
-                    text-align: center;
-                    margin: auto 0;
-                    font-size: 24px;
-                }
-
-                &_addNew > &__svg {
-                    cursor: inherit;
-                }
 
                 &:hover {
                     border-color: var(--main-border-color);
@@ -435,6 +424,50 @@
                     line-height: 30px;
                     font-size: 20px;
                     padding-left: 15px;
+                    margin-right: auto;
+                }
+
+                &_addNew {
+                    box-sizing: border-box;
+                    width: calc(100% - 5px);
+
+                    &:first-of-type {
+                        height: 100%;
+                    }
+                }
+
+                &_addNew:first-of-type > &__svg {
+                    margin: auto;
+                }
+
+                &_addNew:first-of-type > &__pre {
+                    padding: 0;
+                    text-align: center;
+                    margin: auto 0;
+                    font-size: 24px;
+                }
+
+                &_addNew > &__svg {
+                    cursor: inherit;
+                }
+
+                &-increaseNestingLevel{
+                    &__button {
+                        border-radius: var(--block-radius);
+
+                        &:hover {
+                            border-color: var(--main-border-color) !important;
+                        }
+                    }
+
+                    &__button:hover > &__svg {
+                        fill: var(--main-svg-color);
+                    }
+
+                    &__svg {
+                        width: 0;
+                        padding: 0;
+                    }
                 }
             }
         }
