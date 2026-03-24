@@ -1,0 +1,10 @@
+@mixin button_and_label {
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid var(--inactive-color);
+    border-radius: var(--block-radius);
+
+    &:hover {
+        border-color: var(--main-border-color);
+    }
+}

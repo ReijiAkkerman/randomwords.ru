@@ -1,4 +1,5 @@
 @use "partials/tools/listsControl/selectedSection";
+@use "partials/tools/quickAccessBar/additionalOptions";
 
 .tools {
     border-left: 1px solid var(--main-border-color);
@@ -371,7 +372,7 @@
 
             &__div:hover &-sectionItem-increaseNestingLevel__svg {
                 width: 30px;
-                padding: 0 1px 0 2px;
+                padding: 0 5px;
             }
 
             > * {
@@ -451,7 +452,7 @@
                     cursor: inherit;
                 }
 
-                &-increaseNestingLevel{
+                &-increaseNestingLevel {
                     &__button {
                         border-radius: var(--block-radius);
 
@@ -469,6 +470,97 @@
                         padding: 0;
                     }
                 }
+            }
+        }
+    }
+
+    &-lists {
+
+    }
+
+    &-quickAccessBar {
+        &-languageSwitcher {
+            &__button {
+                padding: 5px;
+                font-size: 22px;
+                color: var(--inactive-color);
+                border: 1px solid var(--inactive-color);
+                min-width: 50px;
+                text-align: center;
+
+                &:first-of-type {
+                    border-top-left-radius: var(--block-radius);
+                    border-bottom-left-radius: var(--block-radius);
+                    border-right: none;
+                }
+
+                &:last-of-type {
+                    border-top-right-radius: var(--block-radius);
+                    border-bottom-right-radius: var(--block-radius);
+                }
+
+                &:hover {
+                    border-color: var(--main-border-color);
+                    color: var(--main-text-color);
+                }
+
+                &:hover + & {
+                    border-left-color: var(--main-border-color);
+                }
+            }
+        }
+
+        &-viewMode {
+            &__label {
+                cursor: pointer;
+                padding: 5px 10px;
+                border: 1px solid var(--inactive-color);
+                border-right: none;
+
+                &:first-of-type {
+                    border-top-left-radius: var(--block-radius);
+                    border-bottom-left-radius: var(--block-radius);
+                }
+
+                &:last-of-type {
+                    border-right: 1px solid var(--inactive-color);
+                    border-top-right-radius: var(--block-radius);
+                    border-bottom-right-radius: var(--block-radius);
+                }
+
+                &:hover {
+                    border-color: var(--main-border-color);
+                }
+
+                &:hover + & {
+                    border-left-color: var(--main-border-color);
+                }
+            }
+
+            &__label:hover > &__svg {
+                fill: var(--main-svg-color);
+            }
+
+            &__label:hover > &__svg.svg-stroke {
+                stroke: var(--main-border-color);
+            }
+        }
+
+        &-additionalOptions {
+            &__button {
+                @include additionalOptions.button_and_label;
+            }
+
+            &__label {
+                @include additionalOptions.button_and_label;
+            }
+
+            &__button:hover > &__svg {
+                fill: var(--main-border-color);
+            }
+
+            &__label:hover > &__svg {
+                fill: var(--main-border-color);
             }
         }
     }

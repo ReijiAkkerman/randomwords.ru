@@ -1,6 +1,6 @@
 .tools {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     flex-direction: column;
     position: fixed;
     top: 0;
@@ -153,7 +153,29 @@
         }
     }
 
-    &-something {
+    &-lists {
         height: 100%;
+    }
+
+    &-quickAccessBar {
+        display: flex;
+        justify-content: space-between;
+
+        &-languageSwitcher {
+            display: flex;
+        }
+
+        &-viewMode {
+            display: flex;
+
+            &__label {
+                display: block;
+            }
+        }
+
+        &-additionalOptions {
+            display: flex;
+            gap: 5px;
+        }
     }
 }

@@ -1,6 +1,6 @@
 .tools {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   flex-direction: column;
   position: fixed;
   top: 0;
@@ -121,8 +121,25 @@
 .tools-sectionSelectionArea-sectionsList-sectionItem_addNew:first-of-type > .tools-sectionSelectionArea-sectionsList-sectionItem__pre {
   display: block;
 }
-.tools-something {
+.tools-lists {
   height: 100%;
+}
+.tools-quickAccessBar {
+  display: flex;
+  justify-content: space-between;
+}
+.tools-quickAccessBar-languageSwitcher {
+  display: flex;
+}
+.tools-quickAccessBar-viewMode {
+  display: flex;
+}
+.tools-quickAccessBar-viewMode__label {
+  display: block;
+}
+.tools-quickAccessBar-additionalOptions {
+  display: flex;
+  gap: 5px;
 }
 
 /*# sourceMappingURL=position.css.map */
