@@ -123,6 +123,13 @@
 }
 .tools-lists {
   height: 100%;
+  overflow-y: auto;
+}
+.tools-lists-listTypeArea {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-bottom: 5px;
 }
 .tools-quickAccessBar {
   display: flex;

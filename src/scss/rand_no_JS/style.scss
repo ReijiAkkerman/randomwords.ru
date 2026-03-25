@@ -475,7 +475,32 @@
     }
 
     &-lists {
+        &-listTypeArea {
+            border-bottom: 1px solid var(--inactive-color);
 
+            &:last-of-type {
+                border-bottom: none;
+            }
+        }
+
+        &-header {
+            font-size: 22px;
+            text-align: center;
+        }
+
+        &-listItem {
+            padding: 3px 10px 3px 15px;
+            color: var(--inactive-color);
+            font-size: 20px;
+            text-align: start;
+            border: 1px solid var(--inactive-color);
+            border-radius: var(--block-radius);
+
+            &:hover {
+                color: var(--main-text-color);
+                border-color: var(--main-border-color);
+            }
+        }
     }
 
     &-quickAccessBar {
