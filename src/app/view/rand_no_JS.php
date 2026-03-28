@@ -9,21 +9,15 @@
         <link rel="stylesheet" href="/src/css/rand_no_JS/style.css">
     </head>
     <body>
-        <!-- Основные окна -->
-        <input class="tools__input" type="radio" name="main_window" id="messages">
-        <input class="tools__input" type="radio" name="main_window" id="default">
-        <input class="tools__input" type="radio" name="main_window" id="alarms">
-        <!-- Управление списками -->
-        <input class="tools__input" type="checkbox" name="selectListsSection_area">
         <main class="tools">
             <div class="tools__div tools-communication">
                 <div class="tools-communication__div">
-                    <label class="tools-communication__label" for="messages">
+                    <button class="tools-communication__label" for="messages">
                         <svg class="tools-communication__svg" viewBox="0 0 32 32">
                             <path d="M25 20.822c0.414-0 0.75-0.336 0.75-0.75v0-18.072c-0-0.414-0.336-0.75-0.75-0.75h-23c-0.414 0-0.75 0.336-0.75 0.75v0 18.072c0 0.414 0.336 0.75 0.75 0.75h5.821v4.178c0 0.292 0.167 0.545 0.411 0.668l0.004 0.002c0.096 0.050 0.21 0.080 0.331 0.080 0.001 0 0.002 0 0.004 0h-0c0.17-0 0.326-0.057 0.452-0.152l-0.002 0.001 6.371-4.777zM14.692 19.473l-5.371 4.027v-3.428c-0-0.414-0.336-0.75-0.75-0.75h-5.821v-16.572h21.5v16.572h-9.107c-0.17 0-0.326 0.057-0.452 0.152l0.002-0.001zM30 9.25h-1c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0h0.25v14.215h-4.965c-0.414 0-0.75 0.336-0.75 0.75v0 2.785l-4.514-3.385c-0.123-0.094-0.279-0.15-0.449-0.15-0 0-0 0-0.001 0h-4.572c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0h4.322l5.514 4.135c0.123 0.094 0.28 0.15 0.449 0.15 0.123 0 0.238-0.030 0.34-0.082l-0.004 0.002c0.247-0.126 0.414-0.378 0.414-0.67v0-3.535h4.965c0.414-0 0.75-0.336 0.75-0.75v0-15.715c-0-0.414-0.336-0.75-0.75-0.75v0z"></path>
                         </svg>
                         <p class="tools-communication__p">4</p>
-                    </label>
+                    </button>
                 </div>
                 <div class="tools-communication-timer">
                     <button class="tools-communication-timer__button tools__button_startTimeCounter">
@@ -41,14 +35,14 @@
                     </button>
                 </div>
                 <div class="tools-communication__div">
-                    <label class="tools-communication__label" for="alarms">
+                    <button class="tools-communication__label" for="alarms">
                         <svg class="tools-communication__svg" viewBox="0 0 36 36">
                             <path d="M32.51,27.83A14.4,14.4,0,0,1,30,24.9a12.63,12.63,0,0,1-1.35-4.81V15.15A10.81,10.81,0,0,0,19.21,4.4V3.11a1.33,1.33,0,1,0-2.67,0V4.42A10.81,10.81,0,0,0,7.21,15.15v4.94A12.63,12.63,0,0,1,5.86,24.9a14.4,14.4,0,0,1-2.47,2.93,1,1,0,0,0-.34.75v1.36a1,1,0,0,0,1,1h27.8a1,1,0,0,0,1-1V28.58A1,1,0,0,0,32.51,27.83ZM5.13,28.94a16.17,16.17,0,0,0,2.44-3,14.24,14.24,0,0,0,1.65-5.85V15.15a8.74,8.74,0,1,1,17.47,0v4.94a14.24,14.24,0,0,0,1.65,5.85,16.17,16.17,0,0,0,2.44,3Z"></path>
                             <path  d="M18,34.28A2.67,2.67,0,0,0,20.58,32H15.32A2.67,2.67,0,0,0,18,34.28Z"></path>
                             <rect x="0" y="0" width="36" height="36" fill-opacity="0"/>
                         </svg>
                         <p class="tools-communication__p">5</p>
-                    </label>
+                    </button>
                 </div>
             </div>
             <div class="tools__div tools-common">
@@ -111,6 +105,24 @@
                 </div>
             </div>
             <div class="tools__div tools-listsControl">
+                <div class="tools-listsControl__div tools-listsControl-selectedSection">
+                    <button class="tools-listsControl-selectedSection-name tools-listsControl-selectedSection-name_cath">
+                        <pre class="tools-listsControl-selectedSection-name__pre">Наименование категории</pre>
+                    </button>
+                    <button class="tools-listsControl-selectedSection-switcher tools-listsControl-selectedSection-switcher_next">
+                        <svg class="tools-listsControl-selectedSection-switcher__svg" viewBox="0 0 1024 1024" style="opacity: 1;">
+                            <path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z"></path>
+                        </svg>
+                    </button>
+                    <button style="display:none;" class="tools-listsControl-selectedSection-switcher tools-listsControl-selectedSection-switcher_back">
+                        <svg style="opacity: 1;" class="tools-listsControl-selectedSection-switcher__svg" viewBox="0 0 1024 1024">
+                            <path d="M768 903.232l-50.432 56.768L256 512l461.568-448 50.432 56.768L364.928 512z"></path>
+                        </svg>
+                    </button>
+                    <button style="display:none;" class="tools-listsControl-selectedSection-name tools-listsControl-selectedSection-name_group">
+                        <pre class="tools-listsControl-selectedSection-name__pre">Наименование группы</pre>                        
+                    </button> 
+                </div>
                 <div class="tools-listsControl__div tools-listsControl-workingGroup">
                     <button class="tools-listsControl-workingGroup-item">
                         <svg class="tools-listsControl-workingGroup-item__svg" viewBox="0 0 32 32" style="opacity: 1;">
@@ -133,24 +145,6 @@
                             <path class="cls-1" d="M8,17a7,7,0,0,0-7,7H7"></path>
                         </svg>
                     </button>
-                </div>
-                <div class="tools-listsControl__div tools-listsControl-selectedSection">
-                    <button class="tools-listsControl-selectedSection-name tools-listsControl-selectedSection-name_cath">
-                        <pre class="tools-listsControl-selectedSection-name__pre">Наименование категории</pre>
-                    </button>
-                    <button class="tools-listsControl-selectedSection-switcher tools-listsControl-selectedSection-switcher_next">
-                        <svg class="tools-listsControl-selectedSection-switcher__svg" viewBox="0 0 1024 1024" style="opacity: 1;">
-                            <path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z"></path>
-                        </svg>
-                    </button>
-                    <button style="display:none;" class="tools-listsControl-selectedSection-switcher tools-listsControl-selectedSection-switcher_back">
-                        <svg style="opacity: 1;" class="tools-listsControl-selectedSection-switcher__svg" viewBox="0 0 1024 1024">
-                            <path d="M768 903.232l-50.432 56.768L256 512l461.568-448 50.432 56.768L364.928 512z"></path>
-                        </svg>
-                    </button>
-                    <button style="display:none;" class="tools-listsControl-selectedSection-name tools-listsControl-selectedSection-name_group">
-                        <pre class="tools-listsControl-selectedSection-name__pre">Наименование группы</pre>                        
-                    </button> 
                 </div>
             </div>
             <div style="display:none;" class="tools__div tools-sectionEditingArea">

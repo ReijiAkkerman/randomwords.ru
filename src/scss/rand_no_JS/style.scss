@@ -162,9 +162,6 @@
         }
 
         &-selectedSection {
-            order: 1;
-            transition: transform 0.6s ease-in-out;
-
             &-name {
                 &__pre {
                     font-size: 18px;
@@ -205,14 +202,7 @@
 
         &-workingGroup {
             background-color: var(--main-background-color);
-            transition: all 0.6s ease-in-out;
-            order: 2;
-
-            &:hover {
-                transform: translateX(-370px);
-                min-width: 100%;
-            }
-
+            
             &-item {
                 padding: 5px;
                 border: 1px solid var(--inactive-color);
@@ -245,10 +235,6 @@
                     stroke: var(--main-svg-color);
                 }
             }
-        }
-
-        &-workingGroup:hover + &-selectedSection {
-            transform: translateX(-362px);
         }
     }
 
