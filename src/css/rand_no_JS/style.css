@@ -127,9 +127,6 @@
   order: 1;
   transition: transform 0.6s ease-in-out;
 }
-.tools-listsControl-selectedSection > label {
-  cursor: pointer;
-}
 .tools-listsControl-selectedSection-name__pre {
   font-size: 18px;
 }
@@ -184,6 +181,9 @@
   border-color: var(--main-border-color);
 }
 .tools-listsControl-selectedSection-switcher_next:hover + label {
+  border-left-color: var(--main-border-color);
+}
+.tools-listsControl-selectedSection-name:hover + .tools-listsControl-selectedSection-switcher, .tools-listsControl-selectedSection-switcher:hover + .tools-listsControl-selectedSection-name {
   border-left-color: var(--main-border-color);
 }
 .tools-listsControl-workingGroup {
@@ -459,31 +459,31 @@
 .tools-quickAccessBar-languageSwitcher__button:hover + .tools-quickAccessBar-languageSwitcher__button {
   border-left-color: var(--main-border-color);
 }
-.tools-quickAccessBar-viewMode__label {
+.tools-quickAccessBar-viewMode__button {
   cursor: pointer;
   padding: 5px 10px;
   border: 1px solid var(--inactive-color);
   border-right: none;
 }
-.tools-quickAccessBar-viewMode__label:first-of-type {
+.tools-quickAccessBar-viewMode__button:first-of-type {
   border-top-left-radius: var(--block-radius);
   border-bottom-left-radius: var(--block-radius);
 }
-.tools-quickAccessBar-viewMode__label:last-of-type {
+.tools-quickAccessBar-viewMode__button:last-of-type {
   border-right: 1px solid var(--inactive-color);
   border-top-right-radius: var(--block-radius);
   border-bottom-right-radius: var(--block-radius);
 }
-.tools-quickAccessBar-viewMode__label:hover {
+.tools-quickAccessBar-viewMode__button:hover {
   border-color: var(--main-border-color);
 }
-.tools-quickAccessBar-viewMode__label:hover + .tools-quickAccessBar-viewMode__label {
+.tools-quickAccessBar-viewMode__button:hover + .tools-quickAccessBar-viewMode__button {
   border-left-color: var(--main-border-color);
 }
-.tools-quickAccessBar-viewMode__label:hover > .tools-quickAccessBar-viewMode__svg {
+.tools-quickAccessBar-viewMode__button:hover > .tools-quickAccessBar-viewMode__svg {
   fill: var(--main-svg-color);
 }
-.tools-quickAccessBar-viewMode__label:hover > .tools-quickAccessBar-viewMode__svg.svg-stroke {
+.tools-quickAccessBar-viewMode__button:hover > .tools-quickAccessBar-viewMode__svg.svg-stroke {
   stroke: var(--main-border-color);
 }
 .tools-quickAccessBar-additionalOptions__button {
@@ -495,19 +495,7 @@
 .tools-quickAccessBar-additionalOptions__button:hover {
   border-color: var(--main-border-color);
 }
-.tools-quickAccessBar-additionalOptions__label {
-  cursor: pointer;
-  padding: 5px;
-  border: 1px solid var(--inactive-color);
-  border-radius: var(--block-radius);
-}
-.tools-quickAccessBar-additionalOptions__label:hover {
-  border-color: var(--main-border-color);
-}
 .tools-quickAccessBar-additionalOptions__button:hover > .tools-quickAccessBar-additionalOptions__svg {
-  fill: var(--main-border-color);
-}
-.tools-quickAccessBar-additionalOptions__label:hover > .tools-quickAccessBar-additionalOptions__svg {
   fill: var(--main-border-color);
 }
 

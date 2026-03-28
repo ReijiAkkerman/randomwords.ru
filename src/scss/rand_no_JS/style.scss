@@ -1,5 +1,4 @@
 @use "partials/tools/listsControl/selectedSection";
-@use "partials/tools/quickAccessBar/additionalOptions";
 
 .tools {
     border-left: 1px solid var(--main-border-color);
@@ -19,7 +18,6 @@
         &-timer {
             &__button {
                 padding: 0 10px;
-                // height: 100%;
 
                 &:first-of-type {
                     padding-right: 9px;
@@ -167,10 +165,6 @@
             order: 1;
             transition: transform 0.6s ease-in-out;
 
-            > label {
-                cursor: pointer;
-            }
-
             &-name {
                 &__pre {
                     font-size: 18px;
@@ -202,6 +196,10 @@
                 &_next {
                     @include selectedSection.right-button;
                 }
+            }
+
+            &-name:hover + &-switcher, &-switcher:hover + &-name {
+                border-left-color: var(--main-border-color);
             }
         }
 
@@ -536,7 +534,7 @@
         }
 
         &-viewMode {
-            &__label {
+            &__button {
                 cursor: pointer;
                 padding: 5px 10px;
                 border: 1px solid var(--inactive-color);
@@ -562,29 +560,28 @@
                 }
             }
 
-            &__label:hover > &__svg {
+            &__button:hover > &__svg {
                 fill: var(--main-svg-color);
             }
 
-            &__label:hover > &__svg.svg-stroke {
+            &__button:hover > &__svg.svg-stroke {
                 stroke: var(--main-border-color);
             }
         }
 
         &-additionalOptions {
             &__button {
-                @include additionalOptions.button_and_label;
-            }
+                cursor: pointer;
+                padding: 5px;
+                border: 1px solid var(--inactive-color);
+                border-radius: var(--block-radius);
 
-            &__label {
-                @include additionalOptions.button_and_label;
+                &:hover {
+                    border-color: var(--main-border-color);
+                }
             }
 
             &__button:hover > &__svg {
-                fill: var(--main-border-color);
-            }
-
-            &__label:hover > &__svg {
                 fill: var(--main-border-color);
             }
         }
