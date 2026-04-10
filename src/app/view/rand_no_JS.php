@@ -147,7 +147,7 @@
                     </button>
                 </div>
             </div>
-            <div style="display:none;" class="tools__div tools-sectionEditingArea"> 
+            <div style="display:none;" class="tools__div tools-sectionEditingArea">  
                 <div class="tools-sectionEditingArea-appearance">
                     <input class="tools-sectionEditingArea-appearance__input" type="text" name="listsSectionName" placeholder="Наименование раздела . . .">
                     <button class="tools-sectionEditingArea-appearance__button_setColor"></button>
