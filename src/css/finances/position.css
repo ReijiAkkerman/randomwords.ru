@@ -1,0 +1,14 @@
+.cathegories {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-around;
+  width: 100%;
+  z-index: 1;
+}
+
+.info-mainPart__button {
+  margin: auto;
+}
+
+/*# sourceMappingURL=position.css.map */

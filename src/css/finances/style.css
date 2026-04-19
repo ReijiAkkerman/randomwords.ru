@@ -1,0 +1,44 @@
+input, label, select, option {
+  font-family: Jura;
+}
+
+.cathegories {
+  border-top: 1px solid var(--inactive-color);
+  background-color: #fff;
+}
+.cathegories__button {
+  padding: 5px;
+}
+
+.info-mainPart__div {
+  margin: 10px;
+}
+.info-mainPart__label {
+  font-size: 20px;
+}
+.info-mainPart__input {
+  font-size: 20px;
+}
+.info-mainPart__input[type=number] {
+  width: 100px;
+  border-bottom: 1px solid var(--inactive-color);
+  border-top: 1px solid var(--inactive-color);
+}
+.info-mainPart__select {
+  font-size: 20px;
+}
+.info-mainPart__option {
+  font-size: 20px;
+}
+.info-mainPart__p {
+  text-align: center;
+  font-size: 25px;
+}
+.info-mainPart__button {
+  border-left: 1px solid var(--main-border-color);
+  border-right: 1px solid var(--main-border-color);
+  font-size: 25px;
+  padding: 5px 15px;
+}
+
+/*# sourceMappingURL=style.css.map */

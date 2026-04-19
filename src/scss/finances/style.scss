@@ -1,0 +1,55 @@
+input, label, select, option {
+    font-family: Jura;
+}
+
+.cathegories {
+    border-top: 1px solid var(--inactive-color);
+    background-color: #fff;
+
+    &__button{
+        padding: 5px;
+
+    }
+}
+
+.info {
+    &-mainPart {
+        &__div {
+            margin: 10px;
+        }
+
+        &__label {
+            font-size: 20px;
+        }
+
+        &__input {
+            font-size: 20px;
+
+            &[type="number"] {
+                width: 100px;
+                border-bottom: 1px solid var(--inactive-color);
+                border-top: 1px solid var(--inactive-color);
+            }
+        }
+
+        &__select {
+            font-size: 20px;
+        }
+
+        &__option {
+            font-size: 20px;
+        }
+
+        &__p {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        &__button {
+            border-left: 1px solid var(--main-border-color);
+            border-right: 1px solid var(--main-border-color);
+            font-size: 25px;
+            padding: 5px 15px;
+        }
+    }
+}
