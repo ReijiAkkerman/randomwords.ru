@@ -14,42 +14,68 @@ input, label, select, option {
 
 .info {
     &-mainPart {
-        &__div {
-            margin: 10px;
-        }
+        &-actions {
+            &-users {
+                &__label {
+                    padding-left: 5px;
+                    font-size: 20px;
+                }
 
-        &__label {
-            font-size: 20px;
-        }
-
-        &__input {
-            font-size: 20px;
-
-            &[type="number"] {
-                width: 100px;
-                border-bottom: 1px solid var(--inactive-color);
-                border-top: 1px solid var(--inactive-color);
+                &__input {
+                    width: 14px;
+                    height: 14px;
+                }
             }
-        }
 
-        &__select {
-            font-size: 20px;
-        }
+            &-params {
+                margin: 0 10px;
 
-        &__option {
-            font-size: 20px;
-        }
+                &__div {
+                    > *:last-child {
+                        width: 70%;
+                    }
+                }
+            }
 
-        &__p {
-            text-align: center;
-            font-size: 25px;
-        }
+            &__label {
+                font-size: 20px;
+            }
 
-        &__button {
-            border-left: 1px solid var(--main-border-color);
-            border-right: 1px solid var(--main-border-color);
-            font-size: 25px;
-            padding: 5px 15px;
+            &__input {
+                padding: 5px 5px 5px 10px;
+                font-size: 20px;
+
+                &[type="number"] {
+                    width: 100%;
+                    border-bottom: 1px solid var(--inactive-color);
+                    border-top: 1px solid var(--inactive-color);
+
+                    &:focus {
+                        border-color: var(--main-border-color);
+                    }
+                }
+            }
+
+            &__select {
+                font-size: 20px;
+            }
+
+            &__option {
+                font-size: 20px;
+            }
+
+            &__p {
+                text-align: center;
+                font-size: 25px;
+            }
+
+            &__button {
+                margin-top: 20px;
+                border-left: 1px solid var(--main-border-color);
+                border-right: 1px solid var(--main-border-color);
+                font-size: 25px;
+                padding: 5px 15px;
+            }
         }
     }
 }

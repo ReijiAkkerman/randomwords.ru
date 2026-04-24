@@ -7,7 +7,41 @@
   z-index: 1;
 }
 
-.info-mainPart__button {
+.info-mainPart-actions-params {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.info-mainPart-actions-params__div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info-mainPart-actions-params__div > div {
+  display: flex;
+  gap: 10px;
+}
+.info-mainPart-actions-users {
+  display: block;
+  position: relative;
+}
+.info-mainPart-actions-users__label {
+  grid-area: name;
+}
+.info-mainPart-actions-users__input {
+  grid-area: checker;
+}
+.info-mainPart-actions-users__div {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 5px;
+}
+.info-mainPart-actions-users__div > div {
+  justify-self: center;
+}
+.info-mainPart-actions__button {
   margin: auto;
 }
 

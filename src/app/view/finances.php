@@ -19,42 +19,49 @@
             <div class="info-mainPart">
                 <div class="info-mainPart-actions">
                     <form action="createEntry" method="POST">
-                        <p class="info-mainPart__p">Параметры операции</p>
-                        <div class="info-mainPart__div">
-                            <label class="info-mainPart__label" for="sum">Сумма:</label>
-                            <input class="info-mainPart__input" type="number" name="sum" id="sum">
-                        </div>
-                        <div class="info-mainPart__div">
-                            <label class="info-mainPart__label" for="currency">Валюта:</label>
-                            <select class="info-mainPart__select" name="currency" id="currency">
-                                <option class="info-mainPart__option" value="рубль" selected>&#8381</option>
-                                <option class="info-mainPart__option" value="доллар">&#36</option>
-                                <option class="info-mainPart__option" value="евро">&#8364</option>
-                                <option class="info-mainPart__option" value="юань">&#165</option>
-                                <option class="info-mainPart__option" value="иена">&#20870</option>
-                            </select>
-                        </div>
-                        <div class="info-mainPart__div">
-                            <label class="info-mainPart__label" for="type">Тип</label>
-                            <select class="info-mainPart__select" name="type" id="type">
-                                <option class="info-mainPart__option" value="продукты">Продукты</option>
-                                <option class="info-mainPart__option" value="проезд">Проезд</option>
-                                <option class="info-mainPart__option" value="вкусняшки">Вкусняшки</option>
-                                <option class="info-mainPart__option" value="быстрое питание">Быстрое питание</option>
-                            </select>
-                        </div>
-                        <div class="info-mainPart__div">
-                            <p class="info-mainPart__p">Пользователи</p>
-                            <div>
-                                <input class="info-mainPart__input" type="checkbox" name="user_0" id="Я">
-                                <label class="info-mainPart__label" for="Я">Я</label>
+                        <div class="info-mainPart-actions__div">
+                            <label for="operation_type">Тип операции:</label>
+                            <select name="operation_type" id="operation_type"></select>
+                            <div class="info-mainPart-actions-users">
+                                <p class="info-mainPart-actions__p">Пользователи</p>
+                                <div class="info-mainPart-actions-users__div">
+                                    <div>
+                                        <input class="info-mainPart-actions-users__input" type="checkbox" name="user_0" id="Я" checked>
+                                        <label class="info-mainPart-actions-users__label" for="Я">Я</label>
+                                    </div>
+                                    <div>
+                                        <input class="info-mainPart-actions-users__input" type="checkbox" name="user_1" id="Катя">
+                                        <label class="info-mainPart-actions-users__label" for="Катя">Катя</label>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <input class="info-mainPart__input" type="checkbox" name="user_1" id="Катя">
-                                <label class="info-mainPart__label" for="Катя">Катя</label>
+                            <div class="info-mainPart-actions-params">
+                                <p class="info-mainPart-actions__p">Параметры операции</p>
+                                <div class="info-mainPart-actions-params__div">
+                                    <label class="info-mainPart-actions__label" for="sum">Сумма:</label>
+                                    <div>
+                                        <input class="info-mainPart-actions__input" type="number" name="sum" id="sum">
+                                        <select class="info-mainPart-actions__select" name="currency" id="currency">
+                                            <option class="info-mainPart-actions__option" value="рубль" selected>&#8381</option>
+                                            <option class="info-mainPart-actions__option" value="доллар">&#36</option>
+                                            <option class="info-mainPart-actions__option" value="евро">&#8364</option>
+                                            <option class="info-mainPart-actions__option" value="юань">&#165</option>
+                                            <option class="info-mainPart-actions__option" value="иена">&#20870</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="info-mainPart-actions-params__div">
+                                    <label class="info-mainPart-actions__label" for="type">Тип:</label>
+                                    <select class="info-mainPart-actions__select" name="type" id="type">
+                                        <option class="info-mainPart-actions__option" value="продукты">Продукты</option>
+                                        <option class="info-mainPart-actions__option" value="проезд">Проезд</option>
+                                        <option class="info-mainPart-actions__option" value="вкусняшки">Вкусняшки</option>
+                                        <option class="info-mainPart-actions__option" value="быстрое питание">Быстрое питание</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
-                        <button class="info-mainPart__button">Сохранить</button>
+                        <button class="info-mainPart-actions__button">Сохранить</button>
                     </form>
                 </div>
                 <div class="info-mainPart-stats"></div>

@@ -9,8 +9,52 @@
 
 .info {
     &-mainPart {
-        &__button {
-            margin: auto;
+        &-actions {
+            &-params {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                &__div {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    > div {
+                        display: flex;
+                        gap: 10px;
+                    }
+                }
+            }
+
+            &-users {
+                display: block;
+                position: relative;
+
+                &__label {
+                    grid-area: name;
+                }
+
+                &__input {
+                    grid-area: checker;
+                }
+
+                &__div {
+                    margin: 10px 0;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    column-gap: 30px;
+                    row-gap: 5px;
+
+                    > div {
+                        justify-self: center;
+                    }
+                }
+            }
+
+            &__button {
+                margin: auto;
+            }
         }
     }
 }

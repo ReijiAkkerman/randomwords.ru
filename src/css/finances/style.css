@@ -10,31 +10,47 @@ input, label, select, option {
   padding: 5px;
 }
 
-.info-mainPart__div {
-  margin: 10px;
-}
-.info-mainPart__label {
+.info-mainPart-actions-users__label {
+  padding-left: 5px;
   font-size: 20px;
 }
-.info-mainPart__input {
+.info-mainPart-actions-users__input {
+  width: 14px;
+  height: 14px;
+}
+.info-mainPart-actions-params {
+  margin: 0 10px;
+}
+.info-mainPart-actions-params__div > *:last-child {
+  width: 70%;
+}
+.info-mainPart-actions__label {
   font-size: 20px;
 }
-.info-mainPart__input[type=number] {
-  width: 100px;
+.info-mainPart-actions__input {
+  padding: 5px 5px 5px 10px;
+  font-size: 20px;
+}
+.info-mainPart-actions__input[type=number] {
+  width: 100%;
   border-bottom: 1px solid var(--inactive-color);
   border-top: 1px solid var(--inactive-color);
 }
-.info-mainPart__select {
+.info-mainPart-actions__input[type=number]:focus {
+  border-color: var(--main-border-color);
+}
+.info-mainPart-actions__select {
   font-size: 20px;
 }
-.info-mainPart__option {
+.info-mainPart-actions__option {
   font-size: 20px;
 }
-.info-mainPart__p {
+.info-mainPart-actions__p {
   text-align: center;
   font-size: 25px;
 }
-.info-mainPart__button {
+.info-mainPart-actions__button {
+  margin-top: 20px;
   border-left: 1px solid var(--main-border-color);
   border-right: 1px solid var(--main-border-color);
   font-size: 25px;
