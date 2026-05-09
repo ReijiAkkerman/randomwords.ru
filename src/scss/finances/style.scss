@@ -1,81 +1,82 @@
-input, label, select, option {
+h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
     font-family: Jura;
 }
 
-.cathegories {
-    border-top: 1px solid var(--inactive-color);
-    background-color: #fff;
-
-    &__button{
-        padding: 5px;
-
+.entry {
+    &-title {
+        text-align: center;
+        background-color: #fff;
+        z-index: 1;
+        border-bottom: 1px solid var(--main-border-color);
     }
-}
 
-.info {
-    &-mainPart {
-        &-actions {
-            &-users {
+    &-param {
+        margin: 5px 0;
+
+        &Name {
+            text-align: center;
+            font-weight: normal;
+            font-size: 25px;
+        }
+
+        &-users {
+            &-user {
                 &__label {
-                    padding-left: 5px;
                     font-size: 20px;
                 }
-
-                &__input {
-                    width: 14px;
-                    height: 14px;
-                }
-            }
-
-            &-params {
-                margin: 0 10px;
-
-                &__div {
-                    > *:last-child {
-                        width: 70%;
-                    }
-                }
-            }
-
-            &__label {
-                font-size: 20px;
-            }
-
-            &__input {
-                padding: 5px 5px 5px 10px;
-                font-size: 20px;
-
-                &[type="number"] {
-                    width: 100%;
-                    border-bottom: 1px solid var(--inactive-color);
-                    border-top: 1px solid var(--inactive-color);
-
-                    &:focus {
-                        border-color: var(--main-border-color);
-                    }
-                }
-            }
-
-            &__select {
-                font-size: 20px;
-            }
-
-            &__option {
-                font-size: 20px;
-            }
-
-            &__p {
-                text-align: center;
-                font-size: 25px;
-            }
-
-            &__button {
-                margin-top: 20px;
-                border-left: 1px solid var(--main-border-color);
-                border-right: 1px solid var(--main-border-color);
-                font-size: 25px;
-                padding: 5px 15px;
             }
         }
+
+        &-cath, &-type, &-currency, &-fund {
+            font-size: 20px;
+            width: calc(100% - 20px);
+            padding-left: 10px;
+            border: none;
+            margin: 5px 10px;
+            outline: none;
+        }
+
+        &__div {
+            width: calc(100% - 20px);
+        }
+
+        &-sum {
+            box-sizing: border-box;
+            width: 100%;
+            font-size: 20px;
+            padding: 5px 15px;
+            border-bottom: 1px solid var(--inactive-color);
+            border-top: 1px solid var(--inactive-color);
+        }
+
+        &-currency {
+            box-sizing: border-box;
+            padding: 0;
+            font-size: 25px;
+            width: fit-content;
+        }
+
+        &-description {
+            box-sizing: border-box;
+            width: calc(100% - 20px);
+            height: 100px;
+            margin: 5px 10px;
+            font-size: 20px;
+            resize: none;
+            border: none;
+            background-color: #0001;
+            outline: none;
+            padding: 0 5px;
+        }
+    }
+
+    &__button {
+        color: var(--main-text-color);
+        font-size: 25px;
+        padding: 5px 20px;
+        border-left: 1px solid var(--main-border-color);
+        border-right: 1px solid var(--main-border-color);
+        margin: 10px auto;
+        background-color: #0000000a;
     }
 }

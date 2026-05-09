@@ -1,60 +1,21 @@
-.cathegories {
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    justify-content: space-around;
-    width: 100%;
-    z-index: 1;
-}
+.entry {
+    &-title {
+        position: sticky;
+        top: 0;
+    }
 
-.info {
-    &-mainPart {
-        &-actions {
-            &-params {
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
+    &-param {
+        &-users {
+            display: flex;
+            justify-content: space-around;
+        }
 
-                &__div {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-
-                    > div {
-                        display: flex;
-                        gap: 10px;
-                    }
-                }
-            }
-
-            &-users {
-                display: block;
-                position: relative;
-
-                &__label {
-                    grid-area: name;
-                }
-
-                &__input {
-                    grid-area: checker;
-                }
-
-                &__div {
-                    margin: 10px 0;
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    column-gap: 30px;
-                    row-gap: 5px;
-
-                    > div {
-                        justify-self: center;
-                    }
-                }
-            }
-
-            &__button {
-                margin: auto;
-            }
+        &__div {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            width: calc(100% - 20px);
+            margin: 5px 10px;
         }
     }
 }
