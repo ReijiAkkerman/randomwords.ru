@@ -2,24 +2,27 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   font-family: Jura;
 }
 
-.entry-title {
+.entries-title {
+  box-sizing: border-box;
+  height: fit-content;
   text-align: center;
   background-color: #fff;
   z-index: 1;
   border-bottom: 1px solid var(--main-border-color);
+  font-size: 30px;
 }
-.entry-param {
+.entries-entry-param {
   margin: 5px 0;
 }
-.entry-paramName {
+.entries-entry-paramName {
   text-align: center;
   font-weight: normal;
+  font-size: 28px;
+}
+.entries-entry-param-users-user__label {
   font-size: 25px;
 }
-.entry-param-users-user__label {
-  font-size: 20px;
-}
-.entry-param-cath, .entry-param-type, .entry-param-currency, .entry-param-fund {
+.entries-entry-param-cath, .entries-entry-param-type, .entries-entry-param-currency, .entries-entry-param-fund {
   font-size: 20px;
   width: calc(100% - 20px);
   padding-left: 10px;
@@ -27,10 +30,10 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   margin: 5px 10px;
   outline: none;
 }
-.entry-param__div {
+.entries-entry-param__div {
   width: calc(100% - 20px);
 }
-.entry-param-sum {
+.entries-entry-param-sum {
   box-sizing: border-box;
   width: 100%;
   font-size: 20px;
@@ -38,16 +41,16 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   border-bottom: 1px solid var(--inactive-color);
   border-top: 1px solid var(--inactive-color);
 }
-.entry-param-currency {
+.entries-entry-param-currency {
   box-sizing: border-box;
   padding: 0;
   font-size: 25px;
   width: fit-content;
 }
-.entry-param-description {
+.entries-entry-param-description {
   box-sizing: border-box;
   width: calc(100% - 20px);
-  height: 100px;
+  height: 200px;
   margin: 5px 10px;
   font-size: 20px;
   resize: none;
@@ -56,7 +59,7 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   outline: none;
   padding: 0 5px;
 }
-.entry__button {
+.entries-entry__button {
   color: var(--main-text-color);
   font-size: 25px;
   padding: 5px 20px;
@@ -64,6 +67,45 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   border-right: 1px solid var(--main-border-color);
   margin: 10px auto;
   background-color: rgba(0, 0, 0, 0.0392156863);
+}
+.entries-list {
+  padding: 0 10px 10px 10px;
+}
+.entries-list-date {
+  font-size: 25px;
+  text-align: center;
+  margin: 10px 0;
+}
+.entries-list-item {
+  border: 1px solid var(--inactive-color);
+  border-radius: var(--block-radius);
+}
+.entries-list-item-userColors {
+  flex-shrink: 0;
+  flex-grow: 1;
+  box-sizing: border-box;
+  height: 100%;
+}
+.entries-list-item-userColors > div:first-child {
+  border-top-left-radius: calc(var(--block-radius) - 1px);
+  border-bottom-left-radius: calc(var(--block-radius) - 1px);
+}
+.entries-list-item-mainInfo {
+  box-sizing: border-box;
+  padding: 5px 10px 5px 20px;
+  height: 100%;
+  border-top-right-radius: calc(var(--block-radius) - 1px);
+  border-bottom-right-radius: calc(var(--block-radius) - 1px);
+}
+.entries-list-item-mainInfo_type {
+  font-size: 25px;
+  padding-right: 25px;
+}
+.entries-list-item-mainInfo__div {
+  margin-top: 5px;
+}
+.entries-list-item-mainInfo_sum, .entries-list-item-mainInfo_time {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

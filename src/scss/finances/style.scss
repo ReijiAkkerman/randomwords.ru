@@ -2,81 +2,134 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
     font-family: Jura;
 }
 
-.entry {
+.entries {
     &-title {
+        box-sizing: border-box;
+        height: fit-content;
         text-align: center;
         background-color: #fff;
         z-index: 1;
         border-bottom: 1px solid var(--main-border-color);
+        font-size: 30px;
     }
 
-    &-param {
-        margin: 5px 0;
+    &-entry {
+        &-param {
+            margin: 5px 0;
 
-        &Name {
-            text-align: center;
-            font-weight: normal;
-            font-size: 25px;
+            &Name {
+                text-align: center;
+                font-weight: normal;
+                font-size: 28px;
+            }
+
+            &-users {
+                &-user {
+                    &__label {
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            &-cath, &-type, &-currency, &-fund {
+                font-size: 20px;
+                width: calc(100% - 20px);
+                padding-left: 10px;
+                border: none;
+                margin: 5px 10px;
+                outline: none;
+            }
+
+            &__div {
+                width: calc(100% - 20px);
+            }
+
+            &-sum {
+                box-sizing: border-box;
+                width: 100%;
+                font-size: 20px;
+                padding: 5px 15px;
+                border-bottom: 1px solid var(--inactive-color);
+                border-top: 1px solid var(--inactive-color);
+            }
+
+            &-currency {
+                box-sizing: border-box;
+                padding: 0;
+                font-size: 25px;
+                width: fit-content;
+            }
+
+            &-description {
+                box-sizing: border-box;
+                width: calc(100% - 20px);
+                height: 200px;
+                margin: 5px 10px;
+                font-size: 20px;
+                resize: none;
+                border: none;
+                background-color: #0001;
+                outline: none;
+                padding: 0 5px;
+            }
         }
 
-        &-users {
-            &-user {
-                &__label {
+        &__button {
+            color: var(--main-text-color);
+            font-size: 25px;
+            padding: 5px 20px;
+            border-left: 1px solid var(--main-border-color);
+            border-right: 1px solid var(--main-border-color);
+            margin: 10px auto;
+            background-color: #0000000a;
+        }
+    }
+
+    &-list {
+        padding: 0 10px 10px 10px;
+
+        &-date {
+            font-size: 25px;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        &-item {
+            border: 1px solid var(--inactive-color);
+            border-radius: var(--block-radius);
+
+            &-userColors {
+                flex-shrink: 0;
+                flex-grow: 1;
+                box-sizing: border-box;
+                height: 100%;
+
+                > div:first-child {
+                    border-top-left-radius: calc(var(--block-radius) - 1px);
+                    border-bottom-left-radius: calc(var(--block-radius) - 1px);
+                }
+            }
+
+            &-mainInfo {
+                box-sizing: border-box;
+                padding: 5px 10px 5px 20px;
+                height: 100%;
+                border-top-right-radius: calc(var(--block-radius) - 1px);
+                border-bottom-right-radius: calc(var(--block-radius) - 1px);
+
+                &_type {
+                    font-size: 25px;
+                    padding-right: 25px;
+                }
+
+                &__div {
+                    margin-top: 5px;
+                }
+
+                &_sum, &_time {
                     font-size: 20px;
                 }
             }
         }
-
-        &-cath, &-type, &-currency, &-fund {
-            font-size: 20px;
-            width: calc(100% - 20px);
-            padding-left: 10px;
-            border: none;
-            margin: 5px 10px;
-            outline: none;
-        }
-
-        &__div {
-            width: calc(100% - 20px);
-        }
-
-        &-sum {
-            box-sizing: border-box;
-            width: 100%;
-            font-size: 20px;
-            padding: 5px 15px;
-            border-bottom: 1px solid var(--inactive-color);
-            border-top: 1px solid var(--inactive-color);
-        }
-
-        &-currency {
-            box-sizing: border-box;
-            padding: 0;
-            font-size: 25px;
-            width: fit-content;
-        }
-
-        &-description {
-            box-sizing: border-box;
-            width: calc(100% - 20px);
-            height: 100px;
-            margin: 5px 10px;
-            font-size: 20px;
-            resize: none;
-            border: none;
-            background-color: #0001;
-            outline: none;
-            padding: 0 5px;
-        }
-    }
-
-    &__button {
-        color: var(--main-text-color);
-        font-size: 25px;
-        padding: 5px 20px;
-        border-left: 1px solid var(--main-border-color);
-        border-right: 1px solid var(--main-border-color);
-        margin: 10px auto;
-        background-color: #0000000a;
     }
 }
