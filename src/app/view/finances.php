@@ -10,10 +10,10 @@
         <link rel="stylesheet" href="/src/css/finances/style.css">
     </head>
     <body>
+        <h1 class="title">Создание фонда</h1>
         <section class="entries">
-            <h1 class="entries-title">Наименование фонда</h1>
             <div class="entries__div">
-                <div class="entries-list">
+                <div class="entries-list" style="display:none;">
 
                     <p class="entries-list-date">2020-12-12</p>
                     <button class="entries-list-item">
@@ -74,6 +74,37 @@
                 </div>
             </div>
         </section>
-        <section class="funds"></section>
+        <section class="funds">
+            <div class="funds-list" style="display:none;">
+                <button class="funds-list-item__button">
+                    <div class="funds-list-item" style="background-color:#0f04">
+                        <p class="funds-list-item_title">Повседневные расходы</p>
+                        <p class="funds-list-item_sum">5000<span class="funds-list-item_currency"> &#8381</span></p>
+                        <p class="funds-list-item_sum">200<span class="funds-list-item_currency"> &#36</span></p>
+                    </div>
+                </button>
+            </div>
+            <div class="funds-fund">
+                <form class="funds-fund__form" action="#" method="POST">
+                    <input class="funds-fund__input" type="text" name="fund_name" placeholder="Наименование фонда">
+                    <input type="hidden" name="fund_color">
+                    <p class="funds-fund_titleForColors">Цвет фонда</p>
+                    <div class="funds-fund-colors">
+                        <button class="funds-fund-colors-color" style="background-color:#840;"></button>
+                        <button class="funds-fund-colors-color" style="background-color:#f00;"></button>
+                        <button class="funds-fund-colors-color" style="background-color:#f0f;"></button>
+                        <button class="funds-fund-colors-color" style="background-color:#090;"></button>
+                        <button class="funds-fund-colors-color" style="background-color:#0f0;"></button>
+                        <button class="funds-fund-colors-color" style="background-color:#00f;"></button>
+                        <button class="funds-fund-colors-color" style="background-color:#0ff;"></button>
+                        <button class="funds-fund-colors-color" style="background-color:#ff0;"></button>
+                        <button class="funds-fund-colors-color" style="background-color:#fff;"></button>
+                        <button class="funds-fund-colors-color" style="background-color:#aaa;"></button>
+                    </div>
+                    <button class="funds-fund_save">Сохранить</button>
+                </form>
+
+            </div>
+        </section>
     </body>
 </html>
