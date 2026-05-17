@@ -156,4 +156,12 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   border-right: 1px solid var(--inactive-color);
 }
 
+.switcher__button {
+  border-top: 1px solid var(--inactive-color);
+  border-left: 1px solid var(--inactive-color);
+}
+.switcher__button:first-child {
+  border-left: none;
+}
+
 /*# sourceMappingURL=style.css.map */
