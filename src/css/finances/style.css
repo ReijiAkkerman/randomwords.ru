@@ -157,11 +157,15 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
 }
 
 .switcher__button {
+  background-color: #fff;
   border-top: 1px solid var(--inactive-color);
   border-left: 1px solid var(--inactive-color);
 }
 .switcher__button:first-child {
   border-left: none;
+}
+.switcher__svg {
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

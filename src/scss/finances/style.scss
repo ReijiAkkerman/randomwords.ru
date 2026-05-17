@@ -198,11 +198,16 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
 
 .switcher {
     &__button {
+        background-color: #fff;
         border-top: 1px solid var(--inactive-color);
         border-left: 1px solid var(--inactive-color);
 
         &:first-child {
             border-left: none;
         }
+    }
+
+    &__svg {
+        padding: 10px;
     }
 }
