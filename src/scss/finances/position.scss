@@ -97,6 +97,15 @@ body {
     }
 }
 
+.addNew {
+    &__button {
+        position: fixed;
+        bottom: 70px;
+        right: 20px;
+        opacity: 0.5;
+    }
+}
+
 .switcher {
     display: flex;
     justify-content: space-between;

@@ -196,12 +196,19 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
     }
 }
 
+.addNew {
+    &__button {
+        border: 1px solid var(--inactive-color);
+        border-radius: var(--block-radius);
+        padding: 10px;
+    }
+}
+
 .switcher {
     &__button {
         background-color: #fff;
         border-top: 1px solid var(--inactive-color);
         border-left: 1px solid var(--inactive-color);
-        border
 
         &:first-child {
             border-left: none;

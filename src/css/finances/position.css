@@ -75,6 +75,13 @@ body > .mainWindow {
   height: 100%;
 }
 
+.addNew__button {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  opacity: 0.5;
+}
+
 .switcher {
   display: flex;
   justify-content: space-between;
