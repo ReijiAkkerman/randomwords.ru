@@ -8,6 +8,7 @@ body {
 }
 body > .mainWindow {
   height: 100%;
+  overflow-y: auto;
 }
 
 .title {
@@ -85,7 +86,7 @@ body > .mainWindow {
 .switcher {
   display: flex;
   justify-content: space-between;
-  z-index: 1;
+  z-index: 10;
   bottom: 0;
   width: 100%;
 }

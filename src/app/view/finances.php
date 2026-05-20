@@ -135,5 +135,7 @@
         </section>
 
         <script type="module" src="/src/js/finances/view/switcher.js"></script>
+        <script type="module" src="/src/js/finances/view/add_new_button.js"></script>
+        <script type="module" src="/src/js/finances/view/forms.js"></script>
     </body>
 </html>

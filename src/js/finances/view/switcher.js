@@ -1,5 +1,5 @@
 class Switcher {
-    static #selectors = new Map([
+    #selectors = new Map([
         ["Кнопка отображения фондов", ".switcher-funds"],
         ["Кнопка отображения записей фонда", ".switcher-selectedFund"],
         ["Кнопка отображения настроек", ".switcher-settings"],
@@ -10,8 +10,6 @@ class Switcher {
 
         ["Наименование открытой области", ".title"],
 
-        ["Кнопка добавления чего-либо", ".addNew__button"],
-
         ["", ""],
         ["", ""],
     ]);
@@ -20,104 +18,98 @@ class Switcher {
 
 
 
-    static #CE(selector) {
-        return document.querySelector(Switcher.#selectors.get(selector));
+    #CE(selector) {
+        return document.querySelector(this.#selectors.get(selector));
     }
 
 
 
 
 
-    static funds__button = Switcher.#CE("Кнопка отображения фондов");
-    static entries__button = Switcher.#CE("Кнопка отображения записей фонда");
-    static settings__button = Switcher.#CE("Кнопка отображения настроек");
+    funds__button = this.#CE("Кнопка отображения фондов");
+    entries__button = this.#CE("Кнопка отображения записей фонда");;
+    settings__button = this.#CE("Кнопка отображения настроек");
 
-    static #funds__area = Switcher.#CE("Область фондов");
-    static #entries__area = Switcher.#CE("Область записей");
-    static #settings__area = Switcher.#CE("Область настроек");
+    #funds__area = this.#CE("Область фондов");
+    #entries__area = this.#CE("Область записей");
+    #settings__area = this.#CE("Область настроек");
 
-    static #title = Switcher.#CE("Наименование открытой области");
-
-    static #addNew__button = Switcher.#CE("Кнопка добавления чего-либо");
+    #title = this.#CE("Наименование открытой области");
 
 
 
 
-
-    static #areas = new Map([
-        ["funds", [Switcher.#funds__area, Switcher.funds__button]],
-        ["entries", [Switcher.#entries__area, Switcher.entries__button]],
-        ["settings", [Switcher.#settings__area, Switcher.settings__button]],
+    #areas = new Map([
+        ["funds", [this.#funds__area, this.funds__button]],
+        ["entries", [this.#entries__area, this.entries__button]],
+        ["settings", [this.#settings__area, this.settings__button]],
     ]);
-    static SELECTED_AREA = "funds";
+    SELECTED_AREA = "funds";
 
 
 
 
 
 
-    static showFunds() {
-        Switcher.#showAddNewButton();
-        Switcher.#showSelectedArea(this);
-        Switcher.#exchangeTitle(this);
+    showFunds() {
+        switcher.#showSelectedArea(this);
+        switcher.#exchangeTitle(this);
     }
 
-    static showEntries() {
-        Switcher.#showAddNewButton();
-        Switcher.#showSelectedArea(this);
-        Switcher.#exchangeTitle(this);
+    showEntries() {
+        switcher.#showSelectedArea(this);
+        switcher.#exchangeTitle(this);
     }
 
-    static showSettings() {
-        Switcher.#hideAddNewButton();
-        Switcher.#showSelectedArea(this);
-        Switcher.#exchangeTitle(this);
+    showSettings() {
+        switcher.#showSelectedArea(this);
+        switcher.#exchangeTitle(this);
     }
 
-    static #showSelectedArea(selected_button) {
-        Switcher.#disablePreviousSelectedArea();
-        Switcher.#disablePreviousSelectedButton();
-        Switcher.#enableCurrentSelectedButton(selected_button);
-        Switcher.#enableCurrentSelectedArea();
+    #showSelectedArea(selected_button) {
+        this.#disablePreviousSelectedArea();
+        this.#disablePreviousSelectedButton();
+        this.#enableCurrentSelectedButton(selected_button);
+        this.#enableCurrentSelectedArea();
     }
 
-    static #exchangeTitle(selected_button) {
-        Switcher.#title.innerText = selected_button.dataset.title;
+    #exchangeTitle(selected_button) {
+        this.#title.innerText = selected_button.dataset.title;
     }
 
 
 
 
 
-    static #enableCurrentSelectedButton(selected_button) {
-        Switcher.#SET_SELECTED_AREA(selected_button);
-        Switcher.#_hideButtonBorderline(selected_button);
+    #enableCurrentSelectedButton(selected_button) {
+        this.#SET_SELECTED_AREA(selected_button);
+        this.#_hideButtonBorderline(selected_button);
     }
 
-    static #enableCurrentSelectedArea() {
-        let area = Switcher.#areas.get(Switcher.SELECTED_AREA)[0];
+    #enableCurrentSelectedArea() {
+        let area = this.#areas.get(this.SELECTED_AREA)[0];
         area.style.display = "";
     }
 
-    static #disablePreviousSelectedArea() {
-        let area = Switcher.#areas.get(Switcher.SELECTED_AREA)[0];
+    #disablePreviousSelectedArea() {
+        let area = this.#areas.get(this.SELECTED_AREA)[0];
         area.style.display = "none";
     }
 
-    static #disablePreviousSelectedButton() {
-        let button = Switcher.#areas.get(Switcher.SELECTED_AREA)[1];
-        Switcher.#_showButtonBorderline(button);
+    #disablePreviousSelectedButton() {
+        let button = this.#areas.get(this.SELECTED_AREA)[1];
+        this.#_showButtonBorderline(button);
     }
 
 
 
 
 
-    static #_showButtonBorderline(button) {
+    #_showButtonBorderline(button) {
         button.style.borderTopColor = "";
     }
 
-    static #_hideButtonBorderline(button) {
+    #_hideButtonBorderline(button) {
         button.style.borderTopColor = "#0000";
     }
 
@@ -125,25 +117,15 @@ class Switcher {
 
 
 
-    static #hideAddNewButton() {
-        Switcher.#addNew__button.style.display = "none";
-    }
-
-    static #showAddNewButton() {
-        Switcher.#addNew__button.style.display = "";
-    }
-
-
-
-
-
-    static #SET_SELECTED_AREA(button) {
-        Switcher.SELECTED_AREA = button.dataset.section;
+    #SET_SELECTED_AREA(button) {
+        this.SELECTED_AREA = button.dataset.section;
     }
 }
 
+export var switcher = new Switcher();
+
 document.addEventListener("DOMContentLoaded", function() {
-    Switcher.funds__button.addEventListener('click', Switcher.showFunds);
-    Switcher.entries__button.addEventListener('click', Switcher.showEntries);
-    Switcher.settings__button.addEventListener('click', Switcher.showSettings);
+    switcher.funds__button.addEventListener('click', switcher.showFunds);
+    switcher.entries__button.addEventListener('click', switcher.showEntries);
+    switcher.settings__button.addEventListener('click', switcher.showSettings);
 });
