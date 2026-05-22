@@ -10,18 +10,18 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   padding: 5px;
 }
 
-.entries-entry-param {
+.entries-entryForm-param {
   margin: 5px 0;
 }
-.entries-entry-paramName {
+.entries-entryForm-paramName {
   text-align: center;
   font-weight: normal;
   font-size: 28px;
 }
-.entries-entry-param-users-user__label {
+.entries-entryForm-param-users-user__label {
   font-size: 25px;
 }
-.entries-entry-param-cath, .entries-entry-param-type, .entries-entry-param-currency, .entries-entry-param-fund {
+.entries-entryForm-param-cath, .entries-entryForm-param-type, .entries-entryForm-param-currency, .entries-entryForm-param-fund {
   font-size: 20px;
   width: calc(100% - 20px);
   padding-left: 10px;
@@ -29,10 +29,10 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   margin: 5px 10px;
   outline: none;
 }
-.entries-entry-param__div {
+.entries-entryForm-param__div {
   width: calc(100% - 20px);
 }
-.entries-entry-param-sum {
+.entries-entryForm-param-sum {
   box-sizing: border-box;
   width: 100%;
   font-size: 20px;
@@ -40,13 +40,13 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   border-bottom: 1px solid var(--inactive-color);
   border-top: 1px solid var(--inactive-color);
 }
-.entries-entry-param-currency {
+.entries-entryForm-param-currency {
   box-sizing: border-box;
   padding: 0;
   font-size: 25px;
   width: fit-content;
 }
-.entries-entry-param-description {
+.entries-entryForm-param-description {
   box-sizing: border-box;
   width: calc(100% - 20px);
   height: 200px;
@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   outline: none;
   padding: 0 5px;
 }
-.entries-entry__button {
+.entries-entryForm__button {
   color: var(--main-text-color);
   font-size: 25px;
   padding: 5px 20px;
@@ -106,6 +106,11 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
 .entries-list-item-mainInfo_sum, .entries-list-item-mainInfo_time {
   font-size: 20px;
 }
+.entries-showFormButton {
+  padding: 10px;
+  border: 1px solid var(--inactive-color);
+  border-radius: 10px;
+}
 
 .funds {
   padding: 10px;
@@ -126,7 +131,7 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   font-size: 20px;
   text-align: left;
 }
-.funds-fund__input {
+.funds-fundForm__input {
   box-sizing: border-box;
   font-size: 20px;
   padding: 5px 5px 5px 20px;
@@ -135,20 +140,20 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   border-top: 1px solid var(--inactive-color);
   width: 100%;
 }
-.funds-fund__input:focus {
+.funds-fundForm__input:focus {
   border-color: var(--main-border-color);
 }
-.funds-fund_titleForColors {
+.funds-fundForm_titleForColors {
   font-size: 22px;
   text-align: center;
   margin-bottom: 10px;
 }
-.funds-fund-colors-color {
+.funds-fundForm-colors-color {
   box-sizing: border-box;
   border: 1px solid var(--inactive-color);
   border-radius: var(--block-radius);
 }
-.funds-fund__button {
+.funds-fundForm__button {
   font-size: 25px;
   margin: 10px;
   padding: 5px 15px;
@@ -156,11 +161,10 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   border-right: 1px solid var(--main-border-color);
   background-color: rgba(0, 0, 0, 0.0392156863);
 }
-
-.addNew__button {
-  border: 1px solid var(--inactive-color);
-  border-radius: var(--block-radius);
+.funds-showFormButton {
   padding: 10px;
+  border: 1px solid var(--inactive-color);
+  border-radius: 10px;
 }
 
 .switcher__button {

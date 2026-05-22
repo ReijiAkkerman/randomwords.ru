@@ -19,7 +19,7 @@ body {
 }
 
 .entries {
-    &-entry {
+    &-entryForm {
         &-param {
             &-users {
                 display: flex;
@@ -73,6 +73,12 @@ body {
             }
         }
     }
+
+    &-showFormButton {
+        position: fixed;
+        bottom: 70px;
+        right: 20px;
+    }
 }
 
 .funds {
@@ -88,7 +94,7 @@ body {
         }
     }
 
-    &-fund {
+    &-fundForm {
         &-colors {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
@@ -106,14 +112,11 @@ body {
             justify-content: center;
         }
     }
-}
 
-.addNew {
-    &__button {
+    &-showFormButton {
         position: fixed;
         bottom: 70px;
         right: 20px;
-        opacity: 0.5;
     }
 }
 

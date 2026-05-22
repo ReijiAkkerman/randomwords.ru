@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
 }
 
 .entries {
-    &-entry {
+    &-entryForm {
         &-param {
             margin: 5px 0;
 
@@ -130,6 +130,12 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
             }
         }
     }
+
+    &-showFormButton {
+        padding: 10px;
+        border: 1px solid var(--inactive-color);
+        border-radius: 10px;
+    }
 }
 
 .funds {
@@ -157,7 +163,7 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
         }
     }
 
-    &-fund {
+    &-fundForm {
         &__input {
             box-sizing: border-box;
             font-size: 20px;
@@ -195,13 +201,11 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
             background-color: #0000000a;
         }
     }
-}
 
-.addNew {
-    &__button {
-        border: 1px solid var(--inactive-color);
-        border-radius: var(--block-radius);
+    &-showFormButton {
         padding: 10px;
+        border: 1px solid var(--inactive-color);
+        border-radius: 10px;
     }
 }
 

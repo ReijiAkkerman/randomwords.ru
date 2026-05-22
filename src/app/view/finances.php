@@ -31,47 +31,47 @@
                     </button>
 
                 </div>
-                <div class="entries-entry" style="display:none;">
+                <div class="entries-entryForm" style="display:none;">
                     <form action="#" method="POST">
-                        <h2 class="entries-entry-paramName">Фонд</h2>
-                        <select class="entries-entry-param-fund" name="" id="">
-                            <option class="entries-entry-param-fund__option" value="Повседневное">Повседневное</option>
+                        <h2 class="entries-entryForm-paramName">Фонд</h2>
+                        <select class="entries-entryForm-param-fund" name="" id="">
+                            <option class="entries-entryForm-param-fund__option" value="Повседневное">Повседневное</option>
                         </select>
-                        <h2 class="entries-entry-paramName">Категория</h2>
-                        <select class="entries-entry-param entries-entry-param-cath" name="cathegory" id="">
-                            <option class="entries-entry-param-cath__option" value="loss" selected>Убыток</option>
-                            <option class="entries-entry-param-cath__option" value="income">Прибыль</option>
+                        <h2 class="entries-entryForm-paramName">Категория</h2>
+                        <select class="entries-entryForm-param entries-entryForm-param-cath" name="cathegory" id="">
+                            <option class="entries-entryForm-param-cath__option" value="loss" selected>Убыток</option>
+                            <option class="entries-entryForm-param-cath__option" value="income">Прибыль</option>
                         </select>
-                        <h2 class="entries-entry-paramName">Тип</h2>
-                        <select class="entries-entry-param entries-entry-param-type" name="type" id="">
-                            <option class="entries-entry-param-type__option" value="Еда" selected>Еда</option>
-                            <option class="entries-entry-param-type__option" value="Проезд">Проезд</option>
+                        <h2 class="entries-entryForm-paramName">Тип</h2>
+                        <select class="entries-entryForm-param entries-entryForm-param-type" name="type" id="">
+                            <option class="entries-entryForm-param-type__option" value="Еда" selected>Еда</option>
+                            <option class="entries-entryForm-param-type__option" value="Проезд">Проезд</option>
                         </select>
-                        <h2 class="entries-entry-paramName">Пользователь</h2>
-                        <div class="entries-entry-param entries-entry-param-users">
-                            <div class="entries-entry-param-users-user">
-                                <input class="entries-entry-param-users-user__input" type="checkbox" id="Я" value="Я" checked>
-                                <label class="entries-entry-param-users-user__label" for="Я">Я</label>
+                        <h2 class="entries-entryForm-paramName">Пользователь</h2>
+                        <div class="entries-entry-Formparam entries-entryForm-param-users">
+                            <div class="entries-entryForm-param-users-user">
+                                <input class="entries-entryForm-param-users-user__input" type="checkbox" id="Я" value="Я" checked>
+                                <label class="entries-entryForm-param-users-user__label" for="Я">Я</label>
                             </div>
-                            <div class="entries-entry-param-users-user">
-                                <input class="entries-entry-param-users-user__input" type="checkbox" id="Катя" value="Катя">
-                                <label class="entries-entry-param-users-user__label" for="Катя">Катя</label>
+                            <div class="entries-entryForm-param-users-user">
+                                <input class="entries-entryForm-param-users-user__input" type="checkbox" id="Катя" value="Катя">
+                                <label class="entries-entryForm-param-users-user__label" for="Катя">Катя</label>
                             </div>
                         </div>
-                        <h2 class="entries-entry-paramName">Основные параметры</h2>
-                        <div class="entries-entry-param">
-                            <div class="entries-entry-param__div">
-                                <input class="entries-entry-param-sum" name="sum" type="number" placeholder="Сумма">
-                                <select class="entries-entry-param-currency" name="" id="">
-                                    <option class="entries-entry-param-currency__option" value="">&#8381</option>
-                                    <option class="entries-entry-param-currency__option" value="">&#36</option>
+                        <h2 class="entries-entryForm-paramName">Основные параметры</h2>
+                        <div class="entries-entryForm-param">
+                            <div class="entries-entryForm-param__div">
+                                <input class="entries-entryForm-param-sum" name="sum" type="number" placeholder="Сумма">
+                                <select class="entries-entryForm-param-currency" name="" id="">
+                                    <option class="entries-entryForm-param-currency__option" value="">&#8381</option>
+                                    <option class="entries-entryForm-param-currency__option" value="">&#36</option>
                                 </select>
                             </div>
-                            <textarea class="entries-entry-param-description" name="description" id="" placeholder="Описание"></textarea>
+                            <textarea class="entries-entryForm-param-description" name="description" id="" placeholder="Описание"></textarea>
                         </div>
-                        <div class="entries-entry-actionButtons">
-                            <button class="entries-entry__button entries-entry_save">Сохранить</button>
-                            <button class="entries-entry__button entries-entry_close">
+                        <div class="entries-entryForm-actionButtons">
+                            <button class="entries-entryForm__button entries-entryForm_save">Сохранить</button>
+                            <button class="entries-entryForm__button entries-entryForm_close">
                                 <svg viewBox="0 0 24 24" fill="none">
                                     <path d="M6 6L18 18" stroke="#444" stroke-width="2" stroke-linecap="round"/>
                                     <path d="M18 6L6 18" stroke="#444" stroke-width="2" stroke-linecap="round"/>
@@ -80,6 +80,11 @@
                         </div>
                     </form>
                 </div>
+                <button class="entries-showFormButton">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M13 3C13 2.44772 12.5523 2 12 2C11.4477 2 11 2.44772 11 3V11H3C2.44772 11 2 11.4477 2 12C2 12.5523 2.44772 13 3 13H11V21C11 21.5523 11.4477 22 12 22C12.5523 22 13 21.5523 13 21V13H21C21.5523 13 22 12.5523 22 12C22 11.4477 21.5523 11 21 11H13V3Z"/>
+                    </svg>
+                </button>
             </div>
         </section>
         <section class="mainWindow funds" data-section="funds">
@@ -92,26 +97,26 @@
                     </div>
                 </button>
             </div>
-            <div class="funds-fund" style="display:none;">
-                <form class="funds-fund__form" action="#" method="POST">
-                    <input class="funds-fund__input" type="text" name="fund_name" placeholder="Наименование фонда">
+            <div class="funds-fundForm" style="display:none;">
+                <form class="funds-fundForm__form" action="#" method="POST">
+                    <input class="funds-fundForm__input" type="text" name="fund_name" placeholder="Наименование фонда">
                     <input type="hidden" name="fund_color">
-                    <p class="funds-fund_titleForColors">Цвет фонда</p>
-                    <div class="funds-fund-colors">
-                        <button class="funds-fund-colors-color" style="background-color:#840;" id="_840"></button>
-                        <button class="funds-fund-colors-color" style="background-color:#f00;" id="_f00"></button>
-                        <button class="funds-fund-colors-color" style="background-color:#f0f;" id="_f0f"></button>
-                        <button class="funds-fund-colors-color" style="background-color:#090;" id="_090"></button>
-                        <button class="funds-fund-colors-color" style="background-color:#0f0;" id="_0f0"></button>
-                        <button class="funds-fund-colors-color" style="background-color:#00f;" id="_00f"></button>
-                        <button class="funds-fund-colors-color" style="background-color:#0ff;" id="_0ff"></button>
-                        <button class="funds-fund-colors-color" style="background-color:#ff0;" id="_ff0"></button>
-                        <button class="funds-fund-colors-color" style="background-color:#fff;" id="_fff"></button>
-                        <button class="funds-fund-colors-color" style="background-color:#aaa;" id="_aaa"></button>
+                    <p class="funds-fundForm_titleForColors">Цвет фонда</p>
+                    <div class="funds-fundForm-colors">
+                        <button class="funds-fundForm-colors-color" style="background-color:#840;" id="_840"></button>
+                        <button class="funds-fundForm-colors-color" style="background-color:#f00;" id="_f00"></button>
+                        <button class="funds-fundForm-colors-color" style="background-color:#f0f;" id="_f0f"></button>
+                        <button class="funds-fundForm-colors-color" style="background-color:#090;" id="_090"></button>
+                        <button class="funds-fundForm-colors-color" style="background-color:#0f0;" id="_0f0"></button>
+                        <button class="funds-fundForm-colors-color" style="background-color:#00f;" id="_00f"></button>
+                        <button class="funds-fundForm-colors-color" style="background-color:#0ff;" id="_0ff"></button>
+                        <button class="funds-fundForm-colors-color" style="background-color:#ff0;" id="_ff0"></button>
+                        <button class="funds-fundForm-colors-color" style="background-color:#fff;" id="_fff"></button>
+                        <button class="funds-fundForm-colors-color" style="background-color:#aaa;" id="_aaa"></button>
                     </div>
-                    <div class="funds-fund-actionButtons">
-                        <button class="funds-fund__button funds-fund_save">Сохранить</button>
-                        <button class="funds-fund__button funds-fund_close">
+                    <div class="funds-fundForm-actionButtons">
+                        <button class="funds-fundForm__button funds-fundForm_save">Сохранить</button>
+                        <button class="funds-fundForm__button funds-fundForm_close">
                             <svg viewBox="0 0 24 24" fill="none">
                                 <path d="M6 6L18 18" stroke="#444" stroke-width="2" stroke-linecap="round"/>
                                 <path d="M18 6L6 18" stroke="#444" stroke-width="2" stroke-linecap="round"/>
@@ -120,15 +125,15 @@
                     </div>
                 </form>
             </div>
+            <button class="funds-showFormButton">
+                <svg viewBox="0 0 24 24">
+                    <path d="M13 3C13 2.44772 12.5523 2 12 2C11.4477 2 11 2.44772 11 3V11H3C2.44772 11 2 11.4477 2 12C2 12.5523 2.44772 13 3 13H11V21C11 21.5523 11.4477 22 12 22C12.5523 22 13 21.5523 13 21V13H21C21.5523 13 22 12.5523 22 12C22 11.4477 21.5523 11 21 11H13V3Z"/>
+                </svg>
+            </button>
         </section>
         <section class="mainWindow settings" data-section="settings" style="display:none;">
 
         </section>
-        <button class="addNew__button">
-            <svg class="addNew__svg" viewBox="0 0 24 24">
-                <path d="M13 3C13 2.44772 12.5523 2 12 2C11.4477 2 11 2.44772 11 3V11H3C2.44772 11 2 11.4477 2 12C2 12.5523 2.44772 13 3 13H11V21C11 21.5523 11.4477 22 12 22C12.5523 22 13 21.5523 13 21V13H21C21.5523 13 22 12.5523 22 12C22 11.4477 21.5523 11 21 11H13V3Z"/>
-            </svg>
-        </button>
         <section class="switcher">
             <button class="switcher__button switcher-funds" data-section="funds" data-title="Фонды" style="background-color:#0000;border-top-color:#0000">
                 <svg class="switcher__svg" viewBox="0 0 16 16">
@@ -151,7 +156,7 @@
         </section>
 
         <script type="module" src="/src/js/finances/view/switcher.js"></script>
-        <script type="module" src="/src/js/finances/view/add_new_button.js"></script>
-        <script type="module" src="/src/js/finances/view/forms.js"></script>
+        <script type="module" src="/src/js/finances/view/fund_form.js"></script>
+        <script type="module" src="/src/js/finances/view/entry_form.js"></script>
     </body>
 </html>
