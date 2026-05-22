@@ -69,7 +69,15 @@
                             </div>
                             <textarea class="entries-entry-param-description" name="description" id="" placeholder="Описание"></textarea>
                         </div>
-                        <button class="entries-entry__button entries-entry__button_saveEntry">Сохранить</button>
+                        <div class="entries-entry-actionButtons">
+                            <button class="entries-entry__button entries-entry__button_saveEntry">Сохранить</button>
+                            <button class="entries-entry__button entries-entry__button_closeForm">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M6 6L18 18" stroke="#444" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M18 6L6 18" stroke="#444" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -101,7 +109,15 @@
                         <button class="funds-fund-colors-color" style="background-color:#fff;" id="_fff"></button>
                         <button class="funds-fund-colors-color" style="background-color:#aaa;" id="_aaa"></button>
                     </div>
-                    <button class="funds-fund_save">Сохранить</button>
+                    <div class="funds-fund-actionButtons">
+                        <button class="funds-fund__button funds-fund_save">Сохранить</button>
+                        <button class="funds-fund__button funds-fund_close">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M6 6L18 18" stroke="#444" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M18 6L6 18" stroke="#444" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
                 </form>
             </div>
         </section>

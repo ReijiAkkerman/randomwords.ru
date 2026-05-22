@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
             padding: 5px 20px;
             border-left: 1px solid var(--main-border-color);
             border-right: 1px solid var(--main-border-color);
-            margin: 10px auto;
+            margin: 10px;
             background-color: #0000000a;
         }
     }
@@ -186,12 +186,13 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
             }
         }
 
-        &_save {
+        &__button {
             font-size: 25px;
-            margin: 10px auto;
+            margin: 10px;
             padding: 5px 15px;
-            border-left: 1px solid var(--inactive-color);
-            border-right: 1px solid var(--inactive-color);
+            border-left: 1px solid var(--main-border-color);
+            border-right: 1px solid var(--main-border-color);
+            background-color: #0000000a;
         }
     }
 }
