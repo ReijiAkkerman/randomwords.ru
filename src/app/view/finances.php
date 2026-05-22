@@ -70,8 +70,8 @@
                             <textarea class="entries-entry-param-description" name="description" id="" placeholder="Описание"></textarea>
                         </div>
                         <div class="entries-entry-actionButtons">
-                            <button class="entries-entry__button entries-entry__button_saveEntry">Сохранить</button>
-                            <button class="entries-entry__button entries-entry__button_closeForm">
+                            <button class="entries-entry__button entries-entry_save">Сохранить</button>
+                            <button class="entries-entry__button entries-entry_close">
                                 <svg viewBox="0 0 24 24" fill="none">
                                     <path d="M6 6L18 18" stroke="#444" stroke-width="2" stroke-linecap="round"/>
                                     <path d="M18 6L6 18" stroke="#444" stroke-width="2" stroke-linecap="round"/>

@@ -10,7 +10,8 @@ class Forms {
 
         ["Кнопка добавления чего-либо", ".addNew__button"],
 
-        ["", ""],
+        ["Кнопка закрытия формы с параметрами фонда", ".funds-fund_close"],
+        ["Кнопка закрытия формы с параметрами записи", ".entries-entry_close"],
     ]);
 
 
@@ -33,6 +34,9 @@ class Forms {
 
     addNew__button = this.#CE("Кнопка добавления чего-либо");
 
+    closeFundForm__button = this.#CE("Кнопка закрытия формы с параметрами фонда");
+    closeEntryForm__button = this.#CE("Кнопка закрытия формы с параметрами записи");
+
     FUND_FORM_OPENED = false;
     ENTRY_FORM_OPENED = false;
 
@@ -40,19 +44,37 @@ class Forms {
 
 
 
-    showForm() {
+    openForm() {
         switch(switcher.SELECTED_AREA) {
             case "funds":
+                forms.#hideAddNewButton();
                 forms.#hideFundListArea();
                 forms.#showFundForm();
                 forms.#OPEN_FUND_FORM();
                 break;
             case "entries":
+                forms.#hideAddNewButton();
                 forms.#hideEntryListArea();
                 forms.#showEntryForm();
                 forms.#OPEN_ENTRY_FORM();
                 break;
         }
+    }
+
+    closeFundForm(event) {
+        event.preventDefault();
+        forms.#hideFundForm();
+        forms.#showFundListArea();
+        forms.#showAddNewButton();
+        forms.#CLOSE_FUND_FORM();
+    }
+
+    closeEntryForm(event) {
+        event.preventDefault();
+        forms.#hideEntryForm();
+        forms.#showEntryListArea();
+        forms.#showAddNewButton();
+        forms.#CLOSE_ENTRY_FORM();
     }
 
 
@@ -63,7 +85,7 @@ class Forms {
         this.#fund__form.style.display = "";
     }
 
-    hideFundForm() {
+    #hideFundForm() {
         this.#fund__form.style.display = "none";
     }
 
@@ -71,7 +93,7 @@ class Forms {
         this.#entry__form.style.display = "";
     }
 
-    hideEntryForm() {
+    #hideEntryForm() {
         this.#entry__form.style.display = "none";
     }
 
@@ -93,6 +115,18 @@ class Forms {
 
     #hideEntryListArea() {
         this.#entryList__area.style.display = "none";
+    }
+
+
+
+
+
+    #showAddNewButton() {
+        this.addNew__button.style.display = "";
+    }
+
+    #hideAddNewButton() {
+        this.addNew__button.style.display = "none";
     }
 
 
@@ -129,5 +163,7 @@ export var forms = new Forms();
 forms.defineInitialStateOfForms();
 
 document.addEventListener("DOMContentLoaded", function() {
-    forms.addNew__button.addEventListener("click", forms.showForm);
+    forms.addNew__button.addEventListener("click", forms.openForm);
+    forms.closeFundForm__button.addEventListener("click", forms.closeFundForm);
+    forms.closeEntryForm__button.addEventListener("click", forms.closeEntryForm);
 });
