@@ -61,7 +61,7 @@ class AddNewButton {
     }
 }
 
-var addNewButton = new AddNewButton();
+export var addNewButton = new AddNewButton();
 
 document.addEventListener("DOMContentLoaded", function() {
     switcher.funds__button.addEventListener("click", addNewButton.showAddNewButton);
