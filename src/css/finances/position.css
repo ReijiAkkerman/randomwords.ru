@@ -17,6 +17,67 @@ body > .mainWindow {
   z-index: 1;
 }
 
+.goals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.goals-list-item {
+  display: flex;
+  flex-direction: column;
+}
+.goals-list-item-data {
+  display: flex;
+}
+.goals-list-item-progressBar {
+  display: flex;
+}
+.goals-list-item-progressBar_total {
+  box-sizing: border-box;
+  position: static;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.goals-list-item-progressBar_completed {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: calc(var(--block-radius) - 1px);
+}
+
+.funds-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.funds-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.funds-fundForm-colors {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  height: 120px;
+}
+.funds-fundForm-colors-color {
+  width: 100%;
+  height: 100%;
+}
+.funds-fundForm-actionButtons {
+  display: flex;
+  justify-content: center;
+}
+.funds-showFormButton {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+}
+
 .entries-entryForm-param-users {
   display: flex;
   justify-content: space-around;
@@ -59,36 +120,6 @@ body > .mainWindow {
   width: 100%;
 }
 .entries-showFormButton {
-  position: fixed;
-  bottom: 70px;
-  right: 20px;
-}
-
-.funds-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.funds-list-item {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.funds-fundForm-colors {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-  height: 120px;
-}
-.funds-fundForm-colors-color {
-  width: 100%;
-  height: 100%;
-}
-.funds-fundForm-actionButtons {
-  display: flex;
-  justify-content: center;
-}
-.funds-showFormButton {
   position: fixed;
   bottom: 70px;
   right: 20px;

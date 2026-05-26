@@ -11,6 +11,79 @@
     </head>
     <body>
         <h1 class="title">Фонды</h1>
+        <section class="mainWindow goals">
+            <div class="goals-list">
+                <button class="goals-list-item__button" style="background-color:#0f04;">
+                    <div class="goals-list-item">
+                        <div class="goals-list-item-data">
+                            <div class="goals-list-item-data-users">
+                                <div class="goals-list-item-data-users_user" style="background-color:#f00;"></div>
+                            </div>
+                            <div class="goals-list-item-data__div">
+                                <p class="goals-list-item-data_title">Наименование цели</p>
+                                <p class="goals-list-item-data-progress__p">
+                                    <span class="goals-list-item-data-progress_completed">1000</span>
+                                    /
+                                    <span class="goals-list-item-data-progress_total">10000</span>
+                                    <span class="goals-list-item-data-progress_currency"> &#8381</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="goals-list-item-progressBar">
+                            <div class="goals-list-item-progressBar_completed" style="width:4%;"></div>
+                            <div class="goals-list-item-progressBar_total"></div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="goals-goalForm">
+
+            </div>
+        </section>
+        <section class="mainWindow funds" data-section="funds" style="display:none;">
+            <div class="funds-list">
+                <button class="funds-list-item__button">
+                    <div class="funds-list-item" style="background-color:#0f04">
+                        <p class="funds-list-item_title">Повседневные расходы</p>
+                        <p class="funds-list-item_sum">5000<span class="funds-list-item_currency"> &#8381</span></p>
+                        <p class="funds-list-item_sum">200<span class="funds-list-item_currency"> &#36</span></p>
+                    </div>
+                </button>
+            </div>
+            <div class="funds-fundForm" style="display:none;">
+                <form class="funds-fundForm__form" action="#" method="POST">
+                    <input class="funds-fundForm__input" type="text" name="fund_name" placeholder="Наименование фонда">
+                    <input type="hidden" name="fund_color">
+                    <p class="funds-fundForm_titleForColors">Цвет фонда</p>
+                    <div class="funds-fundForm-colors">
+                        <button class="funds-fundForm-colors-color" style="background-color:#840;" id="_840"></button>
+                        <button class="funds-fundForm-colors-color" style="background-color:#f00;" id="_f00"></button>
+                        <button class="funds-fundForm-colors-color" style="background-color:#f0f;" id="_f0f"></button>
+                        <button class="funds-fundForm-colors-color" style="background-color:#090;" id="_090"></button>
+                        <button class="funds-fundForm-colors-color" style="background-color:#0f0;" id="_0f0"></button>
+                        <button class="funds-fundForm-colors-color" style="background-color:#00f;" id="_00f"></button>
+                        <button class="funds-fundForm-colors-color" style="background-color:#0ff;" id="_0ff"></button>
+                        <button class="funds-fundForm-colors-color" style="background-color:#ff0;" id="_ff0"></button>
+                        <button class="funds-fundForm-colors-color" style="background-color:#fff;" id="_fff"></button>
+                        <button class="funds-fundForm-colors-color" style="background-color:#aaa;" id="_aaa"></button>
+                    </div>
+                    <div class="funds-fundForm-actionButtons">
+                        <button class="funds-fundForm__button funds-fundForm_save">Сохранить</button>
+                        <button class="funds-fundForm__button funds-fundForm_close">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M6 6L18 18" stroke="#444" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M18 6L6 18" stroke="#444" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <button class="funds-showFormButton">
+                <svg viewBox="0 0 24 24">
+                    <path d="M13 3C13 2.44772 12.5523 2 12 2C11.4477 2 11 2.44772 11 3V11H3C2.44772 11 2 11.4477 2 12C2 12.5523 2.44772 13 3 13H11V21C11 21.5523 11.4477 22 12 22C12.5523 22 13 21.5523 13 21V13H21C21.5523 13 22 12.5523 22 12C22 11.4477 21.5523 11 21 11H13V3Z"/>
+                </svg>
+            </button>
+        </section>
         <section class="mainWindow entries" data-section="entries" style="display:none;">
             <div class="entries__div">
                 <div class="entries-list">
@@ -87,54 +160,20 @@
                 </button>
             </div>
         </section>
-        <section class="mainWindow funds" data-section="funds">
-            <div class="funds-list">
-                <button class="funds-list-item__button">
-                    <div class="funds-list-item" style="background-color:#0f04">
-                        <p class="funds-list-item_title">Повседневные расходы</p>
-                        <p class="funds-list-item_sum">5000<span class="funds-list-item_currency"> &#8381</span></p>
-                        <p class="funds-list-item_sum">200<span class="funds-list-item_currency"> &#36</span></p>
-                    </div>
-                </button>
-            </div>
-            <div class="funds-fundForm" style="display:none;">
-                <form class="funds-fundForm__form" action="#" method="POST">
-                    <input class="funds-fundForm__input" type="text" name="fund_name" placeholder="Наименование фонда">
-                    <input type="hidden" name="fund_color">
-                    <p class="funds-fundForm_titleForColors">Цвет фонда</p>
-                    <div class="funds-fundForm-colors">
-                        <button class="funds-fundForm-colors-color" style="background-color:#840;" id="_840"></button>
-                        <button class="funds-fundForm-colors-color" style="background-color:#f00;" id="_f00"></button>
-                        <button class="funds-fundForm-colors-color" style="background-color:#f0f;" id="_f0f"></button>
-                        <button class="funds-fundForm-colors-color" style="background-color:#090;" id="_090"></button>
-                        <button class="funds-fundForm-colors-color" style="background-color:#0f0;" id="_0f0"></button>
-                        <button class="funds-fundForm-colors-color" style="background-color:#00f;" id="_00f"></button>
-                        <button class="funds-fundForm-colors-color" style="background-color:#0ff;" id="_0ff"></button>
-                        <button class="funds-fundForm-colors-color" style="background-color:#ff0;" id="_ff0"></button>
-                        <button class="funds-fundForm-colors-color" style="background-color:#fff;" id="_fff"></button>
-                        <button class="funds-fundForm-colors-color" style="background-color:#aaa;" id="_aaa"></button>
-                    </div>
-                    <div class="funds-fundForm-actionButtons">
-                        <button class="funds-fundForm__button funds-fundForm_save">Сохранить</button>
-                        <button class="funds-fundForm__button funds-fundForm_close">
-                            <svg viewBox="0 0 24 24" fill="none">
-                                <path d="M6 6L18 18" stroke="#444" stroke-width="2" stroke-linecap="round"/>
-                                <path d="M18 6L6 18" stroke="#444" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
-                        </button>
-                    </div>
-                </form>
-            </div>
-            <button class="funds-showFormButton">
-                <svg viewBox="0 0 24 24">
-                    <path d="M13 3C13 2.44772 12.5523 2 12 2C11.4477 2 11 2.44772 11 3V11H3C2.44772 11 2 11.4477 2 12C2 12.5523 2.44772 13 3 13H11V21C11 21.5523 11.4477 22 12 22C12.5523 22 13 21.5523 13 21V13H21C21.5523 13 22 12.5523 22 12C22 11.4477 21.5523 11 21 11H13V3Z"/>
-                </svg>
-            </button>
-        </section>
         <section class="mainWindow settings" data-section="settings" style="display:none;">
 
         </section>
         <section class="switcher">
+            <button class="switcher__button switcher-goals" data-section="goals" data-title="Цели">
+                <svg class="svg-stroke" viewBox="0 0 32 32" enable-background="new 0 0 32 32">
+                    <line fill="none" stroke-width="2" stroke-miterlimit="10" x1="15" y1="16" x2="28" y2="16"/>
+                    <polyline fill="none" stroke-width="2" stroke-miterlimit="10" points="5,16 7,18 11,14 "/>
+                    <line fill="none" stroke-width="2" stroke-miterlimit="10" x1="15" y1="8" x2="28" y2="8"/>
+                    <polyline fill="none" stroke-width="2" stroke-miterlimit="10" points="5,8 7,10 11,6 "/>
+                    <line fill="none" stroke-width="2" stroke-miterlimit="10" x1="15" y1="24" x2="28" y2="24"/>
+                    <polyline fill="none" stroke-width="2" stroke-miterlimit="10" points="5,24 7,26 11,22 "/>
+                </svg>
+            </button>
             <button class="switcher__button switcher-funds" data-section="funds" data-title="Фонды" style="background-color:#0000;border-top-color:#0000">
                 <svg class="switcher__svg" viewBox="0 0 16 16">
                     <path d="M4,13H2V11H4Zm10-2H6v2h8ZM4,7H2V9H4ZM14,7H6V9h8ZM4,3H2V5H4ZM14,3H6V5h8Z"/>
