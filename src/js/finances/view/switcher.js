@@ -1,17 +1,17 @@
 class Switcher {
     #selectors = new Map([
+        ["Кнопка отображения целей", ".switcher-goals"],
         ["Кнопка отображения фондов", ".switcher-funds"],
         ["Кнопка отображения записей фонда", ".switcher-selectedFund"],
         ["Кнопка отображения настроек", ".switcher-settings"],
 
+        ["Область целей", ".goals"],
         ["Область фондов", ".funds"],
         ["Область записей", ".entries"],
         ["Область настроек", ".settings"],
 
         ["Наименование открытой области", ".title"],
 
-        ["", ""],
-        ["", ""],
     ]);
 
 
@@ -25,11 +25,12 @@ class Switcher {
 
 
 
-
+    goals__button = this.#CE("Кнопка отображения целей");
     funds__button = this.#CE("Кнопка отображения фондов");
     entries__button = this.#CE("Кнопка отображения записей фонда");;
     settings__button = this.#CE("Кнопка отображения настроек");
 
+    #goals__area = this.#CE("Область целей");
     #funds__area = this.#CE("Область фондов");
     #entries__area = this.#CE("Область записей");
     #settings__area = this.#CE("Область настроек");
@@ -39,17 +40,23 @@ class Switcher {
 
 
 
+
     #areas = new Map([
+        ["goals", [this.#goals__area, this.goals__button]],
         ["funds", [this.#funds__area, this.funds__button]],
         ["entries", [this.#entries__area, this.entries__button]],
         ["settings", [this.#settings__area, this.settings__button]],
     ]);
-    SELECTED_AREA = "funds";
+    SELECTED_AREA = "goals";
 
 
 
 
 
+    showGoals() {
+        switcher.#showSelectedArea(this);
+        switcher.#exchangeTitle(this);
+    }
 
     showFunds() {
         switcher.#showSelectedArea(this);
@@ -125,7 +132,8 @@ class Switcher {
 export var switcher = new Switcher();
 
 document.addEventListener("DOMContentLoaded", function() {
-    switcher.funds__button.addEventListener('click', switcher.showFunds);
-    switcher.entries__button.addEventListener('click', switcher.showEntries);
-    switcher.settings__button.addEventListener('click', switcher.showSettings);
+    switcher.goals__button.addEventListener("click", switcher.showGoals);
+    switcher.funds__button.addEventListener("click", switcher.showFunds);
+    switcher.entries__button.addEventListener("click", switcher.showEntries);
+    switcher.settings__button.addEventListener("click", switcher.showSettings);
 });

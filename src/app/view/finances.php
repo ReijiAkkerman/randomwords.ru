@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="/src/css/finances/style.css">
     </head>
     <body>
-        <h1 class="title">Фонды</h1>
+        <h1 class="title">Цели</h1>
         <section class="mainWindow goals">
             <div class="goals-list">
                 <button class="goals-list-item__button" style="background-color:#0f04;">
@@ -164,7 +164,7 @@
 
         </section>
         <section class="switcher">
-            <button class="switcher__button switcher-goals" data-section="goals" data-title="Цели">
+            <button class="switcher__button switcher-goals" data-section="goals" data-title="Цели" style="border-top-color:#0000;">
                 <svg class="svg-stroke" viewBox="0 0 32 32" enable-background="new 0 0 32 32">
                     <line fill="none" stroke-width="2" stroke-miterlimit="10" x1="15" y1="16" x2="28" y2="16"/>
                     <polyline fill="none" stroke-width="2" stroke-miterlimit="10" points="5,16 7,18 11,14 "/>
@@ -174,7 +174,7 @@
                     <polyline fill="none" stroke-width="2" stroke-miterlimit="10" points="5,24 7,26 11,22 "/>
                 </svg>
             </button>
-            <button class="switcher__button switcher-funds" data-section="funds" data-title="Фонды" style="background-color:#0000;border-top-color:#0000">
+            <button class="switcher__button switcher-funds" data-section="funds" data-title="Фонды">
                 <svg class="switcher__svg" viewBox="0 0 16 16">
                     <path d="M4,13H2V11H4Zm10-2H6v2h8ZM4,7H2V9H4ZM14,7H6V9h8ZM4,3H2V5H4ZM14,3H6V5h8Z"/>
                 </svg>
