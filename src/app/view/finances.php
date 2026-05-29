@@ -12,7 +12,7 @@
     <body>
         <h1 class="title">Цели</h1>
         <section class="mainWindow goals">
-            <div class="goals-list" style="display:none;">
+            <div class="goals-list">
                 <button class="goals-list-item__button" style="background-color:#0f04;">
                     <div class="goals-list-item">
                         <div class="goals-list-item-data">
@@ -36,7 +36,7 @@
                     </div>
                 </button>
             </div>
-            <div class="goals-goalForm">
+            <div class="goals-goalForm" style="display:none;">
                 <form class="goals-goalForm__form" action="#">
                     <input class="goals-goalForm__input" type="text" name="name" placeholder="Наименование цели">
                     <div class="goals-goalForm__div">
@@ -81,6 +81,11 @@
                     </div>
                 </form>
             </div>
+            <button class="goals-showFormButton">
+                <svg viewBox="0 0 24 24">
+                    <path d="M13 3C13 2.44772 12.5523 2 12 2C11.4477 2 11 2.44772 11 3V11H3C2.44772 11 2 11.4477 2 12C2 12.5523 2.44772 13 3 13H11V21C11 21.5523 11.4477 22 12 22C12.5523 22 13 21.5523 13 21V13H21C21.5523 13 22 12.5523 22 12C22 11.4477 21.5523 11 21 11H13V3Z"/>
+                </svg>
+            </button>
         </section>
         <section class="mainWindow funds" data-section="funds" style="display:none;">
             <div class="funds-list">

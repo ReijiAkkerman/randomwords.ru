@@ -77,6 +77,11 @@ body > .mainWindow {
   width: 100%;
   height: 100%;
 }
+.goals-showFormButton {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+}
 
 .funds-list {
   display: flex;

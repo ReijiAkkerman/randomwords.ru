@@ -101,6 +101,11 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   background-color: rgba(0, 0, 0, 0.0392156863);
   font-size: 25px;
 }
+.goals-showFormButton {
+  padding: 10px;
+  border: 1px solid var(--inactive-color);
+  border-radius: 10px;
+}
 
 .funds {
   padding: 10px;
