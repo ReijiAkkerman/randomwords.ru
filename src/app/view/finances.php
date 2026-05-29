@@ -71,8 +71,8 @@
                         </div>
                     </div>
                     <div class="goals-goalForm-actionButtons">
-                        <button class="goals-goalForm-actionButtons_save">Сохранить</button>
-                        <button class="goals-goalForm-actionButtons_close">
+                        <button class="goals-goalForm_save">Сохранить</button>
+                        <button class="goals-goalForm_close">
                             <svg viewBox="0 0 24 24" fill="none">
                                 <path d="M6 6L18 18" stroke="#444" stroke-width="2" stroke-linecap="round"/>
                                 <path d="M18 6L6 18" stroke="#444" stroke-width="2" stroke-linecap="round"/>
@@ -240,6 +240,7 @@
         </section>
 
         <script type="module" src="/src/js/finances/view/switcher.js"></script>
+        <script type="module" src="/src/js/finances/view/goal_form.js"></script>
         <script type="module" src="/src/js/finances/view/fund_form.js"></script>
         <script type="module" src="/src/js/finances/view/entry_form.js"></script>
     </body>

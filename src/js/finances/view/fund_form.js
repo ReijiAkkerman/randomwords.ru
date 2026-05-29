@@ -22,8 +22,8 @@ class FundForm {
     openForm__button = this.#CE("Кнопка для отображения формы с параметрами фонда");
     closeForm__button = this.#CE("Кнопка закрытия формы с параметрами фонда");
 
-    #entryList__area = this.#CE("Область со списком фондов");
-    #entryForm = this.#CE("Форма с параметрами фонда");
+    #fundList__area = this.#CE("Область со списком фондов");
+    #fundForm = this.#CE("Форма с параметрами фонда");
 
 
 
@@ -48,19 +48,19 @@ class FundForm {
 
 
     #showForm() {
-        this.#entryForm.style.display = "";
+        this.#fundForm.style.display = "";
     }
 
     #hideForm() {
-        this.#entryForm.style.display = "none";
+        this.#fundForm.style.display = "none";
     }
 
     #showList() {
-        this.#entryList__area.style.display = "";
+        this.#fundList__area.style.display = "";
     }
 
     #hideList() {
-        this.#entryList__area.style.display = "none";
+        this.#fundList__area.style.display = "none";
     }
 
     #showOpenFormButton() {

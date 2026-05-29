@@ -122,14 +122,14 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
 
         &-actionButtons {
             margin-top: 20px;
+        }
 
-            &_save, &_close {
-                border-left: 1px solid var(--main-border-color);
-                border-right: 1px solid var(--main-border-color);
-                padding: 5px 15px;
-                background-color: #0000000a;
-                font-size: 25px;
-            }
+        &_save, &_close {
+            border-left: 1px solid var(--main-border-color);
+            border-right: 1px solid var(--main-border-color);
+            padding: 5px 15px;
+            background-color: #0000000a;
+            font-size: 25px;
         }
     }
 
