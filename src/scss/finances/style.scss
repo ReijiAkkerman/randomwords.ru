@@ -76,6 +76,62 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
             }
         }
     }
+
+    &-goalForm {
+        padding: 10px;
+
+        &__input {
+            font-size: 20px;
+            border-top: 1px solid var(--main-border-color);
+            border-bottom: 1px solid var(--main-border-color);
+            padding: 5px 5px 5px 15px;
+
+            &[name="sum"] {
+                width: 100%;
+            }
+        }
+
+        &__select {
+            font-size: 25px;
+        }
+
+        &__option {
+            font-size: 25px;
+        }
+
+        &_paramName {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        &-users {
+            &-user {
+                &__label {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        &-colors {
+            &-color {
+                box-sizing: border-box;
+                border: 1px solid var(--inactive-color);
+                border-radius: var(--block-radius);
+            }
+        }
+
+        &-actionButtons {
+            margin-top: 20px;
+
+            &_save, &_close {
+                border-left: 1px solid var(--main-border-color);
+                border-right: 1px solid var(--main-border-color);
+                padding: 5px 15px;
+                background-color: #0000000a;
+                font-size: 25px;
+            }
+        }
+    }
 }
 
 .funds {

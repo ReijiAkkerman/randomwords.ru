@@ -61,6 +61,46 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   border-bottom-left-radius: calc(var(--block-radius) - 1px);
   border-bottom-right-radius: calc(var(--block-radius) - 1px);
 }
+.goals-goalForm {
+  padding: 10px;
+}
+.goals-goalForm__input {
+  font-size: 20px;
+  border-top: 1px solid var(--main-border-color);
+  border-bottom: 1px solid var(--main-border-color);
+  padding: 5px 5px 5px 15px;
+}
+.goals-goalForm__input[name=sum] {
+  width: 100%;
+}
+.goals-goalForm__select {
+  font-size: 25px;
+}
+.goals-goalForm__option {
+  font-size: 25px;
+}
+.goals-goalForm_paramName {
+  font-size: 25px;
+  text-align: center;
+}
+.goals-goalForm-users-user__label {
+  font-size: 25px;
+}
+.goals-goalForm-colors-color {
+  box-sizing: border-box;
+  border: 1px solid var(--inactive-color);
+  border-radius: var(--block-radius);
+}
+.goals-goalForm-actionButtons {
+  margin-top: 20px;
+}
+.goals-goalForm-actionButtons_save, .goals-goalForm-actionButtons_close {
+  border-left: 1px solid var(--main-border-color);
+  border-right: 1px solid var(--main-border-color);
+  padding: 5px 15px;
+  background-color: rgba(0, 0, 0, 0.0392156863);
+  font-size: 25px;
+}
 
 .funds {
   padding: 10px;

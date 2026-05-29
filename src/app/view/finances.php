@@ -12,7 +12,7 @@
     <body>
         <h1 class="title">Цели</h1>
         <section class="mainWindow goals">
-            <div class="goals-list">
+            <div class="goals-list" style="display:none;">
                 <button class="goals-list-item__button" style="background-color:#0f04;">
                     <div class="goals-list-item">
                         <div class="goals-list-item-data">
@@ -37,7 +37,49 @@
                 </button>
             </div>
             <div class="goals-goalForm">
-
+                <form class="goals-goalForm__form" action="#">
+                    <input class="goals-goalForm__input" type="text" name="name" placeholder="Наименование цели">
+                    <div class="goals-goalForm__div">
+                        <input class="goals-goalForm__input" type="number" name="sum" placeholder="Сумма">
+                        <select class="goals-goalForm__select" name="currency" id="">
+                            <option class="goals-goalForm__option" value="">&#8381</option>
+                            <option class="goals-goalForm__option" value="">&#36</option>
+                        </select>
+                    </div>
+                    <p class="goals-goalForm_paramName">Цвет цели</p>
+                    <div class="goals-goalForm-colors">
+                        <button class="goals-goalForm-colors-color" style="background-color:#840;" id="_840"></button>
+                        <button class="goals-goalForm-colors-color" style="background-color:#f00;" id="_f00"></button>
+                        <button class="goals-goalForm-colors-color" style="background-color:#f0f;" id="_f0f"></button>
+                        <button class="goals-goalForm-colors-color" style="background-color:#090;" id="_090"></button>
+                        <button class="goals-goalForm-colors-color" style="background-color:#0f0;" id="_0f0"></button>
+                        <button class="goals-goalForm-colors-color" style="background-color:#00f;" id="_00f"></button>
+                        <button class="goals-goalForm-colors-color" style="background-color:#0ff;" id="_0ff"></button>
+                        <button class="goals-goalForm-colors-color" style="background-color:#ff0;" id="_ff0"></button>
+                        <button class="goals-goalForm-colors-color" style="background-color:#fff;" id="_fff"></button>
+                        <button class="goals-goalForm-colors-color" style="background-color:#aaa;" id="_aaa"></button>
+                    </div>
+                    <p class="goals-goalForm_paramName">Пользователи</p>
+                    <div class="goals-goalForm-users">
+                        <div class="goals-goalForm-users-user">
+                            <input class="goals-goalForm-users-user__input" type="checkbox" value="Я" id="goals_Я" checked>
+                            <label class="goals-goalForm-users-user__label" for="goals_Я">Я</label>
+                        </div>
+                        <div class="goals-goalForm-users-user">
+                            <input class="goals-goalForm-users-user__input" type="checkbox" value="Катя" id="goals_Катя">
+                            <label class="goals-goalForm-users-user__label" for="goals_Катя">Катя</label>
+                        </div>
+                    </div>
+                    <div class="goals-goalForm-actionButtons">
+                        <button class="goals-goalForm-actionButtons_save">Сохранить</button>
+                        <button class="goals-goalForm-actionButtons_close">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M6 6L18 18" stroke="#444" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M18 6L6 18" stroke="#444" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
             </div>
         </section>
         <section class="mainWindow funds" data-section="funds" style="display:none;">
@@ -85,80 +127,78 @@
             </button>
         </section>
         <section class="mainWindow entries" data-section="entries" style="display:none;">
-            <div class="entries__div">
-                <div class="entries-list">
+            <div class="entries-list">
 
-                    <p class="entries-list-date">2020-12-12</p>
-                    <button class="entries-list-item">
-                        <div class="entries-list-item-userColors">
-                            <div style="background-color:#00f;"></div>
-                            <div style="background-color:#f00;"></div>
+                <p class="entries-list-date">2020-12-12</p>
+                <button class="entries-list-item">
+                    <div class="entries-list-item-userColors">
+                        <div style="background-color:#00f;"></div>
+                        <div style="background-color:#f00;"></div>
+                    </div>
+                    <div class="entries-list-item-mainInfo" style="background-color:#f002;">
+                        <p class="entries-list-item-mainInfo_type">Проезд</p>
+                        <div class="entries-list-item-mainInfo__div">
+                            <p class="entries-list-item-mainInfo_sum">1000<span class="entries-list-item-mainInfo_currency">&#8381</span></p>
+                            <p class="entries-list-item-mainInfo_time">13:53</p>
                         </div>
-                        <div class="entries-list-item-mainInfo" style="background-color:#f002;">
-                            <p class="entries-list-item-mainInfo_type">Проезд</p>
-                            <div class="entries-list-item-mainInfo__div">
-                                <p class="entries-list-item-mainInfo_sum">1000<span class="entries-list-item-mainInfo_currency">&#8381</span></p>
-                                <p class="entries-list-item-mainInfo_time">13:53</p>
-                            </div>
-                        </div>
-                    </button>
-
-                </div>
-                <div class="entries-entryForm" style="display:none;">
-                    <form action="#" method="POST">
-                        <h2 class="entries-entryForm-paramName">Фонд</h2>
-                        <select class="entries-entryForm-param-fund" name="" id="">
-                            <option class="entries-entryForm-param-fund__option" value="Повседневное">Повседневное</option>
-                        </select>
-                        <h2 class="entries-entryForm-paramName">Категория</h2>
-                        <select class="entries-entryForm-param entries-entryForm-param-cath" name="cathegory" id="">
-                            <option class="entries-entryForm-param-cath__option" value="loss" selected>Убыток</option>
-                            <option class="entries-entryForm-param-cath__option" value="income">Прибыль</option>
-                        </select>
-                        <h2 class="entries-entryForm-paramName">Тип</h2>
-                        <select class="entries-entryForm-param entries-entryForm-param-type" name="type" id="">
-                            <option class="entries-entryForm-param-type__option" value="Еда" selected>Еда</option>
-                            <option class="entries-entryForm-param-type__option" value="Проезд">Проезд</option>
-                        </select>
-                        <h2 class="entries-entryForm-paramName">Пользователь</h2>
-                        <div class="entries-entry-Formparam entries-entryForm-param-users">
-                            <div class="entries-entryForm-param-users-user">
-                                <input class="entries-entryForm-param-users-user__input" type="checkbox" id="Я" value="Я" checked>
-                                <label class="entries-entryForm-param-users-user__label" for="Я">Я</label>
-                            </div>
-                            <div class="entries-entryForm-param-users-user">
-                                <input class="entries-entryForm-param-users-user__input" type="checkbox" id="Катя" value="Катя">
-                                <label class="entries-entryForm-param-users-user__label" for="Катя">Катя</label>
-                            </div>
-                        </div>
-                        <h2 class="entries-entryForm-paramName">Основные параметры</h2>
-                        <div class="entries-entryForm-param">
-                            <div class="entries-entryForm-param__div">
-                                <input class="entries-entryForm-param-sum" name="sum" type="number" placeholder="Сумма">
-                                <select class="entries-entryForm-param-currency" name="" id="">
-                                    <option class="entries-entryForm-param-currency__option" value="">&#8381</option>
-                                    <option class="entries-entryForm-param-currency__option" value="">&#36</option>
-                                </select>
-                            </div>
-                            <textarea class="entries-entryForm-param-description" name="description" id="" placeholder="Описание"></textarea>
-                        </div>
-                        <div class="entries-entryForm-actionButtons">
-                            <button class="entries-entryForm__button entries-entryForm_save">Сохранить</button>
-                            <button class="entries-entryForm__button entries-entryForm_close">
-                                <svg viewBox="0 0 24 24" fill="none">
-                                    <path d="M6 6L18 18" stroke="#444" stroke-width="2" stroke-linecap="round"/>
-                                    <path d="M18 6L6 18" stroke="#444" stroke-width="2" stroke-linecap="round"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-                <button class="entries-showFormButton">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M13 3C13 2.44772 12.5523 2 12 2C11.4477 2 11 2.44772 11 3V11H3C2.44772 11 2 11.4477 2 12C2 12.5523 2.44772 13 3 13H11V21C11 21.5523 11.4477 22 12 22C12.5523 22 13 21.5523 13 21V13H21C21.5523 13 22 12.5523 22 12C22 11.4477 21.5523 11 21 11H13V3Z"/>
-                    </svg>
+                    </div>
                 </button>
+
             </div>
+            <div class="entries-entryForm" style="display:none;">
+                <form action="#" method="POST">
+                    <h2 class="entries-entryForm-paramName">Фонд</h2>
+                    <select class="entries-entryForm-param-fund" name="" id="">
+                        <option class="entries-entryForm-param-fund__option" value="Повседневное">Повседневное</option>
+                    </select>
+                    <h2 class="entries-entryForm-paramName">Категория</h2>
+                    <select class="entries-entryForm-param entries-entryForm-param-cath" name="cathegory" id="">
+                        <option class="entries-entryForm-param-cath__option" value="loss" selected>Убыток</option>
+                        <option class="entries-entryForm-param-cath__option" value="income">Прибыль</option>
+                    </select>
+                    <h2 class="entries-entryForm-paramName">Тип</h2>
+                    <select class="entries-entryForm-param entries-entryForm-param-type" name="type" id="">
+                        <option class="entries-entryForm-param-type__option" value="Еда" selected>Еда</option>
+                        <option class="entries-entryForm-param-type__option" value="Проезд">Проезд</option>
+                    </select>
+                    <h2 class="entries-entryForm-paramName">Пользователь</h2>
+                    <div class="entries-entry-Formparam entries-entryForm-param-users">
+                        <div class="entries-entryForm-param-users-user">
+                            <input class="entries-entryForm-param-users-user__input" type="checkbox" id="entries_Я" value="Я" checked>
+                            <label class="entries-entryForm-param-users-user__label" for="entries_Я">Я</label>
+                        </div>
+                        <div class="entries-entryForm-param-users-user">
+                            <input class="entries-entryForm-param-users-user__input" type="checkbox" id="entries_Катя" value="Катя">
+                            <label class="entries-entryForm-param-users-user__label" for="entries_Катя">Катя</label>
+                        </div>
+                    </div>
+                    <h2 class="entries-entryForm-paramName">Основные параметры</h2>
+                    <div class="entries-entryForm-param">
+                        <div class="entries-entryForm-param__div">
+                            <input class="entries-entryForm-param-sum" name="sum" type="number" placeholder="Сумма">
+                            <select class="entries-entryForm-param-currency" name="" id="">
+                                <option class="entries-entryForm-param-currency__option" value="">&#8381</option>
+                                <option class="entries-entryForm-param-currency__option" value="">&#36</option>
+                            </select>
+                        </div>
+                        <textarea class="entries-entryForm-param-description" name="description" id="" placeholder="Описание"></textarea>
+                    </div>
+                    <div class="entries-entryForm-actionButtons">
+                        <button class="entries-entryForm__button entries-entryForm_save">Сохранить</button>
+                        <button class="entries-entryForm__button entries-entryForm_close">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M6 6L18 18" stroke="#444" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M18 6L6 18" stroke="#444" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <button class="entries-showFormButton">
+                <svg viewBox="0 0 24 24">
+                    <path d="M13 3C13 2.44772 12.5523 2 12 2C11.4477 2 11 2.44772 11 3V11H3C2.44772 11 2 11.4477 2 12C2 12.5523 2.44772 13 3 13H11V21C11 21.5523 11.4477 22 12 22C12.5523 22 13 21.5523 13 21V13H21C21.5523 13 22 12.5523 22 12C22 11.4477 21.5523 11 21 11H13V3Z"/>
+                </svg>
+            </button>
         </section>
         <section class="mainWindow settings" data-section="settings" style="display:none;">
 
