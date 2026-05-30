@@ -1,0 +1,19 @@
+.FormElements {
+    &-sumBlock {
+        &_sum {
+            font-size: 20px;
+            border-top: 1px solid var(--main-border-color);
+            border-bottom: 1px solid var(--main-border-color);
+            padding: 5px 5px 5px 15px;
+            width: 100%;
+        }
+
+        &_currency {
+            font-size: 25px;
+
+            &__option {
+                font-size: inherit;
+            }
+        }
+    }
+}

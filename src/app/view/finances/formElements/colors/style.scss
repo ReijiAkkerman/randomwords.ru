@@ -1,0 +1,9 @@
+.FormElements {
+    &-colorsBlock {
+        &_color {
+            box-sizing: border-box;
+            border: 1px solid var(--inactive-color);
+            border-radius: var(--block-radius);
+        }
+    }
+}

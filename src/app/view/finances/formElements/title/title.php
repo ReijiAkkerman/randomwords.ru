@@ -1,0 +1,1 @@
+<input class="FormElements_title" type="text" name="name" placeholder="Наименование цели">
