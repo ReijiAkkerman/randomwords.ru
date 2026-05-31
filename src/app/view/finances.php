@@ -12,6 +12,7 @@
     <body>
         <h1 class="title">Цели</h1>
         <section class="mainWindow goals">
+            <?php $current_section = 'goals'; ?>
             <div class="goals-list">
                 <button class="goals-list-item__button" style="background-color:#0f04;">
                     <div class="goals-list-item">
@@ -52,6 +53,7 @@
             </button>
         </section>
         <section class="mainWindow funds" data-section="funds" style="display:none;">
+            <?php $current_section = 'funds'; ?>
             <div class="funds-list">
                 <button class="funds-list-item__button">
                     <div class="funds-list-item" style="background-color:#0f04">
@@ -76,6 +78,7 @@
             </button>
         </section>
         <section class="mainWindow entries" data-section="entries" style="display:none;">
+            <?php $current_section = 'entries'; ?>
             <div class="entries-list">
 
                 <p class="entries-list-date">2020-12-12</p>
@@ -150,6 +153,7 @@
             </button>
         </section>
         <section class="mainWindow settings" data-section="settings" style="display:none;">
+            <?php $current_section = 'settings'; ?>
 
         </section>
         <section class="switcher">
