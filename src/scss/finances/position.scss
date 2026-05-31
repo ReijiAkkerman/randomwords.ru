@@ -1,3 +1,8 @@
+@use "./formElements/actionButtons/position.scss" as actionButtons;
+@use "./formElements/colors/position.scss" as colors;
+@use "./formElements/sum/position.scss" as sum;
+@use "./formElements/users/position.scss" as users;
+
 body {
     display: flex;
     position: fixed;
@@ -114,6 +119,12 @@ body {
     }
 
     &-fundForm {
+        &__form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
         &-colors {
             display: grid;
             grid-template-columns: repeat(5, 1fr);

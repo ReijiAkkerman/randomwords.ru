@@ -1,7 +1,7 @@
 class FundForm {
     #selectors = new Map([
         ["Кнопка для отображения формы с параметрами фонда", ".funds-showFormButton"],
-        ["Кнопка закрытия формы с параметрами фонда", ".funds-fundForm_close"],
+        ["Кнопка закрытия формы с параметрами фонда", ".funds .FormElements-buttonsBlock_close"],
 
         ["Область со списком фондов", ".funds-list"],
         ["Форма с параметрами фонда", ".funds-fundForm"],

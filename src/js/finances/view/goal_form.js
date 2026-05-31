@@ -1,7 +1,7 @@
 class GoalForm {
     #selectors = new Map([
         ["Кнопка для отображения формы с параметрами цели", ".goals-showFormButton"],
-        ["Кнопка закрытия формы с параметрами цели", ".goals-goalForm_close"],
+        ["Кнопка закрытия формы с параметрами цели", ".goals .FormElements-buttonsBlock_close"],
 
         ["Область со списком целей", ".goals-list"],
         ["Форма с параметрами цели", ".goals-goalForm"],

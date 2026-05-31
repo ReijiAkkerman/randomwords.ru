@@ -1,3 +1,10 @@
+@use "./formElements/actionButtons/style.scss" as actionButtons;
+@use "./formElements/colors/style.scss" as colors;
+@use "./formElements/parameterName/style.scss" as parameterName;
+@use "./formElements/sum/style.scss" as sum;
+@use "./formElements/title/style.scss" as title;
+@use "./formElements/users/style.scss" as users;
+
 h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
     font-family: Jura;
 }

@@ -38,47 +38,11 @@
             </div>
             <div class="goals-goalForm" style="display:none;">
                 <form class="goals-goalForm__form" action="#">
-                    <input class="goals-goalForm__input" type="text" name="name" placeholder="Наименование цели">
-                    <div class="goals-goalForm__div">
-                        <input class="goals-goalForm__input" type="number" name="sum" placeholder="Сумма">
-                        <select class="goals-goalForm__select" name="currency" id="">
-                            <option class="goals-goalForm__option" value="">&#8381</option>
-                            <option class="goals-goalForm__option" value="">&#36</option>
-                        </select>
-                    </div>
-                    <p class="goals-goalForm_paramName">Цвет цели</p>
-                    <div class="goals-goalForm-colors">
-                        <button class="goals-goalForm-colors-color" style="background-color:#840;" id="_840"></button>
-                        <button class="goals-goalForm-colors-color" style="background-color:#f00;" id="_f00"></button>
-                        <button class="goals-goalForm-colors-color" style="background-color:#f0f;" id="_f0f"></button>
-                        <button class="goals-goalForm-colors-color" style="background-color:#090;" id="_090"></button>
-                        <button class="goals-goalForm-colors-color" style="background-color:#0f0;" id="_0f0"></button>
-                        <button class="goals-goalForm-colors-color" style="background-color:#00f;" id="_00f"></button>
-                        <button class="goals-goalForm-colors-color" style="background-color:#0ff;" id="_0ff"></button>
-                        <button class="goals-goalForm-colors-color" style="background-color:#ff0;" id="_ff0"></button>
-                        <button class="goals-goalForm-colors-color" style="background-color:#fff;" id="_fff"></button>
-                        <button class="goals-goalForm-colors-color" style="background-color:#aaa;" id="_aaa"></button>
-                    </div>
-                    <p class="goals-goalForm_paramName">Пользователи</p>
-                    <div class="goals-goalForm-users">
-                        <div class="goals-goalForm-users-user">
-                            <input class="goals-goalForm-users-user__input" type="checkbox" value="Я" id="goals_Я" checked>
-                            <label class="goals-goalForm-users-user__label" for="goals_Я">Я</label>
-                        </div>
-                        <div class="goals-goalForm-users-user">
-                            <input class="goals-goalForm-users-user__input" type="checkbox" value="Катя" id="goals_Катя">
-                            <label class="goals-goalForm-users-user__label" for="goals_Катя">Катя</label>
-                        </div>
-                    </div>
-                    <div class="goals-goalForm-actionButtons">
-                        <button class="goals-goalForm_save">Сохранить</button>
-                        <button class="goals-goalForm_close">
-                            <svg viewBox="0 0 24 24" fill="none">
-                                <path d="M6 6L18 18" stroke="#444" stroke-width="2" stroke-linecap="round"/>
-                                <path d="M18 6L6 18" stroke="#444" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
-                        </button>
-                    </div>
+                    <?php include __DIR__ . '/finances/formElements/title.php'; ?>
+                    <?php include __DIR__ . '/finances/formElements/sum.php'; ?>
+                    <?php include __DIR__ . '/finances/formElements/colors.php'; ?>
+                    <?php include __DIR__ . '/finances/formElements/users.php'; ?>
+                    <?php include __DIR__ . '/finances/formElements/actionButtons.php'; ?>
                 </form>
             </div>
             <button class="goals-showFormButton">
@@ -99,30 +63,10 @@
             </div>
             <div class="funds-fundForm" style="display:none;">
                 <form class="funds-fundForm__form" action="#" method="POST">
-                    <input class="funds-fundForm__input" type="text" name="fund_name" placeholder="Наименование фонда">
-                    <input type="hidden" name="fund_color">
-                    <p class="funds-fundForm_titleForColors">Цвет фонда</p>
-                    <div class="funds-fundForm-colors">
-                        <button class="funds-fundForm-colors-color" style="background-color:#840;" id="_840"></button>
-                        <button class="funds-fundForm-colors-color" style="background-color:#f00;" id="_f00"></button>
-                        <button class="funds-fundForm-colors-color" style="background-color:#f0f;" id="_f0f"></button>
-                        <button class="funds-fundForm-colors-color" style="background-color:#090;" id="_090"></button>
-                        <button class="funds-fundForm-colors-color" style="background-color:#0f0;" id="_0f0"></button>
-                        <button class="funds-fundForm-colors-color" style="background-color:#00f;" id="_00f"></button>
-                        <button class="funds-fundForm-colors-color" style="background-color:#0ff;" id="_0ff"></button>
-                        <button class="funds-fundForm-colors-color" style="background-color:#ff0;" id="_ff0"></button>
-                        <button class="funds-fundForm-colors-color" style="background-color:#fff;" id="_fff"></button>
-                        <button class="funds-fundForm-colors-color" style="background-color:#aaa;" id="_aaa"></button>
-                    </div>
-                    <div class="funds-fundForm-actionButtons">
-                        <button class="funds-fundForm__button funds-fundForm_save">Сохранить</button>
-                        <button class="funds-fundForm__button funds-fundForm_close">
-                            <svg viewBox="0 0 24 24" fill="none">
-                                <path d="M6 6L18 18" stroke="#444" stroke-width="2" stroke-linecap="round"/>
-                                <path d="M18 6L6 18" stroke="#444" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
-                        </button>
-                    </div>
+                    <?php include __DIR__ . '/finances/formElements/title.php'; ?>
+                    <?php include __DIR__ . '/finances/formElements/colors.php'; ?>
+                    <?php include __DIR__ . '/finances/formElements/users.php'; ?>
+                    <?php include __DIR__ . '/finances/formElements/actionButtons.php'; ?>
                 </form>
             </div>
             <button class="funds-showFormButton">

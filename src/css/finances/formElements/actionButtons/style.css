@@ -1,0 +1,12 @@
+.FormElements-buttonsBlock {
+  margin-top: 20px;
+}
+.FormElements-buttonsBlock_save, .FormElements-buttonsBlock_close {
+  border-left: 1px solid var(--main-border-color);
+  border-right: 1px solid var(--main-border-color);
+  padding: 5px 15px;
+  background-color: rgba(0, 0, 0, 0.0392156863);
+  font-size: 25px;
+}
+
+/*# sourceMappingURL=style.css.map */

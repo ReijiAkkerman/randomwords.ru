@@ -1,0 +1,15 @@
+.FormElements-sumBlock_sum {
+  font-size: 20px;
+  border-top: 1px solid var(--main-border-color);
+  border-bottom: 1px solid var(--main-border-color);
+  padding: 5px 5px 5px 15px;
+  width: 100%;
+}
+.FormElements-sumBlock_currency {
+  font-size: 25px;
+}
+.FormElements-sumBlock_currency__option {
+  font-size: inherit;
+}
+
+/*# sourceMappingURL=style.css.map */

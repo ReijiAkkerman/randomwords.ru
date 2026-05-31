@@ -1,3 +1,52 @@
+.FormElements-buttonsBlock {
+  margin-top: 20px;
+}
+.FormElements-buttonsBlock_save, .FormElements-buttonsBlock_close {
+  border-left: 1px solid var(--main-border-color);
+  border-right: 1px solid var(--main-border-color);
+  padding: 5px 15px;
+  background-color: rgba(0, 0, 0, 0.0392156863);
+  font-size: 25px;
+}
+
+.FormElements-colorsBlock_color {
+  box-sizing: border-box;
+  border: 1px solid var(--inactive-color);
+  border-radius: var(--block-radius);
+}
+
+.FormElements_parameterName {
+  font-size: 25px;
+  text-align: center;
+}
+
+.FormElements-sumBlock_sum {
+  font-size: 20px;
+  border-top: 1px solid var(--main-border-color);
+  border-bottom: 1px solid var(--main-border-color);
+  padding: 5px 5px 5px 15px;
+  width: 100%;
+}
+.FormElements-sumBlock_currency {
+  font-size: 25px;
+}
+.FormElements-sumBlock_currency__option {
+  font-size: inherit;
+}
+
+.FormElements_title {
+  box-sizing: border-box;
+  font-size: 20px;
+  border-top: 1px solid var(--main-border-color);
+  border-bottom: 1px solid var(--main-border-color);
+  padding: 5px 5px 5px 15px;
+  width: 100%;
+}
+
+.FormElements-usersBlock_user__label {
+  font-size: 25px;
+}
+
 h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   font-family: Jura;
 }

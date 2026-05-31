@@ -1,8 +1,10 @@
 .FormElements {
     &_title {
+        box-sizing: border-box;
         font-size: 20px;
         border-top: 1px solid var(--main-border-color);
         border-bottom: 1px solid var(--main-border-color);
         padding: 5px 5px 5px 15px;
+        width: 100%;
     }
 }

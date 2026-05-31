@@ -1,0 +1,7 @@
+.FormElements-colorsBlock_color {
+  box-sizing: border-box;
+  border: 1px solid var(--inactive-color);
+  border-radius: var(--block-radius);
+}
+
+/*# sourceMappingURL=style.css.map */
