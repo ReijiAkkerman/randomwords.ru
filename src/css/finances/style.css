@@ -160,20 +160,32 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   padding: 10px;
 }
 .funds-list-item {
-  border: 1px solid var(--inactive-color);
-  border-radius: var(--block-radius);
-  padding: 5px 10px 5px 15px;
+  width: 100%;
+  height: fit-content;
 }
 .funds-list-item__button {
+  border: 1px solid var(--inactive-color);
   border-radius: var(--block-radius);
 }
-.funds-list-item_title {
-  font-size: 25px;
-  text-align: center;
+.funds-list-item-users {
+  width: 20px;
 }
-.funds-list-item_sum {
+.funds-list-item-users_user {
+  width: 20px;
+}
+.funds-list-item-users_user:first-child {
+  border-top-left-radius: calc(var(--block-radius) - 1px);
+  border-bottom-left-radius: calc(var(--block-radius) - 1px);
+}
+.funds-list-item-info {
+  padding: 5px 5px 5px 10px;
+}
+.funds-list-item-info_title {
+  font-size: 25px;
+}
+.funds-list-item-info_sum {
   font-size: 20px;
-  text-align: left;
+  text-align: start;
 }
 .funds-fundForm__input {
   box-sizing: border-box;

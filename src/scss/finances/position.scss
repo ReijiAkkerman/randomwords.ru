@@ -113,8 +113,15 @@ body {
 
         &-item {
             display: flex;
-            flex-direction: column;
             gap: 5px;
+
+            &-users {
+                display: flex;
+            }
+
+            &-info {
+                
+            }
         }
     }
 

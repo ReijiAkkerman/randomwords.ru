@@ -152,22 +152,38 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
 
     &-list {
         &-item {
-            border: 1px solid var(--inactive-color);
-            border-radius: var(--block-radius);
-            padding: 5px 10px 5px 15px;
+            width: 100%;
+            height: fit-content;
 
             &__button {
+                border: 1px solid var(--inactive-color);
                 border-radius: var(--block-radius);
             }
 
-            &_title {
-                font-size: 25px;
-                text-align: center;
+            &-users {
+                width: 20px;
+
+                &_user {
+                    width: 20px;
+
+                    &:first-child {
+                        border-top-left-radius: calc(var(--block-radius) - 1px);
+                        border-bottom-left-radius: calc(var(--block-radius) - 1px);
+                    }
+                }
             }
 
-            &_sum {
-                font-size: 20px;
-                text-align: left;
+            &-info {
+                padding: 5px 5px 5px 10px;
+
+                &_title {
+                    font-size: 25px;
+                }
+
+                &_sum {
+                    font-size: 20px;
+                    text-align: start;
+                }
             }
         }
     }

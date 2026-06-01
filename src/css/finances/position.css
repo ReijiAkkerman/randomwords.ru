@@ -119,8 +119,10 @@ body > .mainWindow {
 }
 .funds-list-item {
   display: flex;
-  flex-direction: column;
   gap: 5px;
+}
+.funds-list-item-users {
+  display: flex;
 }
 .funds-fundForm__form {
   display: flex;
