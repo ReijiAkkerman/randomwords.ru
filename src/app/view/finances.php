@@ -154,7 +154,14 @@
         </section>
         <section class="mainWindow settings" data-section="settings" style="display:none;">
             <?php $current_section = 'settings'; ?>
-
+            <div class="settings-parametersEditing">
+                <div class="settings-parametersEditing-users"></div>
+                <div class="settings-parametersEditing-goals"></div>
+                <div class="settings-parametersEditing-funds"></div>
+                <div class="settings-parametersEditing-cathegory"></div>
+                <div class="settings-parametersEditing-type"></div>
+            </div>
+            <div class="settings-searchAndFilters"></div>
         </section>
         <section class="switcher">
             <button class="switcher__button switcher-goals" data-section="goals" data-title="Цели" style="border-top-color:#0000;">
