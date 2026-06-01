@@ -147,6 +147,11 @@ body > .mainWindow {
   right: 20px;
 }
 
+.entries-entryForm__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .entries-entryForm-param-users {
   display: flex;
   justify-content: space-around;

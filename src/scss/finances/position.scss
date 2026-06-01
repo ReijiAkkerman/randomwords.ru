@@ -152,6 +152,12 @@ body {
 
 .entries {
     &-entryForm {
+        &__form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
         &-param {
             &-users {
                 display: flex;

@@ -98,7 +98,7 @@
 
             </div>
             <div class="entries-entryForm" style="display:none;">
-                <form action="#" method="POST">
+                <form class="entries-entryForm__form" action="#" method="POST">
                     <p class="FormElements_parameterName">Фонд</p>
                     <select class="entries-entryForm-param-fund" name="" id="">
                         <option class="entries-entryForm-param-fund__option" value="Повседневное">Повседневное</option>
@@ -113,28 +113,26 @@
                         <option class="entries-entryForm-param-type__option" value="Еда" selected>Еда</option>
                         <option class="entries-entryForm-param-type__option" value="Проезд">Проезд</option>
                     </select>
-                    <p class="FormElements_parameterName">Пользователь</p>
-                    <div class="entries-entry-Formparam entries-entryForm-param-users">
-                        <div class="entries-entryForm-param-users-user">
-                            <input class="entries-entryForm-param-users-user__input" type="checkbox" id="entries_Я" value="Я" checked>
-                            <label class="entries-entryForm-param-users-user__label" for="entries_Я">Я</label>
+                    <p class="FormElements_parameterName">Пользователи</p>
+                    <div class="FormElements-usersBlock">
+                        <div class="FormElements-usersBlock_user">
+                            <input class="FormElements-usersBlock_user__input" type="checkbox" value="Я" id="<?= $current_section ?>_Я" checked>
+                            <label class="FormElements-usersBlock_user__label" for="<?= $current_section ?>_Я">Я</label>
                         </div>
-                        <div class="entries-entryForm-param-users-user">
-                            <input class="entries-entryForm-param-users-user__input" type="checkbox" id="entries_Катя" value="Катя">
-                            <label class="entries-entryForm-param-users-user__label" for="entries_Катя">Катя</label>
+                        <div class="FormElements-usersBlock_user">
+                            <input class="FormElements-usersBlock_user__input" type="checkbox" value="Катя" id="<?= $current_section ?>_Катя">
+                            <label class="FormElements-usersBlock_user__label" for="<?= $current_section ?>_Катя">Катя</label>
                         </div>
                     </div>
                     <p class="FormElements_parameterName">Основные параметры</p>
-                    <div class="entries-entryForm-param">
-                        <div class="entries-entryForm-param__div">
-                            <input class="entries-entryForm-param-sum" name="sum" type="number" placeholder="Сумма">
-                            <select class="entries-entryForm-param-currency" name="" id="">
-                                <option class="entries-entryForm-param-currency__option" value="">&#8381</option>
-                                <option class="entries-entryForm-param-currency__option" value="">&#36</option>
-                            </select>
-                        </div>
-                        <textarea class="entries-entryForm-param-description" name="description" id="" placeholder="Описание"></textarea>
+                    <div class="FormElements-sumBlock">
+                        <input class="FormElements-sumBlock_sum" type="number" name="sum" placeholder="Сумма">
+                        <select class="FormElements-sumBlock_currency" name="currency" id="">
+                            <option class="FormElements-sumBlock_currency__option" value="">&#8381</option>
+                            <option class="FormElements-sumBlock_currency__option" value="">&#36</option>
+                        </select>
                     </div>
+                    <textarea class="entries-entryForm-param-description" name="description" id="" placeholder="Описание"></textarea>
                     <div class="entries-entryForm-actionButtons">
                         <button class="entries-entryForm__button entries-entryForm_save">Сохранить</button>
                         <button class="entries-entryForm__button entries-entryForm_close">

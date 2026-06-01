@@ -211,27 +211,18 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   border-radius: 10px;
 }
 
-.entries-entryForm-param {
-  margin: 5px 0;
-}
-.entries-entryForm-paramName {
-  text-align: center;
-  font-weight: normal;
-  font-size: 28px;
+.entries {
+  padding: 10px;
 }
 .entries-entryForm-param-users-user__label {
   font-size: 25px;
 }
 .entries-entryForm-param-cath, .entries-entryForm-param-type, .entries-entryForm-param-currency, .entries-entryForm-param-fund {
-  font-size: 20px;
-  width: calc(100% - 20px);
+  font-size: 25px;
+  width: 100%;
   padding-left: 10px;
   border: none;
-  margin: 5px 10px;
   outline: none;
-}
-.entries-entryForm-param__div {
-  width: calc(100% - 20px);
 }
 .entries-entryForm-param-sum {
   box-sizing: border-box;
@@ -249,9 +240,8 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
 }
 .entries-entryForm-param-description {
   box-sizing: border-box;
-  width: calc(100% - 20px);
+  width: 100%;
   height: 200px;
-  margin: 5px 10px;
   font-size: 20px;
   resize: none;
   border: none;
