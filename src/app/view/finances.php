@@ -99,21 +99,21 @@
             </div>
             <div class="entries-entryForm" style="display:none;">
                 <form action="#" method="POST">
-                    <h2 class="entries-entryForm-paramName">Фонд</h2>
+                    <p class="FormElements_parameterName">Фонд</p>
                     <select class="entries-entryForm-param-fund" name="" id="">
                         <option class="entries-entryForm-param-fund__option" value="Повседневное">Повседневное</option>
                     </select>
-                    <h2 class="entries-entryForm-paramName">Категория</h2>
+                    <p class="FormElements_parameterName">Категория</p>
                     <select class="entries-entryForm-param entries-entryForm-param-cath" name="cathegory" id="">
                         <option class="entries-entryForm-param-cath__option" value="loss" selected>Убыток</option>
                         <option class="entries-entryForm-param-cath__option" value="income">Прибыль</option>
                     </select>
-                    <h2 class="entries-entryForm-paramName">Тип</h2>
+                    <p class="FormElements_parameterName">Тип</p>
                     <select class="entries-entryForm-param entries-entryForm-param-type" name="type" id="">
                         <option class="entries-entryForm-param-type__option" value="Еда" selected>Еда</option>
                         <option class="entries-entryForm-param-type__option" value="Проезд">Проезд</option>
                     </select>
-                    <h2 class="entries-entryForm-paramName">Пользователь</h2>
+                    <p class="FormElements_parameterName">Пользователь</p>
                     <div class="entries-entry-Formparam entries-entryForm-param-users">
                         <div class="entries-entryForm-param-users-user">
                             <input class="entries-entryForm-param-users-user__input" type="checkbox" id="entries_Я" value="Я" checked>
@@ -124,7 +124,7 @@
                             <label class="entries-entryForm-param-users-user__label" for="entries_Катя">Катя</label>
                         </div>
                     </div>
-                    <h2 class="entries-entryForm-paramName">Основные параметры</h2>
+                    <p class="FormElements_parameterName">Основные параметры</p>
                     <div class="entries-entryForm-param">
                         <div class="entries-entryForm-param__div">
                             <input class="entries-entryForm-param-sum" name="sum" type="number" placeholder="Сумма">
