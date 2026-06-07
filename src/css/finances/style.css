@@ -270,9 +270,6 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   margin: 10px;
   background-color: rgba(0, 0, 0, 0.0392156863);
 }
-.entries-list {
-  padding: 0 10px 10px 10px;
-}
 .entries-list-date {
   font-size: 25px;
   text-align: center;
