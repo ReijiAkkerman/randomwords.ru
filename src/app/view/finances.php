@@ -157,12 +157,18 @@
             </button>
         </section>
         <section class="mainWindow settings" data-section="settings" style="display:none;">
+            <!-- $current_section используется для определения к какому разделу относится подключенный "общий" элемент -->
             <?php $current_section = 'settings'; ?>
             <div class="settings-parametersEditing">
-                <div class="settings-parametersEditing-users"></div>
-                <div class="settings-parametersEditing-goals"></div>
-                <div class="settings-parametersEditing-funds"></div>
+                <div class="settings-parametersEditing-users">
+                    <div class="settings-parameterEditing-users-list">
+                        <?php include __DIR__ . '/finances/formElements/users.php' ?>
+                    </div>
+                    <div class="settings-parameterEditing-users-control"></div>
+                </div>
                 <div class="settings-parametersEditing-cathegory"></div>
+                <div class="settings-parametersEditing-funds"></div>
+                <div class="settings-parametersEditing-goals"></div>
                 <div class="settings-parametersEditing-type"></div>
             </div>
             <div class="settings-searchAndFilters"></div>
@@ -197,7 +203,6 @@
                 </svg>
             </button>
         </section>
-
         <script type="module" src="/src/js/finances/view/switcher.js"></script>
         <script type="module" src="/src/js/finances/view/goal_form.js"></script>
         <script type="module" src="/src/js/finances/view/fund_form.js"></script>
