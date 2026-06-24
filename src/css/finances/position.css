@@ -174,11 +174,7 @@ body > .mainWindow {
 }
 .entries-list-item-userColors {
   display: flex;
-  justify-content: start;
-  width: 20px;
-}
-.entries-list-item-userColors > div {
-  width: 100%;
+  flex-direction: column;
 }
 .entries-list-item-mainInfo {
   width: 100%;

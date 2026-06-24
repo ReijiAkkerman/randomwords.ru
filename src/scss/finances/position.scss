@@ -190,12 +190,7 @@ body {
 
             &-userColors {
                 display: flex;
-                justify-content: start;
-                width: 20px;
-
-                > div {
-                    width: 100%;
-                }
+                flex-direction: column;
             }
 
             &-mainInfo {

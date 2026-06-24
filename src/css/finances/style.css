@@ -270,16 +270,16 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
 .entries-list-item {
   border: 1px solid var(--inactive-color);
   border-radius: var(--block-radius);
+  overflow: hidden;
 }
 .entries-list-item-userColors {
-  flex-shrink: 0;
-  flex-grow: 1;
   box-sizing: border-box;
+  width: 20px;
   height: 100%;
 }
-.entries-list-item-userColors > div:first-child {
-  border-top-left-radius: calc(var(--block-radius) - 1px);
-  border-bottom-left-radius: calc(var(--block-radius) - 1px);
+.entries-list-item-userColors > div {
+  width: 100%;
+  height: 100%;
 }
 .entries-list-item-mainInfo {
   box-sizing: border-box;
