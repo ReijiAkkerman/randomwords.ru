@@ -19,6 +19,7 @@
                         <div class="goals-list-item-data">
                             <div class="goals-list-item-data-users">
                                 <div class="goals-list-item-data-users_user" style="background-color:#f00;"></div>
+                                <div class="goals-list-item-data-users_user" style="background-color:#00f;"></div>
                             </div>
                             <div class="goals-list-item-data__div">
                                 <p class="goals-list-item-data_title">Наименование цели</p>

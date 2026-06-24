@@ -58,6 +58,10 @@ body > .mainWindow {
 .goals-list-item-data {
   display: flex;
 }
+.goals-list-item-data-users {
+  display: flex;
+  flex-direction: column;
+}
 .goals-list-item-progressBar_total {
   box-sizing: border-box;
   height: 100%;
@@ -115,6 +119,7 @@ body > .mainWindow {
 }
 .funds-list-item-users {
   display: flex;
+  flex-direction: column;
 }
 .funds-fundForm__form {
   display: flex;

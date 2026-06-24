@@ -35,6 +35,11 @@ body {
 
             &-data {
                 display: flex;
+
+                &-users {
+                    display: flex;
+                    flex-direction: column;
+                }
             }
 
             &-progressBar {
@@ -110,10 +115,7 @@ body {
 
             &-users {
                 display: flex;
-            }
-
-            &-info {
-                
+                flex-direction: column;
             }
         }
     }

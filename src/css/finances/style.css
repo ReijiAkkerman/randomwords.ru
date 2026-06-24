@@ -68,6 +68,7 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
 .goals-list-item__button {
   border: 1px solid var(--inactive-color);
   border-radius: var(--block-radius);
+  overflow: hidden;
 }
 .goals-list-item-data {
   width: 100%;
@@ -85,9 +86,6 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   height: 100%;
   width: 100%;
 }
-.goals-list-item-data-users_user:first-child {
-  border-top-left-radius: calc(var(--block-radius) - 1px);
-}
 .goals-list-item-data__div {
   width: 100%;
 }
@@ -99,9 +97,6 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
 .goals-list-item-progressBar {
   width: 100%;
   height: 10px;
-  border-bottom-left-radius: var(--block-radius);
-  border-bottom-right-radius: var(--block-radius);
-  overflow: hidden;
 }
 .goals-list-item-progressBar_total {
   background-color: var(--inactive-color);
@@ -165,16 +160,14 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
 .funds-list-item__button {
   border: 1px solid var(--inactive-color);
   border-radius: var(--block-radius);
+  overflow: hidden;
 }
 .funds-list-item-users {
   width: 20px;
 }
 .funds-list-item-users_user {
-  width: 20px;
-}
-.funds-list-item-users_user:first-child {
-  border-top-left-radius: calc(var(--block-radius) - 1px);
-  border-bottom-left-radius: calc(var(--block-radius) - 1px);
+  width: 100%;
+  height: 100%;
 }
 .funds-list-item-info {
   padding: 5px 5px 5px 10px;
