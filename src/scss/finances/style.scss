@@ -68,17 +68,16 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
             &-progressBar {
                 width: 100%;
                 height: 10px;
+                border-bottom-left-radius: var(--block-radius);
+                border-bottom-right-radius: var(--block-radius);
+                overflow: hidden;
 
                 &_total {
                     background-color: var(--inactive-color);
-                    border-bottom-left-radius: calc(var(--block-radius) - 1px);
-                    border-bottom-right-radius: calc(var(--block-radius) - 1px);
                 }
 
                 &_completed {
                     background-color: #66f;
-                    border-bottom-left-radius: calc(var(--block-radius) - 1px);
-                    border-bottom-right-radius: calc(var(--block-radius) - 1px);
                 }
             }
         }
@@ -345,6 +344,22 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
         padding: 10px;
         border: 1px solid var(--inactive-color);
         border-radius: 10px;
+    }
+}
+
+.settings {
+    &-parametersEditing {
+        &-users {
+            &-list {
+                padding-left: 50px;
+
+                &-user {
+                    &__label {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
     }
 }
 

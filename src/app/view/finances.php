@@ -31,8 +31,9 @@
                             </div>
                         </div>
                         <div class="goals-list-item-progressBar">
-                            <div class="goals-list-item-progressBar_completed" style="width:4%;"></div>
-                            <div class="goals-list-item-progressBar_total"></div>
+                            <div class="goals-list-item-progressBar_total">
+                                <div class="goals-list-item-progressBar_completed" style="width:1%;"></div>
+                            </div>
                         </div>
                     </div>
                 </button>
@@ -157,14 +158,26 @@
             </button>
         </section>
         <section class="mainWindow settings" data-section="settings" style="display:none;">
-            <!-- $current_section используется для определения к какому разделу относится подключенный "общий" элемент -->
+            <!-- $current_section используется для определения к какому разделу относится подключаемый "общий" элемент -->
             <?php $current_section = 'settings'; ?>
             <div class="settings-parametersEditing">
                 <div class="settings-parametersEditing-users">
-                    <div class="settings-parameterEditing-users-list">
-                        <?php include __DIR__ . '/finances/formElements/users.php' ?>
+                    <div class="settings-parametersEditing-users-list">
+                        <div class="settings-parametersEditing-users-list-user">
+                            <input type="radio" class="settings-parametersEditing-users-list-user__input" name="user"id="<?= $current_section ?>_Я" checked>
+                            <label class="settings-parametersEditing-users-list-user__label" for="<?= $current_section ?>_Я">Я</label>
+                        </div>
+                        <div class="settings-parametersEditing-users-list-user">
+                            <input type="radio" class="settings-parametersEditing-users-list-user__input" name="user" id="<?= $current_section ?>_Катя">
+                            <label class="settings-parametersEditing-users-list-user__label" for="<?= $current_section ?>_Катя">Катя</label>
+                        </div>
                     </div>
-                    <div class="settings-parameterEditing-users-control"></div>
+                    <div class="settings-parameterEditing-users-control">
+                        <div class="settings-parameterEditing-users-control-baseActions">
+                            <button class="settings-parameterEditing-users-control-baseActions__button settings-parameterEditing-users-control-baseActions_delete">Удалить</button>
+                            <button class="settings-parameterEditing-users-control-baseActions__button settings-parameterEditing-users-control-baseActions_save">Сохранить</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="settings-parametersEditing-cathegory"></div>
                 <div class="settings-parametersEditing-funds"></div>
