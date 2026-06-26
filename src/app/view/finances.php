@@ -22,7 +22,7 @@
                                 <div class="goals-list-item-data-users_user" style="background-color:#00f;"></div>
                             </div>
                             <div class="goals-list-item-data__div">
-                                <p class="goals-list-item-data_title">Наименование цели</p>
+                                <p class="goals-list-item-data_title goal">Купить машину</p>
                                 <p class="goals-list-item-data-progress__p">
                                     <span class="goals-list-item-data-progress_completed">1000</span>
                                     /
@@ -67,6 +67,18 @@
                             <p class="funds-list-item-info_title">Повседневные расходы</p>
                             <p class="funds-list-item-info_sum">5000<span class="funds-list-item-info_currency"> &#8381</span></p>
                             <p class="funds-list-item-info_sum">200<span class="funds-list-item-info_currency"> &#36</span></p>
+                        </div>
+                    </div>
+                </button>
+                <button class="funds-list-item__button" style="background-color:#0f04;">
+                    <div class="funds-list-item">
+                        <div class="funds-list-item-users">
+                            <div class="funds-list-item-users_user" style="background-color:#f00;"></div>
+                            <div class="funds-list-item-users_user" style="background-color:#00f;"></div>
+                        </div>
+                        <div class="funds-list-item-info">
+                            <p class="funds-list-item-info_title goal">Купить машину</p>
+                            <p class="funds-list-item-info_sum">1000<span class="funds-list-item-info_currency"> &#8381</span></p>
                         </div>
                     </div>
                 </button>

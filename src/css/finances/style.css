@@ -62,9 +62,6 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
 .goals-list {
   padding: 10px;
 }
-.goals-list-item {
-  height: 100px;
-}
 .goals-list-item__button {
   border: 1px solid var(--inactive-color);
   border-radius: var(--block-radius);
@@ -80,7 +77,6 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
 .goals-list-item-data-users {
   box-sizing: border-box;
   width: 20px;
-  height: 100%;
 }
 .goals-list-item-data-users_user {
   height: 100%;
@@ -172,6 +168,7 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
 }
 .funds-list-item-info {
   padding: 5px 5px 5px 10px;
+  width: 100%;
 }
 .funds-list-item-info_title {
   font-size: 25px;
@@ -323,6 +320,11 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
 }
 .switcher__svg {
   padding: 10px;
+}
+
+.goal {
+  font-weight: bold;
+  color: #444;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -22,8 +22,6 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
         padding: 10px;
 
         &-item {
-            height: 100px;
-
             &__button {
                 border: 1px solid var(--inactive-color);
                 border-radius: var(--block-radius);
@@ -41,7 +39,6 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
                 &-users {
                     box-sizing: border-box;
                     width: 20px;
-                    height: 100%;
 
                     &_user {
                         height: 100%;
@@ -166,6 +163,7 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
 
             &-info {
                 padding: 5px 5px 5px 10px;
+                width: 100%;
 
                 &_title {
                     font-size: 25px;
@@ -370,4 +368,13 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
     &__svg {
         padding: 10px;
     }
+}
+
+
+//          Вспомогательный класс 
+// На открытой вкладке фондов среди всех фондов помогает визуально 
+// отличать обычные фонды от фондов созданных через цели.
+.goal {
+    font-weight: bold;
+    color: #444;
 }
