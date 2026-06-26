@@ -182,6 +182,10 @@ body {
     }
 
     &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
         &-item {
             display: flex;
             justify-content: start;

@@ -33,7 +33,7 @@
                         </div>
                         <div class="goals-list-item-progressBar">
                             <div class="goals-list-item-progressBar_total">
-                                <div class="goals-list-item-progressBar_completed" style="width:1%;"></div>
+                                <div class="goals-list-item-progressBar_completed" style="width:10%;"></div>
                             </div>
                         </div>
                     </div>
@@ -88,7 +88,6 @@
         <section class="mainWindow entries" data-section="entries" style="display:none;">
             <?php $current_section = 'entries'; ?>
             <div class="entries-list">
-
                 <p class="entries-list-date">2020-12-12</p>
                 <button class="entries-list-item">
                     <div class="entries-list-item-userColors">
@@ -103,7 +102,6 @@
                         </div>
                     </div>
                 </button>
-
             </div>
             <div class="entries-entryForm" style="display:none;">
                 <form class="entries-entryForm__form" action="#" method="POST">
