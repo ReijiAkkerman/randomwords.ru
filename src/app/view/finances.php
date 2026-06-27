@@ -117,10 +117,6 @@
             </div>
             <div class="entries-entryForm" style="display:none;">
                 <form class="entries-entryForm__form" action="#" method="POST">
-                    <p class="FormElements_parameterName">Фонд</p>
-                    <select class="entries-entryForm-param-fund" name="" id="">
-                        <option class="entries-entryForm-param-fund__option" value="Повседневное">Повседневное</option>
-                    </select>
                     <p class="FormElements_parameterName">Категория</p>
                     <select class="entries-entryForm-param entries-entryForm-param-cath" name="cathegory" id="">
                         <option class="entries-entryForm-param-cath__option" value="loss" selected>Убыток</option>
@@ -131,17 +127,8 @@
                         <option class="entries-entryForm-param-type__option" value="Еда" selected>Еда</option>
                         <option class="entries-entryForm-param-type__option" value="Проезд">Проезд</option>
                     </select>
-                    <p class="FormElements_parameterName">Пользователи</p>
-                    <div class="FormElements-usersBlock">
-                        <div class="FormElements-usersBlock_user">
-                            <input class="FormElements-usersBlock_user__input" type="checkbox" value="Я" id="<?= $current_section ?>_Я" checked>
-                            <label class="FormElements-usersBlock_user__label" for="<?= $current_section ?>_Я">Я</label>
-                        </div>
-                        <div class="FormElements-usersBlock_user">
-                            <input class="FormElements-usersBlock_user__input" type="checkbox" value="Катя" id="<?= $current_section ?>_Катя">
-                            <label class="FormElements-usersBlock_user__label" for="<?= $current_section ?>_Катя">Катя</label>
-                        </div>
-                    </div>
+                    <input class="entries-entryForm-param entries-entryForm-param-newType" type="text" name="new_type" placeholder="Новый тип">
+                    <?php include __DIR__ . "/finances/formElements/users.php" ?>
                     <p class="FormElements_parameterName">Основные параметры</p>
                     <div class="FormElements-sumBlock">
                         <input class="FormElements-sumBlock_sum" type="number" name="sum" placeholder="Сумма">
@@ -171,13 +158,14 @@
         <section class="mainWindow settings" data-section="settings" style="display:none;">
             <!-- $current_section используется для определения к какому разделу относится подключаемый "общий" элемент -->
             <?php $current_section = 'settings'; ?>
+            <h2 class="settings-title">Тип</h2>
             <div class="settings-parametersEditing">
                 <div class="settings-parametersEditing-cathegory"></div>
                 <div class="settings-parametersEditing-funds"></div>
                 <div class="settings-parametersEditing-goals"></div>
                 <div class="settings-parametersEditing-type"></div>
             </div>
-            <div class="settings-searchAndFilters"></div>
+            <div class="settings-searchAndFilters" style="display:none;"></div>
             <div class="settings-modeSwitcher">
                 <button class="settings-modeSwitcher__button">Параметры</button>
                 <button class="settings-modeSwitcher__button">Фильтры</button>

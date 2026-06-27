@@ -220,12 +220,23 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
 .entries-entryForm-param-users-user__label {
   font-size: 25px;
 }
-.entries-entryForm-param-cath, .entries-entryForm-param-type, .entries-entryForm-param-currency, .entries-entryForm-param-fund {
+.entries-entryForm-param-cath, .entries-entryForm-param-type, .entries-entryForm-param-currency {
   font-size: 25px;
   width: 100%;
   padding-left: 10px;
   border: none;
   outline: none;
+}
+.entries-entryForm-param-newType {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 20px;
+  padding: 5px 10px;
+  border-top: 1px solid var(--inactive-color);
+  border-bottom: 1px solid var(--inactive-color);
+}
+.entries-entryForm-param-newType:focus {
+  border-color: var(--main-border-color);
 }
 .entries-entryForm-param-sum {
   box-sizing: border-box;
@@ -303,6 +314,14 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   background-color: rgba(255, 255, 255, 0.5333333333);
 }
 
+.settings-title {
+  font-weight: normal;
+  text-align: center;
+  border-bottom: 1px solid var(--main-border-color);
+  width: fit-content;
+  padding: 0 20px;
+  margin: 0 auto;
+}
 .settings-modeSwitcher__button {
   font-size: 20px;
   width: 100%;
