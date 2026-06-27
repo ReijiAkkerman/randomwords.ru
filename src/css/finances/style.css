@@ -303,11 +303,16 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   background-color: rgba(255, 255, 255, 0.5333333333);
 }
 
-.settings-parametersEditing-users-list {
-  padding-left: 50px;
+.settings-modeSwitcher__button {
+  font-size: 20px;
+  width: 100%;
+  padding: 5px 0;
+  color: var(--inactive-color);
+  border-top: 1px solid var(--inactive-color);
+  border-left: 1px solid var(--inactive-color);
 }
-.settings-parametersEditing-users-list-user__label {
-  font-size: 25px;
+.settings-modeSwitcher__button:first-child {
+  border-left: none;
 }
 
 .switcher__button {

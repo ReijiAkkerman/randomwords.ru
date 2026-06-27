@@ -199,9 +199,14 @@ body > .mainWindow {
   right: 20px;
 }
 
-.settings-parametersEditing-users-list {
+.settings {
   display: flex;
   flex-direction: column;
+  justify-content: end;
+}
+.settings-modeSwitcher {
+  display: flex;
+  justify-content: start;
 }
 
 .switcher {

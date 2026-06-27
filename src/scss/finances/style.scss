@@ -339,16 +339,17 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
 }
 
 .settings {
-    &-parametersEditing {
-        &-users {
-            &-list {
-                padding-left: 50px;
+    &-modeSwitcher {
+        &__button {
+            font-size: 20px;
+            width: 100%;
+            padding: 5px 0;
+            color: var(--inactive-color);
+            border-top: 1px solid var(--inactive-color);
+            border-left: 1px solid var(--inactive-color);
 
-                &-user {
-                    &__label {
-                        font-size: 25px;
-                    }
-                }
+            &:first-child {
+                border-left: none;
             }
         }
     }

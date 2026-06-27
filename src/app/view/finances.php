@@ -172,30 +172,16 @@
             <!-- $current_section используется для определения к какому разделу относится подключаемый "общий" элемент -->
             <?php $current_section = 'settings'; ?>
             <div class="settings-parametersEditing">
-                <div class="settings-parametersEditing-users">
-                    <div class="settings-parametersEditing-users-list">
-                        <div class="settings-parametersEditing-users-list-user">
-                            <input type="radio" class="settings-parametersEditing-users-list-user__input" name="user"id="<?= $current_section ?>_Я" checked>
-                            <label class="settings-parametersEditing-users-list-user__label" for="<?= $current_section ?>_Я">Я</label>
-                        </div>
-                        <div class="settings-parametersEditing-users-list-user">
-                            <input type="radio" class="settings-parametersEditing-users-list-user__input" name="user" id="<?= $current_section ?>_Катя">
-                            <label class="settings-parametersEditing-users-list-user__label" for="<?= $current_section ?>_Катя">Катя</label>
-                        </div>
-                    </div>
-                    <div class="settings-parameterEditing-users-control">
-                        <div class="settings-parameterEditing-users-control-baseActions">
-                            <button class="settings-parameterEditing-users-control-baseActions__button settings-parameterEditing-users-control-baseActions_delete">Удалить</button>
-                            <button class="settings-parameterEditing-users-control-baseActions__button settings-parameterEditing-users-control-baseActions_save">Сохранить</button>
-                        </div>
-                    </div>
-                </div>
                 <div class="settings-parametersEditing-cathegory"></div>
                 <div class="settings-parametersEditing-funds"></div>
                 <div class="settings-parametersEditing-goals"></div>
                 <div class="settings-parametersEditing-type"></div>
             </div>
             <div class="settings-searchAndFilters"></div>
+            <div class="settings-modeSwitcher">
+                <button class="settings-modeSwitcher__button">Параметры</button>
+                <button class="settings-modeSwitcher__button">Фильтры</button>
+            </div>
         </section>
         <section class="switcher">
             <button class="switcher__button switcher-goals" data-section="goals" data-title="Цели" style="border-top-color:#0000;">
@@ -213,7 +199,7 @@
                     <path d="M4,13H2V11H4Zm10-2H6v2h8ZM4,7H2V9H4ZM14,7H6V9h8ZM4,3H2V5H4ZM14,3H6V5h8Z"/>
                 </svg>
             </button>
-            <button class="switcher__button switcher-selectedFund" data-section="entries" data-title="Повседневное">
+            <button class="switcher__button switcher-selectedFund" data-section="entries" data-title="Повседневные расходы">
                 <svg class="switcher__svg" viewBox="0 0 256 256">
                     <path d="M36,64a4.0002,4.0002,0,0,1,4-4H216a4,4,0,0,1,0,8H40A4.0002,4.0002,0,0,1,36,64Zm4,68H216a4,4,0,0,0,0-8H40a4,4,0,0,0,0,8Zm104,56H40a4,4,0,0,0,0,8H144a4,4,0,0,0,0-8Zm88,0H212V168a4,4,0,0,0-8,0v20H184a4,4,0,0,0,0,8h20v20a4,4,0,0,0,8,0V196h20a4,4,0,0,0,0-8Z"/>
                 </svg>
