@@ -208,6 +208,16 @@ body > .mainWindow {
   display: flex;
   justify-content: start;
 }
+.settings-parametersEditing-users__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.settings-parametersEditing-users-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
 
 .switcher {
   display: flex;

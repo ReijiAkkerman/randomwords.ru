@@ -229,6 +229,22 @@ body {
         display: flex;
         justify-content: start;
     }
+
+    &-parametersEditing {
+        &-users {
+            &__form {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            &-actions {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+            }
+        }
+    }
 }
 
 .switcher {

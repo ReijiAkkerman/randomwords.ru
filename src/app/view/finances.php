@@ -158,12 +158,26 @@
         <section class="mainWindow settings" data-section="settings" style="display:none;">
             <!-- $current_section используется для определения к какому разделу относится подключаемый "общий" элемент -->
             <?php $current_section = 'settings'; ?>
-            <h2 class="settings-title">Тип</h2>
             <div class="settings-parametersEditing">
-                <div class="settings-parametersEditing-cathegory"></div>
-                <div class="settings-parametersEditing-funds"></div>
-                <div class="settings-parametersEditing-goals"></div>
-                <div class="settings-parametersEditing-type"></div>
+                <h2 class="settings-parametersEditing-title">Пользователи</h2>
+                <div class="settings-parametersEditing-users">
+                    <form class="settings-parametersEditing-users__form" action="#">
+                        <input type="hidden" name="actionType">
+                        <input class="settings-parametersEditing-users__input settings-parametersEditing-users_newUser" type="text" name="username" placeholder="Имя пользователя">
+                        <select class="settings-parametersEditing-users__select settings-parametersEditing-users_selectUser" name="user" id="">
+                            <option value="Я">Я</option>
+                            <option value="Катя">Катя</option>
+                        </select>
+                        <div class="settings-parametersEditing-users-actions">
+                            <button class="settings-parametersEditing-users-actions__button settings-parametersEditing-users-actions_save">Изменить</button>
+                            <button class="settings-parametersEditing-users-actions__button settings-parametersEditing-users-actions_remove">
+                                <svg class="settings-parametersEditing-users-actions__svg" viewBox="0 0 1024 1024">
+                                    <path d="M160 256H96a32 32 0 0 1 0-64h256V95.936a32 32 0 0 1 32-32h256a32 32 0 0 1 32 32V192h256a32 32 0 1 1 0 64h-64v672a32 32 0 0 1-32 32H192a32 32 0 0 1-32-32V256zm448-64v-64H416v64h192zM224 896h576V256H224v640zm192-128a32 32 0 0 1-32-32V416a32 32 0 0 1 64 0v320a32 32 0 0 1-32 32zm192 0a32 32 0 0 1-32-32V416a32 32 0 0 1 64 0v320a32 32 0 0 1-32 32z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
             <div class="settings-searchAndFilters" style="display:none;"></div>
             <div class="settings-modeSwitcher">
