@@ -485,6 +485,7 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
         &-date {
             &__label {
                 font-size: 25px;
+                padding-left: 10px;
                 margin: auto 0;
             }
         }
@@ -510,7 +511,7 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
 
 //          Вспомогательный класс 
 // На открытой вкладке фондов среди всех фондов помогает визуально 
-// отличать обычные фонды от фондов созданных через цели.
+// отличать обычные фонды от фондов относящиеся к целям.
 .goal {
     font-weight: bold;
     color: #444;

@@ -227,7 +227,7 @@
                     <button class="settings-searchAndFilters_switchButton">Валюта</button>
                     <div class="settings-searchAndFilters_contentsArea settings-searchAndFilters-currency__div">
                         <div class="settings-searchAndFilters-currency_firstItem">
-                            <input class="settings-searchAndFilters__input" type="radio" name="filter_currency" id="settings-filters_currency0" value="Рубль">
+                            <input class="settings-searchAndFilters__input" type="radio" name="filter_currency" id="settings-filters_currency0" value="Рубль" checked>
                             <label class="settings-searchAndFilters__label settings-searchAndFilters-currency__label" for="Рубль">&#8381</label>
                         </div>
                         <div class="settings-searchAndFilters-currency_lastItem">
@@ -263,8 +263,8 @@
                 </div>
             </div>
             <div class="settings-modeSwitcher">
-                <button class="settings-modeSwitcher__button">Параметры</button>
-                <button class="settings-modeSwitcher__button">Фильтры</button>
+                <button class="settings-modeSwitcher__button settings-modeSwitcher_switchToParams">Параметры</button>
+                <button class="settings-modeSwitcher__button settings-modeSwitcher_switchToFilters" style="color:#000;">Фильтры</button>
             </div>
         </section>
         <section class="switcher">
@@ -301,5 +301,7 @@
         <script type="module" src="/src/js/finances/view/goal_form.js"></script>
         <script type="module" src="/src/js/finances/view/fund_form.js"></script>
         <script type="module" src="/src/js/finances/view/entry_form.js"></script>
+
+        <script type="module" src="/src/js/finances/view/settings/switcher.js"></script>
     </body>
 </html>

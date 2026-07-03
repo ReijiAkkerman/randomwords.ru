@@ -129,7 +129,7 @@ class Switcher {
     }
 }
 
-export var switcher = new Switcher();
+var switcher = new Switcher();
 
 document.addEventListener("DOMContentLoaded", function() {
     switcher.goals__button.addEventListener("click", switcher.showGoals);
