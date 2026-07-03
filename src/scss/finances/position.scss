@@ -228,6 +228,9 @@ body {
     &-modeSwitcher {
         display: flex;
         justify-content: start;
+        position: sticky;
+        bottom: 0;
+        z-index: 1;
     }
 
     &-parametersEditing {
@@ -242,6 +245,65 @@ body {
                 display: flex;
                 justify-content: center;
                 gap: 10px;
+            }
+        }
+    }
+
+    &-searchAndFilters {
+        &-cathegories {
+            &__div {
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+            }
+        }
+
+        &-users {
+            &__div {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 30px;
+                row-gap: 10px;
+            }
+
+            &_firstItem {
+                justify-self: end;
+            }
+
+            &_lastItem {
+                justify-self: start;
+            }
+        }
+
+        &-sum {
+            &__div {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+        }
+
+        &-currency {
+            &__div {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 30px;
+                row-gap: 10px;
+            }
+
+            &_firstItem {
+                justify-self: end;
+            }
+
+            &_lastItem {
+                justify-self: start;
+            }
+        }
+
+        &-date {
+            &__div {
+                display: flex;
+                justify-content: space-between;
             }
         }
     }

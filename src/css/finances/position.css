@@ -207,6 +207,9 @@ body > .mainWindow {
 .settings-modeSwitcher {
   display: flex;
   justify-content: start;
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
 }
 .settings-parametersEditing-users__form {
   display: flex;
@@ -217,6 +220,44 @@ body > .mainWindow {
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+.settings-searchAndFilters-cathegories__div {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.settings-searchAndFilters-users__div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 10px;
+}
+.settings-searchAndFilters-users_firstItem {
+  justify-self: end;
+}
+.settings-searchAndFilters-users_lastItem {
+  justify-self: start;
+}
+.settings-searchAndFilters-sum__div {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.settings-searchAndFilters-currency__div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 10px;
+}
+.settings-searchAndFilters-currency_firstItem {
+  justify-self: end;
+}
+.settings-searchAndFilters-currency_lastItem {
+  justify-self: start;
+}
+.settings-searchAndFilters-date__div {
+  display: flex;
+  justify-content: space-between;
 }
 
 .switcher {
