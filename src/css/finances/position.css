@@ -221,6 +221,13 @@ body > .mainWindow {
   justify-content: center;
   gap: 10px;
 }
+.settings-searchAndFilters {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow-y: auto;
+}
 .settings-searchAndFilters-cathegories__div {
   display: flex;
   justify-content: center;

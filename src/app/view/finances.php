@@ -137,7 +137,7 @@
                             <option class="FormElements-sumBlock_currency__option" value="">&#36</option>
                         </select>
                     </div>
-                    <textarea class="entries-entryForm-param-description" name="description" id="" placeholder="Описание"></textarea>
+                    <textarea class="entries-entryForm-param-specialMarks" name="special_marks" id="" placeholder="Особые отметки&#10;(указывать через запятую)"></textarea>
                     <div class="entries-entryForm-actionButtons">
                         <button class="entries-entryForm__button entries-entryForm_save">Сохранить</button>
                         <button class="entries-entryForm__button entries-entryForm_close">
@@ -180,87 +180,90 @@
                 </div>
             </div>
             <div class="settings-searchAndFilters">
-                <div class="settings-searchAndFilters-cathegories">
-                    <button class="settings-searchAndFilters_switchButton">Категории</button>
-                    <div class="settings-searchAndFilters_contentsArea settings-searchAndFilters-cathegories__div">
-                        <div>
-                            <input class="settings-searchAndFilters__input" type="checkbox" name="filter_expences" id="settings-filters_expences" checked>
-                            <label class="settings-searchAndFilters__label" for="settings-filters_expences">Расходы</label>
+                <div>
+                    <div class="settings-searchAndFilters-cathegories">
+                        <button class="settings-searchAndFilters_switchButton">Категории</button>
+                        <div class="settings-searchAndFilters_contentsArea settings-searchAndFilters-cathegories__div" style="display:none;">
+                            <div>
+                                <input class="settings-searchAndFilters__input" type="checkbox" name="filter_expences" id="settings-filters_expences" checked>
+                                <label class="settings-searchAndFilters__label" for="settings-filters_expences">Расходы</label>
+                            </div>
+                            <div>
+                                <input class="settings-searchAndFilters__input" type="checkbox" name="filter_incomes" id="settings-filters_incomes">
+                                <label class="settings-searchAndFilters__label" for="settings-filters_incomes">Доходы</label>
+                            </div>
                         </div>
-                        <div>
-                            <input class="settings-searchAndFilters__input" type="checkbox" name="filter_incomes" id="settings-filters_incomes">
-                            <label class="settings-searchAndFilters__label" for="settings-filters_incomes">Доходы</label>
+                    </div>
+                    <div class="settings-searchAndFilters-users">
+                        <button class="settings-searchAndFilters_switchButton">Пользователи</button>
+                        <div class="settings-searchAndFilters_contentsArea settings-searchAndFilters-users__div" style="display:none;">
+                            <div class="settings-searchAndFilters-users_firstItem">
+                                <input class="settings-searchAndFilters__input" type="checkbox" name="filter_user0" id="settings-filters_user0" checked>
+                                <label class="settings-searchAndFilters__label" for="settings-filters_user0">Я</label>
+                            </div>
+                            <div class="settings-searchAndFilters-users_lastItem">
+                                <input class="settings-searchAndFilters__input" type="checkbox" name="filter_user1" id="settings-filters_user1">
+                                <label class="settings-searchAndFilters__label" for="settings-filters_user1">Катя</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="settings-searchAndFilters-types">
+                        <button class="settings-searchAndFilters_switchButton">Типы</button>
+                        <div class="settings-searchAndFilters_contentsArea" style="display:none;">
+                            <p class="settings-searchAndFilters-types__p settings-searchAndFilters-types_infoNoTypes" style="display:none;">Типов нет</p>
+                            <div class="settings-searchAndFilters-types-item">
+                                <input class="settings-searchAndFilters__input" type="checkbox" name="filter_type0" id="settings-filters_type0">
+                                <label class="settings-searchAndFilters__label" for="settings-filters_type0">Аванс</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="settings-searchAndFilters-sum">
+                        <button class="settings-searchAndFilters_switchButton">Сумма</button>
+                        <div class="settings-searchAndFilters_contentsArea settings-searchAndFilters-sum__div" style="display:none;">
+                            <input class="settings-searchAndFilters__input settings-searchAndFilters-sum__input" type="number" name="filter_sumFrom" placeholder="От">
+                            <input class="settings-searchAndFilters__input settings-searchAndFilters-sum__input" type="number" name="filter_sumTo" placeholder="До">
+                        </div>
+                    </div>
+                    <div class="settings-searchAndFilters-currency">
+                        <button class="settings-searchAndFilters_switchButton">Валюта</button>
+                        <div class="settings-searchAndFilters_contentsArea settings-searchAndFilters-currency__div" style="display:none;">
+                            <div class="settings-searchAndFilters-currency_firstItem">
+                                <input class="settings-searchAndFilters__input" type="radio" name="filter_currency" id="settings-filters_currency0" value="Рубль" checked>
+                                <label class="settings-searchAndFilters__label settings-searchAndFilters-currency__label" for="Рубль">&#8381</label>
+                            </div>
+                            <div class="settings-searchAndFilters-currency_lastItem">
+                                <input class="settings-searchAndFilters__input" type="radio" name="filter_currency" id="settings-filters_currency1" value="Доллар">
+                                <label class="settings-searchAndFilters__label settings-searchAndFilters-currency__label" for="Доллар">&#36</label>
+                            </div>
+                            <div class="settings-searchAndFilters-currency_firstItem">
+                                <input class="settings-searchAndFilters__input" type="radio" name="filter_currency" id="settings-filters_currency2" value="Евро">
+                                <label class="settings-searchAndFilters__label settings-searchAndFilters-currency__label" for="Евро">&#8364</label>
+                            </div>
+                            <div class="settings-searchAndFilters-currency_lastItem">
+                                <input class="settings-searchAndFilters__input" type="radio" name="filter_currency" id="settings-filters_currency3" value="Юань">
+                                <label class="settings-searchAndFilters__label settings-searchAndFilters-currency__label kanji" for="Юань">&#20803</label>
+                            </div>
+                            <div class="settings-searchAndFilters-currency_firstItem">
+                                <input class="settings-searchAndFilters__input" type="radio" name="filter_currency" id="settings-filters_currency4" value="Йена">
+                                <label class="settings-searchAndFilters__label settings-searchAndFilters-currency__label kanji" for="Йена">&#20870</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="settings-searchAndFilters-date">
+                        <button class="settings-searchAndFilters_switchButton">Дата и время</button>
+                        <div class="settings-searchAndFilters_contentsArea" style="display:none;">
+                            <div class="settings-searchAndFilters-date__div">
+                                <label class="settings-searchAndFilters-date__label" for="">С</label>
+                                <input class="settings-searchAndFilters__input settings-searchAndFilters-date__input" type="date" name="filter_dateFrom" id="settings-filters_dateFrom">
+                            </div>
+                            <div class="settings-searchAndFilters-date__div">
+                                <label class="settings-searchAndFilters-date__label" for="">До</label>
+                                <input class="settings-searchAndFilters__input settings-searchAndFilters-date__input" type="date" name="filter_dateTo" id="settings-filters_dateTo">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="settings-searchAndFilters-users">
-                    <button class="settings-searchAndFilters_switchButton">Пользователи</button>
-                    <div class="settings-searchAndFilters_contentsArea settings-searchAndFilters-users__div">
-                        <div class="settings-searchAndFilters-users_firstItem">
-                            <input class="settings-searchAndFilters__input" type="checkbox" name="filter_user0" id="settings-filters_user0" checked>
-                            <label class="settings-searchAndFilters__label" for="settings-filters_user0">Я</label>
-                        </div>
-                        <div class="settings-searchAndFilters-users_lastItem">
-                            <input class="settings-searchAndFilters__input" type="checkbox" name="filter_user1" id="settings-filters_user1">
-                            <label class="settings-searchAndFilters__label" for="settings-filters_user1">Катя</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="settings-searchAndFilters-types">
-                    <button class="settings-searchAndFilters_switchButton">Типы</button>
-                    <p class="settings-searchAndFilters-types__p settings-searchAndFilters-types_infoNoTypes">Типов нет</p>
-                    <div class="settings-searchAndFilters_contentsArea" style="display:none;">
-                        <div>
-                            <input class="settings-searchAndFilters__input" type="checkbox" name="filter_type0" id="settings-filters_type0">
-                            <label class="settings-searchAndFilters__label" for="settings-filters_type0">Аванс</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="settings-searchAndFilters-sum">
-                    <button class="settings-searchAndFilters_switchButton">Сумма</button>
-                    <div class="settings-searchAndFilters_contentsArea settings-searchAndFilters-sum__div">
-                        <input class="settings-searchAndFilters__input settings-searchAndFilters-sum__input" type="number" name="filter_sumFrom" placeholder="От">
-                        <input class="settings-searchAndFilters__input settings-searchAndFilters-sum__input" type="number" name="filter_sumTo" placeholder="До">
-                    </div>
-                </div>
-                <div class="settings-searchAndFilters-currency">
-                    <button class="settings-searchAndFilters_switchButton">Валюта</button>
-                    <div class="settings-searchAndFilters_contentsArea settings-searchAndFilters-currency__div">
-                        <div class="settings-searchAndFilters-currency_firstItem">
-                            <input class="settings-searchAndFilters__input" type="radio" name="filter_currency" id="settings-filters_currency0" value="Рубль" checked>
-                            <label class="settings-searchAndFilters__label settings-searchAndFilters-currency__label" for="Рубль">&#8381</label>
-                        </div>
-                        <div class="settings-searchAndFilters-currency_lastItem">
-                            <input class="settings-searchAndFilters__input" type="radio" name="filter_currency" id="settings-filters_currency1" value="Доллар">
-                            <label class="settings-searchAndFilters__label settings-searchAndFilters-currency__label" for="Доллар">&#36</label>
-                        </div>
-                        <div class="settings-searchAndFilters-currency_firstItem">
-                            <input class="settings-searchAndFilters__input" type="radio" name="filter_currency" id="settings-filters_currency2" value="Евро">
-                            <label class="settings-searchAndFilters__label settings-searchAndFilters-currency__label" for="Евро">&#8364</label>
-                        </div>
-                        <div class="settings-searchAndFilters-currency_lastItem">
-                            <input class="settings-searchAndFilters__input" type="radio" name="filter_currency" id="settings-filters_currency3" value="Юань">
-                            <label class="settings-searchAndFilters__label settings-searchAndFilters-currency__label kanji" for="Юань">&#20803</label>
-                        </div>
-                        <div class="settings-searchAndFilters-currency_firstItem">
-                            <input class="settings-searchAndFilters__input" type="radio" name="filter_currency" id="settings-filters_currency4" value="Йена">
-                            <label class="settings-searchAndFilters__label settings-searchAndFilters-currency__label kanji" for="Йена">&#20870</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="settings-searchAndFilters-date">
-                    <button class="settings-searchAndFilters_switchButton">Дата и время</button>
-                    <div class="settings-searchAndFilters_contentsArea">
-                        <div class="settings-searchAndFilters-date__div">
-                            <label class="settings-searchAndFilters-date__label" for="">С</label>
-                            <input class="settings-searchAndFilters__input settings-searchAndFilters-date__input" type="date" name="filter_dateFrom" id="settings-filters_dateFrom">
-                        </div>
-                        <div class="settings-searchAndFilters-date__div">
-                            <label class="settings-searchAndFilters-date__label" for="">До</label>
-                            <input class="settings-searchAndFilters__input settings-searchAndFilters-date__input" type="date" name="filter_dateTo" id="settings-filters_dateTo">
-                        </div>
-                    </div>
-                </div>
+                <button class="settings-searchAndFilters_resetFilters">Сбросить фильтры</button>
             </div>
             <div class="settings-modeSwitcher">
                 <button class="settings-modeSwitcher__button settings-modeSwitcher_switchToParams">Параметры</button>
@@ -303,5 +306,6 @@
         <script type="module" src="/src/js/finances/view/entry_form.js"></script>
 
         <script type="module" src="/src/js/finances/view/settings/switcher.js"></script>
+        <script type="module" src="/src/js/finances/view/settings/filters/items_opener.js"></script>
     </body>
 </html>
