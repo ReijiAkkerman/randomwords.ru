@@ -211,15 +211,20 @@ body > .mainWindow {
   bottom: 0;
   z-index: 1;
 }
-.settings-parametersEditing-users__form {
+.settings-parametersEditing {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.settings-parametersEditing-users-actions {
+.settings-parametersEditing-item__div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.settings-parametersEditing-item-users-actions {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
 }
 .settings-searchAndFilters {
   display: flex;

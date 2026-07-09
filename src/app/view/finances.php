@@ -159,28 +159,41 @@
             <!-- $current_section используется для определения к какому разделу относится подключаемый "общий" элемент -->
             <?php $current_section = 'settings'; ?>
             <div class="settings-parametersEditing" style="display:none;">
-                <h2 class="settings-parametersEditing-title">Пользователи</h2>
-                <div class="settings-parametersEditing-users">
-                    <form class="settings-parametersEditing-users__form" action="#">
-                        <input type="hidden" name="actionType">
-                        <input class="settings-parametersEditing-users__input settings-parametersEditing-users_newUser" type="text" name="username" placeholder="Имя пользователя">
-                        <select class="settings-parametersEditing-users__select settings-parametersEditing-users_selectUser" name="user" id="">
+                <div class="settings-parametersEditing-item">
+                    <h2 class="settings-parametersEditing-item__h2">Пользователи</h2>
+                    <form action="#" class="settings-parametersEditing-item__div settings-parametersEditing-item-users">
+                        <select class="settings-parametersEditing-item-users__select" name="user" id="settings-users">
                             <option value="Я">Я</option>
                             <option value="Катя">Катя</option>
                         </select>
-                        <div class="settings-parametersEditing-users-actions">
-                            <button class="settings-parametersEditing-users-actions__button settings-parametersEditing-users-actions_save">Изменить</button>
-                            <button class="settings-parametersEditing-users-actions__button settings-parametersEditing-users-actions_remove">
-                                <svg class="settings-parametersEditing-users-actions__svg" viewBox="0 0 1024 1024">
+                        <input class="settings-parametersEditing-item__input" type="text" name="user_name" placeholder="Имя пользователя">
+                        <div class="settings-parametersEditing-item-users-actions">
+                            <button class="settings-parametersEditing-item__button settings-parametersEditing-item-users_saveChanges">Изменить</button>
+                            <button class="settings-parametersEditing-item__button settings-parametersEditing-item-users_removeUser">
+                                <svg class="settings-parametersEditing-item__svg" viewBox="0 0 1024 1024">
                                     <path d="M160 256H96a32 32 0 0 1 0-64h256V95.936a32 32 0 0 1 32-32h256a32 32 0 0 1 32 32V192h256a32 32 0 1 1 0 64h-64v672a32 32 0 0 1-32 32H192a32 32 0 0 1-32-32V256zm448-64v-64H416v64h192zM224 896h576V256H224v640zm192-128a32 32 0 0 1-32-32V416a32 32 0 0 1 64 0v320a32 32 0 0 1-32 32zm192 0a32 32 0 0 1-32-32V416a32 32 0 0 1 64 0v320a32 32 0 0 1-32 32z"/>
                                 </svg>
                             </button>
                         </div>
                     </form>
+                    <form action="#" class="settings-parametersEditing-item__div settings-parametersEditing-item-newUser">
+                        <input class="settings-parametersEditing-item__input" type="text" name="new_user" placeholder="Новый пользователь">
+                        <button class="settings-parametersEditing-item__button settings-parametersEditing-item_addNewUser">Добавить</button>
+                    </form>
+                </div>
+                <hr class="settings-parametersEditing__hr">
+                <div class="settings-parametersEditing-item">
+                    <h2 class="settings-parametersEditing-item__h2">Настроки фильтров</h2>
+                    <button class="settings-parametersEditing-item__button settings-parametersEditing-item_saveFiltersAsDefault">Зафиксировать выбранное</button>
                 </div>
             </div>
             <div class="settings-searchAndFilters">
                 <div>
+                    <!-- В каждом div-е класса settings-searchAndFilters-* должно быть только 2 элемента
+                    button класса settings-searchAndFilters_switchButton и 
+                    div класса settings-searchAndFilters_contentsArea.
+                    Добавление новых элементов в этот уровень вложенности или удаление одного из описанных выше элементов
+                    поломает работу скрипта /src/js/finances/view/settings/filters/items_opener.js -->
                     <div class="settings-searchAndFilters-cathegories">
                         <button class="settings-searchAndFilters_switchButton">Категории</button>
                         <div class="settings-searchAndFilters_contentsArea settings-searchAndFilters-cathegories__div" style="display:none;">

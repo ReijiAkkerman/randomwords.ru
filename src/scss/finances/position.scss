@@ -234,17 +234,23 @@ body {
     }
 
     &-parametersEditing {
-        &-users {
-            &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &-item {
+            &__div {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
             }
 
-            &-actions {
-                display: flex;
-                justify-content: center;
-                gap: 10px;
+            &-users {
+                &-actions {
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                }
             }
         }
     }

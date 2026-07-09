@@ -317,49 +317,57 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   background-color: rgba(255, 255, 255, 0.5333333333);
 }
 
-.settings-parametersEditing-title {
+.settings-parametersEditing {
+  padding: 10px;
+}
+.settings-parametersEditing__hr {
+  margin-top: 10px;
+}
+.settings-parametersEditing-item {
+  margin-bottom: 10px;
+}
+.settings-parametersEditing-item__h2 {
+  font-size: 25px;
   font-weight: normal;
   text-align: center;
-  border-bottom: 1px solid var(--main-border-color);
-  width: fit-content;
-  padding: 0 20px;
-  margin: 0 auto 10px;
+  margin-bottom: 10px;
+  text-decoration: underline;
 }
-.settings-parametersEditing-users {
-  margin: 0 10px;
-}
-.settings-parametersEditing-users__input {
-  box-sizing: border-box;
+.settings-parametersEditing-item__input {
   font-size: 20px;
-  width: 100%;
   padding: 5px 10px;
   border-top: 1px solid var(--inactive-color);
   border-bottom: 1px solid var(--inactive-color);
 }
-.settings-parametersEditing-users__input:focus {
+.settings-parametersEditing-item__input:focus {
   border-color: var(--main-border-color);
 }
-.settings-parametersEditing-users__select {
-  width: 100%;
-  font-size: 25px;
-  background-color: rgba(0, 0, 0, 0.0392156863);
-  border: none;
-  padding-left: 10px;
-  outline: none;
-}
-.settings-parametersEditing-users-actions__button {
-  padding: 5px 15px;
+.settings-parametersEditing-item__button {
   border-left: 1px solid var(--main-border-color);
   border-right: 1px solid var(--main-border-color);
-  background-color: rgba(0, 0, 0, 0.0392156863);
+  padding: 5px 15px;
   font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.0392156863);
+  width: fit-content;
 }
-.settings-parametersEditing-users-actions__svg {
-  box-sizing: border-box;
-  width: 25px;
-  height: 25px;
-  vertical-align: -3px;
+.settings-parametersEditing-item__svg {
   fill: var(--main-svg-color);
+  vertical-align: -4px;
+}
+.settings-parametersEditing-item-users {
+  margin-bottom: 20px;
+}
+.settings-parametersEditing-item-users__select {
+  font-size: 25px;
+  padding-left: 15px;
+  border: none;
+}
+.settings-parametersEditing-item_addNewUser {
+  margin: auto;
+}
+.settings-parametersEditing-item_saveFiltersAsDefault {
+  font-size: 20px;
+  margin: auto;
 }
 .settings-modeSwitcher {
   background-color: #fff;
@@ -393,7 +401,7 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   border-right: 1px solid var(--main-border-color);
   width: fit-content;
   margin: 10px auto;
-  background-color: #e3e3e3;
+  background-color: rgba(0, 0, 0, 0.0392156863);
 }
 .settings-searchAndFilters__input {
   font-size: 25px;
