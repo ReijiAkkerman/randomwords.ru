@@ -274,20 +274,27 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
                 width: fit-content;
             }
 
-            &-specialMarks {
+            &__textarea {
                 box-sizing: border-box;
                 width: 100%;
-                height: 200px;
                 font-size: 20px;
                 resize: none;
                 border: none;
                 background-color: #0001;
                 outline: none;
                 padding: 0 5px;
+            }
+
+            &_specialMarks {
+                height: 100px;
 
                 &::placeholder {
                     text-align: center;
                 }
+            }
+
+            &_description {
+                height: 200px;
             }
         }
 

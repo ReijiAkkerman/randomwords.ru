@@ -252,10 +252,9 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   font-size: 25px;
   width: fit-content;
 }
-.entries-entryForm-param-specialMarks {
+.entries-entryForm-param__textarea {
   box-sizing: border-box;
   width: 100%;
-  height: 200px;
   font-size: 20px;
   resize: none;
   border: none;
@@ -263,8 +262,14 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   outline: none;
   padding: 0 5px;
 }
-.entries-entryForm-param-specialMarks::placeholder {
+.entries-entryForm-param_specialMarks {
+  height: 100px;
+}
+.entries-entryForm-param_specialMarks::placeholder {
   text-align: center;
+}
+.entries-entryForm-param_description {
+  height: 200px;
 }
 .entries-entryForm__button {
   color: var(--main-text-color);

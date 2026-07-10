@@ -101,7 +101,7 @@
             <?php $current_section = 'entries'; ?>
             <div class="entries-list">
                 <p class="entries-list-date">2020-12-12</p>
-                <button class="entries-list-item">
+                <button class="entries-list-item" data-cathegory="Убыток" data-type="Проезд" data-date="2020-12-12" data-time="13:53" data-users="Я,Катя" data-sum="1000" data-currency="Рубль" data-special_marks="" data-description="">
                     <div class="entries-list-item-userColors">
                         <div style="background-color:#00f;"></div>
                         <div style="background-color:#f00;"></div>
@@ -117,10 +117,11 @@
             </div>
             <div class="entries-entryForm" style="display:none;">
                 <form class="entries-entryForm__form" action="#" method="POST">
+                    <input type="hidden" name="type">
                     <p class="FormElements_parameterName">Категория</p>
                     <select class="entries-entryForm-param entries-entryForm-param-cath" name="cathegory" id="">
-                        <option class="entries-entryForm-param-cath__option" value="loss" selected>Убыток</option>
-                        <option class="entries-entryForm-param-cath__option" value="income">Прибыль</option>
+                        <option class="entries-entryForm-param-cath__option" value="Убыток" selected>Убыток</option>
+                        <option class="entries-entryForm-param-cath__option" value="Прибыль">Прибыль</option>
                     </select>
                     <p class="FormElements_parameterName">Тип</p>
                     <select class="entries-entryForm-param entries-entryForm-param-type" name="type" id="">
@@ -133,11 +134,12 @@
                     <div class="FormElements-sumBlock">
                         <input class="FormElements-sumBlock_sum" type="number" name="sum" placeholder="Сумма">
                         <select class="FormElements-sumBlock_currency" name="currency" id="">
-                            <option class="FormElements-sumBlock_currency__option" value="">&#8381</option>
-                            <option class="FormElements-sumBlock_currency__option" value="">&#36</option>
+                            <option class="FormElements-sumBlock_currency__option" value="Рубль">&#8381</option>
+                            <option class="FormElements-sumBlock_currency__option" value="Доллар">&#36</option>
                         </select>
                     </div>
-                    <textarea class="entries-entryForm-param-specialMarks" name="special_marks" id="" placeholder="Особые отметки&#10;(указывать через запятую)"></textarea>
+                    <textarea class="entries-entryForm-param__textarea entries-entryForm-param_specialMarks" name="special_marks" id="" placeholder="Особые отметки&#10;(указывать через запятую)"></textarea>
+                    <textarea class="entries-entryForm-param__textarea entries-entryForm-param_description" name="description" id="" placeholder="Описание"></textarea>
                     <div class="entries-entryForm-actionButtons">
                         <button class="entries-entryForm__button entries-entryForm_save">Сохранить</button>
                         <button class="entries-entryForm__button entries-entryForm_close">
@@ -320,5 +322,7 @@
 
         <script type="module" src="/src/js/finances/view/settings/switcher.js"></script>
         <script type="module" src="/src/js/finances/view/settings/filters/items_opener.js"></script>
+
+        <script type="module" src="/src/js/finances/view/entries/show_entry's_data.js"></script>
     </body>
 </html>
