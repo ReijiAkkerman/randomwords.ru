@@ -14,6 +14,7 @@ class SwitcherButton {
     }
 
     enableCurrentSection(event) {
+        if(SwitcherButton.#earlier_selected_button !== this)
         SwitcherButton.#earlier_selected_button.#disablePreviousSection();
         SwitcherButton.#earlier_selected_button = this;
         this.#showWindow();
@@ -36,21 +37,21 @@ class SwitcherButton {
     }
 
     #highlightSvg() {
-        let svg = this.#button.querySelector("svg.switcher__svg");
+        let svg = this.#button.querySelector("svg.svg-stroke");
         if(svg === null) {
-            svg = this.#button.querySelector("svg.svg-stroke");
-            svg.style.stroke = CSSStyles.getMainSvgColor();
+            svg = this.#button.querySelector("svg.switcher__svg");
+            svg.style.fill = CSSStyles.getMainSvgColor();
         }
-        else svg.style.fill = CSSStyles.getMainSvgColor();
+        else svg.style.stroke = CSSStyles.getMainSvgColor();
     }
 
     #unhighlightSvg() {
-        let svg = this.#button.querySelector("svg.switcher__svg");
+        let svg = this.#button.querySelector("svg.svg-stroke");
         if(svg === null) {
-            svg = this.#button.querySelector("svg.svg-stroke");
-            svg.style.stroke = "";
+            svg = this.#button.querySelector("svg.switcher__svg");
+            svg.style.fill = "";
         }
-        else svg.style.fill = "";
+        else svg.style.stroke = "";
     }
 
     #showWindow() {
