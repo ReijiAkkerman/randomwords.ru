@@ -287,7 +287,7 @@
         </section>
         <section class="switcher">
             <button class="switcher__button switcher-goals" data-section="goals" data-title="Цели" style="border-top-color:#0000;">
-                <svg class="svg-stroke" viewBox="0 0 32 32" enable-background="new 0 0 32 32">
+                <svg class="switcher__svg svg-stroke" viewBox="0 0 32 32" enable-background="new 0 0 32 32">
                     <line fill="none" stroke-width="2" stroke-miterlimit="10" x1="15" y1="16" x2="28" y2="16"/>
                     <polyline fill="none" stroke-width="2" stroke-miterlimit="10" points="5,16 7,18 11,14 "/>
                     <line fill="none" stroke-width="2" stroke-miterlimit="10" x1="15" y1="8" x2="28" y2="8"/>
@@ -301,7 +301,7 @@
                     <path d="M4,13H2V11H4Zm10-2H6v2h8ZM4,7H2V9H4ZM14,7H6V9h8ZM4,3H2V5H4ZM14,3H6V5h8Z"/>
                 </svg>
             </button>
-            <button class="switcher__button switcher-selectedFund" data-section="entries" data-title="Повседневные расходы">
+            <button class="switcher__button switcher-entries" data-section="entries" data-title="Повседневные расходы">
                 <svg class="switcher__svg" viewBox="0 0 256 256">
                     <path d="M36,64a4.0002,4.0002,0,0,1,4-4H216a4,4,0,0,1,0,8H40A4.0002,4.0002,0,0,1,36,64Zm4,68H216a4,4,0,0,0,0-8H40a4,4,0,0,0,0,8Zm104,56H40a4,4,0,0,0,0,8H144a4,4,0,0,0,0-8Zm88,0H212V168a4,4,0,0,0-8,0v20H184a4,4,0,0,0,0,8h20v20a4,4,0,0,0,8,0V196h20a4,4,0,0,0,0-8Z"/>
                 </svg>
@@ -315,7 +315,10 @@
                 </svg>
             </button>
         </section>
-        <script type="module" src="/src/js/finances/view/switcher.js"></script>
+        <script type="module" src="/src/js/finances/view/CSSStyles.js"></script>
+        <script type="module" src="/src/js/finances/view/SwitcherButton.js"></script>
+
+        <!-- <script type="module" src="/src/js/finances/view/switcher.js"></script>
         <script type="module" src="/src/js/finances/view/goal_form.js"></script>
         <script type="module" src="/src/js/finances/view/fund_form.js"></script>
         <script type="module" src="/src/js/finances/view/entry_form.js"></script>
@@ -323,6 +326,6 @@
         <script type="module" src="/src/js/finances/view/settings/switcher.js"></script>
         <script type="module" src="/src/js/finances/view/settings/filters/items_opener.js"></script>
 
-        <script type="module" src="/src/js/finances/view/entries/show_entry's_data.js"></script>
+        <script type="module" src="/src/js/finances/view/entries/show_entry's_data.js"></script> -->
     </body>
 </html>
