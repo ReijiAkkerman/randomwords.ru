@@ -5,11 +5,13 @@ class SwitcherButton {
 
     #button;
     #window;
+    #title;
     #button_color;
 
     constructor(button_selector, window_selector, button_color = CSSStyles.getMainSvgColor()) {
         this.#button = document.querySelector(button_selector);
         this.#window = document.querySelector(window_selector);
+        this.#title = document.querySelector(".title");
         this.#button_color = button_color;
         this.#button.addEventListener("click", (event) => this.enableCurrentSection(event));
         if(SwitcherButton.#earlier_selected_button === undefined) SwitcherButton.#earlier_selected_button = goals;
@@ -19,6 +21,7 @@ class SwitcherButton {
         if(SwitcherButton.#earlier_selected_button !== this)
         SwitcherButton.#earlier_selected_button.#disablePreviousSection();
         SwitcherButton.#earlier_selected_button = this;
+        this.#setTitle();
         this.#showWindow();
         this.#highlightSvg();
         this.#hightlightButton();
@@ -54,6 +57,10 @@ class SwitcherButton {
             svg.style.fill = "";
         }
         else svg.style.stroke = "";
+    }
+
+    #setTitle() {
+        this.#title.textContent = this.#button.dataset.title;
     }
 
     #showWindow() {
