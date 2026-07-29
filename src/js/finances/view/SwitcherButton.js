@@ -5,10 +5,12 @@ class SwitcherButton {
 
     #button;
     #window;
+    #button_color;
 
-    constructor(button_selector, window_selector) {
+    constructor(button_selector, window_selector, button_color = CSSStyles.getMainSvgColor()) {
         this.#button = document.querySelector(button_selector);
         this.#window = document.querySelector(window_selector);
+        this.#button_color = button_color;
         this.#button.addEventListener("click", (event) => this.enableCurrentSection(event));
         if(SwitcherButton.#earlier_selected_button === undefined) SwitcherButton.#earlier_selected_button = goals;
     }
@@ -40,9 +42,9 @@ class SwitcherButton {
         let svg = this.#button.querySelector("svg.svg-stroke");
         if(svg === null) {
             svg = this.#button.querySelector("svg.switcher__svg");
-            svg.style.fill = CSSStyles.getMainSvgColor();
+            svg.style.fill = this.#button_color;
         }
-        else svg.style.stroke = CSSStyles.getMainSvgColor();
+        else svg.style.stroke = this.#button_color;
     }
 
     #unhighlightSvg() {
@@ -68,6 +70,6 @@ export var goals, funds, entries, settings;
 document.addEventListener("DOMContentLoaded", function() {
     goals = new SwitcherButton(".switcher-goals", ".mainWindow.goals");
     funds = new SwitcherButton(".switcher-funds", ".mainWindow.funds");
-    entries = new SwitcherButton(".switcher-entries", ".mainWindow.entries");
-    settings = new SwitcherButton(".switcher-settings", ".mainWindow.settings");
+    entries = new SwitcherButton(".switcher-entries", ".mainWindow.entries", CSSStyles.getMainTextColor());
+    settings = new SwitcherButton(".switcher-settings", ".mainWindow.settings", CSSStyles.getMainTextColor());
 });
