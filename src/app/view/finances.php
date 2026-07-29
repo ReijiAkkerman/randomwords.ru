@@ -318,6 +318,7 @@
         <script type="module" src="/src/js/finances/view/CSSStyles.js"></script>
         <script type="module" src="/src/js/finances/view/SwitcherButton.js"></script>
         <script type="module" src="/src/js/finances/view/NewAdderButton.js"></script>
+        <script type="module" src="/src/js/finances/view/CloseFormButton.js"></script>
 
         <!-- <script type="module" src="/src/js/finances/view/switcher.js"></script>
         <script type="module" src="/src/js/finances/view/goal_form.js"></script>

@@ -1,18 +1,18 @@
 class NewAdderButton {
     #form;
-    #currently_opened_area;
+    #list;
     #addNew_button;
 
-    constructor(addNew_button_selector, currently_opened_area_selector, form_selector) {
+    constructor(addNew_button_selector, list_selector, form_selector) {
         this.#addNew_button = document.querySelector(addNew_button_selector);
-        this.#currently_opened_area = document.querySelector(currently_opened_area_selector);
+        this.#list = document.querySelector(list_selector);
         this.#form = document.querySelector(form_selector);
         this.#addNew_button.addEventListener("click", (event) => this.openForm(event));
     }
 
     openForm() {
         this.#hideAddNewButton();
-        this.#hideCurrentlyOpenedArea();
+        this.#hideList();
         this.#showForm();
     }
 
@@ -20,8 +20,8 @@ class NewAdderButton {
         this.#addNew_button.style.display = "none";
     }
 
-    #hideCurrentlyOpenedArea() {
-        this.#currently_opened_area.style.display = "none";
+    #hideList() {
+        this.#list.style.display = "none";
     }
 
     #showForm() {
