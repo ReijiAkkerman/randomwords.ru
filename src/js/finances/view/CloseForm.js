@@ -1,4 +1,4 @@
-class CloseFormButton {
+class CloseForm {
     #form;
     #addNew_button;
     #list;
@@ -38,7 +38,7 @@ class CloseFormButton {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    let goals = new CloseFormButton(".goals-goalForm", ".goals-showFormButton", ".goals-list", ".goals .FormElements-buttonsBlock_close");
-    let funds = new CloseFormButton(".funds-fundForm", ".funds-showFormButton", ".funds-list", ".funds .FormElements-buttonsBlock_close");
-    let entries = new CloseFormButton(".entries-entryForm", ".entries-showFormButton", ".entries-list", ".entries-entryForm_close");
+    let goals = new CloseForm(".goals-goalForm", ".goals-showFormButton", ".goals-list", ".goals .FormElements-buttonsBlock_close");
+    let funds = new CloseForm(".funds-fundForm", ".funds-showFormButton", ".funds-list", ".funds .FormElements-buttonsBlock_close");
+    let entries = new CloseForm(".entries-entryForm", ".entries-showFormButton", ".entries-list", ".entries-entryForm_close");
 });

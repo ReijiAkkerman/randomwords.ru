@@ -1,4 +1,4 @@
-class NewAdderButton {
+class AddNew {
     #form;
     #list;
     #addNew_button;
@@ -30,7 +30,7 @@ class NewAdderButton {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    let goals = new NewAdderButton(".goals-showFormButton", ".goals-list", ".goals-goalForm");
-    let funds = new NewAdderButton(".funds-showFormButton", ".funds-list", ".funds-fundForm");
-    let entries = new NewAdderButton(".entries-showFormButton", ".entries-list", ".entries-entryForm");
+    let goals = new AddNew(".goals-showFormButton", ".goals-list", ".goals-goalForm");
+    let funds = new AddNew(".funds-showFormButton", ".funds-list", ".funds-fundForm");
+    let entries = new AddNew(".entries-showFormButton", ".entries-list", ".entries-entryForm");
 });

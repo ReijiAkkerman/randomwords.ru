@@ -316,9 +316,11 @@
             </button>
         </section>
         <script type="module" src="/src/js/finances/view/CSSStyles.js"></script>
-        <script type="module" src="/src/js/finances/view/SwitcherButton.js"></script>
-        <script type="module" src="/src/js/finances/view/NewAdderButton.js"></script>
-        <script type="module" src="/src/js/finances/view/CloseFormButton.js"></script>
+        <script type="module" src="/src/js/finances/view/WindowSwitcher.js"></script>
+        <script type="module" src="/src/js/finances/view/AddNew.js"></script>
+        <script type="module" src="/src/js/finances/view/CloseForm.js"></script>
+        <!-- settings -->
+         <script type="module" src="/src/js/finances/view/settings/SectionSwitcher.js"></script>
 
         <!-- <script type="module" src="/src/js/finances/view/switcher.js"></script>
         <script type="module" src="/src/js/finances/view/goal_form.js"></script>

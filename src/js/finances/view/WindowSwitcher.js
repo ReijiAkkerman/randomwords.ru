@@ -1,6 +1,6 @@
 import {CSSStyles} from "/src/js/finances/view/CSSStyles.js";
 
-class SwitcherButton {
+class WindowSwitcher {
     static #earlier_selected_button;
 
     #button;
@@ -14,13 +14,13 @@ class SwitcherButton {
         this.#title = document.querySelector(".title");
         this.#button_color = button_color;
         this.#button.addEventListener("click", (event) => this.enableCurrentSection(event));
-        if(SwitcherButton.#earlier_selected_button === undefined) SwitcherButton.#earlier_selected_button = goals;
+        if(WindowSwitcher.#earlier_selected_button === undefined) WindowSwitcher.#earlier_selected_button = goals;
     }
 
     enableCurrentSection(event) {
-        if(SwitcherButton.#earlier_selected_button !== this)
-        SwitcherButton.#earlier_selected_button.#disablePreviousSection();
-        SwitcherButton.#earlier_selected_button = this;
+        if(WindowSwitcher.#earlier_selected_button !== this)
+        WindowSwitcher.#earlier_selected_button.#disablePreviousSection();
+        WindowSwitcher.#earlier_selected_button = this;
         this.#setTitle();
         this.#showWindow();
         this.#highlightSvg();
@@ -75,8 +75,8 @@ class SwitcherButton {
 export var goals, funds, entries, settings;
 
 document.addEventListener("DOMContentLoaded", function() {
-    goals = new SwitcherButton(".switcher-goals", ".mainWindow.goals");
-    funds = new SwitcherButton(".switcher-funds", ".mainWindow.funds");
-    entries = new SwitcherButton(".switcher-entries", ".mainWindow.entries", CSSStyles.getMainTextColor());
-    settings = new SwitcherButton(".switcher-settings", ".mainWindow.settings", CSSStyles.getMainTextColor());
+    goals = new WindowSwitcher(".switcher-goals", ".mainWindow.goals");
+    funds = new WindowSwitcher(".switcher-funds", ".mainWindow.funds");
+    entries = new WindowSwitcher(".switcher-entries", ".mainWindow.entries", CSSStyles.getMainTextColor());
+    settings = new WindowSwitcher(".switcher-settings", ".mainWindow.settings", CSSStyles.getMainTextColor());
 });
