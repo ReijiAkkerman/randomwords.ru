@@ -320,7 +320,9 @@
         <script type="module" src="/src/js/finances/view/AddNew.js"></script>
         <script type="module" src="/src/js/finances/view/CloseForm.js"></script>
         <!-- settings -->
-         <script type="module" src="/src/js/finances/view/settings/SectionSwitcher.js"></script>
+        <script type="module" src="/src/js/finances/view/settings/SectionSwitcher.js"></script>
+        <!--    filters -->
+        <script type="module" src="/src/js/finances/view/settings/filters/ItemsOpener.js"></script>
 
         <!-- <script type="module" src="/src/js/finances/view/switcher.js"></script>
         <script type="module" src="/src/js/finances/view/goal_form.js"></script>
