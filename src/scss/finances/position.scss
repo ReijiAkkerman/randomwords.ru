@@ -315,6 +315,14 @@ body {
         &-date {
             &__div {
                 display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+
+        &--date {
+            &__div {
+                display: flex;
                 justify-content: space-between;
             }
         }

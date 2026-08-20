@@ -269,6 +269,11 @@ body > .mainWindow {
 }
 .settings-searchAndFilters-date__div {
   display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.settings-searchAndFilters--date__div {
+  display: flex;
   justify-content: space-between;
 }
 

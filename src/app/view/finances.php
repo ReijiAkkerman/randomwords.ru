@@ -265,13 +265,13 @@
                         </div>
                     </div>
                     <div class="settings-searchAndFilters-date">
-                        <button class="settings-searchAndFilters_switchButton">Дата и время</button>
-                        <div class="settings-searchAndFilters_contentsArea" style="display:none;">
-                            <div class="settings-searchAndFilters-date__div">
+                        <button class="settings-searchAndFilters_switchButton">Дата</button>
+                        <div class="settings-searchAndFilters_contentsArea settings-searchAndFilters-date__div" style="display:none;">
+                            <div class="settings-searchAndFilters--date__div">
                                 <label class="settings-searchAndFilters-date__label" for="">С</label>
                                 <input class="settings-searchAndFilters__input settings-searchAndFilters-date__input" type="date" name="filter_dateFrom" id="settings-filters_dateFrom">
                             </div>
-                            <div class="settings-searchAndFilters-date__div">
+                            <div class="settings-searchAndFilters--date__div">
                                 <label class="settings-searchAndFilters-date__label" for="">До</label>
                                 <input class="settings-searchAndFilters__input settings-searchAndFilters-date__input" type="date" name="filter_dateTo" id="settings-filters_dateTo">
                             </div>
