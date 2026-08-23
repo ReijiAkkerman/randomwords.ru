@@ -216,12 +216,12 @@ body > .mainWindow {
   flex-direction: column;
   gap: 10px;
 }
-.settings-parametersEditing-item__div {
+.settings-parametersEditing-item__form {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.settings-parametersEditing-item-users-actions {
+.settings-parametersEditing-item-users-actions, .settings-parametersEditing-item-types-actions {
   display: flex;
   justify-content: center;
   gap: 20px;

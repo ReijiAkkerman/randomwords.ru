@@ -406,7 +406,7 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
                 vertical-align: -4px;
             }
 
-            &-users {
+            &-users, &-types {
                 margin-bottom: 20px;
 
                 &__select {
@@ -414,6 +414,10 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
                     padding-left: 15px;
                     border: none;
                 }
+            }
+
+            &-types {
+                margin-bottom: 0;
             }
 
             &_addNewUser {

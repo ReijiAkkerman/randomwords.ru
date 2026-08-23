@@ -239,13 +239,13 @@ body {
         gap: 10px;
 
         &-item {
-            &__div {
+            &__form {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
             }
 
-            &-users {
+            &-users, &-types {
                 &-actions {
                     display: flex;
                     justify-content: center;

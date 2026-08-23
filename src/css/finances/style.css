@@ -359,13 +359,16 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   fill: var(--main-svg-color);
   vertical-align: -4px;
 }
-.settings-parametersEditing-item-users {
+.settings-parametersEditing-item-users, .settings-parametersEditing-item-types {
   margin-bottom: 20px;
 }
-.settings-parametersEditing-item-users__select {
+.settings-parametersEditing-item-users__select, .settings-parametersEditing-item-types__select {
   font-size: 25px;
   padding-left: 15px;
   border: none;
+}
+.settings-parametersEditing-item-types {
+  margin-bottom: 0;
 }
 .settings-parametersEditing-item_addNewUser {
   margin: auto;
