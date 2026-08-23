@@ -267,12 +267,12 @@ body > .mainWindow {
 .settings-searchAndFilters-currency_lastItem {
   justify-self: start;
 }
-.settings-searchAndFilters-date__div {
+.settings-searchAndFilters-date__div, .settings-searchAndFilters-time__div {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.settings-searchAndFilters--date__div {
+.settings-searchAndFilters--date__div, .settings-searchAndFilters--time__div {
   display: flex;
   justify-content: space-between;
 }

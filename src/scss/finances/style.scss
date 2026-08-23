@@ -512,7 +512,7 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
             }
         }
 
-        &-date {
+        &-date, &-time {
             &__label {
                 font-size: 25px;
                 padding-left: 10px;
@@ -525,6 +525,13 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
                 border-top: 1px solid var(--inactive-color);
                 border-bottom: 1px solid var(--inactive-color);
                 color: var(--inactive-color);
+            }
+        }
+
+        &-time {
+            &__input {
+                padding-left: 15px;
+                padding-right: 15px;
             }
         }
 

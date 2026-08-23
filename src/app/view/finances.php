@@ -277,6 +277,19 @@
                             </div>
                         </div>
                     </div>
+                    <div class="settings-searchAndFilters-time">
+                        <button class="settings-searchAndFilters_switchButton">Время</button>
+                        <div class="settings-searchAndFilters_contentsArea settings-searchAndFilters-time__div" style="display:none;">
+                            <div class="settings-searchAndFilters--time__div">
+                                <label class="settings-searchAndFilters-time__label" for="">С</label>
+                                <input class="settings-searchAndFilters__input settings-searchAndFilters-time__input" type="time" name="filter_timeFrom" id="settings-filters_dateFrom">
+                            </div>
+                            <div class="settings-searchAndFilters--time__div">
+                                <label class="settings-searchAndFilters-time__label" for="">До</label>
+                                <input class="settings-searchAndFilters__input settings-searchAndFilters-time__input" type="time" name="filter_timeTo" id="settings-filters_dateTo">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <button class="settings-searchAndFilters_resetFilters">Сбросить фильтры</button>
             </div>

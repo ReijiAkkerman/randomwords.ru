@@ -438,17 +438,21 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
 .settings-searchAndFilters-currency__label.kanji {
   font-size: 20px;
 }
-.settings-searchAndFilters-date__label {
+.settings-searchAndFilters-date__label, .settings-searchAndFilters-time__label {
   font-size: 25px;
   padding-left: 10px;
   margin: auto 0;
 }
-.settings-searchAndFilters-date__input {
+.settings-searchAndFilters-date__input, .settings-searchAndFilters-time__input {
   margin-right: 10px;
   padding-left: 5px;
   border-top: 1px solid var(--inactive-color);
   border-bottom: 1px solid var(--inactive-color);
   color: var(--inactive-color);
+}
+.settings-searchAndFilters-time__input {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .settings-searchAndFilters-date .settings-searchAndFilters_contentsArea {
   border-bottom: none;
