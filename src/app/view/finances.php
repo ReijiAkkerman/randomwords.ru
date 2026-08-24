@@ -14,6 +14,7 @@
         <section class="mainWindow goals">
             <?php $current_section = 'goals'; ?>
             <div class="goals-list">
+                <?php include __DIR__ . '/finances/formElements/searchBar.php' ?>
                 <button class="goals-list-item__button" style="background-color:#0f04;">
                     <div class="goals-list-item">
                         <div class="goals-list-item-data">
@@ -57,6 +58,7 @@
         <section class="mainWindow funds" data-section="funds" style="display:none;">
             <?php $current_section = 'funds'; ?>
             <div class="funds-list">
+                <?php include __DIR__ . '/finances/formElements/searchBar.php' ?>
                 <button class="funds-list-item__button" style="background-color:#0f04;">
                     <div class="funds-list-item">
                         <div class="funds-list-item-users">
@@ -100,6 +102,7 @@
         <section class="mainWindow entries" data-section="entries" style="display:none;">
             <?php $current_section = 'entries'; ?>
             <div class="entries-list">
+                <?php include __DIR__ . '/finances/formElements/searchBar.php' ?>
                 <p class="entries-list-date">2020-12-12</p>
                 <button class="entries-list-item" data-cathegory="Убыток" data-type="Проезд" data-date="2020-12-12" data-time="13:53" data-users="Я,Катя" data-sum="1000" data-currency="Рубль" data-special_marks="" data-description="">
                     <div class="entries-list-item-userColors">

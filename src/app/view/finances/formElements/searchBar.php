@@ -1,0 +1,1 @@
+<input class="FormElements_searchField" type="text" name="<?= $current_section ?>_search" placeholder="Искомое наименование ...">
