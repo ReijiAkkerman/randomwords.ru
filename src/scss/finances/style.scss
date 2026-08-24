@@ -421,6 +421,20 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
                 margin-bottom: 0;
             }
 
+            &-search {
+                &__p, &__label {
+                    font-size: 20px;
+                }
+
+                &__p {
+                    text-align: center;
+                }
+
+                &__div {
+                    padding-left: 20px;
+                }
+            }
+
             &_addNewUser {
                 margin: auto;
             }

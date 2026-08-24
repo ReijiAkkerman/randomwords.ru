@@ -252,6 +252,12 @@ body {
                     gap: 20px;
                 }
             }
+
+            &-search {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
         }
     }
 

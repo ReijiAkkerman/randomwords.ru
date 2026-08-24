@@ -226,6 +226,11 @@ body > .mainWindow {
   justify-content: center;
   gap: 20px;
 }
+.settings-parametersEditing-item-search {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .settings-searchAndFilters {
   display: flex;
   flex-direction: column;

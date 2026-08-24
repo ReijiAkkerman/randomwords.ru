@@ -210,6 +210,25 @@
                     <h2 class="settings-parametersEditing-item__h2">Настроки фильтров</h2>
                     <button class="settings-parametersEditing-item__button settings-parametersEditing-item_saveFiltersAsDefault">Зафиксировать выбранное</button>
                 </div>
+                <hr class="settings-parametersEditing__hr">
+                <div class="settings-parametersEditing-item">
+                    <h2 class="settings-parametersEditing-item__h2">Поиск</h2>
+                    <div class="settings-parametersEditing-item-search">
+                        <p class="settings-parametersEditing-item-search__p">Включить для:</p>
+                        <div class="settings-parametersEditing-item-search__div">
+                            <input class="settings-parametersEditing-item-search__input" type="checkbox" name="searchInsideGoals" id="searchInsideGoals">
+                            <label class="settings-parametersEditing-item-search__label" for="searchInsideGoals">Целей</label>
+                        </div>
+                        <div class="settings-parametersEditing-item-search__div">
+                            <input class="settings-parametersEditing-item-search__input" type="checkbox" name="searchInsideFunds" id="searchInsideFunds">
+                            <label class="settings-parametersEditing-item-search__label" for="searchInsideFunds">Фондов</label>
+                        </div>
+                        <div class="settings-parametersEditing-item-search__div">
+                            <input class="settings-parametersEditing-item-search__input" type="checkbox" name="searchInsideEntries" id="searchInsideEntries">
+                            <label class="settings-parametersEditing-item-search__label" for="searchInsideEntries">Записей</label>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="settings-searchAndFilters">
                 <div>
