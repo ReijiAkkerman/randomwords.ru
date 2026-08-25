@@ -1,0 +1,1 @@
+<input class="FormElements-sortingBar_searchRow" type="text" name="<?= $current_section ?>_searchRow" placeholder="Искомое имя ...">

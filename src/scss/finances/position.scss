@@ -2,6 +2,7 @@
 @use "./formElements/colors/position.scss" as colors;
 @use "./formElements/sum/position.scss" as sum;
 @use "./formElements/users/position.scss" as users;
+@use "./formElements/sortingBar/position.scss" as sortingBar;
 
 body {
     display: flex;

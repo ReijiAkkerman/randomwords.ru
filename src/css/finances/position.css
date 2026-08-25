@@ -27,6 +27,11 @@
   gap: 20px;
 }
 
+.FormElements-sortingBar {
+  display: flex;
+  gap: 10px;
+}
+
 body {
   display: flex;
   position: fixed;

@@ -1,0 +1,1 @@
+<button class="FormElements-sortingBar_sortButton <?= $current_section ?>-list-sortingBar_sortButton">Sort</button>
