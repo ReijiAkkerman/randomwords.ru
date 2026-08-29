@@ -20,13 +20,6 @@
   text-align: center;
 }
 
-.FormElements_searchField {
-  font-size: 20px;
-  padding: 5px 10px;
-  border-bottom: 1px solid var(--inactive-color);
-  border-top: 1px solid var(--inactive-color);
-}
-
 .FormElements-sumBlock_sum {
   font-size: 20px;
   border-top: 1px solid var(--main-border-color);
@@ -341,6 +334,16 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
 }
 .entries-list-item-mainInfo_sum, .entries-list-item-mainInfo_time {
   font-size: 20px;
+}
+.entries-list-item-recipientColors {
+  height: 10px;
+  width: fit-content;
+  border-bottom-left-radius: 10px;
+  overflow: hidden;
+}
+.entries-list-item-recipientColors__div {
+  width: 20px;
+  height: 100%;
 }
 .entries-showFormButton {
   padding: 10px;

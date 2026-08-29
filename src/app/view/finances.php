@@ -116,6 +116,10 @@
                             <p class="entries-list-item-mainInfo_time">13:53</p>
                         </div>
                     </div>
+                    <div class="entries-list-item-recipientColors">
+                        <div class="entries-list-item-recipientColors__div" style="background-color:#00f;"></div>
+                        <div class="entries-list-item-recipientColors__div" style="background-color:#f00;"></div>
+                    </div>
                 </button>
             </div>
             <div class="entries-entryForm" style="display:none;">

@@ -198,6 +198,12 @@ body > .mainWindow {
   justify-content: space-between;
   width: 100%;
 }
+.entries-list-item-recipientColors {
+  display: flex;
+  position: absolute;
+  flex-direction: row-reverse;
+  right: 0px;
+}
 .entries-showFormButton {
   position: fixed;
   bottom: 70px;

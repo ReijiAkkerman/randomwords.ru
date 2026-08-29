@@ -211,6 +211,13 @@ body {
                     width: 100%;
                 }
             }
+
+            &-recipientColors {
+                display: flex;
+                position: absolute;
+                flex-direction: row-reverse;
+                right: 0px;
+            }
         }
     }
 
