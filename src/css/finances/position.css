@@ -254,16 +254,16 @@ body > .mainWindow {
   justify-content: center;
   gap: 30px;
 }
-.settings-searchAndFilters-users__div {
+.settings-searchAndFilters-users__div, .settings-searchAndFilters-recipients__div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 30px;
   row-gap: 10px;
 }
-.settings-searchAndFilters-users_firstItem {
+.settings-searchAndFilters-users_firstItem, .settings-searchAndFilters-recipients_firstItem {
   justify-self: end;
 }
-.settings-searchAndFilters-users_lastItem {
+.settings-searchAndFilters-users_lastItem, .settings-searchAndFilters-recipients_lastItem {
   justify-self: start;
 }
 .settings-searchAndFilters-sum__div {

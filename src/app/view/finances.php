@@ -254,6 +254,19 @@
                             </div>
                         </div>
                     </div>
+                    <div class="settings-searchAndFilters-recipients">
+                        <button class="settings-searchAndFilters_switchButton">Получатели</button>
+                        <div class="settings-searchAndFilters_contentsArea settings-searchAndFilters-recipients__div" style="display:none;">
+                            <div class="settings-searchAndFilters-recipients_firstItem">
+                                <input class="settings-searchAndFilters__input" type="checkbox" name="filter_recipient0" id="settings-filters_recipient0">
+                                <label class="settings-searchAndFilters__label" for="settings-filters_recipient0">Я</label>
+                            </div>
+                            <div class="settings-searchAndFilters-recipients_lastItem">
+                                <input class="settings-searchAndFilters__input" type="checkbox" name="filter_recipient1" id="settings-filters_recipient1">
+                                <label class="settings-searchAndFilters__label" for="settings-filters_recipient1">Катя</label>
+                            </div>
+                        </div>
+                    </div>
                     <div class="settings-searchAndFilters-users">
                         <button class="settings-searchAndFilters_switchButton">Пользователи</button>
                         <div class="settings-searchAndFilters_contentsArea settings-searchAndFilters-users__div" style="display:none;">
