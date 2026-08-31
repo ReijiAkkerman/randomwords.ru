@@ -32,6 +32,12 @@
   gap: 10px;
 }
 
+.FormElements-recipientsBlock {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
 body {
   display: flex;
   position: fixed;

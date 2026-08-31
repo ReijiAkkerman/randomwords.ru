@@ -3,6 +3,7 @@
 @use "./formElements/sum/position.scss" as sum;
 @use "./formElements/users/position.scss" as users;
 @use "./formElements/sortingBar/position.scss" as sortingBar;
+@use "./formElements/recipients/position.scss" as recipients;
 
 body {
     display: flex;

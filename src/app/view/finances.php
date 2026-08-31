@@ -137,14 +137,9 @@
                     </select>
                     <input class="entries-entryForm-param entries-entryForm-param-newType" type="text" name="new_type" placeholder="Новый тип">
                     <?php include __DIR__ . "/finances/formElements/users.php" ?>
+                    <?php include __DIR__ . "/finances/formElements/recipients.php" ?>
                     <p class="FormElements_parameterName">Основные параметры</p>
-                    <div class="FormElements-sumBlock">
-                        <input class="FormElements-sumBlock_sum" type="number" name="sum" placeholder="Сумма">
-                        <select class="FormElements-sumBlock_currency" name="currency" id="">
-                            <option class="FormElements-sumBlock_currency__option" value="Рубль">&#8381</option>
-                            <option class="FormElements-sumBlock_currency__option" value="Доллар">&#36</option>
-                        </select>
-                    </div>
+                    <?php include __DIR__ . "/finances/formElements/sum.php" ?>
                     <textarea class="entries-entryForm-param__textarea entries-entryForm-param_specialMarks" name="special_marks" id="" placeholder="Особые отметки&#10;(указывать через запятую)"></textarea>
                     <textarea class="entries-entryForm-param__textarea entries-entryForm-param_description" name="description" id="" placeholder="Описание"></textarea>
                     <div class="entries-entryForm-actionButtons">
