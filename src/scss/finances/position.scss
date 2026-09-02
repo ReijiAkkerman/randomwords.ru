@@ -247,24 +247,16 @@ body {
         flex-direction: column;
         gap: 10px;
 
-        &-item {
-            &__form {
+        &-users {
+            &__div {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
             }
 
-            &-users, &-types {
-                &-actions {
-                    display: flex;
-                    justify-content: center;
-                    gap: 20px;
-                }
-            }
-
-            &-search {
+            &-actions {
                 display: flex;
-                flex-direction: column;
+                justify-content: center;
                 gap: 10px;
             }
         }

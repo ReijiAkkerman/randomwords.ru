@@ -377,88 +377,6 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
 }
 
 .settings {
-    &-parametersEditing {
-        padding: 10px;
-
-        &__hr {
-            margin-top: 10px;
-        }
-
-        &-item {
-            margin-bottom: 10px;
-
-            &__h2 {
-                font-size: 25px;
-                font-weight: normal;
-                text-align: center;
-                margin-bottom: 10px;
-                text-decoration: underline;
-            }
-
-            &__input {
-                font-size: 20px;
-                padding: 5px 10px;
-                border-top: 1px solid var(--inactive-color);
-                border-bottom: 1px solid var(--inactive-color);
-
-                &:focus {
-                    border-color: var(--main-border-color);
-                }
-            }
-
-            &__button {
-                border-left: 1px solid var(--main-border-color);
-                border-right: 1px solid var(--main-border-color);
-                padding: 5px 15px;
-                font-size: 25px;
-                background-color: #0000000a;
-                width: fit-content;
-            }
-
-            &__svg {
-                fill: var(--main-svg-color);
-                vertical-align: -4px;
-            }
-
-            &-users, &-types {
-                margin-bottom: 20px;
-
-                &__select {
-                    font-size: 25px;
-                    padding-left: 15px;
-                    border: none;
-                }
-            }
-
-            &-types {
-                margin-bottom: 0;
-            }
-
-            &-search {
-                &__p, &__label {
-                    font-size: 22px;
-                }
-
-                &__p {
-                    text-align: center;
-                }
-
-                &__div {
-                    padding-left: 20px;
-                }
-            }
-
-            &_addNewUser {
-                margin: auto;
-            }
-
-            &_saveFiltersAsDefault {
-                font-size: 20px;
-                margin: auto;
-            }
-        }
-    }
-
     &-modeSwitcher {
         background-color: #fff;
 
@@ -476,7 +394,7 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
         }
     }
 
-    &-searchAndFilters {
+    &-parametersEditing, &-searchAndFilters {
         &_switchButton {
             width: 100%;
             font-size: 20px;
@@ -484,12 +402,55 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
             padding: 5px 0;
             background: linear-gradient(180deg, #fff, #ccc);
         }
-
+        
         &_contentsArea {
             padding: 5px;
             border-bottom: 1px solid var(--inactive-color);
         }
+    }
 
+    &-parametersEditing {
+        &-users {
+            &__div {
+                padding: 10px;
+            }
+
+            &__select {
+                font-size: 20px;
+                padding: 5px;
+                border: none;
+            }
+
+            &__input {
+                font-size: 20px;
+                padding: 5px 10px;
+                border-top: 1px solid var(--inactive-color);
+                border-bottom: 1px solid var(--inactive-color);
+
+                &:focus {
+                    border-color: var(--main-border-color);
+                }
+            }
+
+            &__button {
+                font-size: 20px;
+                padding: 5px 15px;
+                border-left: 1px solid var(--inactive-color);
+                border-right: 1px solid var(--inactive-color);
+                background-color: #00000004;
+
+                &:focus {
+                    border-color: var(--main-border-color);
+
+                    > svg {
+                        fill: var(--main-svg-color);
+                    }
+                }
+            }
+        }
+    }
+
+    &-searchAndFilters {
         &_resetFilters {
             font-size: 20px;
             padding: 10px 20px;

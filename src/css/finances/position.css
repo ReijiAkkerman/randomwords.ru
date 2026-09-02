@@ -233,19 +233,14 @@ body > .mainWindow {
   flex-direction: column;
   gap: 10px;
 }
-.settings-parametersEditing-item__form {
+.settings-parametersEditing-users__div {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.settings-parametersEditing-item-users-actions, .settings-parametersEditing-item-types-actions {
+.settings-parametersEditing-users-actions {
   display: flex;
   justify-content: center;
-  gap: 20px;
-}
-.settings-parametersEditing-item-search {
-  display: flex;
-  flex-direction: column;
   gap: 10px;
 }
 .settings-searchAndFilters {
