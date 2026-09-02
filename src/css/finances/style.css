@@ -381,35 +381,45 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   padding: 5px;
   border-bottom: 1px solid var(--inactive-color);
 }
-.settings-parametersEditing-users__div {
+.settings-parametersEditing_contentsArea {
   padding: 10px;
 }
-.settings-parametersEditing-users__select {
+.settings-parametersEditing_contentsArea:last-of-type {
+  border-bottom: none;
+}
+.settings-parametersEditing__select {
   font-size: 20px;
   padding: 5px;
   border: none;
 }
-.settings-parametersEditing-users__input {
+.settings-parametersEditing__input {
   font-size: 20px;
   padding: 5px 10px;
   border-top: 1px solid var(--inactive-color);
   border-bottom: 1px solid var(--inactive-color);
 }
-.settings-parametersEditing-users__input:focus {
+.settings-parametersEditing__input:focus {
   border-color: var(--main-border-color);
 }
-.settings-parametersEditing-users__button {
+.settings-parametersEditing__button {
+  color: var(--inactive-color);
   font-size: 20px;
   padding: 5px 15px;
   border-left: 1px solid var(--inactive-color);
   border-right: 1px solid var(--inactive-color);
   background-color: rgba(0, 0, 0, 0.0156862745);
 }
-.settings-parametersEditing-users__button:focus {
+.settings-parametersEditing__button:focus, .settings-parametersEditing__button:active {
+  color: var(--main-text-color);
+  background-color: rgba(0, 0, 0, 0.0392156863);
   border-color: var(--main-border-color);
 }
-.settings-parametersEditing-users__button:focus > svg {
+.settings-parametersEditing__button:focus > svg, .settings-parametersEditing__button:active > svg {
   fill: var(--main-svg-color);
+}
+.settings-parametersEditing-filters_setChosenAsDefault {
+  width: fit-content;
+  margin: auto;
 }
 .settings-searchAndFilters_resetFilters {
   font-size: 20px;

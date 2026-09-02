@@ -243,21 +243,40 @@ body {
     }
 
     &-parametersEditing {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+        &_contentsArea {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
 
         &-users {
-            &__div {
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-            }
-
             &-actions {
                 display: flex;
                 justify-content: center;
                 gap: 10px;
+            }
+        }
+
+        &-types {
+            &-actions {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+            }
+        }
+
+        &-search {
+            &__p {
+                font-size: 25px;
+                text-align: center;
+            }
+
+            &__div {
+                padding-left: 20px;
+            }
+
+            &__label {
+                font-size: 22px;
             }
         }
     }

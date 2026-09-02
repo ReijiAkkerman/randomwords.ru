@@ -410,42 +410,54 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
     }
 
     &-parametersEditing {
-        &-users {
-            &__div {
-                padding: 10px;
+        &_contentsArea {
+            padding: 10px;
+
+            &:last-of-type {
+                border-bottom: none;
             }
+        }
 
-            &__select {
-                font-size: 20px;
-                padding: 5px;
-                border: none;
+        &__select {
+            font-size: 20px;
+            padding: 5px;
+            border: none;
+        }
+
+        &__input {
+            font-size: 20px;
+            padding: 5px 10px;
+            border-top: 1px solid var(--inactive-color);
+            border-bottom: 1px solid var(--inactive-color);
+
+            &:focus {
+                border-color: var(--main-border-color);
             }
+        }
 
-            &__input {
-                font-size: 20px;
-                padding: 5px 10px;
-                border-top: 1px solid var(--inactive-color);
-                border-bottom: 1px solid var(--inactive-color);
+        &__button {
+            color: var(--inactive-color);
+            font-size: 20px;
+            padding: 5px 15px;
+            border-left: 1px solid var(--inactive-color);
+            border-right: 1px solid var(--inactive-color);
+            background-color: #00000004;
 
-                &:focus {
-                    border-color: var(--main-border-color);
+            &:focus, &:active {
+                color: var(--main-text-color);
+                background-color: #0000000a;
+                border-color: var(--main-border-color);
+
+                > svg {
+                    fill: var(--main-svg-color);
                 }
             }
+        }
 
-            &__button {
-                font-size: 20px;
-                padding: 5px 15px;
-                border-left: 1px solid var(--inactive-color);
-                border-right: 1px solid var(--inactive-color);
-                background-color: #00000004;
-
-                &:focus {
-                    border-color: var(--main-border-color);
-
-                    > svg {
-                        fill: var(--main-svg-color);
-                    }
-                }
+        &-filters {
+            &_setChosenAsDefault {
+                width: fit-content;
+                margin: auto;
             }
         }
     }

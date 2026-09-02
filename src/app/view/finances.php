@@ -165,20 +165,20 @@
             <div class="settings-parametersEditing" style="display:none;">
                 <div class="settings-parametersEditing-users">
                     <button class="settings-parametersEditing_switchButton">Пользователи</button>
-                    <div class="settings-parametersEditing_contentsArea settings-parametersEditing-users__div">
-                        <select class="settings-parametersEditing-users__select settings-parametersEditing-users_select" name="user">
+                    <div class="settings-parametersEditing_contentsArea" style="display:none;">
+                        <select class="settings-parametersEditing__select settings-parametersEditing-users_select" name="user">
                             <option value="Я">Я</option>
                             <option value="Катя">Катя</option>
                         </select>
-                        <input class="settings-parametersEditing-users__input" type="text" name="username" placeholder="Имя пользователя">
+                        <input class="settings-parametersEditing__input" type="text" name="username" placeholder="Имя пользователя">
                         <div class="settings-parametersEditing-users-actions">
-                            <button class="settings-parametersEditing-users__button settings-parametersEditing-users-new_addNewUser">
+                            <button class="settings-parametersEditing__button settings-parametersEditing-users-new_addNewUser">
                                 <svg viewBox="0 0 24 24">
                                     <path d="M13 3C13 2.44772 12.5523 2 12 2C11.4477 2 11 2.44772 11 3V11H3C2.44772 11 2 11.4477 2 12C2 12.5523 2.44772 13 3 13H11V21C11 21.5523 11.4477 22 12 22C12.5523 22 13 21.5523 13 21V13H21C21.5523 13 22 12.5523 22 12C22 11.4477 21.5523 11 21 11H13V3Z"/>
                                 </svg>
                             </button>
-                            <button class="settings-parametersEditing-users__button settings-parametersEditing-users-actions__button settings-parametersEditing-users-actions_saveChanges">Изменить</button>
-                            <button class="settings-parametersEditing-users__button settings-parametersEditing-users-actions__button settings-parametersEditing-users-actions_removeUser">
+                            <button class="settings-parametersEditing__button settings-parametersEditing-users-actions_saveChanges">Изменить</button>
+                            <button class="settings-parametersEditing__button settings-parametersEditing-users-actions_removeUser">
                                 <svg class="settings-parametersEditing-users__svg" viewBox="0 0 1024 1024">
                                     <path d="M160 256H96a32 32 0 0 1 0-64h256V95.936a32 32 0 0 1 32-32h256a32 32 0 0 1 32 32V192h256a32 32 0 1 1 0 64h-64v672a32 32 0 0 1-32 32H192a32 32 0 0 1-32-32V256zm448-64v-64H416v64h192zM224 896h576V256H224v640zm192-128a32 32 0 0 1-32-32V416a32 32 0 0 1 64 0v320a32 32 0 0 1-32 32zm192 0a32 32 0 0 1-32-32V416a32 32 0 0 1 64 0v320a32 32 0 0 1-32 32z"/>
                                 </svg>
@@ -186,75 +186,46 @@
                         </div>
                     </div>
                 </div>
-
-
-
-                <div class="settings-parametersEditing-item" style="display:none;">
-                    <h2 class="settings-parametersEditing-item__h2">Пользователи</h2>
-                    <form action="#" class="settings-parametersEditing-item__form settings-parametersEditing-item-users">
-                        <select class="settings-parametersEditing-item-users__select" name="user" id="settings-users">
-                            <option value="Я">Я</option>
-                            <option value="Катя">Катя</option>
-                        </select>
-                        <input class="settings-parametersEditing-item__input" type="text" name="username" placeholder="Имя пользователя">
-                        <div class="settings-parametersEditing-item-users-actions">
-                            <button class="settings-parametersEditing-item__button settings-parametersEditing-item-users_saveChanges">Изменить</button>
-                            <button class="settings-parametersEditing-item__button settings-parametersEditing-item-users_removeUser">
-                                <svg class="settings-parametersEditing-item__svg" viewBox="0 0 1024 1024">
-                                    <path d="M160 256H96a32 32 0 0 1 0-64h256V95.936a32 32 0 0 1 32-32h256a32 32 0 0 1 32 32V192h256a32 32 0 1 1 0 64h-64v672a32 32 0 0 1-32 32H192a32 32 0 0 1-32-32V256zm448-64v-64H416v64h192zM224 896h576V256H224v640zm192-128a32 32 0 0 1-32-32V416a32 32 0 0 1 64 0v320a32 32 0 0 1-32 32zm192 0a32 32 0 0 1-32-32V416a32 32 0 0 1 64 0v320a32 32 0 0 1-32 32z"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </form>
-                    <form action="#" class="settings-parametersEditing-item__form settings-parametersEditing-item-newUser">
-                        <input class="settings-parametersEditing-item__input" type="text" name="new_user" placeholder="Новый пользователь">
-                        <button class="settings-parametersEditing-item__button settings-parametersEditing-item_addNewUser">Добавить</button>
-                    </form>
-                </div>
-
-
-
-                <hr class="settings-parametersEditing__hr" style="display:none;">
-                <div class="settings-parametersEditing-item" style="display:none;">
-                    <h2 class="settings-parametersEditing-item__h2">Типы</h2>
-                    <form action="#" class="settings-parametersEditing-item__form settings-parametersEditing-item-types">
-                        <select class="settings-parametersEditing-item-types__select" name="user" id="settings-types">
+                <div class="settings-parametersEditing-types">
+                    <button class="settings-parametersEditing_switchButton">Типы</button>
+                    <div class="settings-parametersEditing_contentsArea" style="display:none;">
+                        <select class="settings-parametersEditing__select" name="type" id="settings-types">
                             <option value="Еда">Еда</option>
                             <option value="Проезд">Проезд</option>
                         </select>
-                        <input class="settings-parametersEditing-item__input" type="text" name="username" placeholder="Наименование типа">
-                        <div class="settings-parametersEditing-item-types-actions">
-                            <button class="settings-parametersEditing-item__button settings-parametersEditing-item-types_saveChanges">Изменить</button>
-                            <button class="settings-parametersEditing-item__button settings-parametersEditing-item-types_removeType">
-                                <svg class="settings-parametersEditing-item__svg" viewBox="0 0 1024 1024">
+                        <input class="settings-parametersEditing__input" type="text" name="typename" placeholder="Наименование типа">
+                        <div class="settings-parametersEditing-types-actions">
+                            <button class="settings-parametersEditing__button settings-parametersEditing-types-actions_saveChanges">Изменить</button>
+                            <button class="settings-parametersEditing__button settings-parametersEditing-types-actions_removeType">
+                                <svg viewBox="0 0 1024 1024">
                                     <path d="M160 256H96a32 32 0 0 1 0-64h256V95.936a32 32 0 0 1 32-32h256a32 32 0 0 1 32 32V192h256a32 32 0 1 1 0 64h-64v672a32 32 0 0 1-32 32H192a32 32 0 0 1-32-32V256zm448-64v-64H416v64h192zM224 896h576V256H224v640zm192-128a32 32 0 0 1-32-32V416a32 32 0 0 1 64 0v320a32 32 0 0 1-32 32zm192 0a32 32 0 0 1-32-32V416a32 32 0 0 1 64 0v320a32 32 0 0 1-32 32z"/>
                                 </svg>
                             </button>
                         </div>
-                    </form>
+                    </div>
                 </div>
-                <hr class="settings-parametersEditing__hr" style="display:none;">
-                <div class="settings-parametersEditing-item" style="display:none;">
-                    <h2 class="settings-parametersEditing-item__h2">Настроки фильтров</h2>
-                    <button class="settings-parametersEditing-item__button settings-parametersEditing-item_saveFiltersAsDefault">Зафиксировать выбранное</button>
+                <div class="settings-parametersEditing-search">
+                    <button class="settings-parametersEditing_switchButton">Поиск</button>
+                    <div class="settings-parametersEditing_contentsArea" style="display:none;">
+                        <p class="settings-parametersEditing-search__p">Включить для:</p>
+                        <div class="settings-parametersEditing-search__div">
+                            <input class="settings-parametersEditing-search__input" type="checkbox" name="searchInsideGoals" id="searchInsideGoals">
+                            <label class="settings-parametersEditing-search__label" for="searchInsideGoals">Целей</label>
+                        </div>
+                        <div class="settings-parametersEditing-search__div">
+                            <input class="settings-parametersEditing-search__input" type="checkbox" name="searchInsideFunds" id="searchInsideFunds">
+                            <label class="settings-parametersEditing-search__label" for="searchInsideFunds">Фондов</label>
+                        </div>
+                        <div class="settings-parametersEditing-search__div">
+                            <input class="settings-parametersEditing-search__input" type="checkbox" name="searchInsideEntries" id="searchInsideEntries">
+                            <label class="settings-parametersEditing-search__label" for="searchInsideEntries">Записей</label>
+                        </div>
+                    </div>
                 </div>
-                <hr class="settings-parametersEditing__hr" style="display:none;">
-                <div class="settings-parametersEditing-item" style="display:none;">
-                    <h2 class="settings-parametersEditing-item__h2">Поиск</h2>
-                    <div class="settings-parametersEditing-item-search">
-                        <p class="settings-parametersEditing-item-search__p">Включить для:</p>
-                        <div class="settings-parametersEditing-item-search__div">
-                            <input class="settings-parametersEditing-item-search__input" type="checkbox" name="searchInsideGoals" id="searchInsideGoals">
-                            <label class="settings-parametersEditing-item-search__label" for="searchInsideGoals">Целей</label>
-                        </div>
-                        <div class="settings-parametersEditing-item-search__div">
-                            <input class="settings-parametersEditing-item-search__input" type="checkbox" name="searchInsideFunds" id="searchInsideFunds">
-                            <label class="settings-parametersEditing-item-search__label" for="searchInsideFunds">Фондов</label>
-                        </div>
-                        <div class="settings-parametersEditing-item-search__div">
-                            <input class="settings-parametersEditing-item-search__input" type="checkbox" name="searchInsideEntries" id="searchInsideEntries">
-                            <label class="settings-parametersEditing-item-search__label" for="searchInsideEntries">Записей</label>
-                        </div>
+                <div class="settings-parametersEditing-filters">
+                    <button class="settings-parametersEditing_switchButton">Настройки фильтров</button>
+                    <div class="settings-parametersEditing_contentsArea" style="display:none;">
+                        <button class="settings-parametersEditing__button settings-parametersEditing-filters_setChosenAsDefault">Запомнить выбранные</button>
                     </div>
                 </div>
             </div>

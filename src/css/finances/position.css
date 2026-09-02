@@ -228,12 +228,7 @@ body > .mainWindow {
   bottom: 0;
   z-index: 1;
 }
-.settings-parametersEditing {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.settings-parametersEditing-users__div {
+.settings-parametersEditing_contentsArea {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -242,6 +237,21 @@ body > .mainWindow {
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+.settings-parametersEditing-types-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.settings-parametersEditing-search__p {
+  font-size: 25px;
+  text-align: center;
+}
+.settings-parametersEditing-search__div {
+  padding-left: 20px;
+}
+.settings-parametersEditing-search__label {
+  font-size: 22px;
 }
 .settings-searchAndFilters {
   display: flex;
