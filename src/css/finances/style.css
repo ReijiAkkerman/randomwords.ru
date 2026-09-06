@@ -417,6 +417,17 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
 .settings-parametersEditing__button:focus > svg, .settings-parametersEditing__button:active > svg {
   fill: var(--main-svg-color);
 }
+.settings-parametersEditing-common {
+  padding: 10px;
+}
+.settings-parametersEditing-common__button {
+  color: #e33;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid #e33;
+  border-radius: var(--block-radius);
+  background-color: #fee;
+}
 .settings-parametersEditing-filters_setChosenAsDefault {
   width: fit-content;
   margin: auto;

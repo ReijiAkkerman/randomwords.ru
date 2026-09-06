@@ -228,9 +228,21 @@ body > .mainWindow {
   bottom: 0;
   z-index: 1;
 }
+.settings-parametersEditing {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow-y: auto;
+}
 .settings-parametersEditing_contentsArea {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+.settings-parametersEditing-common {
+  display: flex;
+  justify-content: center;
   gap: 10px;
 }
 .settings-parametersEditing-users-actions {

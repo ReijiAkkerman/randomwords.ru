@@ -243,9 +243,21 @@ body {
     }
 
     &-parametersEditing {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        overflow-y: auto;
+
         &_contentsArea {
             display: flex;
             flex-direction: column;
+            gap: 10px;
+        }
+
+        &-common {
+            display: flex;
+            justify-content: center;
             gap: 10px;
         }
 

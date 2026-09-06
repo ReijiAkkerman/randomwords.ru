@@ -454,6 +454,19 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
             }
         }
 
+        &-common {
+            padding: 10px;
+            
+            &__button {
+                color: #e33;
+                font-size: 20px;
+                padding: 10px;
+                border: 1px solid #e33;
+                border-radius: var(--block-radius);
+                background-color: #fee;
+            }
+        }
+
         &-filters {
             &_setChosenAsDefault {
                 width: fit-content;
