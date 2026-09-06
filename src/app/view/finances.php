@@ -390,7 +390,8 @@
         <!-- filters -->
         <script type="module" src="/src/js/finances/view/settings/filters/ItemsOpener.js"></script>
         <!-- parameters -->
-         <script type="module" src="/src/js/finances/view/settings/parameters/ItemsOpener.js"></script>
+        <script type="module" src="/src/js/finances/view/settings/parameters/ItemsOpener.js"></script>
+        <script type="module" src="/src/js/finances/view/settings/parameters/search/SearchRowDisplaying.js"></script>
 
         <!-- <script type="module" src="/src/js/finances/view/switcher.js"></script>
         <script type="module" src="/src/js/finances/view/goal_form.js"></script>
