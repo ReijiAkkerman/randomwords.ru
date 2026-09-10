@@ -7,7 +7,7 @@
         public array $args;
         public static string $folder;
 
-        private const DEFAULT_URL = 'finances/view';
+        private const DEFAULT_URL = 'auth/view';
 
         public function __construct() {
             $this->args = [];

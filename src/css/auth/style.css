@@ -1,0 +1,52 @@
+.auth {
+  padding: 20px;
+  border: 1px solid var(--main-border-color);
+  border-radius: 20px;
+}
+.auth-switcher {
+  padding: 0 20px;
+}
+.auth-switcher__button {
+  color: var(--inactive-color);
+  font-size: 30px;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0666666667);
+  outline: none;
+}
+.auth-switcher__button:focus, .auth-switcher__button:hover {
+  color: var(--main-svg-color);
+}
+.auth-switcher__button:active {
+  color: var(--main-text-color);
+  border-color: var(--main-border-color);
+}
+.auth-forms {
+  padding: 0 20px;
+}
+.auth__input {
+  font-size: 25px;
+  padding: 5px 10px;
+  border-top: 1px solid var(--inactive-color);
+  border-bottom: 1px solid var(--inactive-color);
+  font-family: Jura;
+  width: 100%;
+  box-sizing: border-box;
+}
+.auth__input:focus {
+  border-color: var(--main-border-color);
+}
+.auth__button {
+  font-size: 25px;
+  margin-top: 10px;
+  padding: 5px 20px;
+  border-left: 1px solid var(--inactive-color);
+  border-right: 1px solid var(--inactive-color);
+  width: fit-content;
+  outline: none;
+}
+.auth__button:hover, .auth__button:focus {
+  border-color: var(--main-border-color);
+  background-color: rgba(0, 0, 0, 0.0392156863);
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,59 @@
+.auth {
+    padding: 20px;
+    border: 1px solid var(--main-border-color);    
+    border-radius: 20px;
+
+    &-switcher {
+        padding: 0 20px;
+
+        &__button {
+            color: var(--inactive-color);
+            font-size: 30px;
+            padding: 10px 20px;
+            border-bottom: 1px solid #0001;
+            outline: none;
+
+            &:focus, &:hover {
+                color: var(--main-svg-color);
+            }
+
+            &:active {
+                color: var(--main-text-color);
+                border-color: var(--main-border-color);
+            }
+        }
+    }
+
+    &-forms {
+        padding: 0 20px;        
+    }
+
+    &__input {
+        font-size: 25px;
+        padding: 5px 10px;
+        border-top: 1px solid var(--inactive-color);
+        border-bottom: 1px solid var(--inactive-color);
+        font-family: Jura;
+        width: 100%;
+        box-sizing: border-box;
+
+        &:focus {
+            border-color: var(--main-border-color);
+        }
+    }
+
+    &__button {
+        font-size: 25px;
+        margin-top: 10px;
+        padding: 5px 20px;
+        border-left: 1px solid var(--inactive-color);
+        border-right: 1px solid var(--inactive-color);
+        width: fit-content;
+        outline: none;
+
+        &:hover, &:focus {
+            border-color: var(--main-border-color);
+            background-color: #0000000a;
+        }
+    }
+}

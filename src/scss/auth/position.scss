@@ -1,0 +1,28 @@
+section {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.auth {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &-switcher {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
