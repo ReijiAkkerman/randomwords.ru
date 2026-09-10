@@ -13,8 +13,8 @@
         <section>
             <div class="auth">
                 <div class="auth-switcher">
-                    <button class="auth-switcher__button" style="color:#000;border-color:#000;">Вход</button>
-                    <button class="auth-switcher__button">Регистрация</button>
+                    <button class="auth-switcher__button auth-switcher_login" style="color:#000;border-color:#000;">Вход</button>
+                    <button class="auth-switcher__button auth-switcher_registration">Регистрация</button>
                 </div>
                 <div class="auth-forms">
                     <form class="auth__form auth-login" action="#">
@@ -54,5 +54,6 @@
                 </div>
             </div>
         </section>
+        <script type="module" src="/src/js/auth/ModeSwitcher.js"></script>
     </body>
 </html>
