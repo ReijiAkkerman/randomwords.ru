@@ -20,40 +20,40 @@
                     <form class="auth__form auth-login" action="#">
                         <div class="auth__div">
                             <p class="auth__p" style="display:none;"></p>
-                            <input class="auth__input" type="text" placeholder="Логин">
+                            <input class="auth__input" name="login" type="text" placeholder="Логин">
                         </div>
                         <div class="auth__div">
                             <p class="auth__p" style="display:none;"></p>
-                            <input class="auth__input" type="password" placeholder="Пароль">
+                            <input class="auth__input" name="password" type="password" placeholder="Пароль">
                         </div>
                         <button class="auth__button">Войти</button>
                     </form>
                     <form class="auth__form auth-registration" style="display:none;">
                         <div class="auth__div">
                             <p class="auth__p" style="display:none;"></p>
-                            <input class="auth__input" type="text" placeholder="Логин">
+                            <input class="auth__input" name="login" type="text" placeholder="Логин">
                         </div>
                         <div class="auth__div">
                             <p class="auth__p" style="display:none;"></p>
-                            <input class="auth__input" type="text" placeholder="Эл. почта">
+                            <input class="auth__input" name="email" type="text" placeholder="Эл. почта">
                         </div>
                         <div class="auth__div">
                             <p class="auth__p" style="display:none;"></p>
-                            <input class="auth__input" type="text" placeholder="Имя">
+                            <input class="auth__input" name="name" type="text" placeholder="Имя">
                         </div>
                         <div class="auth__div">
                             <p class="auth__p" style="display:none;"></p>
-                            <input class="auth__input" type="password" placeholder="Пароль">
+                            <input class="auth__input" name="password" type="password" placeholder="Пароль">
                         </div>
                         <div class="auth__div">
                             <p class="auth__p" style="display:none;"></p>
-                            <input class="auth__input" type="password" placeholder="Повтор пароля">
+                            <input class="auth__input" name="password_repetition" type="password" placeholder="Повтор пароля">
                         </div>
                         <button class="auth__button">Зарегистрироваться</button>
                     </form>
                 </div>
             </div>
         </section>
-        <script type="module" src="/src/js/auth/ModeSwitcher.js"></script>
+        <script type="module" src="/src/js/auth/view/ModeSwitcher.js"></script>
     </body>
 </html>
