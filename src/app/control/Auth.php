@@ -8,65 +8,77 @@
     use project\common\Error;
 
     class Auth {
+        private array $errors = [];
+
         use View;
         use Errors;
 
         public function reg() {
-            $login = $_POST['login'];
-            $email = $_POST['email'];
-            $name = $_POST['name'];
-            $password = $_POST['password'];
-            $password_repetition = $_POST['password_repetition'];
-            new mAuth()->reg($login, $email, $name, $password);
+            $login = trim($_POST['login']);
+            $email = trim($_POST['email']);
+            $name = trim($_POST['name']);
+            $password = trim($_POST['password']);
+            $password_repetition = trim($_POST['password_repetition']);
+
+            $validations = [
+                'isLogin' => $login,
+                'isEmail' => $email,
+                'isName' => $name,
+                'isPassword' => $password,
+                'isPasswordRepetition' => $password_repetition,
+            ];
+            foreach($validations as $func => $arg) {
+                $this->$func($arg);
+            }
+            if($this->errors) $this->sendErrorMessage($this->errors);
+
+            // new mAuth()->reg($login, $email, $name, $password);
         }
 
 
 
 
 
-        private function isLogin(): bool {
-
+        private function isLogin(string $login): void {
+            if($login === '') $this->errors[] = new Error('login', 'Логин не введён!!!');
         }
 
-        private function isEmail(): bool {
-
+        private function isEmail(string $email): void {
+            if($email === '') $this->errors[] = new Error('email', 'Электронная почта не указана!!!');
         }
 
-        private function isName(): bool {
-
+        private function isName(string $name): void {
+            if($name === '') $this->errors[] = new Error('name', 'Имя не указано!!!');
         }
 
-        private function isPassword(): bool {
-
+        private function isPassword(string $password): void {
+            if($password === '') $this->errors[] = new Error('password', 'Пароль не введён!!!');
         }
 
-        private function isPasswordRepetition(): bool {
-
-        }
-
-        private function isMatchedLogin(): bool {
-
-        }
-
-        private function isMatchedEmail(): bool {
-
-        }
-
-        private function isMatchedName(): bool {
-
-        }
-
-        private function isMatchedPassword(): bool {
-
+        private function isPasswordRepetition(string $password_repetition): void {
+            if($password_repetition === '') $this->errors[] = new Error('password_repetition', 'Пароль не введен повторно!!!');
         }
 
         private function isSamePasswords(
             string $password,
             string $password_repetition,
         ): bool {
-            if($password !== $password_repetition) {
-                $error = new Error('password', 'Пароли не совпадают');
-                $this->sendErrorMessage($error);
-            }
+            
+        }
+
+        private function isMatchedLogin(string $login): bool {
+
+        }
+
+        private function isMatchedEmail(string $email): bool {
+
+        }
+
+        private function isMatchedName(string $name): bool {
+
+        }
+
+        private function isMatchedPassword(string $password): bool {
+
         }
     }

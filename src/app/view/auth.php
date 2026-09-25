@@ -49,11 +49,12 @@
                             <p class="auth__p" style="display:none;"></p>
                             <input class="auth__input" name="password_repetition" type="password" placeholder="Повтор пароля">
                         </div>
-                        <button class="auth__button">Зарегистрироваться</button>
+                        <button class="auth__button auth-registration__button">Зарегистрироваться</button>
                     </form>
                 </div>
             </div>
         </section>
         <script type="module" src="/src/js/auth/view/ModeSwitcher.js"></script>
+        <script type="module" src="/src/js/auth/control/Registration.js"></script>
     </body>
 </html>

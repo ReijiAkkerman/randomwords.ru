@@ -1,4 +1,6 @@
 <?php
+    namespace project\common;
+
     class Error {
         public string $error_field;
         public string $error_message;
@@ -7,7 +9,7 @@
             $error_field,
             $error_message,
         ) {
-            $this->error_field = $error_message;
+            $this->error_field = $error_field;
             $this->error_message = $error_message;
         }
     }
