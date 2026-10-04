@@ -48,5 +48,14 @@
   border-color: var(--main-border-color);
   background-color: rgba(0, 0, 0, 0.0392156863);
 }
+.auth__p {
+  width: 450px;
+  box-sizing: border-box;
+  color: #f00;
+  font-size: 15px;
+  padding: 0 5px;
+  line-height: 0.8;
+  margin-bottom: 2px;
+}
 
 /*# sourceMappingURL=style.css.map */
