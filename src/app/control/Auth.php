@@ -14,10 +14,7 @@
         const LOGIN_LENGTH_MAX = 50;
         const EMAIL_LENGTH_MAX = 255;
         const NAME_LENGTH_MAX = 100;
-        const PASSWORD_LENGTH_MAX = 100;        
-
-        const REGEX_CHECK_SPACES = '/\x20/';
-        const REGEX_CHECK_AT = '/\x40/';
+        const PASSWORD_LENGTH_MAX = 100;
 
         const REGEX_VALIDATE_LOGIN = '//';
         const REGEX_VALIDATE_EMAIL = '//';
@@ -36,12 +33,9 @@
 
         public function reg() {
             $this->reg_getFieldsData();
-            // $this->reg_checkFieldsCompletion(); 
+            $this->reg_checkFieldsCompletion();
+            $this->reg_checkSpacesExistence();
             $this->reg_checkFieldsLength();
-            if($this->errors) {
-                $this->sendErrorMessage($this->errors);
-                exit;
-            }
 
             // new mAuth()->reg($login, $email, $name, $password);
         }
@@ -60,16 +54,11 @@
 
 
         private function reg_checkFieldsCompletion(): void {
-            $validations = [
-                'checkLogin' => $this->login,
-                'checkEmail' => $this->email,
-                'checkName' => $this->name,
-                'checkPassword' => $this->password,
-                'checkPasswordRepetition' => $this->password_repetition,
-            ];
-            foreach($validations as $func => $arg) {
-                $this->$func($arg);
-            }
+            $this->checkLogin($this->login);
+            $this->checkEmail($this->email);
+            $this->checkName($this->name);
+            $this->checkPassword($this->password);
+            $this->checkPasswordRepetition($this->password_repetition);
             if($this->errors) {
                 $this->sendErrorMessage($this->errors);
                 exit;
@@ -98,34 +87,35 @@
 
 
         private function reg_checkSpacesExistence(): void {
-
+            $this->checkLoginSpaces($this->login);
+            $this->checkEmailSpaces($this->email);
+            if($this->errors) {
+                $this->sendErrorMessage($this->errors);
+                exit;
+            }
         }
         #
         private function checkLoginSpaces(string $login): void {
-            switch(preg_match(self::REGEX_CHECK_SPACES, $login)) {
-                case 1:
-                    $this->errors[] = new Error('login', 'Пробелы недопустимы');
-                    break;
-                case false:
-                    $this->errors[] = new Error('login', "ERROR [model]Auth->reg_checkSpacesExistence->checkLoginSpaces->preg_match('/\\x20/', '$login')");
-                    break;
-            }
+            if(str_contains($login, "\x20"))
+                $this->errors[] = new Error('login', 'Пробелы недопустимы!');
         }
         #
         private function checkEmailSpaces(string $email): void {
-            switch(preg_match(self::REGEX_CHECK_SPACES, $email)) {
-                case 1:
-                    $this->errors[] = new Error('login', 'Пробелы недопустимы');
-                    break;
-                case false:
-                    $this->errors[] = new Error('login', "ERROR [model]Auth->reg_checkSpacesExistence->checkEmailSpaces->preg_match('/\\x20/', '$login')");
-                    break;
-            }
+            if(str_contains($email, "\x20"))
+                $this->errors[] = new Error('email', 'Пробелы недопустимы!');
         }
 
 
         private function reg_checkFieldsLength(): void {
+            $this->checkLoginLength($this->login);
+            $this->checkEmailLength($this->email);
             $this->checkNameLength($this->name);
+            $this->checkPasswordLength($this->password);
+            $this->checkPasswordLength($this->password_repetition, true);
+            if($this->errors) {
+                $this->sendErrorMessage($this->errors);
+                exit;
+            }
         }
         #
         private function checkLoginLength(string $login): void {
@@ -144,15 +134,17 @@
         #
         private function checkNameLength(string $name): void {
             $name_length = mb_strlen($name);
-            $this->errors[] = new Error('name', "Длина имени $name_length символов");
+            if($name_length > self::NAME_LENGTH_MAX)
+                $this->errors[] = new Error('name', 'Имя пользователя должно содержать не более ' . self::NAME_LENGTH_MAX . ' символов');
         }
         #
-        private function checkPasswordLength(string $password): void {
-
-        }
-        #
-        private function checkPasswordRepetitionLength(string $password_repetition): void {
-
+        private function checkPasswordLength(string $password, bool $repetition = false): void {
+            $field = ($repetition) ? 'password_repetition' : 'password';
+            $password_length = mb_strlen($password);
+            if($password_length < self::PASSWORD_LENGTH_MIN)
+                $this->errors[] = new Error($field, 'Пароль должен содержать не менее ' . self::PASSWORD_LENGTH_MIN . ' символов');
+            else if($password_length > self::PASSWORD_LENGTH_MAX)
+                $this->errors[] = new Error($field, 'Пороль должен содержать не более ' . self::PASSWORD_LENGTH_MAX . ' символов');
         }
 
 

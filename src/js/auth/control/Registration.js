@@ -9,6 +9,7 @@ class Registration {
         xhr.send(formData);
         xhr.onloadend = () => {
             alert(xhr.responseText);
+            console.log(xhr.responseText);
         };
     }
 }

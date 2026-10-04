@@ -39,10 +39,10 @@
                         </div>
                         <div class="auth__div">
                             <p class="auth__p" style="display:none;"></p>
-                            <input class="auth__input" name="name" type="text" placeholder="Имя">
+                            <input class="auth__input" name="name" type="text" placeholder="Имя пользователя">
                         </div>
                         <div class="auth__div">
-                            <p class="auth__p">Длина имени 20 символов и много много много текста и еще много много много текста</p>
+                            <p class="auth__p" style="display:none;"></p>
                             <input class="auth__input" name="password" type="password" placeholder="Пароль">
                         </div>
                         <div class="auth__div">
