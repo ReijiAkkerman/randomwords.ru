@@ -16,10 +16,14 @@
         const NAME_LENGTH_MAX = 100;
         const PASSWORD_LENGTH_MAX = 100;
 
-        const REGEX_VALIDATE_LOGIN = '//';
-        const REGEX_VALIDATE_EMAIL = '//';
-        const REGEX_VALIDATE_NAME = '//';
-        const REGEX_VALIDATE_PASSWORD = '//';
+        const REGEX_VALIDATE_LOGIN_FIRST_SYMBOL = '/^[^\W0-9]/';
+        const REGEX_VALIDATE_EMAIL_FIRST_SYMBOL = '/^[^\W0-9]/';
+        const REGEX_VALIDATE_NAME_FIRST_SYMBOL = '/^[^\W]/u';
+
+        const REGEX_VALIDATE_LOGIN = '/^\w+$/';
+        const REGEX_VALIDATE_EMAIL = '/^[\w.]+$/';
+        const REGEX_VALIDATE_NAME = '/^[\w\x20-]+$/u';
+        const REGEX_VALIDATE_PASSWORD = '/^[\w\x20_.-]$/u';
 
         private string $login = '';
         private string $email = '';
@@ -34,8 +38,11 @@
         public function reg() {
             $this->reg_getFieldsData();
             $this->reg_checkFieldsCompletion();
+            $this->reg_validateFirstSymbol();
             $this->reg_checkSpacesExistence();
+            $this->reg_validateFieldsData();
             $this->reg_checkFieldsLength();
+            $this->reg_checkPasswordsIdentity();
 
             // new mAuth()->reg($login, $email, $name, $password);
         }
@@ -64,7 +71,7 @@
                 exit;
             }
         }
-        #
+        #####
         private function checkLogin(string $login): void {
             if($login === '') $this->errors[] = new Error('login', 'Логин не введён');
         }
@@ -94,7 +101,7 @@
                 exit;
             }
         }
-        #
+        #####
         private function checkLoginSpaces(string $login): void {
             if(str_contains($login, "\x20"))
                 $this->errors[] = new Error('login', 'Пробелы недопустимы!');
@@ -117,7 +124,7 @@
                 exit;
             }
         }
-        #
+        #####
         private function checkLoginLength(string $login): void {
             $login_length = strlen($login);
             if($login_length < self::LOGIN_LENGTH_MIN) 
@@ -149,39 +156,106 @@
 
 
         private function reg_validateFieldsData(): void {
-            
-        }
-        #
-        private function validatePasswordsIdentity(
-            string $password,
-            string $password_repetition,
-        ): void {
-            if($password !== $password_repetition) $this->errors[] = new Error('password_repetition', 'Пароли не совпадают!!!');
-        }
-        #
-        private function validateLogin(string $login): bool {
-            $regex = '/\w*/';
-            switch(preg_match($regex, $login)) {
-                case 1:
-                    break;
-                case 0:
-                    $this->errors[] = new Error('login', "Введены неразрешенные символы");
-                    break;
-                case false:
-                    $this->errors[] = new Error('login', "ERROR [model]Auth->validateLogin->preg_match('$regex', '$login')");
-                    break;
+            $this->validateLogin($this->login);
+            $this->validateEmail($this->email);
+            $this->validateName($this->name);
+            $this->validatePassword($this->password);
+            $this->validatePassword($this->password_repetition, true);
+            if($this->errors) {
+                $this->sendErrorMessage($this->errors);
+                exit;
             }
         }
-        #
-        private function validateEmail(string $email): bool {
-
+        #####
+        private function validateLogin(string $login): void {
+            $regex = self::REGEX_VALIDATE_LOGIN;
+            $preg_match_result = preg_match($regex, $login);
+            if($preg_match_result === 1);
+            else if($preg_match_result === 0)
+                $this->errors[] = new Error('login', 'Введены недопустимые символы!<br>Разрешены латинские буквенно-цифровые символы и символ нижнего подчеркивания');
+            else if($preg_match_result === false)
+                $this->errors[] = new Error('login', "ERROR [model]Auth->validateLogin->preg_match('$regex', '$login')");
         }
         #
-        private function validateName(string $name): bool {
-
+        private function validateEmail(string $email): void {
+            $regex = self::REGEX_VALIDATE_EMAIL;
+            $preg_match_result = preg_match($regex, $email);
+            if($preg_match_result === 1);
+            else if($preg_match_result === 0)
+                $this->errors[] = new Error('email', 'Введены недопустимые символы!<br>Разрешены латинские буквенно-цифровые символы и точки');
+            else if($preg_match_result === false)
+                $this->errors[] = new Error('email', "Уккщк");
         }
         #
-        private function validatePassword(string $password): bool {
+        private function validateName(string $name): void {
+            $regex = self::REGEX_VALIDATE_NAME;
+            $preg_match_result = preg_match($regex, $name);
+            if($preg_match_result === 1);
+            else if($preg_match_result === 0)
+                $this->errors[] = new Error('name', 'Введены недопустимые символы!<br>Разрешены буквенно-цифровые символы, дефис и пробел');
+            else if($preg_match_result === false)
+                $this->errors[] = new Error('login', "ERROR [model]Auth->validateName->preg_match('$regex', '$name')");
+        }
+        #
+        private function validatePassword(string $password, $repetition = false): void {
+            $regex = self::REGEX_VALIDATE_PASSWORD;
+            $preg_match_result = preg_match($regex, $name);
+            $field = ($repetition === false) ? 'password' : 'password_repetition';
+            if($preg_match_result === 1);
+            else if($preg_match_result === 0)
+                $this->errors[] = new Error($field, 'Введены недопустимые символы<br>Разрешены буквенно-цифровые символы, символ нижнего подчеркивания, пробел, дефис и точка');
+            else if($preg_match_result === false)
+                $this->errors[] = new Error($field, "ERROR [model]Auth->validatePassword(field='$field')->preg_match('$regex', '" . $this->$field . "')");
+        }
 
+
+        private function reg_checkPasswordsIdentity(string $password, string $password_repetition): void {
+            if($password !== $password_repetition)
+                $this->errors[] = new Error('password_repetition', 'Пароли не совпадают!!!');
+            if($this->errors) {
+                $this->sendErrorMessage($this->errors);
+                exit;
+            }
+        }
+
+
+        private function reg_validateFirstSymbol(): void {
+            $this->validateLoginFirstSymbol($this->login);
+            $this->validateEmailFirstSymbol($this->email);
+            $this->validateNameFirstSymbol($this->name);
+            if($this->errors) {
+                $this->sendErrorMessage($this->errors);
+                exit;
+            }
+        }
+        #####
+        private function validateLoginFirstSymbol(string $login): void {
+            $regex = self::REGEX_VALIDATE_LOGIN_FIRST_SYMBOL;
+            $preg_match_result = preg_match($regex, $login);
+            if($preg_match_result === 1);
+            else if($preg_match_result === 0)
+                $this->errors[] = new Error('login', 'Первый символ должен быть буквой или символом нижнего подчеркивания!');
+            else if($preg_match_result === false)
+                $this->errors[] = new Error('login', "ERROR [model]Auth->validateLoginFirstSymbol->preg_match('$regex', '$login')");
+        }
+        #
+        private function validateEmailFirstSymbol(string $email): void {
+            $regex = self::REGEX_VALIDATE_EMAIL_FIRST_SYMBOL;
+            $preg_match_result = preg_match($regex, $email);
+            if($preg_match_result === 1);
+            else if($preg_match_result === 0)
+                $this->errors[] = new Error('email', 'Первый символ должен быть буквой или символом нижнего подчеркивания!');
+            else if($preg_match_result === false)
+                $this->errors[] = new Error('email', "ERROR [model]Auth->validateEmailFirstSymbol->preg_match('$regex', '$email')");
+        }
+        #
+        private function validateNameFirstSymbol(string $name): void {
+            $regex = self::REGEX_VALIDATE_NAME_FIRST_SYMBOL;
+            $preg_match_result = preg_match($regex, $name);
+            if($preg_match_result === 1);
+            else if($preg_match_result === 0)
+                $this->errors[] = new Error('name', 'Первый символ должен быть буквой, цифрой или символом нижнего подчеркивания!');
+            else if($preg_match_result === false)
+                $this->errors[] = new Error('name', "ERROR [model]Aurh->validateNameFirstSymbol->preg_match('$regex', '$name')");
         }
     }
