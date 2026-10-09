@@ -26,7 +26,7 @@
                             <p class="auth__p" style="display:none;"></p>
                             <input class="auth__input" name="password" type="password" placeholder="Пароль">
                         </div>
-                        <button class="auth__button">Войти</button>
+                        <button class="auth__button auth-login__button">Войти</button>
                     </form>
                     <form class="auth__form auth-registration" style="display:none;">
                         <div class="auth__div">
@@ -56,5 +56,6 @@
         </section>
         <script type="module" src="/src/js/auth/view/ModeSwitcher.js"></script>
         <script type="module" src="/src/js/auth/control/Registration.js"></script>
+        <script type="module" src="/src/js/auth/control/Login.js"></script>
     </body>
 </html>

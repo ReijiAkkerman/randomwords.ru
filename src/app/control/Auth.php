@@ -47,6 +47,15 @@
             // new mAuth()->reg($login, $email, $name, $password);
         }
 
+        public function log(): void {
+            $this->log_getFieldsData();
+            $this->log_checkFieldsCompletion();
+            $this->log_validateFirstSymbol();
+            $this->log_checkSpacesExistence();
+            $this->log_validateFieldsData();
+            $this->log_checkFieldsLength();
+        }
+
 
 
 
@@ -58,6 +67,11 @@
             $this->password = trim($_POST['password']);
             $this->password_repetition = trim($_POST['password_repetition']);
         }
+        ###
+        private function log_getFieldsData(): void {
+            $this->login = trim($_POST['login']);
+            $this->password = trim($_POST['password']);
+        }
 
 
         private function reg_checkFieldsCompletion(): void {
@@ -66,10 +80,13 @@
             $this->checkName($this->name);
             $this->checkPassword($this->password);
             $this->checkPasswordRepetition($this->password_repetition);
-            if($this->errors) {
-                $this->sendErrorMessage($this->errors);
-                exit;
-            }
+            $this->sendErrors();
+        }
+        ###
+        private function log_checkFieldsCompletion(): void {
+            $this->checkLogin($this->login);
+            $this->checkPassword($this->password);
+            $this->sendErrors();
         }
         #####
         private function checkLogin(string $login): void {
@@ -96,10 +113,12 @@
         private function reg_checkSpacesExistence(): void {
             $this->checkLoginSpaces($this->login);
             $this->checkEmailSpaces($this->email);
-            if($this->errors) {
-                $this->sendErrorMessage($this->errors);
-                exit;
-            }
+            $this->sendErrors();
+        }
+        ###
+        private function log_checkSpacesExistence(): void {
+            $this->checkLoginSpaces($this->login);
+            $this->sendErrors();
         }
         #####
         private function checkLoginSpaces(string $login): void {
@@ -119,10 +138,13 @@
             $this->checkNameLength($this->name);
             $this->checkPasswordLength($this->password);
             $this->checkPasswordLength($this->password_repetition, true);
-            if($this->errors) {
-                $this->sendErrorMessage($this->errors);
-                exit;
-            }
+            $this->sendErrors();
+        }
+        ###
+        private function log_checkFieldsLength(): void {
+            $this->checkLoginLength($this->login);
+            $this->checkPasswordLength($this->password);
+            $this->sendErrors();
         }
         #####
         private function checkLoginLength(string $login): void {
@@ -161,10 +183,13 @@
             $this->validateName($this->name);
             $this->validatePassword($this->password);
             $this->validatePassword($this->password_repetition, true);
-            if($this->errors) {
-                $this->sendErrorMessage($this->errors);
-                exit;
-            }
+            $this->sendErrors();
+        }
+        ###
+        private function log_validateFieldsData(): void {
+            $this->validateLogin($this->login);
+            $this->validatePassword($this->password);
+            $this->sendErrors();
         }
         #####
         private function validateLogin(string $login): void {
@@ -212,10 +237,7 @@
         private function reg_checkPasswordsIdentity(string $password, string $password_repetition): void {
             if($password !== $password_repetition)
                 $this->errors[] = new Error('password_repetition', 'Пароли не совпадают!!!');
-            if($this->errors) {
-                $this->sendErrorMessage($this->errors);
-                exit;
-            }
+            $this->sendErrors();
         }
 
 
@@ -223,10 +245,12 @@
             $this->validateLoginFirstSymbol($this->login);
             $this->validateEmailFirstSymbol($this->email);
             $this->validateNameFirstSymbol($this->name);
-            if($this->errors) {
-                $this->sendErrorMessage($this->errors);
-                exit;
-            }
+            $this->sendErrors();
+        }
+        ###
+        private function log_validateFirstSymbol(): void {
+            $this->validateLoginFirstSymbol($this->login);
+            $this->sendErrors();
         }
         #####
         private function validateLoginFirstSymbol(string $login): void {
