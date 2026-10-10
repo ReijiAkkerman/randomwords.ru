@@ -19,34 +19,34 @@
                 <div class="auth-forms">
                     <form class="auth__form auth-login" action="#">
                         <div class="auth__div">
-                            <p class="auth__p" style="display:none;"></p>
+                            <p class="auth__p auth-login-errorMessage_login" style="display:none;"></p>
                             <input class="auth__input" name="login" type="text" placeholder="Логин">
                         </div>
                         <div class="auth__div">
-                            <p class="auth__p" style="display:none;"></p>
+                            <p class="auth__p auth-login-errorMessage_password" style="display:none;"></p>
                             <input class="auth__input" name="password" type="password" placeholder="Пароль">
                         </div>
                         <button class="auth__button auth-login__button">Войти</button>
                     </form>
                     <form class="auth__form auth-registration" style="display:none;">
                         <div class="auth__div">
-                            <p class="auth__p" style="display:none;"></p>
+                            <p class="auth__p auth-registration-errorMessage_login" style="display:none;"></p>
                             <input class="auth__input" name="login" type="text" placeholder="Логин">
                         </div>
                         <div class="auth__div">
-                            <p class="auth__p" style="display:none;"></p>
+                            <p class="auth__p auth-registration-errorMessage_email" style="display:none;"></p>
                             <input class="auth__input" name="email" type="text" placeholder="Эл. почта">
                         </div>
                         <div class="auth__div">
-                            <p class="auth__p" style="display:none;"></p>
+                            <p class="auth__p auth-registration-errorMessage_name" style="display:none;"></p>
                             <input class="auth__input" name="name" type="text" placeholder="Имя пользователя">
                         </div>
                         <div class="auth__div">
-                            <p class="auth__p" style="display:none;"></p>
+                            <p class="auth__p auth-registration-errorMessage_password" style="display:none;"></p>
                             <input class="auth__input" name="password" type="password" placeholder="Пароль">
                         </div>
                         <div class="auth__div">
-                            <p class="auth__p" style="display:none;"></p>
+                            <p class="auth__p auth-registration-errorMessage_password_repetition" style="display:none;"></p>
                             <input class="auth__input" name="password_repetition" type="password" placeholder="Повтор пароля">
                         </div>
                         <button class="auth__button auth-registration__button">Зарегистрироваться</button>
@@ -55,7 +55,7 @@
             </div>
         </section>
         <script type="module" src="/src/js/auth/view/ModeSwitcher.js"></script>
-        <script type="module" src="/src/js/auth/control/Registration.js"></script>
-        <script type="module" src="/src/js/auth/control/Login.js"></script>
+        <script type="module" src="/src/js/auth/control/Auth.js"></script>
+        <script type="module" src="/src/js/auth/model/ErrorsOutput.js"></script>
     </body>
 </html>
