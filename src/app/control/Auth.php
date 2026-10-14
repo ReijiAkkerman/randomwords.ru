@@ -12,7 +12,7 @@
         const PASSWORD_LENGTH_MIN = 8;
 
         const LOGIN_LENGTH_MAX = 50;
-        const EMAIL_LENGTH_MAX = 255;
+        const EMAIL_LENGTH_MAX = 250;
         const NAME_LENGTH_MAX = 100;
         const PASSWORD_LENGTH_MAX = 100;
 
@@ -30,7 +30,6 @@
         private string $name = '';
         private string $password = '';
         private string $password_repetition = '';
-        private array $errors = [];
 
         use View;
         use Errors;
@@ -43,8 +42,7 @@
             $this->reg_validateFieldsData();
             $this->reg_checkFieldsLength();
             $this->reg_checkPasswordsIdentity($this->password, $this->password_repetition);
-
-            // new mAuth()->reg($login, $email, $name, $password);
+            // (new mAuth())->reg($login, $email, $name, $password);
         }
 
         public function log(): void {
@@ -197,7 +195,7 @@
             $preg_match_result = preg_match($regex, $login);
             if($preg_match_result === 1);
             else if($preg_match_result === 0)
-                $this->errors[] = new Error('login', 'Введены недопустимые символы!<br>Разрешены латинские буквенно-цифровые символы и символ нижнего подчеркивания');
+                $this->errors[] = new Error('login', "Введены недопустимые символы! Разрешены латинские буквенно-цифровые символы и символ нижнего подчеркивания");
             else if($preg_match_result === false)
                 $this->errors[] = new Error('login', "ERROR [control]Auth->validateLogin->preg_match('$regex', '$login')");
         }
@@ -207,7 +205,7 @@
             $preg_match_result = preg_match($regex, $email);
             if($preg_match_result === 1);
             else if($preg_match_result === 0)
-                $this->errors[] = new Error('email', 'Введены недопустимые символы!<br>Разрешены латинские буквенно-цифровые символы и точки');
+                $this->errors[] = new Error('email', "Введены недопустимые символы! Разрешены латинские буквенно-цифровые символы и точки");
             else if($preg_match_result === false)
                 $this->errors[] = new Error('email', "Уккщк");
         }
@@ -217,7 +215,7 @@
             $preg_match_result = preg_match($regex, $name);
             if($preg_match_result === 1);
             else if($preg_match_result === 0)
-                $this->errors[] = new Error('name', 'Введены недопустимые символы!<br>Разрешены буквенно-цифровые символы, дефис и пробел');
+                $this->errors[] = new Error('name', "Введены недопустимые символы! Разрешены буквенно-цифровые символы, дефис и пробел");
             else if($preg_match_result === false)
                 $this->errors[] = new Error('login', "ERROR [control]Auth->validateName->preg_match('$regex', '$name')");
         }
@@ -228,7 +226,7 @@
             $preg_match_result = preg_match($regex, $this->$field);
             if($preg_match_result === 1);
             else if($preg_match_result === 0)
-                $this->errors[] = new Error($field, 'Введены недопустимые символы<br>Разрешены буквенно-цифровые символы, символ нижнего подчеркивания, пробел, дефис и точка');
+                $this->errors[] = new Error($field, "Введены недопустимые символы! Разрешены буквенно-цифровые символы, символ нижнего подчеркивания, пробел, дефис и точка");
             else if($preg_match_result === false)
                 $this->errors[] = new Error($field, "ERROR [control]Auth->validatePassword(field='$field')->preg_match('$regex', '" . $this->$field . "')");
         }
