@@ -1,36 +1,30 @@
 class ErrorsOutput {
-    static completeErrorFields(action_type, errors_array) {
-        let error_fields = Array(errors_array.length);
-        for(let i = 0; i < errors_array.length; i++) {
-            error_fields[i] = document.querySelector(`.auth-${action_type}-errorMessage_${errors_array[i].error_field}`);
-            ErrorsOutput.clearErrorField(action_type, errors_array[i].error_field);
-            error_fields[i].textContent = errors_array[i].error_message;
-            error_fields[i].style.display = '';
+    static completeErrorFields(action_type, errors_array) { //[control]Auth.(reg|log);
+        let errors_list = ErrorsOutput.#getErrorsList(action_type, errors_array);
+        for(const [error_field, error_message] of errors_list) {
+            let placeForError = document.querySelector(`.auth-${action_type}-errorMessage_${error_field}`);
+            placeForError.textContent = error_message;
+            placeForError.style.display = (error_message) ? '' : 'none';
         }
     }
 
-    static clearErrorField(window, field) {
-        let error_field = document.querySelector(`.auth-${window}-errorMessage_${field}`);
-        error_field.textContent = '';
-        error_field.style.display = 'none'; 
+    static #getErrorsList(window, errors_array) {
+        let errors_list = new Map();
+        errors_array.forEach(error => {errors_list.set(error.error_field, error.error_message);});
+        let fieldnames = ErrorsOutput.#getFieldNames(window);
+        for(let i = 0; i < fieldnames.length; i++)
+            if(errors_list.has(fieldnames[i])) continue;
+            else errors_list.set(fieldnames[i], '');
+        return errors_list;
     }
 
-    static clearLoginErrorFields() {
-        let fields = ['login', 'password'];
-        fields.forEach(field => {ErrorsOutput.clearErrorField('login', field);});
-    }
-
-    static clearRegistrationErrorFields() {
-        let fields = ['login', 'email', 'name', 'password', 'password_repetition'];
-        fields.forEach(field => {ErrorsOutput.clearErrorField('registration' ,field);});
+    static #getFieldNames(window) {
+        let fields = document.querySelectorAll(`.auth-${window} .auth__input`);
+        let fieldnames = new Array(fields.length);
+        for(let i = 0; i < fields.length; i++)
+            fieldnames[i] = fields[i].name;
+        return fieldnames;
     }
 }
 
 export {ErrorsOutput};
-
-document.addEventListener('click', function() {
-    let login__button = document.querySelector('.auth-login__button');
-    let registration__button = document.querySelector('.auth-registration__button');
-    login__button.addEventListener('click', ErrorsOutput.clearLoginErrorFields);
-    registration__button.addEventListener('click', ErrorsOutput.clearRegistrationErrorFields);
-});

@@ -207,7 +207,7 @@
             else if($preg_match_result === 0)
                 $this->errors[] = new Error('email', "Введены недопустимые символы! Разрешены латинские буквенно-цифровые символы и точки");
             else if($preg_match_result === false)
-                $this->errors[] = new Error('email', "Уккщк");
+                $this->errors[] = new Error('email', "ERROR [control]Auth->validateEmail->preg_match('$regex', '$email')");
         }
         #
         private function validateName(string $name): void {
