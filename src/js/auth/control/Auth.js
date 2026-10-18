@@ -32,6 +32,7 @@ class Auth {
                 ErrorsOutput.completeErrorFields('registration', xhr.response);
                 alert(xhr_responseText);
             }
+            else window.location.pathname = '/finances/view';
         };
     }
 }
