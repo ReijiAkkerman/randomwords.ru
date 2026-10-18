@@ -20,13 +20,14 @@ class Auth {
         event.preventDefault();
         let xhr = new XMLHttpRequest();
         xhr.open('POST', '/auth/reg');
-        xhr.responseType = 'json';
+        xhr.responseType = 'text';
         let form = document.querySelector('.auth-registration');
         let formData = new FormData(form);
         xhr.send(formData);
         xhr.onloadend = () => {
             if(xhr.response) {
-                ErrorsOutput.completeErrorFields('registration', xhr.response);
+                alert(xhr.response);
+                // ErrorsOutput.completeErrorFields('registration', xhr.response);
             }
         };
     }

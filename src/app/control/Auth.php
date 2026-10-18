@@ -42,7 +42,7 @@
             $this->reg_validateFieldsData();
             $this->reg_checkFieldsLength();
             $this->reg_checkPasswordsIdentity($this->password, $this->password_repetition);
-            // (new mAuth())->reg($login, $email, $name, $password);
+            (new mAuth())->reg($this->login, $this->email, $this->name, $this->password);
         }
 
         public function log(): void {
