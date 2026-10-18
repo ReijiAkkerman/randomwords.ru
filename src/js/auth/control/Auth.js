@@ -11,7 +11,9 @@ class Auth {
         xhr.send(formData);
         xhr.onloadend = () => {
             if(xhr.response) {
+                let xhr_responseText = JSON.stringify(xhr.response);
                 ErrorsOutput.completeErrorFields('login', xhr.response);
+                alert(xhr_responseText);
             }
         };
     }
@@ -20,14 +22,15 @@ class Auth {
         event.preventDefault();
         let xhr = new XMLHttpRequest();
         xhr.open('POST', '/auth/reg');
-        xhr.responseType = 'text';
+        xhr.responseType = 'json';
         let form = document.querySelector('.auth-registration');
         let formData = new FormData(form);
         xhr.send(formData);
         xhr.onloadend = () => {
             if(xhr.response) {
-                alert(xhr.response);
-                // ErrorsOutput.completeErrorFields('registration', xhr.response);
+                let xhr_responseText = JSON.stringify(xhr.response);
+                ErrorsOutput.completeErrorFields('registration', xhr.response);
+                alert(xhr_responseText);
             }
         };
     }
