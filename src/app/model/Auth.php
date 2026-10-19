@@ -12,49 +12,79 @@
         use Mysql;
         use Cookies;
 
+        private string $Password_hash = '';
+
 
 
 
 
         public function reg(string $LOGIN, string $EMAIL, string $NAME, string $PASSWORD): void {
             $this->createMysqlRootConnection();
-            if($this->userExists($LOGIN, $EMAIL)) {
-                $this->closeMysqlConnection();
-                $this->sendErrors();
-            }
-            $encrypted_password = $this->encryptPassword($PASSWORD);
-            $this->saveUserAuthData($LOGIN, $EMAIL, $NAME, $encrypted_password);
+            $this->reg_checkUserExistence($LOGIN, $EMAIL);
+            $encrypted_password = $this->reg_encryptPassword($PASSWORD);
+            $this->reg_saveUserAuthData($LOGIN, $EMAIL, $NAME, $encrypted_password);
             $this->closeMysqlConnection();
             $this->prepareCookies($LOGIN, $encrypted_password);
             $this->sendCookies();
         }
         #####
-
-
-
-        private function saveUserAuthData($LOGIN, $EMAIL, $NAME, $encrypted_password): void {
+        private function reg_saveUserAuthData($LOGIN, $EMAIL, $NAME, $encrypted_password): void {
             $query = "INSERT INTO users(login, email, name, password_hash) VALUES ('$LOGIN', '$EMAIL', '$NAME', '$encrypted_password')";
             $this->mysql->query($query);
         }
-
-        private function userExists($LOGIN, $EMAIL): bool {
-
-            $query = 'USE AUTH';
-            $result = $this->mysql->query($query);
-
-            $query = "SELECT * FROM users WHERE login='$LOGIN' OR email='$EMAIL'";
-            $result = $this->mysql->query($query);
+        #
+        private function reg_checkUserExistence(string $LOGIN, string $EMAIL): void {
+            $this->mysql->query('USE AUTH');
+            $result = $this->mysql->query("SELECT * FROM users WHERE login='$LOGIN' OR email='$EMAIL'");
             foreach($result as $row) {
                 if($row['login']) $this->errors[] = new Error('login', 'Указанный логин уже существует!');
                 if($row['email']) $this->errors[] = new Error('email', 'Указанная эл. почта уже существует!');
             }
-            $user_exists = ($this->errors) ? true : false;
-            return $user_exists;
+            if($this->errors) {
+                $this->closeMysqlConnection();
+                $this->sendErrors();
+            }
         }
-
-        private function encryptPassword($PASSWORD): string {
+        #
+        private function reg_encryptPassword($PASSWORD): string {
             return password_hash($PASSWORD, PASSWORD_DEFAULT);
         }
+
+
+
+
+
+        public function log(string $LOGIN, string $PASSWORD): void {
+            $this->createMysqlRootConnection();
+            $this->log_checkUserExistence($LOGIN);
+            $this->closeMysqlConnection();
+            $this->log_identifyUser($PASSWORD);
+            $this->prepareCookies($LOGIN, $Password_hash);
+            $this->sendCookies();
+        }
+
+        private function log_checkUserExistence(string $LOGIN): void {
+            $this->mysql->query('USE AUTH');
+            $result = $this->mysql->query("SELECT * FROM users WHERE login='$LOGIN'");
+            foreach($result as $row) 
+                $this->Password_hash = $row['password_hash'];
+            if($this->Password_hash === '') {
+                $this->closeMysqlConnection();
+                $this->errors[] = new Error('login', 'Пользователь не найден!');
+                $this->sendErrors();
+            }
+        }
+
+        private function log_identifyUser(string $PASSWORD): void {
+            if(password_verify($PASSWORD, $this->Password_hash) === false) {
+                $this->errors[] = new Error('password', 'Пароль неверный!');
+                $this->sendErrors();
+            }
+        }
+
+
+
+
 
         private function prepareCookies(string $LOGIN, string $confirmation): void {
             $this->addCookie('login', $LOGIN);

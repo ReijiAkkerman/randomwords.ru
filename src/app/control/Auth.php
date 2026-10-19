@@ -39,7 +39,7 @@
             $this->reg_checkFieldsCompletion();
             $this->reg_validateFirstSymbol();
             $this->reg_checkSpacesExistence();
-            $this->reg_validateFieldsData();
+            $this->reg_validateFieldsData();    // проверяет допустимость символов
             $this->reg_checkFieldsLength();
             $this->reg_checkPasswordsIdentity($this->password, $this->password_repetition);
             (new mAuth())->reg($this->login, $this->email, $this->name, $this->password);
@@ -50,8 +50,9 @@
             $this->log_checkFieldsCompletion();
             $this->log_validateFirstSymbol();
             $this->log_checkSpacesExistence();
-            $this->log_validateFieldsData();
+            $this->log_validateFieldsData();    // проверяет допустимость символов
             $this->log_checkFieldsLength();
+            (new mAuth)->log($this->login, $this->password);
         }
 
 

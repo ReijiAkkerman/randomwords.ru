@@ -15,6 +15,7 @@ class Auth {
                 ErrorsOutput.completeErrorFields('login', xhr.response);
                 alert(xhr_responseText);
             }
+            else window.location.pathname = '/finances/view';
         };
     }
 
