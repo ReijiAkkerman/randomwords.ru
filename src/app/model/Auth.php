@@ -35,11 +35,12 @@
         #
         private function reg_checkUserExistence(string $LOGIN, string $EMAIL): void {
             $this->mysql->query('USE AUTH');
-            $result = $this->mysql->query("SELECT * FROM users WHERE login='$LOGIN' OR email='$EMAIL'");
-            foreach($result as $row) {
+            $result = $this->mysql->query("SELECT * FROM users WHERE login='$LOGIN'");
+            foreach($result as $row)
                 if($row['login']) $this->errors[] = new Error('login', 'Указанный логин уже существует!');
+            $result = $this->mysql->query("SELECT * FROM users WHERE email='$EMAIL'");
+            foreach($result as $row) 
                 if($row['email']) $this->errors[] = new Error('email', 'Указанная эл. почта уже существует!');
-            }
             if($this->errors) {
                 $this->closeMysqlConnection();
                 $this->sendErrors();
@@ -59,7 +60,7 @@
             $this->log_checkUserExistence($LOGIN);
             $this->closeMysqlConnection();
             $this->log_identifyUser($PASSWORD);
-            $this->prepareCookies($LOGIN, $Password_hash);
+            $this->prepareCookies($LOGIN, $this->Password_hash);
             $this->sendCookies();
         }
 

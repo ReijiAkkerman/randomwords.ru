@@ -5,15 +5,19 @@ class Auth {
         event.preventDefault();
         let xhr = new XMLHttpRequest();
         xhr.open('POST', '/auth/log');
-        xhr.responseType = 'json';
+        xhr.responseType = 'text';
         let form = document.querySelector('.auth-login');
         let formData = new FormData(form);
         xhr.send(formData);
         xhr.onloadend = () => {
             if(xhr.response) {
-                let xhr_responseText = JSON.stringify(xhr.response);
-                ErrorsOutput.completeErrorFields('login', xhr.response);
-                alert(xhr_responseText);
+                try {
+                    let xhr_json_response = JSON.parse(xhr.response);
+                    ErrorsOutput.completeErrorFields('login', xhr_json_response);
+                }
+                catch (SyntaxError) {
+                    alert(xhr.response);
+                }
             }
             else window.location.pathname = '/finances/view';
         };
@@ -23,15 +27,19 @@ class Auth {
         event.preventDefault();
         let xhr = new XMLHttpRequest();
         xhr.open('POST', '/auth/reg');
-        xhr.responseType = 'json';
+        xhr.responseType = 'text';
         let form = document.querySelector('.auth-registration');
         let formData = new FormData(form);
         xhr.send(formData);
         xhr.onloadend = () => {
             if(xhr.response) {
-                let xhr_responseText = JSON.stringify(xhr.response);
-                ErrorsOutput.completeErrorFields('registration', xhr.response);
-                alert(xhr_responseText);
+                try {
+                    let xhr_json_response = JSON.parse(xhr.response);
+                    ErrorsOutput.completeErrorFields('registration', xhr_json_response);
+                }
+                catch (SyntaxError) {
+                    alert(xhr.response);
+                }
             }
             else window.location.pathname = '/finances/view';
         };
