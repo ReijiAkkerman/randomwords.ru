@@ -1,11 +1,12 @@
 <?php
     namespace project\control;
 
-    use project\control\traits\View;
     use project\common\traits\Errors;
+    use project\common\Error;
+    
+    use project\control\traits\Page;
 
     use project\model\Auth as mAuth;
-    use project\common\Error;
 
     class Auth {
         const LOGIN_LENGTH_MIN = 5;
@@ -31,8 +32,13 @@
         private string $password = '';
         private string $password_repetition = '';
 
-        use View;
         use Errors;
+        use Page;
+
+        public function view(): void {
+            if($this->userHasCredentials()) header('Location: http://test/finances/view', true, 301);
+            else require_once __DIR__ . "/../view/auth.php";
+        }
 
         public function reg() {
             $this->reg_getFieldsData();

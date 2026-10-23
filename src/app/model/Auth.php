@@ -63,7 +63,7 @@
             $this->prepareCookies($LOGIN, $this->Password_hash);
             $this->sendCookies();
         }
-
+        #
         private function log_checkUserExistence(string $LOGIN): void {
             $this->mysql->query('USE AUTH');
             $result = $this->mysql->query("SELECT * FROM users WHERE login='$LOGIN'");
@@ -75,7 +75,7 @@
                 $this->sendErrors();
             }
         }
-
+        #
         private function log_identifyUser(string $PASSWORD): void {
             if(password_verify($PASSWORD, $this->Password_hash) === false) {
                 $this->errors[] = new Error('password', 'Пароль неверный!');
@@ -83,12 +83,21 @@
             }
         }
 
-
-
-
-
         private function prepareCookies(string $LOGIN, string $confirmation): void {
             $this->addCookie('login', $LOGIN);
             $this->addCookie('confirmation', $confirmation);
+        }
+
+
+
+
+
+        public function getConfirmation(string $LOGIN): string {
+            $this->createMysqlRootConnection();
+            $this->mysql->query('USE AUTH');
+            $result = $this->mysql->query("SELECT password_hash FROM users WHERE login='$LOGIN'");
+            foreach($result as $row)
+                return $row['password_hash'];
+            $this->closeMysqlConnection();
         }
     }

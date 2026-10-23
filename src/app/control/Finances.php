@@ -1,8 +1,8 @@
 <?php
     namespace project\control;
 
-    use project\control\traits\View;
+    use project\control\traits\Page;
 
     class Finances {
-        use View;
+        use Page;
     }
