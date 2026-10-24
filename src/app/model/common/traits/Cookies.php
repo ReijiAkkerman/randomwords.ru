@@ -16,7 +16,7 @@
 
         public function sendCookies(): void {
             foreach($this->cookies as $cookie_name => $params   )
-                setcookie($cookie_name, $params[0], $params[1]);
+                setcookie($cookie_name, $params[0], $params[1], '/');
         }
 
         public function deleteCookies(): void {

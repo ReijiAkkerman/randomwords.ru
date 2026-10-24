@@ -12,9 +12,10 @@
         }
 
         public function userHasCredentials(): bool {
-            $LOGIN = $_COOKIE['login'];
-            $CONFIRMATION = $_COOKIE['confirmation'];
-            $Confirmation = (new Auth)->getConfirmation($LOGIN);
+            $LOGIN = (isset($_COOKIE['login'])) ? $_COOKIE['login'] : '';
+            $CONFIRMATION = (isset($_COOKIE['confirmation'])) ? $_COOKIE['confirmation'] : '';
+            if($LOGIN && $CONFIRMATION)
+                $Confirmation = (new Auth)->getConfirmation($LOGIN);
             $credentials = ($CONFIRMATION && $Confirmation && $CONFIRMATION === $Confirmation) ? true : false;
             return $credentials; 
         }
