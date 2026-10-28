@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="/src/css/position.css">
         <link rel="stylesheet" href="/src/css/style.css">
         <link rel="stylesheet" href="/src/css/fonts.css">
@@ -398,15 +399,5 @@
         <!-- parameters -->
         <script type="module" src="/src/js/finances/view/settings/parameters/ItemsOpener.js"></script>
         <script type="module" src="/src/js/finances/view/settings/parameters/search/SearchRowDisplaying.js"></script>
-
-        <!-- <script type="module" src="/src/js/finances/view/switcher.js"></script>
-        <script type="module" src="/src/js/finances/view/goal_form.js"></script>
-        <script type="module" src="/src/js/finances/view/fund_form.js"></script>
-        <script type="module" src="/src/js/finances/view/entry_form.js"></script>
-
-        <script type="module" src="/src/js/finances/view/settings/switcher.js"></script>
-        <script type="module" src="/src/js/finances/view/settings/filters/items_opener.js"></script>
-
-        <script type="module" src="/src/js/finances/view/entries/show_entry's_data.js"></script> -->
     </body>
 </html>

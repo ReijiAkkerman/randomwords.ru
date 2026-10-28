@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="/src/css/position.css">
         <link rel="stylesheet" href="/src/css/style.css">
         <link rel="stylesheet" href="/src/css/fonts.css">

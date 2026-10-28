@@ -36,11 +36,9 @@
         use Page;
 
         public function view(): void {
-            if($this->userHasCredentials()) {
-                header('Location: http://test/finances/view', true, 301);
-                exit;
-            }
+            if($this->userHasCredentials()) header('Location: http://test/finances/view', true, 302);
             else require_once __DIR__ . "/../view/auth.php";
+            exit;
         }
 
         public function reg() {
