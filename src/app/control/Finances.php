@@ -8,7 +8,7 @@
 
         public function view(): void {
             if($this->userHasCredentials()) require_once __DIR__ . "/../view/finances.php";
-            else header('Location: http://test/auth/view', true, 302);
+            else header('Location: /auth/view', true, 302);
             exit;
         }
     }

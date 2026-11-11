@@ -12,7 +12,7 @@
     </head>
     <body>
         <h1 class="title">Цели</h1>
-        <section class="mainWindow goals">
+        <section class="mainWindow goals" style="display:none;">
             <?php $current_section = 'goals'; ?>
             <div class="goals-list">
                 <?php include __DIR__ . '/finances/formElements/sortingBar.php' ?>
@@ -56,7 +56,7 @@
                 </svg>
             </button>
         </section>
-        <section class="mainWindow funds" data-section="funds" style="display:none;">
+        <section class="mainWindow funds" style="display:none;">
             <?php $current_section = 'funds'; ?>
             <div class="funds-list">
                 <?php include __DIR__ . '/finances/formElements/sortingBar.php' ?>
@@ -100,7 +100,7 @@
                 </svg>
             </button>
         </section>
-        <section class="mainWindow entries" data-section="entries" style="display:none;">
+        <section class="mainWindow entries" style="display:none;">
             <?php $current_section = 'entries'; ?>
             <div class="entries-list">
                 <?php include __DIR__ . '/finances/formElements/sortingBar.php' ?>
@@ -160,7 +160,7 @@
                 </svg>
             </button>
         </section>
-        <section class="mainWindow settings" data-section="settings" style="display:none;">
+        <section class="mainWindow settings" style="display:none;">
             <!-- $current_section используется для определения к какому разделу относится подключаемый "общий" элемент -->
             <?php $current_section = 'settings'; ?>
             <div class="settings-parametersEditing" style="display:none;">
@@ -358,7 +358,7 @@
                 <button class="settings-modeSwitcher__button settings-modeSwitcher_switchToFilters" style="color:#000;">Фильтры</button>
             </div>
         </section>
-        <section class="switcher">
+        <section class="switcher" style="display:none;">
             <button class="switcher__button switcher-goals" data-section="goals" data-title="Цели" style="border-top-color:#0000;">
                 <svg class="switcher__svg svg-stroke" viewBox="0 0 32 32" enable-background="new 0 0 32 32">
                     <line fill="none" stroke-width="2" stroke-miterlimit="10" x1="15" y1="16" x2="28" y2="16"/>
@@ -388,8 +388,11 @@
                 </svg>
             </button>
         </section>
+        <section class="analitics">
+
+        </section>
         <script type="module" src="/src/js/finances/view/CSSStyles.js"></script>
-        <script type="module" src="/src/js/finances/view/WindowSwitcher.js"></script>
+        <script type="module" src="/src/js/finances/view/TabSwitcher.js"></script>
         <script type="module" src="/src/js/finances/view/AddNew.js"></script>
         <script type="module" src="/src/js/finances/view/CloseForm.js"></script>
         <!-- settings -->
@@ -399,5 +402,9 @@
         <!-- parameters -->
         <script type="module" src="/src/js/finances/view/settings/parameters/ItemsOpener.js"></script>
         <script type="module" src="/src/js/finances/view/settings/parameters/search/SearchRowDisplaying.js"></script>
+        <!-- analitics -->
+        <script type="module" src="/src/js/finances/view/analitics/WindowSwitcher.js"></script>
+        <!-- MOBILE -->
+        <script type="module" src="/src/js/finances/view/mobile/TOUCH_LOGGER.js"></script>
     </body>
 </html>

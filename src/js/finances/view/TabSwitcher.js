@@ -1,7 +1,8 @@
 import {CSSStyles} from "/src/js/finances/view/CSSStyles.js";
 
-class WindowSwitcher {
-    static #earlier_selected_button;
+class TabSwitcher {
+    static earlier_selected_button;
+    static #bar = document.querySelector(".switcher");
 
     #button;
     #window;
@@ -14,17 +15,35 @@ class WindowSwitcher {
         this.#title = document.querySelector(".title");
         this.#button_color = button_color;
         this.#button.addEventListener("click", (event) => this.enableCurrentSection(event));
-        if(WindowSwitcher.#earlier_selected_button === undefined) WindowSwitcher.#earlier_selected_button = goals;
+        if(TabSwitcher.earlier_selected_button === undefined) TabSwitcher.earlier_selected_button = goals;
     }
 
     enableCurrentSection(event) {
-        if(WindowSwitcher.#earlier_selected_button !== this)
-        WindowSwitcher.#earlier_selected_button.#disablePreviousSection();
-        WindowSwitcher.#earlier_selected_button = this;
+        if(TabSwitcher.earlier_selected_button !== this)
+        TabSwitcher.earlier_selected_button.#disablePreviousSection();
+        TabSwitcher.earlier_selected_button = this;
         this.#setTitle();
         this.#showWindow();
         this.#highlightSvg();
         this.#hightlightButton();
+    }
+
+    // Имена методов написанные заглавными буквами могут быть вызваны только другими классами.
+    // Классом, в котором они определены, вызываться не должны.
+    static HIDE_SECTION() {
+        TabSwitcher.earlier_selected_button.#hideWindow();
+    }
+
+    static SHOW_SECTION() {
+        TabSwitcher.earlier_selected_button.#showWindow();
+    }
+
+    static HIDE_SWITCHER_BAR() {
+        TabSwitcher.#bar.style.display = "none";
+    }
+
+    static SHOW_SWITCHER_BAR() {
+        TabSwitcher.#bar.style.display = "";
     }
 
     #disablePreviousSection() {
@@ -72,11 +91,12 @@ class WindowSwitcher {
     }
 }
 
-export var goals, funds, entries, settings;
+var goals, funds, entries, settings;
+export {TabSwitcher};
 
 document.addEventListener("DOMContentLoaded", function() {
-    goals = new WindowSwitcher(".switcher-goals", ".mainWindow.goals");
-    funds = new WindowSwitcher(".switcher-funds", ".mainWindow.funds");
-    entries = new WindowSwitcher(".switcher-entries", ".mainWindow.entries", CSSStyles.getMainTextColor());
-    settings = new WindowSwitcher(".switcher-settings", ".mainWindow.settings", CSSStyles.getMainTextColor());
+    goals = new TabSwitcher(".switcher-goals", ".mainWindow.goals");
+    funds = new TabSwitcher(".switcher-funds", ".mainWindow.funds");
+    entries = new TabSwitcher(".switcher-entries", ".mainWindow.entries", CSSStyles.getMainTextColor());
+    settings = new TabSwitcher(".switcher-settings", ".mainWindow.settings", CSSStyles.getMainTextColor());
 });

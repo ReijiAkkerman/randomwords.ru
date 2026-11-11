@@ -329,4 +329,10 @@ body > .mainWindow {
   height: 100%;
 }
 
+.analitics {
+  display: block;
+  height: 100%;
+  overflow-y: auto;
+}
+
 /*# sourceMappingURL=position.css.map */

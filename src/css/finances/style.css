@@ -503,6 +503,10 @@ h1, h2, h3, h4, h5, h6, label, input, textarea, option, select {
   padding: 10px;
 }
 
+.analitics {
+  background-color: #f00;
+}
+
 .goal {
   font-weight: bold;
   color: #444;
