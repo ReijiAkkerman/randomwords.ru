@@ -16,7 +16,6 @@ class TOUCH_LOGGER {
     setStartPoint(event) {
         this.#startX = event.touches[0].clientX;
         this.#startY = event.touches[0].clientY;
-        // console.log(`start x=${this.#startX} y=${this.#startY}`);
     }
 
     #setEndPoint(event) {

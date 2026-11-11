@@ -388,23 +388,26 @@
                 </svg>
             </button>
         </section>
-        <section class="analitics">
+        <section class="analitics" style="display:;">
 
         </section>
-        <script type="module" src="/src/js/finances/view/CSSStyles.js"></script>
-        <script type="module" src="/src/js/finances/view/TabSwitcher.js"></script>
-        <script type="module" src="/src/js/finances/view/AddNew.js"></script>
-        <script type="module" src="/src/js/finances/view/CloseForm.js"></script>
-        <!-- settings -->
-        <script type="module" src="/src/js/finances/view/settings/SectionSwitcher.js"></script>
-        <!-- filters -->
-        <script type="module" src="/src/js/finances/view/settings/filters/ItemsOpener.js"></script>
-        <!-- parameters -->
-        <script type="module" src="/src/js/finances/view/settings/parameters/ItemsOpener.js"></script>
-        <script type="module" src="/src/js/finances/view/settings/parameters/search/SearchRowDisplaying.js"></script>
-        <!-- analitics -->
-        <script type="module" src="/src/js/finances/view/analitics/WindowSwitcher.js"></script>
+        <script type="module" src="/src/js/finances/view/CSS_STYLES.js"></script>
         <!-- MOBILE -->
-        <script type="module" src="/src/js/finances/view/mobile/TOUCH_LOGGER.js"></script>
+        <script type="module" src="/src/js/finances/view/TOUCH_LOGGER.js"></script>
+        <!-- main window -->
+        <script type="module" src="/src/js/finances/view/windows/main/TabSwitcher.js"></script>
+        <script type="module" src="/src/js/finances/view/windows/main/AddNew.js"></script>
+        <script type="module" src="/src/js/finances/view/windows/main/CloseForm.js"></script>
+            <!-- settings -->
+        <script type="module" src="/src/js/finances/view/windows/main/tabs/settings/SectionSwitcher.js"></script>
+            <!-- filters -->
+        <script type="module" src="/src/js/finances/view/windows/main/tabs/settings/filters/ItemsOpener.js"></script>
+            <!-- parameters -->
+        <script type="module" src="/src/js/finances/view/windows/main/tabs/settings/parameters/ItemsOpener.js"></script>
+        <script type="module" src="/src/js/finances/view/windows/main/tabs/settings/parameters/search/SearchRowDisplaying.js"></script>
+
+
+
+        <script type="module" src="/src/js/finances/view/WindowSwitcher.js"></script>
     </body>
 </html>

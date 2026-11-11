@@ -1,4 +1,4 @@
-import {ItemsOpener} from "../ItemsOpener.js";
+import {ItemsOpener} from "/src/js/finances/view/windows/main/tabs/settings/ItemsOpener.js";
 
 document.addEventListener("DOMContentLoaded", function() {
     let open_buttons = document.querySelectorAll(".settings-searchAndFilters_switchButton");

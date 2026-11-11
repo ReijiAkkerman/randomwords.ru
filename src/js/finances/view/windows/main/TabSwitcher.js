@@ -1,4 +1,4 @@
-import {CSSStyles} from "/src/js/finances/view/CSSStyles.js";
+import {CSS_STYLES} from "/src/js/finances/view/CSS_STYLES.js";
 
 class TabSwitcher {
     static earlier_selected_button;
@@ -9,7 +9,7 @@ class TabSwitcher {
     #title;
     #button_color;
 
-    constructor(button_selector, window_selector, button_color = CSSStyles.getMainSvgColor()) {
+    constructor(button_selector, window_selector, button_color = CSS_STYLES.getMainSvgColor()) {
         this.#button = document.querySelector(button_selector);
         this.#window = document.querySelector(window_selector);
         this.#title = document.querySelector(".title");
@@ -97,6 +97,6 @@ export {TabSwitcher};
 document.addEventListener("DOMContentLoaded", function() {
     goals = new TabSwitcher(".switcher-goals", ".mainWindow.goals");
     funds = new TabSwitcher(".switcher-funds", ".mainWindow.funds");
-    entries = new TabSwitcher(".switcher-entries", ".mainWindow.entries", CSSStyles.getMainTextColor());
-    settings = new TabSwitcher(".switcher-settings", ".mainWindow.settings", CSSStyles.getMainTextColor());
+    entries = new TabSwitcher(".switcher-entries", ".mainWindow.entries", CSS_STYLES.getMainTextColor());
+    settings = new TabSwitcher(".switcher-settings", ".mainWindow.settings", CSS_STYLES.getMainTextColor());
 });
